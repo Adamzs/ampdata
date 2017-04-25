@@ -102,6 +102,7 @@ public class SQLManager implements ErrorReporter, ErrorEventListener {
         String metaFilePath = meta.getFile().getFile().getAbsolutePath();
         String csvFilePath = metaFilePath.replaceAll(".meta", "");
         StringBuilder sql = new StringBuilder();
+        csvFilePath = csvFilePath.replace("\\", "/");
         sql.append("LOAD DATA LOCAL INFILE '" + csvFilePath + "'");
         sql.append(" INTO TABLE " + normalize(meta.getTableName()));
         sql.append(" COLUMNS TERMINATED BY ','");

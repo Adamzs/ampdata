@@ -176,6 +176,7 @@ public class Ingest implements ActionListener, ErrorEventListener {
             projectDirectory = new File(openDialog.getProjectPath());
             metaFiles = MetafileManager.getMetafileHandler().readMetaFiles(projectDirectory);
             Properties.getProperties().set(Properties.PROJ_ROOT, projectDirectory.getAbsolutePath());
+            JOptionPane.showMessageDialog(ingesterFrame, "Import metadatas completed.", "Success", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
