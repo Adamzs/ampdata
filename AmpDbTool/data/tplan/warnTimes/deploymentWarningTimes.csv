@@ -1,0 +1,4 @@
+Key,Day,Enabled,Description,EventPhase,Data
+LAND,0,true,,,2
+AIR,0,true,,,2
+SEA,0,true,,,2

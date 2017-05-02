@@ -1,0 +1,113 @@
+NAME,ATTRIBUTE_NUM,VALUE,UNITS,DATE_STAMP,USER_NAME,SOURCE,ID
+AQRC,24,500.0,railcar,Apr 17 2012,vang,User entered,134218355
+KKGA,124,KFAR,string,Oct 25 2010,vang,User,134218126
+KKGA,125,FAR,string,Oct 25 2010,vang,User,134218126
+KZTV,124,PHNL,string,Oct 25 2010,vang,User,134217954
+KZTV,125,HNL,string,Oct 25 2010,vang,User,134217954
+YFXQ,124,PAFB,string,Oct 25 2010,vang,User,134218149
+YFXQ,125,FBK,string,Oct 25 2010,vang,User,134218149
+ZRCE,124,KNYL,string,Oct 25 2010,vang,User,134218189
+ZRCE,125,NYL,string,Oct 25 2010,vang,User,134218189
+FJRP,124,KCLT,string,Oct 25 2010,vang,User,134219270
+FJRP,125,CLT,string,Oct 25 2010,vang,User,134219270
+MHMV,124,KIKR,string,Oct 25 2010,vang,User,134218258
+MHMV,125,ABQ,string,Oct 25 2010,vang,User,134218258
+YZJU,124,KIWA,string,Oct 25 2010,vang,User,134218467
+YZJU,125,CHD,string,Oct 25 2010,vang,User,134218467
+KYJL,124,KHST,string,Oct 25 2010,vang,User,134218491
+KYJL,125,HST,string,Oct 25 2010,vang,User,134218491
+LWRC,124,KSAW,string,Oct 25 2010,vang,User,134218657
+LWRC,125,MQT,string,Oct 25 2010,vang,User,134218657
+FGWB,124,KMGE,string,Oct 25 2010,vang,User,134218808
+FGWB,125,MGE,string,Oct 25 2010,vang,User,134218808
+KNMD,124,PHNL,string,Oct 25 2010,vang,User,134219095
+KNMD,125,HNL,string,Oct 25 2010,vang,User,134219095
+HCTL,16,175.0,railcar/day,Apr 17 2012,vang,User entered,134218487
+UTAC,24,300.0,int,Mar 11 2010,vang,User entered,134218298
+JTVH,24,500.0,int,Mar 11 2010,vang,User entered,134217739
+TTWZ,24,500.0,int,Mar 11 2010,vang,User entered,134218139
+TQUH,24,500.0,railcar,Apr 17 2012,vang,User entered,134218270
+LCMT,24,1000.0,railcar,Apr 17 2012,vang,User entered,134218867
+WMPT,24,500.0,railcar,Apr 17 2012,vang,User entered,134218910
+pipeline-0,44,8.995465278625488,mi,Oct 25 2010,vang,ELIST Calculated,805306368
+pipeline-1,44,11.863093376159668,mi,Oct 25 2010,vang,ELIST Calculated,805306369
+pipeline-2,44,7.505427837371826,mi,Oct 25 2010,vang,ELIST Calculated,805306370
+pipeline-3,44,6.642962455749512,mi,Oct 25 2010,vang,ELIST Calculated,805306371
+rail 0,44,3.493467092514038,mi,Mar 10 2010,vang,ELIST Calculated,671093102
+rail 1,44,0.3908849060535431,mi,Apr 11 2012,vang,ELIST Calculated,671093103
+rail 2,44,1.3061469793319702,mi,Apr 11 2012,vang,ELIST Calculated,671093104
+rail 3,44,1.2636263370513916,mi,Apr 11 2012,vang,ELIST Calculated,671093105
+rail 4,44,0.12759773433208466,mi,Apr 11 2012,vang,ELIST Calculated,671093106
+rail 5,44,1.4555388689041138,mi,Apr 11 2012,vang,ELIST Calculated,671093107
+rail 6,44,0.5949488878250122,mi,Apr 17 2012,vang,ELIST Calculated,671093108
+road 0,44,1.319226622581482,mi,Mar 10 2010,vang,ELIST Calculated,536877459
+waterway-0,44,11.97175121307373,mi,Oct 25 2010,vang,ELIST Calculated,1073741824
+waterway-1,44,16.5256290435791,mi,Oct 25 2010,vang,ELIST Calculated,1073741825
+waterway-2,44,22.730426788330078,mi,Oct 25 2010,vang,ELIST Calculated,1073741826
+waterway-3,44,6.174830913543701,mi,Oct 25 2010,vang,ELIST Calculated,1073741827
+waterway-4,44,8.527347564697266,mi,Oct 25 2010,vang,ELIST Calculated,1073741828
+waterway-5,44,14.958298683166504,mi,Oct 25 2010,vang,ELIST Calculated,1073741829
+waterway-6,44,6.588563442230225,mi,Oct 25 2010,vang,ELIST Calculated,1073741830
+waterway-7,44,28.11148452758789,mi,Oct 25 2010,vang,ELIST Calculated,1073741831
+waterway-8,44,11.639927864074707,mi,Oct 25 2010,vang,ELIST Calculated,1073741832
+waterway-9,44,5.164246082305908,mi,Oct 25 2010,vang,ELIST Calculated,1073741833
+waterway-10,44,43.567649841308594,mi,Oct 25 2010,vang,ELIST Calculated,1073741834
+Safaqis NE-1 berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435462
+Safaqis NE-2 berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435464
+Safaqis NW-1 berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435466
+Safaqis NW-2 berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435468
+LONG BEACH all-purpose berth-NPTU,76,55.0,ft,Mar 10 2010,vang,User entered,268435480
+LONG BEACH all-purpose berth-NPTU,74,5000.0,ft,Mar 10 2010,vang,User entered,268435480
+SAN DIEGO all-purpose berth-UTAC,76,55.0,ft,Mar 10 2010,vang,User entered,268435481
+SAN DIEGO all-purpose berth-UTAC,74,5000.0,ft,Mar 10 2010,vang,User entered,268435481
+NEW YORK all-purpose berth-RRRK,76,55.0,ft,Mar 10 2010,vang,User entered,268435482
+NEW YORK all-purpose berth-RRRK,74,5000.0,ft,Mar 10 2010,vang,User entered,268435482
+NEWPORT NEWS all-purpose berth-RULV,76,55.0,ft,Mar 10 2010,vang,User entered,268435483
+NEWPORT NEWS all-purpose berth-RULV,74,5000.0,ft,Mar 10 2010,vang,User entered,268435483
+SAVANNAH all-purpose berth-UZXJ,76,55.0,ft,Mar 10 2010,vang,User entered,268435484
+SAVANNAH all-purpose berth-UZXJ,74,5000.0,ft,Mar 10 2010,vang,User entered,268435484
+JACKSONVILLE all-purpose berth-LSGM,76,55.0,ft,Mar 10 2010,vang,User entered,268435485
+JACKSONVILLE all-purpose berth-LSGM,74,5000.0,ft,Mar 10 2010,vang,User entered,268435485
+all-purpose berth-FQZF Terminal-19855,76,70.0,ft,Oct 26 2010,vang,User entered,268435486
+all-purpose berth-FQZF Terminal-19855,74,5000.0,ft,Oct 26 2010,vang,User entered,268435486
+all-purpose berth-APFD Terminal-19858,74,5000.0,ft,Oct 26 2010,vang,User entered,268435487
+all-purpose berth-APFD Terminal-19858,76,70.0,ft,Oct 26 2010,vang,User entered,268435487
+SALT,78,180.0,ft,Mar 10 2010,vang,User entered,268435471
+FGTW berth container,74,4000.0,ft,Mar 10 2010,vang,User entered,268435456
+FGTW berth container,76,90.0,ft,Mar 10 2010,vang,User entered,268435456
+FGTW berth container,78,180.0,ft,Mar 10 2010,vang,User entered,268435456
+BSRL berth container,74,4000.0,ft,Mar 10 2010,vang,User entered,268435460
+BSRL berth container,76,90.0,ft,Mar 10 2010,vang,User entered,268435460
+BSRL berth container,78,180.0,ft,Mar 10 2010,vang,User entered,268435460
+ADLS berth container,74,4000.0,ft,Mar 10 2010,vang,User entered,268435472
+ADLS berth container,76,90.0,ft,Mar 10 2010,vang,User entered,268435472
+ADLS berth container,78,180.0,ft,Mar 10 2010,vang,User entered,268435472
+FGTW berth general purpose,74,4000.0,ft,Mar 10 2010,vang,User entered,268435459
+FGTW berth general purpose,76,90.0,ft,Mar 10 2010,vang,User entered,268435459
+FGTW berth general purpose,78,180.0,ft,Mar 10 2010,vang,User entered,268435459
+BSRL berth general purpose,74,4000.0,ft,Mar 10 2010,vang,User entered,268435461
+BSRL berth general purpose,76,90.0,ft,Mar 10 2010,vang,User entered,268435461
+BSRL berth general purpose,78,180.0,ft,Mar 10 2010,vang,User entered,268435461
+Gabes berth1,74,4000.0,ft,Mar 10 2010,vang,User entered,268435463
+Gabes berth1,78,180.0,ft,Mar 10 2010,vang,User entered,268435463
+ADLS berth general purpose,74,4000.0,ft,Mar 10 2010,vang,User entered,268435465
+ADLS berth general purpose,76,90.0,ft,Mar 10 2010,vang,User entered,268435465
+ADLS berth general purpose,78,180.0,ft,Mar 10 2010,vang,User entered,268435465
+Gabes berth2,74,4000.0,ft,Mar 10 2010,vang,User entered,268435469
+Gabes berth2,76,90.0,ft,Mar 10 2010,vang,User entered,268435469
+Gabes berth2,78,180.0,ft,Mar 10 2010,vang,User entered,268435469
+Safaqis tanker berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435467
+Gabes tanker berth,78,180.0,ft,Mar 10 2010,vang,User entered,268435470
+LONG BEACH gantry crane-NPTU,109,Yes,yn,Mar 10 2010,vang,User entered,402653242
+LONG BEACH gantry crane-NPTU,97,10,int,Mar 10 2010,vang,User entered,402653242
+SAN DIEGO gantry crane-UTAC,109,Yes,yn,Mar 10 2010,vang,User entered,402653243
+SAN DIEGO gantry crane-UTAC,97,10,int,Mar 10 2010,vang,User entered,402653243
+NEW YORK gantry crane-RRRK,97,10,int,Mar 10 2010,vang,User entered,402653244
+NEW YORK gantry crane-RRRK,109,Yes,yn,Mar 10 2010,vang,User entered,402653244
+NEWPORT NEWS gantry crane-RULV,97,10,int,Mar 10 2010,vang,User entered,402653245
+NEWPORT NEWS gantry crane-RULV,109,Yes,yn,Mar 10 2010,vang,User entered,402653245
+JACKSONVILLE gantry crane-LSGM,97,10,int,Mar 10 2010,vang,User entered,402653246
+JACKSONVILLE gantry crane-LSGM,109,Yes,yn,Mar 10 2010,vang,User entered,402653246
+SAVANNAH gantry crane-UZXJ,97,10,int,Mar 10 2010,vang,User entered,402653247
+SAVANNAH gantry crane-UZXJ,109,Yes,yn,Mar 10 2010,vang,User entered,402653247
+gantry crane-FQZF Terminal-19856,97,10,int,Oct 26 2010,vang,User entered,402653248

@@ -1,0 +1,6 @@
+Name,AcType,CrewDutyEnabled,MissionPrepTime,CrewDutyDay,AugmentedCrewDutyDay,CrewRest
+STRATEGIC,B-747P,true,2.75,16,24,15
+STRATEGIC,C-17,true,2.75,16,24,15
+STRATEGIC,C-5A,true,2.75,16,24,15
+STRATEGIC,CH47,false,2.75,16,24,15
+STRATEGIC,KC-10,true,2.75,16,24,15

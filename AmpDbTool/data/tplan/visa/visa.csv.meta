@@ -1,0 +1,59 @@
+{
+    "id": "/tplan/visa/visa.csv.meta",
+    "title": "Visa",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.visa.VisaStopsIO",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Schedule",
+                "titles": "Schedule",
+                "description": "The name of this schedule",
+                "datatype": "string"
+            },
+            {
+                "name": "InitDay",
+                "titles": "InitDay",
+                "description": "The offset of when this schedule starts",
+                "datatype": "float"
+            },
+            {
+                "name": "Position",
+                "titles": "Position",
+                "description": "Number in sequence for visa stops",
+                "datatype": "integer"
+            },
+            {
+                "name": "Port",
+                "titles": "Port",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "StopTime",
+                "titles": "StopTime",
+                "description": "Time at port",
+                "datatype": "float"
+            },
+            {
+                "name": "TravelTime",
+                "titles": "TravelTime",
+                "description": "Time to travel to next port",
+                "datatype": "float"
+            }
+        ],
+        
+        "foreignKeys": [
+            {
+                "columnReference": "Port",
+                "reference": {
+                    "schemaReference": "/tplan/seaports/seaports.csv.meta",
+                    "columnReference": "Geoloc"
+                }
+            }
+        ]
+    }
+}

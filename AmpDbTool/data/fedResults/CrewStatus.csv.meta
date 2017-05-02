@@ -1,0 +1,20 @@
+{
+    "id": "/fedResults/CrewStatus.csv.meta",
+    "title": "CrewStatuses",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.fedenum.CrewStatus",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "CrewStatus",
+                "titles": "CrewStatus",
+                "description": "The status for the crew",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "CrewStatus",
+        "foreignKeys": [
+        ]
+    }
+}

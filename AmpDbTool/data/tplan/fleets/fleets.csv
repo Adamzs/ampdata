@@ -1,0 +1,12 @@
+Fleet,Mobilization,Requisitioned,CollPointWaitDays,CollPointSpeedFactor,CollPointCostFactor
+RRF,9,true,10,1,1
+FLOW,93,false,10,1,1
+PREPO,7,true,10,1,1
+AMMO,16,true,10,1,1
+MPS,7,true,10,1,1
+MSC,3,true,10,1,1
+ORG SURGE,9,true,10,1,1
+EUSC,16,true,10,1,1
+VISA,16,true,10,1,1
+FF-LINER,16,true,10,1,1
+PORT AUG,0,true,10,1,1

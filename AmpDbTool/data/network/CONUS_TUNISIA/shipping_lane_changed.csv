@@ -1,0 +1,11 @@
+KEY,SHAPE_ROW,CountryState,CountryStateCode,Length,LineStyle,LineWidth,LineColor,WaterwayRate,WaterwayRateOfMarch,AvailableMilitary,type,From,To,DisplayName,Modified
+NEW 10-4,4,28,28,,,,,,,,,intersection 6469,intersection 6470,,
+NEW 11-8,8,47,47,,,,,,,,,intersection 6472,intersection 6469,,
+NEW 12-7,7,34,34,,,,,,,,,AZTG intersection,intersection 6472,,
+NEW 3-0,0,06,06,,,,,,,,,SERU intersection,UEND intersection,,
+NEW 4-9,9,22,22,,,,,,,,,intersection 6471,RQNK intersection,,
+NEW 5-5,5,08,08,,,,,,,,,intersection 6468,intersection 6471,,
+NEW 6-2,2,22,22,,,,,,,,,intersection 6467,intersection 6468,,
+NEW 7-3,3,01,01,,,,,,,,,intersection 6466,intersection 6467,,
+NEW 8-1,1,08,08,,,,,,,,,intersection 6465,intersection 6466,,
+NEW 9-6,6,47,47,,,,,,,,,intersection 6470,intersection 6465,,

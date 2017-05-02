@@ -1,0 +1,19 @@
+Name,Day,Enabled,Description,EventPhase,UnitEquipment,Resupply,Ammo,Special
+T-AVB,0,true,,,true,true,true,false
+T-AH,0,true,,,false,false,false,false
+PAX,0,true,,,false,false,false,false
+FSS,0,true,,,true,true,true,false
+RO/RO,0,true,,,true,true,true,false
+CAR TRANS,0,true,,,true,true,true,false
+POL TANKER,0,true,,,false,false,false,false
+T-ACS,0,true,,,true,true,true,false
+BREAKBULK,0,true,,,true,true,true,false
+BARGE(LASH),0,true,,,true,true,true,false
+RO/RO(T-AKR),0,true,,,true,true,true,false
+VISA CONT,0,true,,,true,true,true,false
+BULK CARRIER,0,true,,,true,true,true,false
+BARGE(T-AKB),0,true,,,true,true,true,false
+CONT-NSS,0,true,,,true,true,true,false
+CONT-SS,0,true,,,true,true,true,false
+COMBO,0,true,,,true,true,true,false
+CLF,0,true,,,true,true,true,false

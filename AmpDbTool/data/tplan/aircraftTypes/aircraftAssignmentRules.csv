@@ -1,0 +1,14 @@
+LoadCategory,ACType,Priority
+Pax,B-747P,1
+Air Drop,C-17,1
+Bulk,C-17,3
+Direct Delivery,C-17,1
+Outsize,C-17,1
+Oversize,C-17,1
+Air Drop,C-5A,2
+Bulk,C-5A,2
+Outsize,C-5A,2
+Oversize,C-5A,2
+Bulk,CH47,4
+Bulk,KC-10,1
+Oversize,KC-10,3

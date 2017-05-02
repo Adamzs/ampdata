@@ -1,0 +1,2 @@
+PersonnelLeadTime,MinimumLookAhead,MaximumLookAhead,DraftClearance,EscortReturnSpeed,BunkeringDelay,LateDeliveryLimit,StrandLateSpecialModeCargo,SpecialModeWaitDays,UseTravelTimeEstimator,TheaterLoadAnticipationWindow,StrandedCargoCanReschedule,MaxStrandedCargoSTons,NumTimesStrandedCargoCanReschedule,PlanningBeforeExecuteCompleteDays,TravelTimeEstimator
+5,10,45,2,0,0,0,false,10,false,0,false,100,1,6,TIMEDIST

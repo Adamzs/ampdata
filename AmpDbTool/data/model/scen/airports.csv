@@ -1,0 +1,143 @@
+GeolocCode,Name,Latitude,Longitude,Fuel Dest,CONUS Airport,MilitaryGateway,CRAFGateway,DirectDelivery,MOGConstrained,Fuel Org,CrewRestAllowed
+AEDY,ALCONBURY,52.3725,-0.21138889,,false,false,false,false,true,"",true
+AGGN,ALTUS AFB,34.66639,-99.26806,,true,false,false,false,false,"",true
+AJJY,ANDERSEN AFB,13.583889,144.93,,false,false,false,false,true,"",true
+AJXF,JOINT BASE ANDREW,38.810833,-76.86667,,true,false,false,false,false,"",true
+AQLM,HARTSFIELD JACKSO,33.636665,-84.42778,,true,false,false,false,false,"",true
+ASHE,AVIANO AB,46.031113,12.596389,,false,false,false,false,true,"",true
+ATXK,BAHRAIN INTL,26.268055,50.636944,,false,false,false,false,false,"",true
+AVXV,KALAELOA,21.307222,-158.07028,,false,false,false,false,false,"",true
+AWUB,BARKSDALE AFB,32.501945,-93.6625,,true,false,false,false,false,"",true
+BAEY,BEALE AFB,39.136112,-121.43667,,true,false,false,false,false,"",true
+BBJM,BEAUFORT MCAS,32.4775,-80.72305,,true,false,false,false,false,"",true
+BJHZ,AUSTIN BERGSTROM,30.194445,-97.67,,true,false,false,false,false,"",true
+BPWZ,BIGGS AAF,31.849445,-106.38,,true,false,false,false,true,"",true
+BQWK,BIR EL ATER,34.7525,8.075277,,false,false,false,false,false,"",true
+BRKR,BIRMINGHAM SHUTTL,33.56389,-86.75222,,true,false,false,false,false,"",true
+BWKR,ARKANSAS INTL,35.964443,-89.943886,,true,false,false,false,false,"",true
+BXUR,BOLLING AFB HELI,38.842777,-77.01611,,true,false,false,false,false,"",true
+CTGC,GRISSOM ARB,40.648056,-86.15222,,true,false,false,false,false,"",true
+CWKW,CAIRO WEST,30.116388,30.915556,,false,false,false,false,true,"",true
+CYWF,CAMPBELL AAF,36.66861,-87.49611,,true,false,false,false,true,"",true
+CZQZ,CANNON AFB,34.3825,-103.3225,,true,false,false,false,false,"",true
+DDPF,FORT WORTH NAS JR,32.769165,-97.441666,,true,false,false,false,false,"",true
+DESR,CASTLE,37.380554,-120.56834,,true,false,false,false,false,"",true
+DKFX,JB CHARLESTON,32.898613,-80.04056,,true,true,true,false,true,"",true
+DNNL,CHERRY POINT MCAS,34.900833,-76.88084,,true,false,false,false,false,"",true
+DPNB,OHARE,41.978054,-87.90611,,true,false,false,false,false,"",true
+DVLK,DIOSDADO MACAPAGA,15.186111,120.56028,,false,false,false,false,false,"",true
+DYCS,CLEVELAND HOPKINS,41.409443,-81.855,,true,false,false,false,false,"",true
+ETZB,CP PENDLETON,33.316666,-117.38333,,true,false,false,false,false,"",true
+EYBD,SUBIC BAY INTL,14.794444,120.271385,,false,false,false,false,true,"",true
+FAXN,DARMSTADT AAF,49.853333,8.5847225,,false,false,false,false,false,"",true
+FBNV,DAVIS MONTHAN AFB,32.16639,-110.88306,,true,false,false,false,true,"",true
+FGDC,DIEGO GARCIA NSF,-7.3133335,72.41111,,false,false,false,false,true,"",true
+FGWB,DOBBINS ARB,33.91528,-84.51639,,true,false,false,false,false,"",true
+FJXT,DOVER AFB,39.129444,-75.465836,,true,false,false,false,true,"",true
+FNWZ,DYESS AFB,32.418335,-99.85667,,true,false,false,false,true,"",true
+FTEP,DUKE FLD,30.648611,-86.52194,,true,false,false,false,false,"",true
+FTEV,HURLBURT FLD,30.427778,-86.68916,,true,false,false,false,false,"",true
+FTFA,EGLIN AFB,30.483334,-86.525276,,true,false,false,false,true,"",true
+FTZH,EL BORMA,31.703888,9.254167,,false,false,false,false,true,"",true
+FUQN,THYNA,34.71639,10.691667,,false,false,false,false,true,"",true
+FUZD,EL TORO MCAS,33.673332,-117.73,,true,false,false,false,false,"",true
+FXSB,JB ELMENDORF-RICH,61.25139,-149.8064,,false,false,false,false,true,"",true
+GAMH,ALEXANDRIA INTL,31.3275,-92.548615,,true,false,false,false,true,"",true
+GHLN,FRANCIS E WARREN,41.133335,-104.867226,,true,false,false,false,false,"",true
+GJKZ,FAIRCHILD AFB,47.615,-117.65583,,true,false,false,false,false,"",true
+GKVB,FAIRFORD,51.683334,-1.79,,false,false,false,false,true,"",true
+GUQE,FORBES FLD,38.950832,-95.66361,,true,false,false,false,true,"",true
+GYRZ,FRANKFURT MAIN,50.033333,8.570556,,false,false,false,false,false,"",true
+HNTK,MATMATA,33.733334,9.919167,,false,false,false,false,true,"",true
+HPBF,GAFSA,34.426388,8.828055,,false,false,false,false,false,"",true
+HTUX,GENERAL MITCHELL,42.946945,-87.89694,,true,false,false,false,false,"",true
+HUUA,SOUTHERN CALIFORN,34.5975,-117.38306,,true,false,false,false,false,"",true
+JEAH,DJERBA,33.875557,10.777223,,false,false,false,false,true,"",true
+JFSD,GRAND FORKS AFB,47.961113,-97.40111,,true,false,false,false,true,"",true
+JREZ,GRIFFISS INTL,43.23389,-75.406944,,true,false,false,false,true,"",true
+KJGW,HAYWARD EXECUTIVE,37.65889,-122.121666,,true,false,false,false,false,"",true
+KNMD,JBPH-H HICKAM FLD,21.31611,-157.92667,,false,false,false,false,true,"",true
+KRSM,HILL AFB,41.12389,-111.97305,,true,false,false,false,false,"",true
+KWRD,HOLLOMAN AFB,32.852222,-106.10917,,true,false,false,false,false,"",true
+KYJL,HOMESTEAD AFB,25.488056,-80.38389,,true,false,false,false,false,"",true
+KZTV,HONOLULU INTL,21.31611,-157.92667,,false,false,false,false,false,"",true
+LEXG,HUNTER AAF,32.01,-81.14611,,true,false,false,false,true,"",true
+LSGE,JACKSONVILLE NAS,30.233889,-81.675,,true,false,false,false,false,"",true
+LXEZ,KADENA AB,26.355556,127.76778,,false,false,false,false,true,"",true
+LYAX,KANEOHE BAY MCAF,21.450556,-157.76805,,false,false,false,false,false,"",true
+MAHG,KEESLER AFB,30.410555,-88.924446,,true,false,false,false,true,"",true
+MBPB,JBSA KELLY AFB,29.384167,-98.58111,,true,false,false,false,false,"",true
+MEPJ,GIMHAE INTL,35.180557,128.93805,,false,false,false,false,true,"",true
+MHMV,KIRTLAND AFB,35.04028,-106.60917,,true,false,false,false,true,"",true
+MQNA,LAJES,38.761944,-27.090834,,false,false,false,false,true,"",true
+MSET,LAKENHEATH,52.409443,0.5611111,,false,false,false,false,false,"",true
+MSQB,LAMBERT ST LOUIS,38.74861,-90.37,,true,false,false,false,false,"",true
+MUHJ,JB LANGLEY-EUSTIS,37.08278,-76.36056,,true,false,false,false,true,"",true
+MYXZ,LAWSON AAF,32.331665,-84.98722,,true,false,false,false,false,"",true
+NKAK,LITTLE ROCK AFB,34.918335,-92.14306,,true,false,false,false,true,"",true
+NNGX,GENERAL EDWARD LA,42.363056,-71.006386,,true,false,false,false,true,"",true
+NRCH,LORING INTL,46.950554,-67.88583,,true,false,false,false,true,"",true
+NUEX,LUKE AFB,33.535,-112.38306,,true,false,false,false,false,"",true
+NVZR,MACDILL AFB,27.849445,-82.52111,,true,false,false,false,false,"",true
+NWXN,MADANIYIN,33.35,10.443611,,false,false,false,false,false,"",true
+NZAS,MALMSTROM AFB HEL,47.504723,-111.187225,,true,false,false,false,false,"",true
+OPA1,FWD BASE,34.283333,9.6,,false,false,false,false,true,"",true
+PCZP,MARCH ARB,33.880833,-117.259445,,true,false,false,false,false,"",true
+PJVY,EASTERN WV RGNL S,39.401943,-77.984726,,true,false,false,false,true,"",true
+PNQS,MAXWELL AFB,32.383057,-86.36584,,true,false,false,false,true,"",true
+PQWY,JBLM MCCHORD FLD,47.13778,-122.47639,,true,false,false,false,true,"",true
+PRQE,MC CONNELL AFB,37.623055,-97.2675,,true,false,false,false,false,"",true
+PSXE,MC GHEE TYSON,35.81111,-83.99416,,true,false,false,false,false,"",true
+PTFL,MC GUIRE FLD,40.015556,-74.59167,,true,true,true,false,true,"",true
+QFQE,MILDENHALL,52.361946,0.4863889,,false,false,false,false,true,"",true
+QJKL,MINNEAPOLIS ST PA,44.881943,-93.221664,,true,false,false,false,true,"",true
+QJVF,MINOT AFB,48.415833,-101.358055,,true,false,false,false,false,"",true
+QKJA,MIRAMAR MCAS,32.868332,-117.14167,,true,false,false,false,true,"",true
+QSEU,MOODY AFB,30.967777,-83.193054,,true,false,false,false,false,"",true
+QYZH,MOUNTAIN HOME AFB,43.04361,-115.8725,,true,false,false,false,true,"",true
+RDRD,MYRTLE BEACH INTL,33.67972,-78.92834,,true,false,false,false,false,"",true
+RKMF,NELLIS AFB,36.23611,-115.034164,,true,false,false,false,true,"",true
+RZQH,NORTH ISLAND NAS,32.699165,-117.21528,,true,false,false,false,false,"",true
+SBDW,NORFOLK NS,36.93778,-76.28917,,true,false,false,false,false,"",true
+SCEY,SAN BERNARDINO IN,34.095276,-117.235,,true,false,false,false,false,"",true
+SEA1,TUNISIASEABASE,34.283333,10.5,,false,false,false,false,true,"",true
+SGBP,OFFUTT AFB,41.119446,-95.90861,,true,false,false,false,true,"",true
+SHYQ,HARRISBURG INTL,40.193054,-76.7625,,true,false,false,false,false,"",true
+SMYU,OSAN AB,37.090557,127.029724,,false,false,false,false,false,"",true
+STRL,PALERMO,38.175835,13.091111,,false,false,false,false,true,"",true
+SXHT,PATRICK AFB,28.235,-80.61,,true,false,false,false,false,"",true
+TDHV,CITY OF COLORADO,38.805832,-104.700836,,true,false,false,false,true,"",true
+THWA,PLATTSBURGH INTL,44.650833,-73.468056,,true,false,false,false,false,"",true
+TKXA,POINT MUGU NAS,34.120277,-119.120834,,true,false,false,false,false,"",true
+TMKH,POPE AAF,35.170834,-79.01444,,true,false,false,false,true,"",true
+TYFR,RAMSTEIN AB,49.43611,7.606389,,false,false,false,false,true,"",true
+UGZX,RIYADH AB,24.712778,46.725555,,false,false,false,false,true,"",true
+UHGN,ROBERT GRAY AAF,31.067223,-97.82889,,true,false,false,false,true,"",true
+UHHZ,ROBINS AFB,32.640278,-83.59194,,true,false,false,false,false,"",true
+ULLT,JOSE APONTE DE LA,18.245277,-65.64333,,false,false,false,false,false,"",true
+UMXB,ROTA NS,36.64528,-6.3494444,,false,false,false,false,true,"",true
+VDYD,SCOTT AFB MIDAMER,38.545277,-89.83528,,true,false,false,false,true,"",true
+VGHV,MUSCAT INTL,23.593056,58.284443,,false,false,false,false,false,"",true
+VKAG,SEYMOUR JOHNSON A,35.339443,-77.960556,,true,false,false,false,true,"",true
+VLSB,SHAW AFB,33.97278,-80.47056,,true,false,false,false,false,"",true
+VRJT,SIGONELLA,37.40167,14.922222,,false,false,false,false,true,"",true
+VSMR,PAYA LEBAR,1.3605555,103.90945,,false,false,false,false,true,"",true
+VWLB,SOESTERBERG,52.127224,5.276111,,false,false,false,false,false,"",true
+VYHK,SPANGDAHLEM AB,49.976665,6.6986113,,false,false,false,false,false,"",true
+WEAS,LOUISVILLE INTL S,38.174168,-85.73639,,true,false,false,false,false,"",true
+WSVC,CHEIKH LARBI TEBE,35.431667,8.122222,,false,false,false,false,false,"",true
+WWYK,TINKER AFB,35.414722,-97.386665,,true,false,false,false,false,"",true
+XBGX,TORREJON,40.496666,-3.4458334,,false,false,false,false,false,"",true
+XDAT,TRAVIS AFB,38.264446,-121.924164,,true,true,true,false,true,"",true
+XLWU,TYNDALL AFB,30.069445,-85.575554,,true,false,false,false,false,"",true
+XQDT,UPPER HEYFORD,51.93667,-1.2491666,,false,false,false,false,false,"",true
+XUMU,VANDENBERG AFB,34.73722,-120.58444,,true,false,false,false,false,"",true
+YAQF,VOLK FLD,43.939167,-90.25305,,true,false,false,false,true,"",true
+YTPM,WESTOVER ARB METR,42.19389,-72.53472,,true,false,false,false,false,"",true
+YWHG,WHITEMAN AFB,38.730278,-93.547775,,true,false,false,false,true,"",true
+ZAWN,WILLOW GROVE NAS,40.199722,-75.148056,,true,false,false,false,true,"",true
+ZFKN,WOODBRIDGE,52.08972,1.4055556,,false,false,false,false,false,"",true
+ZHTV,WRIGHT PATTERSON,39.82611,-84.04833,,true,false,false,false,true,"",true
+ZJXD,OSCODA WURTSMITH,44.451668,-83.394165,,true,false,false,false,false,"",true
+ZNRE,YOKOTA AB,35.74861,139.34862,,false,false,false,false,true,"",true
+ZRCE,YUMA INTL,32.656387,-114.605,,true,false,false,false,false,"",true

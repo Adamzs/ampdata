@@ -1,0 +1,46 @@
+{
+    "id": "/adHoc/auto/shipBerthView.csv.meta",
+    "title": "ShipBerthInfo",
+    "scenario": "metadata-scenario",
+    "ampversion": "14.13.0 alpha1",
+    "viewSchema": {
+        "references": [
+            {
+                "schemaReference": "/adHoc/auto/shipCargoUte.csv.meta",
+                "columnReference": "Departure Day"
+            },
+            {
+                "schemaReference": "/adHoc/auto/shipBerthTime.csv.meta",
+                "columnReference": "Ship Name"
+            },
+            {
+                "schemaReference": "/adHoc/auto/shipBerthTime.csv.meta",
+                "columnReference": "Fleet"
+            },
+            {
+                "schemaReference": "/adHoc/auto/shipBerthTime.csv.meta",
+                "columnReference": "Terminal"
+            },
+            {
+                "schemaReference": "/adHoc/auto/shipBerthTime.csv.meta",
+                "columnReference": "Berth Name"
+            },
+            {
+                "schemaReference": "/adHoc/auto/shipCargoUte.csv.meta",
+                "columnReference": "*"
+            }
+        ],
+        "joins": [
+             {
+                "column1": {
+                    "schemaReference": "/adHoc/auto/shipBerthTime.csv.meta",
+                    "columnReference": "Ship Name"
+                },
+                "column2": {
+                    "schemaReference": "/adHoc/auto/shipCargoUte.csv.meta",
+                    "columnReference": "Ship Name"
+                }
+            }
+        ]
+    }
+}

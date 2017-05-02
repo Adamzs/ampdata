@@ -1,0 +1,691 @@
+KEY,ATTRIBUTE_NUM,VALUE
+ALL-PURPOSE,215,false
+ALL-PURPOSE,78,120.0
+BARGE,215,false
+BBULK/AMMO,215,false
+BBULK/CONTNR,215,false
+BBULK/RORO,215,false
+BREAKBULK,215,false
+CONT/AMMO,215,false
+CONTAINER,215,false
+DOCK,215,false
+GENERAL PURP,215,false
+INTRA WATER,215,false
+JLOTS,82,500.0
+JLOTS,215,false
+LIGHTER,215,false
+LIGHTER,74,150.0
+OTHER,215,false
+RORO,215,false
+RORO berth,215,false
+RORO-container berth,215,false
+RORO/CONTNR,215,false
+TANKER,82,15.0
+TANKER,86,feature
+TANKER,215,false
+TANKER,74,1000.0
+TANKER,126,2
+VISA,215,false
+VISA berth,215,false
+added road,48,3824.0
+added road,49,25.0
+added road,215,false
+admin,18,488320.0
+admin,19,488320
+admin,3,square
+admin,4,blue
+admin,20,488320.0
+admin,215,false
+air force station,215,false
+air national guard station,215,false
+air station,1,TUNISIA
+air station,2,TS
+air station,3,airport.gif
+air station,4,green
+air station,86,airport
+air station,215,false
+air terminal,215,false
+airfield,1,TUNISIA
+airfield,2,TS
+airfield,3,airport.gif
+airfield,4,green
+airfield,86,airport
+airfield,215,false
+airport,64, 
+airport,1,Tunisia
+airport,2,TS
+airport,3,airport.gif
+airport,4,blue
+airport,86,airport
+airport,215,false
+airport,124,
+airport,125,
+all-purpose berth,215,false
+ammunition storage,18,488320.0
+ammunition storage,19,488320
+ammunition storage,3,square
+ammunition storage,4,blue
+ammunition storage,20,488320.0
+ammunition storage,86,node
+ammunition storage,215,false
+annex,18,488320.0
+annex,19,488320
+annex,3,square
+annex,4,blue
+annex,20,488320.0
+annex,215,false
+apron,215,false
+army installation,18,488320.0
+army installation,19,488320
+army installation,3,square
+army installation,4,blue
+army installation,20,488320.0
+army installation,86,node
+army installation,215,false
+austere port,215,false
+auto connector pipeline,215,false
+auto connector rail,215,false
+auto connector road,215,false
+auto connector shipping lane,215,false
+auto connector waterway,215,false
+barge berth,215,false
+bay,215,false
+berth,131,
+berth,100,Both
+berth,132,
+berth,133,
+berth,134,
+berth,167,
+berth,136,-999.0
+berth,137,99999.0
+berth,138,true
+berth,74,200.0
+berth,75,50.0
+berth,76,30.0
+berth,108,0.0
+berth,77,800.0
+berth,78,60.0
+berth,79,true
+berth,82,2000.0
+berth,86,feature
+berth,215,false
+berth,216,
+berth,218,2.1E9
+berth,126,0
+breakbulk berth,215,false
+breakbulk-ammunition berth,215,false
+breakbulk-container berth,215,false
+breakbulk-roro berth,215,false
+bridge,3,bridge.gif
+bridge,4,orange
+bridge,86,feature
+bridge,215,false
+canal,215,false
+capacitated land link,215,false
+cape,215,false
+channel,215,false
+city,18,488320.0
+city,19,488320
+city,3,city.gif
+city,4,yellow
+city,20,488320.0
+city,86,node
+city,215,false
+civil air patrol,215,false
+clinic,18,488320.0
+clinic,19,488320
+clinic,20,488320.0
+clinic,215,false
+coast guard installation,18,19998.4
+coast guard installation,19,19998
+coast guard installation,20,19998.4
+coast guard installation,215,false
+command operations,18,488320.0
+command operations,19,488320
+command operations,20,488320.0
+command operations,215,false
+communication,18,488320.0
+communication,19,488320
+communication,3,circle
+communication,20,488320.0
+communication,215,false
+connector pipeline,215,false
+connector rail,215,false
+connector road,215,false
+connector shipping lane,215,false
+connector waterway,215,false
+container berth,215,false
+container crane,215,false
+container crane,103,144.0
+container crane,104,144.0
+container crane,105,4000.0
+container crane,106,4000.0
+container-ammunition berth,215,false
+crane,97,1
+crane,133,
+crane,103,144.0
+crane,135,
+crane,136,-999.0
+crane,104,144.0
+crane,137,99999.0
+crane,105,4000.0
+crane,138,true
+crane,106,4000.0
+crane,109,false
+crane,79,true
+crane,86,feature
+crane,215,false
+crane,216,
+crane,158,0
+defense fuel support point,18,488320.0
+defense fuel support point,19,488320
+defense fuel support point,20,488320.0
+defense fuel support point,215,false
+deployment area,112,
+deployment area,113,
+deployment area,2,
+deployment area,114,
+deployment area,4,gray
+deployment area,117,
+deployment area,214,
+deployment area,215,false
+deployment area,12,5.0
+deployment area,110,
+deployment area,111,
+depot,18,488320.0
+depot,19,488320
+depot,20,488320.0
+depot,215,false
+dispensary,18,488320.0
+dispensary,19,488320
+dispensary,20,488320.0
+dispensary,215,false
+dualport,64,
+dualport,3,seaport.gif
+dualport,99,6
+dualport,68,6000.0
+dualport,4,blue
+dualport,69,4000.0
+dualport,70,2600.0
+dualport,86,dualport
+dualport,215,false
+dualport,71,2300.0
+dualport,72,1800.0
+dualport,73,1200.0
+family housing,18,488320.0
+family housing,19,488320
+family housing,3,circle
+family housing,4,gray
+family housing,20,488320.0
+family housing,215,false
+feature,215,false
+fixed port,18,19998.4
+fixed port,19,19998
+fixed port,3,seaport.gif
+fixed port,20,19998.4
+fixed port,215,false
+gantry crane,215,false
+gantry crane,103,288.0
+gantry crane,104,288.0
+gantry crane,105,8000.0
+gantry crane,106,8000.0
+general purpose berth,215,false
+gravel road,215,false
+gulf,215,false
+hospital,18,488320.0
+hospital,19,488320
+hospital,20,488320.0
+hospital,215,false
+international airport,1,TUNISIA
+international airport,2,TS
+international airport,3,airport.gif
+international airport,4,magenta
+international airport,215,false
+intersection,128,0.0
+intersection,2,
+intersection,214,
+intersection,215,false
+intersection,127,0.0
+intra water berth,215,false
+island,215,false
+joint use airport,1,TUNISIA
+joint use airport,2,TS
+joint use airport,3,airport.gif
+joint use airport,4,green
+joint use airport,86,airport
+joint use airport,215,false
+joint-use airport,215,false
+lake,215,false
+land node,215,false
+landnode,18,488320.0
+landnode,19,488320
+landnode,20,488320.0
+landnode,21,2
+landnode,215,false
+landnode,7,landnode
+large rail,215,false
+large rail,46,2
+large railroad,53,200.0
+large railroad,54,20.0
+large railroad,215,false
+large road,48,9180.0
+large road,49,60.0
+large road,86,road
+large road,215,false
+large road,46,2
+link,1,
+link,129,
+link,130,
+link,2,
+link,44,20.0
+link,45,Solid
+link,46,1
+link,79,true
+link,47,green
+link,213,
+link,86,link
+link,214,
+link,215,false
+link,216,
+link feature,0,0.0 0.0
+link feature,128,0.0
+link feature,2,
+link feature,3,square
+link feature,4,red
+link feature,166,true
+link feature,168,road
+link feature,169,
+link feature,11,2000.0
+link feature,12,500.0
+link feature,44,1000.0
+link feature,13,500.0
+link feature,14,100
+link feature,48,0.0
+link feature,53,0.0
+link feature,86,feature
+link feature,214,
+link feature,215,false
+link feature,216,
+link feature,127,0.0
+maintenance,18,488320.0
+maintenance,19,488320
+maintenance,20,488320.0
+maintenance,215,false
+marine barracks,18,488320.0
+marine barracks,19,488320
+marine barracks,20,488320.0
+marine barracks,215,false
+marine corps camp,18,488320.0
+marine corps camp,19,488320
+marine corps camp,20,488320.0
+marine corps camp,215,false
+marine ground installation,18,488320.0
+marine ground installation,19,488320
+marine ground installation,20,488320.0
+marine ground installation,215,false
+medium rail,215,false
+medium rail,46,2
+medium railroad,53,80.0
+medium railroad,215,false
+medium road,48,3824.0
+medium road,49,25.0
+medium road,86,road
+medium road,215,false
+medium road,46,2
+military airport,3,airport.gif
+military airport,4,green
+military airport,86,airport
+military airport,215,false
+military node,3,circle
+military node,215,false
+missile,18,488320.0
+missile,19,488320
+missile,20,488320.0
+missile,215,false
+mobile crane,215,false
+mobile crane,103,100.0
+mobile crane,104,100.0
+mobile crane,105,3000.0
+mobile crane,106,3000.0
+navaid,18,19998.4
+navaid,19,19998
+navaid,20,19998.4
+navaid,215,false
+naval activity,18,488320.0
+naval activity,19,488320
+naval activity,20,488320.0
+naval activity,215,false
+naval base,18,19998.4
+naval base,19,19998
+naval base,20,19998.4
+naval base,215,false
+navy installation,18,19998.4
+navy installation,19,19998
+navy installation,3,square
+navy installation,4,blue
+navy installation,20,19998.4
+navy installation,215,false
+node,0,36.0 10.0
+node,128,0.0
+node,1,TUNISIA
+node,2,TS
+node,3,circle
+node,4,black
+node,5,0.0
+node,6,landnode
+node,7,landnode
+node,139,None.
+node,11,10000.0
+node,140,-
+node,12,1000.0
+node,141,None.
+node,13,1000.0
+node,142,-
+node,14,100
+node,143,None.
+node,15,117647.06
+node,16,20000.0
+node,144,-
+node,17,10000.0
+node,145,None.
+node,18,2.0E8
+node,146,-
+node,19,200000000
+node,147,false
+node,20,2.0E8
+node,148,75.0
+node,21,3
+node,149,50.0
+node,22,230
+node,150,14400.0
+node,23,230
+node,151,14400.0
+node,152,30.0
+node,24,230.0
+node,153,10.0
+node,25,2000.0
+node,154,20.0
+node,26,2
+node,155,2400.0
+node,27,23000.0
+node,156,24000.0
+node,28,24000.0
+node,157,2400.0
+node,29,25000.0
+node,30,26000.0
+node,31,27000.0
+node,32,28000.0
+node,33,29000.0
+node,34,20000.0
+node,35,21000.0
+node,36,22000.0
+node,37,23000.0
+node,38,24000.0
+node,39,25000.0
+node,40,26000.0
+node,41,27000.0
+node,42,550.0
+node,43,800.0
+node,201,5.5
+node,202,5.5
+node,204,5.5
+node,205,Detailed
+node,206,96.0
+node,207,96.0
+node,79,false
+node,208,96.0
+node,209,96.0
+node,210,96.0
+node,211,96.0
+node,212,96.0
+node,86,node
+node,214,
+node,215,false
+node,87,0.0
+node,88,24.0
+node,216,
+node,217,10000.0
+node,218,2.1E9
+node,219,2.1E9
+node,95,1000
+node,96,1000
+node,101,550.0
+node,102,550.0
+node,116,
+node,127,0.0
+ocean,18,488320.0
+ocean,19,488320
+ocean,20,488320.0
+ocean,215,false
+operating area,18,488320.0
+operating area,19,488320
+operating area,3,square
+operating area,4,blue
+operating area,20,488320.0
+operating area,215,false
+parking,65,2
+parking,66,4
+parking,67,6
+parking,100,Both
+parking,86,feature
+parking,215,false
+parking,90,2
+parking,91,4
+parking,92,6
+parking,93,10
+pass,215,false
+passage,18,488320.0
+passage,19,488320
+passage,20,488320.0
+passage,215,false
+pipeline,86,pipeline
+pipeline,215,false
+pipeline,200,0.0
+pipeline,56,2400.0
+pipeline,47,"0,153,51"
+pipeline node,4,forestGreen
+pipeline node,86,node
+pipeline node,215,false
+pol retail distribution,3,triangle
+pol retail distribution,4,blue
+pol retail distribution,215,false
+pol retail distribution station,18,488320.0
+pol retail distribution station,19,488320
+pol retail distribution station,20,488320.0
+pol retail distribution station,215,false
+port,18,19998.4
+port,19,19998
+port,3,seaport.gif
+port,68,1000.0
+port,20,19998.4
+port,69,1000.0
+port,70,218.75
+port,6,landnode
+port,215,false
+port,71,218.75
+port,72,588.2353
+port,73,588.2353
+radar installation,18,488320.0
+radar installation,19,488320
+radar installation,20,488320.0
+radar installation,215,false
+radar receiver,18,488320.0
+radar receiver,19,488320
+radar receiver,20,488320.0
+radar receiver,215,false
+radio relay,18,488320.0
+radio relay,19,488320
+radio relay,3,circle
+radio relay,4,darkGray
+radio relay,20,488320.0
+radio relay,215,false
+rail,53,2400.0
+rail,86,rail
+rail,54,48.0
+rail,215,false
+rail,55,56.5
+rail,11,2000.0
+rail,12,500.0
+rail,13,500.0
+rail,45,LongDash
+rail,94,Single
+rail,47,"102,102,0"
+rail bridge,4,125
+rail bridge,86,rail bridge
+rail bridge,215,false
+rail bridge,168,rail
+rail bridge,11,150.0
+rail tunnel,4,125
+rail tunnel,86,rail tunnel
+rail tunnel,215,false
+rail tunnel,168,rail
+railroad junction,18,488320.0
+railroad junction,19,488320
+railroad junction,20,488320.0
+railroad junction,215,false
+recreation,18,488320.0
+recreation,19,488320
+recreation,20,488320.0
+recreation,215,false
+refugee camp,215,false
+reserve training center,18,488320.0
+reserve training center,19,488320
+reserve training center,20,488320.0
+reserve training center,215,false
+road,160,No
+road,11,2000.0
+road,12,500.0
+road,13,500.0
+road,14,150
+road,47,yellow
+road,48,3824.0
+road,49,50.0
+road,50,false
+road,52,30.0
+road,86,road
+road,215,false
+road,159,Type 1
+road bridge,86,road bridge
+road bridge,215,false
+road bridge,14,150
+road junction,215,false
+road tunnel,86,road tunnel
+road tunnel,215,false
+runway,215,false
+rural populated area,18,488320.0
+rural populated area,19,488320
+rural populated area,3,circle
+rural populated area,4,gray
+rural populated area,20,488320.0
+rural populated area,215,false
+school,18,488320.0
+school,19,488320
+school,20,488320.0
+school,215,false
+sea,18,488320.0
+sea,19,488320
+sea,20,488320.0
+sea,215,false
+sea node,215,false
+seanode,215,false
+seaport,3,seaport.gif
+seaport,99,30
+seaport,68,12000.0
+seaport,4,cyan
+seaport,69,10000.0
+seaport,70,2000.0
+seaport,86,seaport
+seaport,215,false
+seaport,71,1000.0
+seaport,72,2000.0
+seaport,73,1000.0
+service,18,488320.0
+service,19,488320
+service,20,488320.0
+service,215,false
+shipping lane,86,waterway
+shipping lane,215,false
+shipping lane,58,1000.0
+shipping lane,59,14.0
+shipping lane,47,blue
+shipping lane node,18,488320.0
+shipping lane node,19,488320
+shipping lane node,20,488320.0
+shipping lane node,215,false
+small rail,215,false
+small railroad,53,40.0
+small railroad,215,false
+small road,48,1530.0
+small road,49,40.0
+small road,215,false
+staging area,3,square
+staging area,4,forestGreen
+staging area,86,node
+staging area,215,false
+storage,18,488320.0
+storage,19,488320
+storage,3,square
+storage,4,blue
+storage,20,488320.0
+storage,215,false
+strait,215,false
+tanker berth,82,450.0
+tanker berth,86,feature
+tanker berth,215,false
+tanker berth,126,2
+terminal,2,
+terminal,99,6
+terminal,68,6000.0
+terminal,69,4000.0
+terminal,133,
+terminal,70,2600.0
+terminal,166,true
+terminal,71,2300.0
+terminal,72,1800.0
+terminal,73,1200.0
+terminal,18,1742400.0
+terminal,21,3
+terminal,215,false
+terminal,216,
+training,18,488320.0
+training,19,488320
+training,3,square
+training,4,blue
+training,20,488320.0
+training,215,false
+trans-shipment link,48,3824.0
+trans-shipment link,49,25.0
+trans-shipment link,215,false
+tunnel,3,tunnel.gif
+tunnel,4,orange
+tunnel,86,feature
+tunnel,215,false
+unit_node,18,488320.0
+unit_node,19,488320
+unit_node,20,488320.0
+unit_node,215,false
+virtual pipeline,215,false
+virtual rail,215,false
+virtual road,48,9180.0
+virtual road,49,25.0
+virtual road,215,false
+virtual waterway,215,false
+vulnerable point,215,false
+water,215,false
+waterway,86,waterway
+waterway,215,false
+waterway,58,2400.0
+waterway,59,8.0
+waterway,47,blue
+waterway node,215,false
+weather station,18,488320.0
+weather station,19,488320
+weather station,3,square
+weather station,4,blue
+weather station,20,488320.0
+weather station,215,false
+wharf crane,215,false
+wharf crane,103,288.0
+wharf crane,104,288.0
+wharf crane,105,8000.0
+wharf crane,106,8000.0

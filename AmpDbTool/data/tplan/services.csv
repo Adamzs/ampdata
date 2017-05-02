@@ -1,0 +1,5 @@
+Name,Source,Code,SustainmentRules,Percentage,DefaultCommodityType
+AIR-FORCE,STANDARD,F,AIR-FORCE,1,""
+ARMY,STANDARD,A,ARMY,1,""
+MARINES,STANDARD,M,MARINES,1,""
+NAVY,STANDARD,N,NAVY,1,""

@@ -1,0 +1,12 @@
+Type,RateMarch,DefaultAvail,CurbWeight,Military,LIN,FuelConsumptionRate,VehicleWidth,VehicleHeight
+Commercial 10-Ton Tractor,50.0,95.0,2.0,0,,5.0,0.0,0.0
+Commercial HET Tractor,50.0,95.0,2.0,0,,5.0,0.0,0.0
+M1070 HET Tractor,50.0,95.0,2.0,1,T59048,5.0,0.0,0.0
+M1088 WOWN MTV Tractor,50.0,95.0,2.0,1,T61239,5.0,0.0,0.0
+M1088 WWN MTV Tractor,50.0,95.0,2.0,1,T61307,5.0,0.0,0.0
+M123 10-Ton Tractor,50.0,95.0,2.0,1,X59600,5.0,0.0,0.0
+M818 5-Ton Tractor,50.0,95.0,2.0,1,X59326,5.0,0.0,0.0
+M911 HET Tractor,50.0,95.0,2.0,1,T61035,5.0,0.0,0.0
+M915A2 25-Ton Tractor,50.0,95.0,2.0,1,T61103,5.0,0.0,0.0
+M916 20-Ton Tractor,50.0,95.0,2.0,1,T91653,5.0,0.0,0.0
+M931 5-Ton Tractor,50.0,95.0,2.0,1,X59326,5.0,0.0,0.0

@@ -1,0 +1,2115 @@
+Key,Day,Enabled,Description,EventPhase,Data
+CANAL11,0,true,,,true
+CANAL33,0,true,,,true
+CANAL01,0,true,,,true
+CANAL02,0,true,,,true
+CANAL03,0,true,,,true
+CANAL04,0,true,,,true
+SPAC001,0,true,,,true
+SPAC002,0,true,,,true
+SPAC003,0,true,,,true
+SPAZ003,0,true,,,true
+SPAC004,0,true,,,true
+SPAC005,0,true,,,true
+SPAC006,0,true,,,true
+SPAC007,0,true,,,true
+SPAZ007,0,true,,,true
+SPAC008,0,true,,,true
+SPAC009,0,true,,,true
+SPAC010,0,true,,,true
+SPAC011,0,true,,,true
+SPAC012,0,true,,,true
+SPAC013,0,true,,,true
+SPAC014,0,true,,,true
+SPAC015,0,true,,,true
+SPAC016,0,true,,,true
+SPAC017,0,true,,,true
+SPAC018,0,true,,,true
+SPAC019,0,true,,,true
+SPAC020,0,true,,,true
+SPAC021,0,true,,,true
+SPAC022,0,true,,,true
+SPAC023,0,true,,,true
+SPAC024,0,true,,,true
+SPAC025,0,true,,,true
+SPAC026,0,true,,,true
+SPAC027,0,true,,,true
+SPAC028,0,true,,,true
+SPAC029,0,true,,,true
+SPAC030,0,true,,,true
+SPAC031,0,true,,,true
+SPAC032,0,true,,,true
+SPAC033,0,true,,,true
+SPAC034,0,true,,,true
+SPAC035,0,true,,,true
+SPAC036,0,true,,,true
+SPAC037,0,true,,,true
+SPAC038,0,true,,,true
+SPAC039,0,true,,,true
+SPAC040,0,true,,,true
+SPAC041,0,true,,,true
+SPAC042,0,true,,,true
+SPAC043,0,true,,,true
+SPAC044,0,true,,,true
+SPAC045,0,true,,,true
+SPAC046,0,true,,,true
+SPAC047,0,true,,,true
+SPAC048,0,true,,,true
+SPAC049,0,true,,,true
+SPAC050,0,true,,,true
+SPAC051,0,true,,,true
+SPAC052,0,true,,,true
+SPAC053,0,true,,,true
+SPAC054,0,true,,,true
+SPAC055,0,true,,,true
+SPAC056,0,true,,,true
+SPAC057,0,true,,,true
+SPACY57,0,true,,,true
+SPACZ57,0,true,,,true
+SPAC058,0,true,,,true
+SPAC059,0,true,,,true
+SPAC060,0,true,,,true
+SPAC061,0,true,,,true
+SPAC062,0,true,,,true
+SPAC062 DUP,0,true,,,true
+SPAC063,0,true,,,true
+SPAC064,0,true,,,true
+SPAC065,0,true,,,true
+SPAC066,0,true,,,true
+SPAC067,0,true,,,true
+SPAC068,0,true,,,true
+SPAC069,0,true,,,true
+SPAC070,0,true,,,true
+SPACZ70,0,true,,,true
+SPAC071,0,true,,,true
+SPAC072,0,true,,,true
+SPAC073,0,true,,,true
+SPAC074,0,true,,,true
+SPAC075,0,true,,,true
+SPAC076,0,true,,,true
+SPACZ76,0,true,,,true
+SPACX76,0,true,,,true
+SPAC077,0,true,,,true
+SPAC078,0,true,,,true
+SPAC079,0,true,,,true
+SPAC080,0,true,,,true
+SPAC081,0,true,,,true
+SPAC082,0,true,,,true
+SPAC083,0,true,,,true
+SPAC084,0,true,,,true
+SPAC085,0,true,,,true
+SPAC086,0,true,,,true
+SPAC087,0,true,,,true
+SPAC088,0,true,,,true
+SPACZ88,0,true,,,true
+SPAC089,0,true,,,true
+SPAC090,0,true,,,true
+SPAC091,0,true,,,true
+SPAC092,0,true,,,true
+SPAC093,0,true,,,true
+SPAC094,0,true,,,true
+SPAC095,0,true,,,true
+SPAZ095,0,true,,,true
+SPAC096,0,true,,,true
+SPAC097,0,true,,,true
+SPAZ097,0,true,,,true
+SPAC098,0,true,,,true
+SPAC099,0,true,,,true
+SPAC100,0,true,,,true
+SPAC101,0,true,,,true
+SPAC102,0,true,,,true
+SPAC103,0,true,,,true
+SPAC104,0,true,,,true
+SPAC105,0,true,,,true
+SPAC106,0,true,,,true
+SPAC107,0,true,,,true
+SPAZ107,0,true,,,true
+SPAC108,0,true,,,true
+SPAC109,0,true,,,true
+SPAC110,0,true,,,true
+SPAC111,0,true,,,true
+SPAC112,0,true,,,true
+SPAC113,0,true,,,true
+SPAC114,0,true,,,true
+SPAC115,0,true,,,true
+SPAC116,0,true,,,true
+SPAC117,0,true,,,true
+SPAC118,0,true,,,true
+SPAC119,0,true,,,true
+SPAC120,0,true,,,true
+SPAC121,0,true,,,true
+SPAC122,0,true,,,true
+SPAC123,0,true,,,true
+SPAC124,0,true,,,true
+SPAC125,0,true,,,true
+SPAC126,0,true,,,true
+SPAC127,0,true,,,true
+SPAC128,0,true,,,true
+SPAC129,0,true,,,true
+SPAC130,0,true,,,true
+SPAC131,0,true,,,true
+SPAC132,0,true,,,true
+SPAC133,0,true,,,true
+SPAC134,0,true,,,true
+SPAC135,0,true,,,true
+SPAC136,0,true,,,true
+SPAC137,0,true,,,true
+SPAC138,0,true,,,true
+SPAY138,0,true,,,true
+SPAZ138,0,true,,,true
+SPAC139,0,true,,,true
+SPAC140,0,true,,,true
+SPAC141,0,true,,,true
+SPAC142,0,true,,,true
+SPAC143,0,true,,,true
+SPAC144,0,true,,,true
+SPAC145,0,true,,,true
+SPAC146,0,true,,,true
+SPAC147,0,true,,,true
+SPAC148,0,true,,,true
+SPAC149,0,true,,,true
+SPAC150,0,true,,,true
+SPAZ150,0,true,,,true
+SPAC151,0,true,,,true
+SPAC152,0,true,,,true
+SPAC153,0,true,,,true
+SPAC154,0,true,,,true
+SPAC155,0,true,,,true
+SPAC156,0,true,,,true
+SPAZ154,0,true,,,true
+SPAZ155,0,true,,,true
+SPAZ156,0,true,,,true
+SPAC157,0,true,,,true
+SPAC158,0,true,,,true
+SPAC159,0,true,,,true
+SPAC160,0,true,,,true
+SPAC161,0,true,,,true
+SPAZ157,0,true,,,true
+SPAZ158,0,true,,,true
+SPAZ159,0,true,,,true
+SPAZ160,0,true,,,true
+SPAZ161,0,true,,,true
+SPAC162,0,true,,,true
+SPAC162 DUP,0,true,,,true
+SPAC163,0,true,,,true
+SPAC164,0,true,,,true
+SPAC165,0,true,,,true
+SPAC166,0,true,,,true
+SPAC167,0,true,,,true
+SPAY167,0,true,,,true
+SPAZ167,0,true,,,true
+SPAC168,0,true,,,true
+SPAC169,0,true,,,true
+SPAC170,0,true,,,true
+SPAC171,0,true,,,true
+SPAZ171,0,true,,,true
+SPAC172,0,true,,,true
+SPAC173,0,true,,,true
+SPAC174,0,true,,,true
+SPAC175,0,true,,,true
+SPAC176,0,true,,,true
+SPAC177,0,true,,,true
+SPAC178,0,true,,,true
+SPAC179,0,true,,,true
+SPAC180,0,true,,,true
+SPAC181,0,true,,,true
+SPAC182,0,true,,,true
+SPAC183,0,true,,,true
+SPAC184,0,true,,,true
+SPAC185,0,true,,,true
+SPAC186,0,true,,,true
+SPAC187,0,true,,,true
+SPAZ187,0,true,,,true
+SPAC188,0,true,,,true
+SPAC189,0,true,,,true
+SPAC190,0,true,,,true
+SPAZ186,0,true,,,true
+SPAZ187 DUP,0,true,,,true
+SPAZ188,0,true,,,true
+SPAZ189,0,true,,,true
+SPAY190,0,true,,,true
+SPAZ190,0,true,,,true
+SPAC191,0,true,,,true
+SPAC192,0,true,,,true
+SPAC193,0,true,,,true
+SPAC194,0,true,,,true
+SPAC195,0,true,,,true
+SPAC196,0,true,,,true
+SPAC197,0,true,,,true
+SPAC198,0,true,,,true
+SPAC199,0,true,,,true
+SPAC200,0,true,,,true
+SPAC201,0,true,,,true
+SPAZ200,0,true,,,true
+SPAZ201,0,true,,,true
+SPAZ202,0,true,,,true
+SPAC202,0,true,,,true
+NPAC001,0,true,,,true
+NPAC002,0,true,,,true
+NPAC003,0,true,,,true
+NPAC004,0,true,,,true
+NPAC005,0,true,,,true
+NPAC006,0,true,,,true
+NPAC007,0,true,,,true
+NPAC008,0,true,,,true
+NPAC009,0,true,,,true
+NPAC010,0,true,,,true
+NPAC011,0,true,,,true
+NPAC012,0,true,,,true
+NPAC013,0,true,,,true
+NPAC014,0,true,,,true
+NPAC015,0,true,,,true
+NPAC016,0,true,,,true
+NPAC017,0,true,,,true
+NPAC018,0,true,,,true
+NPAC019,0,true,,,true
+NPAC020,0,true,,,true
+NPAC021,0,true,,,true
+NPAC022,0,true,,,true
+NPAC023,0,true,,,true
+NPAC024,0,true,,,true
+NPACW24,0,true,,,true
+NPACX24,0,true,,,true
+NPACZ24,0,true,,,true
+NPAC025,0,true,,,true
+NPAC026,0,true,,,true
+NPAZ024,0,true,,,true
+NPAZ025,0,true,,,true
+NPAZ026,0,true,,,true
+NPAC027,0,true,,,true
+NPAC028,0,true,,,true
+NPAC029,0,true,,,true
+NPAC030,0,true,,,true
+NPAC031,0,true,,,true
+NPAC032,0,true,,,true
+NPAC033,0,true,,,true
+NPAC034,0,true,,,true
+NPAC035,0,true,,,true
+NPAC036,0,true,,,true
+NPAC037,0,true,,,true
+NPAC038,0,true,,,true
+NPAC039,0,true,,,true
+NPAC040,0,true,,,true
+NPAC041,0,true,,,true
+NPAC042,0,true,,,true
+NPAZ042,0,true,,,true
+NPAC043,0,true,,,true
+NPACZ43,0,true,,,true
+NPAC044,0,true,,,true
+NPAC045,0,true,,,true
+NPAC046,0,true,,,true
+NPAC047,0,true,,,true
+NPAC048,0,true,,,true
+NPAC049,0,true,,,true
+NPAC050,0,true,,,true
+NPAC051,0,true,,,true
+NPAC052,0,true,,,true
+NPAC053,0,true,,,true
+NPAC054,0,true,,,true
+NPAC055,0,true,,,true
+NPAC056,0,true,,,true
+NPAC057,0,true,,,true
+NPAC058,0,true,,,true
+NPAC059,0,true,,,true
+NPACA62,0,true,,,true
+NPACA63,0,true,,,true
+NPACA64,0,true,,,true
+NPACA65,0,true,,,true
+NPACA66,0,true,,,true
+NPACA67,0,true,,,true
+NPAC060,0,true,,,true
+NPAC061,0,true,,,true
+NPAC062,0,true,,,true
+NPAC063,0,true,,,true
+NPAC064,0,true,,,true
+NPAC065,0,true,,,true
+NPAC066,0,true,,,true
+NPAC067,0,true,,,true
+NPAC068,0,true,,,true
+NPAC069,0,true,,,true
+NPAC070,0,true,,,true
+NPAC071,0,true,,,true
+NPAC072,0,true,,,true
+NPAC073,0,true,,,true
+NPAC074,0,true,,,true
+NPAC075,0,true,,,true
+NPAC076,0,true,,,true
+NPAC077,0,true,,,true
+NPAC078,0,true,,,true
+NPAC079,0,true,,,true
+NPAC080,0,true,,,true
+NPAC081,0,true,,,true
+NPAC082,0,true,,,true
+NPAC083,0,true,,,true
+NPAC084,0,true,,,true
+NPAC085,0,true,,,true
+NPAC086,0,true,,,true
+NPAC087,0,true,,,true
+NPAC088,0,true,,,true
+NPAC089,0,true,,,true
+NPAC090,0,true,,,true
+NPAC091,0,true,,,true
+NPAC092,0,true,,,true
+NPAC093,0,true,,,true
+NPAC094,0,true,,,true
+NPAC095,0,true,,,true
+NPAC096,0,true,,,true
+NPAC097,0,true,,,true
+NPAC098,0,true,,,true
+NPAC099,0,true,,,true
+NPAC100,0,true,,,true
+NPAZ100,0,true,,,true
+NPAZ101,0,true,,,true
+NPAC101,0,true,,,true
+NPAC102,0,true,,,true
+NPAC103,0,true,,,true
+NPAC104,0,true,,,true
+NPAC105,0,true,,,true
+NATL001,0,true,,,true
+NATL002,0,true,,,true
+NATL003,0,true,,,true
+NATL004,0,true,,,true
+NATL005,0,true,,,true
+NATL006,0,true,,,true
+NATL007,0,true,,,true
+NATL008,0,true,,,true
+NATLZ08,0,true,,,true
+NATLY08,0,true,,,true
+NATL009,0,true,,,true
+NATL010,0,true,,,true
+NATL011,0,true,,,true
+NATL012,0,true,,,true
+NATL013,0,true,,,true
+NATL014,0,true,,,true
+NATL015,0,true,,,true
+NATL016,0,true,,,true
+NATL017,0,true,,,true
+NATL018,0,true,,,true
+NATL019,0,true,,,true
+NATL020,0,true,,,true
+NATL021,0,true,,,true
+NATL022,0,true,,,true
+NATL023,0,true,,,true
+NATL024,0,true,,,true
+NATL025,0,true,,,true
+NATL026,0,true,,,true
+NATL027,0,true,,,true
+NATL028,0,true,,,true
+NATL029,0,true,,,true
+NATL030,0,true,,,true
+NATL031,0,true,,,true
+NATL032,0,true,,,true
+NATL033,0,true,,,true
+NATL034,0,true,,,true
+NATL035,0,true,,,true
+NATL036,0,true,,,true
+NATL037,0,true,,,true
+NATLZ37,0,true,,,true
+NATL038,0,true,,,true
+NATL039,0,true,,,true
+NATL040,0,true,,,true
+NATL041,0,true,,,true
+NATZ041,0,true,,,true
+NATL042,0,true,,,true
+NATLA42,0,true,,,true
+NATL043,0,true,,,true
+NATL044,0,true,,,true
+NATL045,0,true,,,true
+NATL046,0,true,,,true
+NATL047,0,true,,,true
+NATL048,0,true,,,true
+NATL049,0,true,,,true
+NATL050,0,true,,,true
+NATL051,0,true,,,true
+NATL052,0,true,,,true
+NATL053,0,true,,,true
+NATL054,0,true,,,true
+NATL055,0,true,,,true
+NATZ055,0,true,,,true
+NATL056,0,true,,,true
+NATL057,0,true,,,true
+NATL058,0,true,,,true
+NATL059,0,true,,,true
+NATL060,0,true,,,true
+NATL061,0,true,,,true
+NATL062,0,true,,,true
+NATL063,0,true,,,true
+NATL064,0,true,,,true
+NATZ064,0,true,,,true
+NATZ065,0,true,,,true
+NATL065,0,true,,,true
+NATL066,0,true,,,true
+NATL067,0,true,,,true
+NATL068,0,true,,,true
+NATL069,0,true,,,true
+NATL070,0,true,,,true
+NATL071,0,true,,,true
+NATL072,0,true,,,true
+NATL073,0,true,,,true
+NATL074,0,true,,,true
+NATLZ74,0,true,,,true
+NATLY74,0,true,,,true
+NATL075,0,true,,,true
+NATL076,0,true,,,true
+NATLZ76,0,true,,,true
+NATLY76,0,true,,,true
+NATL077,0,true,,,true
+NATL078,0,true,,,true
+NATL079,0,true,,,true
+NATL080,0,true,,,true
+NATL081,0,true,,,true
+NATL082,0,true,,,true
+NATL083,0,true,,,true
+NATL084,0,true,,,true
+NATL085,0,true,,,true
+NATL086,0,true,,,true
+NATL087,0,true,,,true
+NATL088,0,true,,,true
+NATL089,0,true,,,true
+NATL090,0,true,,,true
+NATL091,0,true,,,true
+NATL092,0,true,,,true
+NATL093,0,true,,,true
+NATL094,0,true,,,true
+NATL095,0,true,,,true
+NATL096,0,true,,,true
+NATL097,0,true,,,true
+NATL098,0,true,,,true
+NATL099,0,true,,,true
+NATL100,0,true,,,true
+NATL101,0,true,,,true
+NATL102,0,true,,,true
+NATL103,0,true,,,true
+NATL104,0,true,,,true
+NATL105,0,true,,,true
+NATL106,0,true,,,true
+NATL107,0,true,,,true
+NATL108,0,true,,,true
+NATL108 DUP,0,true,,,true
+NATL109,0,true,,,true
+NATL110,0,true,,,true
+NATL111,0,true,,,true
+NATZ111,0,true,,,true
+NATL112,0,true,,,true
+NATL113,0,true,,,true
+NATL114,0,true,,,true
+NATL115,0,true,,,true
+NATL116,0,true,,,true
+NATL117,0,true,,,true
+NATL118,0,true,,,true
+NATL119,0,true,,,true
+NATL120,0,true,,,true
+NATL121,0,true,,,true
+NATL122,0,true,,,true
+NATL123,0,true,,,true
+NATL124,0,true,,,true
+NATL125,0,true,,,true
+NATL126,0,true,,,true
+NATL127,0,true,,,true
+NATL128,0,true,,,true
+NATL129,0,true,,,true
+NATL130,0,true,,,true
+NATL131,0,true,,,true
+NATL132,0,true,,,true
+NATL133,0,true,,,true
+NATL134,0,true,,,true
+NATL135,0,true,,,true
+NATL136,0,true,,,true
+NATL137,0,true,,,true
+NATL138,0,true,,,true
+NATL139,0,true,,,true
+NATL140,0,true,,,true
+NATL141,0,true,,,true
+NATB141,0,true,,,true
+NATL142,0,true,,,true
+NATL143,0,true,,,true
+NATL144,0,true,,,true
+NATL144A,0,true,,,true
+NATL145,0,true,,,true
+NATL146,0,true,,,true
+NATL147,0,true,,,true
+NATL148,0,true,,,true
+NATL149,0,true,,,true
+NATL150,0,true,,,true
+NATB150,0,true,,,true
+NATL151,0,true,,,true
+NATB151,0,true,,,true
+NATL152,0,true,,,true
+NATL153,0,true,,,true
+NATL154,0,true,,,true
+NATL155,0,true,,,true
+NATL156,0,true,,,true
+NATL157,0,true,,,true
+NATL158,0,true,,,true
+NATL159,0,true,,,true
+NATB157,0,true,,,true
+NATB158,0,true,,,true
+NATB159,0,true,,,true
+NATL160,0,true,,,true
+NATL161,0,true,,,true
+NATL162,0,true,,,true
+NATL163,0,true,,,true
+NATL164,0,true,,,true
+NATL165,0,true,,,true
+NATL166,0,true,,,true
+NATL167,0,true,,,true
+NATL168,0,true,,,true
+NATL169,0,true,,,true
+NATL170,0,true,,,true
+NATL171,0,true,,,true
+NATL172,0,true,,,true
+NATL173,0,true,,,true
+NATL174,0,true,,,true
+NATL175,0,true,,,true
+NATL176,0,true,,,true
+NATL177,0,true,,,true
+NATL178,0,true,,,true
+NATL179,0,true,,,true
+NATL180,0,true,,,true
+NATZ180,0,true,,,true
+NATL181,0,true,,,true
+NATL182,0,true,,,true
+NATL183,0,true,,,true
+NATL184,0,true,,,true
+NATL185,0,true,,,true
+NATL186,0,true,,,true
+NATL187,0,true,,,true
+NATL188,0,true,,,true
+NATL189,0,true,,,true
+NATL190,0,true,,,true
+NATL191,0,true,,,true
+NATL192,0,true,,,true
+NATL193,0,true,,,true
+NATL194,0,true,,,true
+NATL195,0,true,,,true
+NATL196,0,true,,,true
+NATL197,0,true,,,true
+NATL198,0,true,,,true
+NATL199,0,true,,,true
+NATL200,0,true,,,true
+NATL201,0,true,,,true
+NATL202,0,true,,,true
+NATL203,0,true,,,true
+NATL204,0,true,,,true
+NATL205,0,true,,,true
+NATL206,0,true,,,true
+NATL207,0,true,,,true
+NATL208,0,true,,,true
+NATL209,0,true,,,true
+NATL210,0,true,,,true
+NATL211,0,true,,,true
+NATL212,0,true,,,true
+NATL213,0,true,,,true
+NATL214,0,true,,,true
+NATL215,0,true,,,true
+NATL216,0,true,,,true
+NATL217,0,true,,,true
+NATL218,0,true,,,true
+NATL219,0,true,,,true
+NATLA19,0,true,,,true
+NATL220,0,true,,,true
+NATL221,0,true,,,true
+NATL222,0,true,,,true
+NATL223,0,true,,,true
+NATL224,0,true,,,true
+NATL225,0,true,,,true
+NATL226,0,true,,,true
+NATL227,0,true,,,true
+NATL228,0,true,,,true
+NATL229,0,true,,,true
+NATL230,0,true,,,true
+NATL231,0,true,,,true
+NATL232,0,true,,,true
+NATL233,0,true,,,true
+NATL234,0,true,,,true
+NATL235,0,true,,,true
+NATL236,0,true,,,true
+NATL237,0,true,,,true
+NATL237A,0,true,,,true
+NATL238,0,true,,,true
+NATL239,0,true,,,true
+NATL240,0,true,,,true
+NATL241,0,true,,,true
+NATL242,0,true,,,true
+NATL243,0,true,,,true
+NATL244,0,true,,,true
+NATL245,0,true,,,true
+NATL246,0,true,,,true
+NATL247,0,true,,,true
+NATL248,0,true,,,true
+NATL249,0,true,,,true
+NATL250,0,true,,,true
+NATL251,0,true,,,true
+NATL252,0,true,,,true
+NATL253,0,true,,,true
+NATL254,0,true,,,true
+NATL255,0,true,,,true
+NATL256,0,true,,,true
+NATL257,0,true,,,true
+NATL258,0,true,,,true
+NATL259,0,true,,,true
+NATL260,0,true,,,true
+NATL261,0,true,,,true
+NATL262,0,true,,,true
+NATL263,0,true,,,true
+NATL264,0,true,,,true
+NATL265,0,true,,,true
+NATL266,0,true,,,true
+NATL267,0,true,,,true
+NATL268,0,true,,,true
+NATL269,0,true,,,true
+NATL270,0,true,,,true
+NATL271,0,true,,,true
+NATL272,0,true,,,true
+NATL273,0,true,,,true
+NATL274,0,true,,,true
+NATL275,0,true,,,true
+NATL276,0,true,,,true
+NATL277,0,true,,,true
+NATL278,0,true,,,true
+NATL279,0,true,,,true
+NATL280,0,true,,,true
+NATL281,0,true,,,true
+NATL282,0,true,,,true
+NATL283,0,true,,,true
+NATL284,0,true,,,true
+NATZ284,0,true,,,true
+NATL285,0,true,,,true
+NATL286,0,true,,,true
+NATL287,0,true,,,true
+NATL288,0,true,,,true
+NATL289,0,true,,,true
+NATL290,0,true,,,true
+NATL291,0,true,,,true
+NATL292,0,true,,,true
+NATL293,0,true,,,true
+NATL294,0,true,,,true
+NATL295,0,true,,,true
+NATL296,0,true,,,true
+NATL297,0,true,,,true
+NATL298,0,true,,,true
+NATL299,0,true,,,true
+NATL300,0,true,,,true
+NATL301,0,true,,,true
+NATL302,0,true,,,true
+NATL303,0,true,,,true
+NATL304,0,true,,,true
+NATL305,0,true,,,true
+NATL306,0,true,,,true
+NATL307,0,true,,,true
+NATL308,0,true,,,true
+NATL309,0,true,,,true
+NATL310,0,true,,,true
+NATL311,0,true,,,true
+NATL312,0,true,,,true
+NATL313,0,true,,,true
+NATL314,0,true,,,true
+SAM001,0,true,,,true
+SAM002,0,true,,,true
+SAMZ02,0,true,,,true
+SAM003,0,true,,,true
+SAM004,0,true,,,true
+SAM005,0,true,,,true
+SAM006,0,true,,,true
+SAM007,0,true,,,true
+SAM008,0,true,,,true
+SAM009,0,true,,,true
+SAM010,0,true,,,true
+SAM011,0,true,,,true
+SAM012,0,true,,,true
+SAM013,0,true,,,true
+SAM014,0,true,,,true
+SAM015,0,true,,,true
+SAM016,0,true,,,true
+SAM017,0,true,,,true
+SAM018,0,true,,,true
+SAM019,0,true,,,true
+SAM020,0,true,,,true
+SAM021,0,true,,,true
+SAM022,0,true,,,true
+SAM023,0,true,,,true
+SAM024,0,true,,,true
+SAM025,0,true,,,true
+SAZ025,0,true,,,true
+SAM026,0,true,,,true
+SAM027,0,true,,,true
+SAM028,0,true,,,true
+SAM029,0,true,,,true
+SAM030,0,true,,,true
+SAM031,0,true,,,true
+SAM032,0,true,,,true
+SAM033,0,true,,,true
+SAM034,0,true,,,true
+SAM035,0,true,,,true
+SAM036,0,true,,,true
+SAM037,0,true,,,true
+SAMZ37,0,true,,,true
+SAM038,0,true,,,true
+SAM039,0,true,,,true
+SAM040,0,true,,,true
+SAM041,0,true,,,true
+SAM042,0,true,,,true
+SAM043,0,true,,,true
+SAM044,0,true,,,true
+SAM045,0,true,,,true
+SAM046,0,true,,,true
+SAM047,0,true,,,true
+SAM048,0,true,,,true
+SAM049,0,true,,,true
+SAM050,0,true,,,true
+SAZ050,0,true,,,true
+SAM051,0,true,,,true
+SAM052,0,true,,,true
+SAM053,0,true,,,true
+SAM054,0,true,,,true
+SAM055,0,true,,,true
+SAM056,0,true,,,true
+SAM057,0,true,,,true
+SAMZ57,0,true,,,true
+SAM058,0,true,,,true
+SAM059,0,true,,,true
+SAM060,0,true,,,true
+SAM061,0,true,,,true
+SAMZ61,0,true,,,true
+SAM062,0,true,,,true
+SAMZ62,0,true,,,true
+SAM063,0,true,,,true
+SAM064,0,true,,,true
+MED001,0,true,,,true
+MED002,0,true,,,true
+MED003,0,true,,,true
+MED004,0,true,,,true
+MED005,0,true,,,true
+MED006,0,true,,,true
+MED007,0,true,,,true
+MED008,0,true,,,true
+MED009,0,true,,,true
+MED010,0,true,,,true
+MED011,0,true,,,true
+MED012,0,true,,,true
+MED013,0,true,,,true
+MED014,0,true,,,true
+MED015,0,true,,,true
+MED016,0,true,,,true
+MED017,0,true,,,true
+MED018,0,true,,,true
+MED019,0,true,,,true
+MED020,0,true,,,true
+MED021,0,true,,,true
+MED022,0,true,,,true
+MED023,0,true,,,true
+MED024,0,true,,,true
+MED025,0,true,,,true
+MED026,0,true,,,true
+MEDZ26,0,true,,,true
+MED027,0,true,,,true
+MED028,0,true,,,true
+MED029,0,true,,,true
+MED030,0,true,,,true
+MED031,0,true,,,true
+MED032,0,true,,,true
+MED033,0,true,,,true
+MED034,0,true,,,true
+MED035,0,true,,,true
+MEDZ35,0,true,,,true
+MED036,0,true,,,true
+MED037,0,true,,,true
+MED038,0,true,,,true
+MED039,0,true,,,true
+MED040,0,true,,,true
+MED041,0,true,,,true
+MED042,0,true,,,true
+MED043,0,true,,,true
+MED044,0,true,,,true
+MED045,0,true,,,true
+MEDZ45,0,true,,,true
+MED046,0,true,,,true
+MED047,0,true,,,true
+MED048,0,true,,,true
+MED049,0,true,,,true
+MED050,0,true,,,true
+MED051,0,true,,,true
+MED052,0,true,,,true
+MED053,0,true,,,true
+MED054,0,true,,,true
+MED055,0,true,,,true
+MED056,0,true,,,true
+MED057,0,true,,,true
+MED058,0,true,,,true
+MED059,0,true,,,true
+MED060,0,true,,,true
+MED061,0,true,,,true
+MED062,0,true,,,true
+MED063,0,true,,,true
+MED064,0,true,,,true
+MED065,0,true,,,true
+MED066,0,true,,,true
+MED067,0,true,,,true
+MED068,0,true,,,true
+MED069,0,true,,,true
+MED070,0,true,,,true
+MED071,0,true,,,true
+MED072,0,true,,,true
+MED073,0,true,,,true
+MED074,0,true,,,true
+MED075,0,true,,,true
+MED076,0,true,,,true
+MED077,0,true,,,true
+MED078,0,true,,,true
+MED079,0,true,,,true
+MED080,0,true,,,true
+MED081,0,true,,,true
+MED082,0,true,,,true
+MED083,0,true,,,true
+MED084,0,true,,,true
+MED085,0,true,,,true
+MED086,0,true,,,true
+MED087,0,true,,,true
+MED088,0,true,,,true
+MED089,0,true,,,true
+MED090,0,true,,,true
+MED091,0,true,,,true
+MED092,0,true,,,true
+MED093,0,true,,,true
+MED094,0,true,,,true
+MED095,0,true,,,true
+MED096,0,true,,,true
+MED097,0,true,,,true
+MED098,0,true,,,true
+MED099,0,true,,,true
+MED100,0,true,,,true
+MED101,0,true,,,true
+MED102,0,true,,,true
+MED103,0,true,,,true
+MED104,0,true,,,true
+MED105,0,true,,,true
+MED106,0,true,,,true
+MED107,0,true,,,true
+MED108,0,true,,,true
+MED109,0,true,,,true
+AFR001,0,true,,,true
+AFRZ01,0,true,,,true
+AFR002,0,true,,,true
+AFR003,0,true,,,true
+AFR004,0,true,,,true
+AFRZ04,0,true,,,true
+AFR005,0,true,,,true
+AFR006,0,true,,,true
+AFR007,0,true,,,true
+AFR008,0,true,,,true
+AFR009,0,true,,,true
+AFR010,0,true,,,true
+AFRZ10,0,true,,,true
+AFR011,0,true,,,true
+AFR012,0,true,,,true
+AFR013,0,true,,,true
+AFR014,0,true,,,true
+AFR015,0,true,,,true
+AFR016,0,true,,,true
+AFR017,0,true,,,true
+AFR018,0,true,,,true
+AFR019,0,true,,,true
+AFR020,0,true,,,true
+AFR021,0,true,,,true
+AFR022,0,true,,,true
+AFR023,0,true,,,true
+AFR024,0,true,,,true
+AFR025,0,true,,,true
+AFRZ25,0,true,,,true
+AFRY25,0,true,,,true
+AFR026,0,true,,,true
+AFR027,0,true,,,true
+AFR028,0,true,,,true
+AFR029,0,true,,,true
+AFR030,0,true,,,true
+AED031,0,true,,,true
+AFR032,0,true,,,true
+AFRA32,0,true,,,true
+AFR033,0,true,,,true
+AFR034,0,true,,,true
+AFR035,0,true,,,true
+AFR036,0,true,,,true
+AFR037,0,true,,,true
+AFR038,0,true,,,true
+AFRZ38,0,true,,,true
+AFR039,0,true,,,true
+AFR040,0,true,,,true
+AFR041,0,true,,,true
+AFRZ41,0,true,,,true
+AFR042,0,true,,,true
+AFR043,0,true,,,true
+AFR044,0,true,,,true
+AFR045,0,true,,,true
+AFR046,0,true,,,true
+AFR047,0,true,,,true
+AFR048,0,true,,,true
+AFR049,0,true,,,true
+AFR050,0,true,,,true
+AFR051,0,true,,,true
+AFR052,0,true,,,true
+AFR053,0,true,,,true
+AFR054,0,true,,,true
+AFRZ54,0,true,,,true
+AFR055,0,true,,,true
+AFR056,0,true,,,true
+AFR057,0,true,,,true
+AFR058,0,true,,,true
+AFR059,0,true,,,true
+AFR060,0,true,,,true
+AFR061,0,true,,,true
+AFR062,0,true,,,true
+AFR063,0,true,,,true
+AFR064,0,true,,,true
+AFR065,0,true,,,true
+AFR066,0,true,,,true
+AFR067,0,true,,,true
+AFR068,0,true,,,true
+AFRZ68,0,true,,,true
+AFR069,0,true,,,true
+AFR070,0,true,,,true
+AFR071,0,true,,,true
+AFR072,0,true,,,true
+AFR073,0,true,,,true
+AFR074,0,true,,,true
+AFR075,0,true,,,true
+AFR076,0,true,,,true
+AFR077,0,true,,,true
+AFR078,0,true,,,true
+AFR079,0,true,,,true
+AFR080,0,true,,,true
+AFR081,0,true,,,true
+AFR082,0,true,,,true
+AFR083,0,true,,,true
+AFR084,0,true,,,true
+AFR085,0,true,,,true
+AFR086,0,true,,,true
+AFR087,0,true,,,true
+AFR088,0,true,,,true
+AFR089,0,true,,,true
+AFR090,0,true,,,true
+AFR091,0,true,,,true
+AFR092,0,true,,,true
+AFR093,0,true,,,true
+AFR094,0,true,,,true
+G    109,0,true,,,true
+G    110,0,true,,,true
+G    111,0,true,,,true
+G    112,0,true,,,true
+G    113,0,true,,,true
+G    114,0,true,,,true
+G    115,0,true,,,true
+G    117,0,true,,,true
+G    118,0,true,,,true
+G    120,0,true,,,true
+G    121,0,true,,,true
+G    123,0,true,,,true
+G    124,0,true,,,true
+G    125,0,true,,,true
+G    126,0,true,,,true
+G    127,0,true,,,true
+G    128,0,true,,,true
+G    129,0,true,,,true
+G    130,0,true,,,true
+G    131,0,true,,,true
+G    132,0,true,,,true
+G    142,0,true,,,true
+G    143,0,true,,,true
+G    144,0,true,,,true
+G    145,0,true,,,true
+G    146,0,true,,,true
+G    147,0,true,,,true
+G    148,0,true,,,true
+G    149,0,true,,,true
+G    150,0,true,,,true
+G    151,0,true,,,true
+G    152,0,true,,,true
+G    153,0,true,,,true
+G    154,0,true,,,true
+G    155,0,true,,,true
+G    156,0,true,,,true
+G    157,0,true,,,true
+G    158,0,true,,,true
+G    159,0,true,,,true
+G    160,0,true,,,true
+G    161,0,true,,,true
+G    162,0,true,,,true
+G    163,0,true,,,true
+G    164,0,true,,,true
+G    165,0,true,,,true
+G    166,0,true,,,true
+G    167,0,true,,,true
+G    168,0,true,,,true
+G    169,0,true,,,true
+G    170,0,true,,,true
+G    171,0,true,,,true
+G    172,0,true,,,true
+G    173,0,true,,,true
+G    174,0,true,,,true
+G    175,0,true,,,true
+G    176,0,true,,,true
+G    177,0,true,,,true
+G    178,0,true,,,true
+G    179,0,true,,,true
+G    180,0,true,,,true
+G    181,0,true,,,true
+G    182,0,true,,,true
+G    183,0,true,,,true
+G    184,0,true,,,true
+G    185,0,true,,,true
+G    186,0,true,,,true
+G    187,0,true,,,true
+G    188,0,true,,,true
+G    189,0,true,,,true
+G    190,0,true,,,true
+G    191,0,true,,,true
+G    192,0,true,,,true
+G    193,0,true,,,true
+G    194,0,true,,,true
+G    195,0,true,,,true
+G    196,0,true,,,true
+G    197,0,true,,,true
+G    198,0,true,,,true
+G    199,0,true,,,true
+G    200,0,true,,,true
+G    201,0,true,,,true
+GA   201,0,true,,,true
+G    202,0,true,,,true
+G    203,0,true,,,true
+G    204,0,true,,,true
+G    205,0,true,,,true
+G    206,0,true,,,true
+G    207,0,true,,,true
+G    208,0,true,,,true
+G    209,0,true,,,true
+GA   209,0,true,,,true
+G    210,0,true,,,true
+G    211,0,true,,,true
+G    212,0,true,,,true
+G    213,0,true,,,true
+G    214,0,true,,,true
+G    215,0,true,,,true
+G    216,0,true,,,true
+G    217,0,true,,,true
+G    218,0,true,,,true
+G    219,0,true,,,true
+G    220,0,true,,,true
+G    221,0,true,,,true
+G    222,0,true,,,true
+G    223,0,true,,,true
+G    224,0,true,,,true
+G    225,0,true,,,true
+G    226,0,true,,,true
+G    227,0,true,,,true
+G    228,0,true,,,true
+G    229,0,true,,,true
+G    230,0,true,,,true
+G    231,0,true,,,true
+G    232,0,true,,,true
+G    233,0,true,,,true
+G    234,0,true,,,true
+G    235,0,true,,,true
+G    236,0,true,,,true
+G    237,0,true,,,true
+G    238,0,true,,,true
+G    239,0,true,,,true
+G    240,0,true,,,true
+G    241,0,true,,,true
+G    242,0,true,,,true
+G    243,0,true,,,true
+G    244,0,true,,,true
+G    245,0,true,,,true
+G    246,0,true,,,true
+G    247,0,true,,,true
+G    248,0,true,,,true
+G    249,0,true,,,true
+G    250,0,true,,,true
+G    251,0,true,,,true
+G    252,0,true,,,true
+G    253,0,true,,,true
+G    254,0,true,,,true
+G    255,0,true,,,true
+GA   255,0,true,,,true
+G    256,0,true,,,true
+G    257,0,true,,,true
+G    258,0,true,,,true
+G    259,0,true,,,true
+G    260,0,true,,,true
+G    261,0,true,,,true
+G    262,0,true,,,true
+G    263,0,true,,,true
+G    264,0,true,,,true
+G    265,0,true,,,true
+G    266,0,true,,,true
+G    267,0,true,,,true
+G    268,0,true,,,true
+G    269,0,true,,,true
+G    270,0,true,,,true
+G    271,0,true,,,true
+G    272,0,true,,,true
+G    273,0,true,,,true
+G    274,0,true,,,true
+G    275,0,true,,,true
+G    276,0,true,,,true
+G    277,0,true,,,true
+G    278,0,true,,,true
+G    279,0,true,,,true
+G    280,0,true,,,true
+G    281,0,true,,,true
+G    282,0,true,,,true
+G    284,0,true,,,true
+G    285,0,true,,,true
+G    286,0,true,,,true
+G    287,0,true,,,true
+G    288,0,true,,,true
+G    289,0,true,,,true
+G    290,0,true,,,true
+G    291,0,true,,,true
+G    292,0,true,,,true
+G    293,0,true,,,true
+G    294,0,true,,,true
+G    295,0,true,,,true
+G    296,0,true,,,true
+G    297,0,true,,,true
+G    298,0,true,,,true
+G    299,0,true,,,true
+G    300,0,true,,,true
+G    301,0,true,,,true
+G    302,0,true,,,true
+G    303,0,true,,,true
+G    304,0,true,,,true
+G    305,0,true,,,true
+G    306,0,true,,,true
+G    307,0,true,,,true
+G    308,0,true,,,true
+G    309,0,true,,,true
+G    310,0,true,,,true
+G    311,0,true,,,true
+G    312,0,true,,,true
+G    313,0,true,,,true
+G    314,0,true,,,true
+G    315,0,true,,,true
+G    316,0,true,,,true
+G    318,0,true,,,true
+G    319,0,true,,,true
+G    322,0,true,,,true
+G    323,0,true,,,true
+G    324,0,true,,,true
+G    325,0,true,,,true
+G    326,0,true,,,true
+G    328,0,true,,,true
+G    329,0,true,,,true
+G    330,0,true,,,true
+G    331,0,true,,,true
+G    332,0,true,,,true
+G    333,0,true,,,true
+G    334,0,true,,,true
+G    335,0,true,,,true
+G    336,0,true,,,true
+G    337,0,true,,,true
+G    338,0,true,,,true
+G    339,0,true,,,true
+G    340,0,true,,,true
+G    341,0,true,,,true
+G    342,0,true,,,true
+G    343,0,true,,,true
+G    344,0,true,,,true
+G    345,0,true,,,true
+G    346,0,true,,,true
+G    347,0,true,,,true
+G    348,0,true,,,true
+G    349,0,true,,,true
+G    350,0,true,,,true
+G    351,0,true,,,true
+G    352,0,true,,,true
+G    353,0,true,,,true
+G    354,0,true,,,true
+G    355,0,true,,,true
+G    356,0,true,,,true
+G    357,0,true,,,true
+G    358,0,true,,,true
+G    359,0,true,,,true
+G    360,0,true,,,true
+G    361,0,true,,,true
+G    362,0,true,,,true
+G    363,0,true,,,true
+G    364,0,true,,,true
+G    365,0,true,,,true
+G    366,0,true,,,true
+G    367,0,true,,,true
+G    368,0,true,,,true
+G    369,0,true,,,true
+G    370,0,true,,,true
+G    371,0,true,,,true
+G    372,0,true,,,true
+G    373,0,true,,,true
+G    374,0,true,,,true
+G    375,0,true,,,true
+G    376,0,true,,,true
+G    377,0,true,,,true
+G    378,0,true,,,true
+G    379,0,true,,,true
+G    380,0,true,,,true
+G    381,0,true,,,true
+G    382,0,true,,,true
+G    383,0,true,,,true
+G    384,0,true,,,true
+G    385,0,true,,,true
+G    386,0,true,,,true
+G    387,0,true,,,true
+G    388,0,true,,,true
+G    389,0,true,,,true
+G    390,0,true,,,true
+G    391,0,true,,,true
+G    392,0,true,,,true
+G    394,0,true,,,true
+G    395,0,true,,,true
+G    396,0,true,,,true
+G    397,0,true,,,true
+G    398,0,true,,,true
+G    399,0,true,,,true
+G    400,0,true,,,true
+G    401,0,true,,,true
+G    402,0,true,,,true
+G    403,0,true,,,true
+G    404,0,true,,,true
+G    405,0,true,,,true
+G    406,0,true,,,true
+G    407,0,true,,,true
+G    408,0,true,,,true
+G    409,0,true,,,true
+G    410,0,true,,,true
+G    411,0,true,,,true
+G    412,0,true,,,true
+G    413,0,true,,,true
+G    414,0,true,,,true
+G    415,0,true,,,true
+G    416,0,true,,,true
+G    417,0,true,,,true
+G    418,0,true,,,true
+G    421,0,true,,,true
+G    422,0,true,,,true
+G    423,0,true,,,true
+G    424,0,true,,,true
+G    425,0,true,,,true
+G    426,0,true,,,true
+G    427,0,true,,,true
+G    428,0,true,,,true
+G    429,0,true,,,true
+G    430,0,true,,,true
+G    431,0,true,,,true
+G    432,0,true,,,true
+G    433,0,true,,,true
+G    434,0,true,,,true
+G    435,0,true,,,true
+G    436,0,true,,,true
+G    437,0,true,,,true
+G    438,0,true,,,true
+G    439,0,true,,,true
+G    440,0,true,,,true
+G    441,0,true,,,true
+G    442,0,true,,,true
+G    443,0,true,,,true
+G    444,0,true,,,true
+G    445,0,true,,,true
+G    446,0,true,,,true
+G    447,0,true,,,true
+G    448,0,true,,,true
+G    449,0,true,,,true
+G    450,0,true,,,true
+G    451,0,true,,,true
+G    452,0,true,,,true
+G    453,0,true,,,true
+G    454,0,true,,,true
+G    455,0,true,,,true
+G    456,0,true,,,true
+G    457,0,true,,,true
+G    458,0,true,,,true
+G    459,0,true,,,true
+G    460,0,true,,,true
+G    461,0,true,,,true
+G    462,0,true,,,true
+G    463,0,true,,,true
+G    464,0,true,,,true
+G    465,0,true,,,true
+G    466,0,true,,,true
+G    467,0,true,,,true
+G    468,0,true,,,true
+G    469,0,true,,,true
+GA  1469,0,true,,,true
+GA  1470,0,true,,,true
+GA  1471,0,true,,,true
+G    470,0,true,,,true
+G    471,0,true,,,true
+G    472,0,true,,,true
+G    473,0,true,,,true
+G    474,0,true,,,true
+G    475,0,true,,,true
+G    476,0,true,,,true
+G    477,0,true,,,true
+G    478,0,true,,,true
+G    479,0,true,,,true
+G    480,0,true,,,true
+G    481,0,true,,,true
+G    482,0,true,,,true
+G    483,0,true,,,true
+G    484,0,true,,,true
+G    485,0,true,,,true
+G    486,0,true,,,true
+G    487,0,true,,,true
+G    488,0,true,,,true
+G    489,0,true,,,true
+G    492,0,true,,,true
+G    493,0,true,,,true
+G    494,0,true,,,true
+G    495,0,true,,,true
+G    496,0,true,,,true
+G    497,0,true,,,true
+G    498,0,true,,,true
+G    499,0,true,,,true
+G    500,0,true,,,true
+G    501,0,true,,,true
+G    502,0,true,,,true
+G    503,0,true,,,true
+G    504,0,true,,,true
+G    505,0,true,,,true
+G    506,0,true,,,true
+G    507,0,true,,,true
+G    508,0,true,,,true
+G    509,0,true,,,true
+G    510,0,true,,,true
+G    511,0,true,,,true
+G    512,0,true,,,true
+G    513,0,true,,,true
+G    514,0,true,,,true
+G    515,0,true,,,true
+G    517,0,true,,,true
+G    518,0,true,,,true
+G    519,0,true,,,true
+G    520,0,true,,,true
+G    521,0,true,,,true
+G    523,0,true,,,true
+G    526,0,true,,,true
+GA   528,0,true,,,true
+GB   528,0,true,,,true
+GC   528,0,true,,,true
+GD   528,0,true,,,true
+GE   528,0,true,,,true
+GF   528,0,true,,,true
+GG   528,0,true,,,true
+GH   528,0,true,,,true
+GI   528,0,true,,,true
+G    529,0,true,,,true
+GA   529,0,true,,,true
+G    532,0,true,,,true
+G    533,0,true,,,true
+G    534,0,true,,,true
+G    535,0,true,,,true
+G    536,0,true,,,true
+G    537,0,true,,,true
+G    538,0,true,,,true
+G    539,0,true,,,true
+G    540,0,true,,,true
+G    541,0,true,,,true
+G    542,0,true,,,true
+G    543,0,true,,,true
+G    544,0,true,,,true
+G    545,0,true,,,true
+G    546,0,true,,,true
+G    547,0,true,,,true
+G    548,0,true,,,true
+G    549,0,true,,,true
+G    550,0,true,,,true
+G    551,0,true,,,true
+G    552,0,true,,,true
+G    553,0,true,,,true
+G    554,0,true,,,true
+G    555,0,true,,,true
+G    556,0,true,,,true
+G    557,0,true,,,true
+G    558,0,true,,,true
+G    559,0,true,,,true
+G    560,0,true,,,true
+G    561,0,true,,,true
+G    562,0,true,,,true
+G    563,0,true,,,true
+G    564,0,true,,,true
+G    565,0,true,,,true
+G    566,0,true,,,true
+G    567,0,true,,,true
+G    569,0,true,,,true
+G    570,0,true,,,true
+G    571,0,true,,,true
+G    572,0,true,,,true
+G    573,0,true,,,true
+G    574,0,true,,,true
+G    575,0,true,,,true
+G    576,0,true,,,true
+G    577,0,true,,,true
+G    578,0,true,,,true
+G    579,0,true,,,true
+G    580,0,true,,,true
+G    581,0,true,,,true
+G    582,0,true,,,true
+G    583,0,true,,,true
+G    584,0,true,,,true
+G    585,0,true,,,true
+G    586,0,true,,,true
+G    587,0,true,,,true
+G    588,0,true,,,true
+GA   588,0,true,,,true
+G    589,0,true,,,true
+G    590,0,true,,,true
+G    591,0,true,,,true
+G    592,0,true,,,true
+G    593,0,true,,,true
+AG   594,0,true,,,true
+G    594,0,true,,,true
+G    595,0,true,,,true
+AG   596,0,true,,,true
+G    596,0,true,,,true
+G    597,0,true,,,true
+G    598,0,true,,,true
+G    599,0,true,,,true
+G    600,0,true,,,true
+G    601,0,true,,,true
+G    602,0,true,,,true
+G    603,0,true,,,true
+G    604,0,true,,,true
+G    605,0,true,,,true
+G    608,0,true,,,true
+G    609,0,true,,,true
+G    610,0,true,,,true
+G    611,0,true,,,true
+G    617,0,true,,,true
+G    618,0,true,,,true
+G    619,0,true,,,true
+G    620,0,true,,,true
+G    621,0,true,,,true
+G    622,0,true,,,true
+G    623,0,true,,,true
+G    624,0,true,,,true
+G    625,0,true,,,true
+G    626,0,true,,,true
+G    627,0,true,,,true
+G    628,0,true,,,true
+G    629,0,true,,,true
+G    630,0,true,,,true
+G    631,0,true,,,true
+G    632,0,true,,,true
+G    633,0,true,,,true
+G    634,0,true,,,true
+G    635,0,true,,,true
+G    636,0,true,,,true
+G    637,0,true,,,true
+G    638,0,true,,,true
+G    639,0,true,,,true
+G    640,0,true,,,true
+G    641,0,true,,,true
+G    642,0,true,,,true
+G    643,0,true,,,true
+G    644,0,true,,,true
+G    645,0,true,,,true
+G    646,0,true,,,true
+G    647,0,true,,,true
+G    648,0,true,,,true
+G    649,0,true,,,true
+G    650,0,true,,,true
+G    651,0,true,,,true
+G    652,0,true,,,true
+G    653,0,true,,,true
+G    654,0,true,,,true
+G    655,0,true,,,true
+G    656,0,true,,,true
+G    657,0,true,,,true
+G    658,0,true,,,true
+GA   659,0,true,,,true
+G    659,0,true,,,true
+G    660,0,true,,,true
+AG   661,0,true,,,true
+G    661,0,true,,,true
+G    662,0,true,,,true
+G    663,0,true,,,true
+G    664,0,true,,,true
+G    665,0,true,,,true
+G    666,0,true,,,true
+G    667,0,true,,,true
+G    668,0,true,,,true
+G    669,0,true,,,true
+G    670,0,true,,,true
+G    671,0,true,,,true
+G    673,0,true,,,true
+G    674,0,true,,,true
+GA   674,0,true,,,true
+G    676,0,true,,,true
+G    678,0,true,,,true
+G    679,0,true,,,true
+G    680,0,true,,,true
+G    681,0,true,,,true
+G    682,0,true,,,true
+G    683,0,true,,,true
+G    684,0,true,,,true
+G    685,0,true,,,true
+G    686,0,true,,,true
+G    687,0,true,,,true
+G    688,0,true,,,true
+G    689,0,true,,,true
+G    690,0,true,,,true
+G    691,0,true,,,true
+G    692,0,true,,,true
+G    693,0,true,,,true
+G    694,0,true,,,true
+G    695,0,true,,,true
+G    697,0,true,,,true
+G    698,0,true,,,true
+G    699,0,true,,,true
+G    700,0,true,,,true
+G    701,0,true,,,true
+G    702,0,true,,,true
+G    703,0,true,,,true
+G    704,0,true,,,true
+G    705,0,true,,,true
+G    706,0,true,,,true
+G    707,0,true,,,true
+G    708,0,true,,,true
+G    709,0,true,,,true
+G    710,0,true,,,true
+G    711,0,true,,,true
+G    712,0,true,,,true
+G    713,0,true,,,true
+G    714,0,true,,,true
+G    715,0,true,,,true
+G    716,0,true,,,true
+G    717,0,true,,,true
+G    718,0,true,,,true
+G    719,0,true,,,true
+G    720,0,true,,,true
+G    721,0,true,,,true
+G    722,0,true,,,true
+G    723,0,true,,,true
+G    724,0,true,,,true
+G    725,0,true,,,true
+G    726,0,true,,,true
+G    727,0,true,,,true
+G    728,0,true,,,true
+G    729,0,true,,,true
+G    730,0,true,,,true
+G    731,0,true,,,true
+G    732,0,true,,,true
+G    733,0,true,,,true
+G    734,0,true,,,true
+G    735,0,true,,,true
+G    736,0,true,,,true
+G    737,0,true,,,true
+G    738,0,true,,,true
+G    739,0,true,,,true
+G    740,0,true,,,true
+G    741,0,true,,,true
+G    742,0,true,,,true
+G    743,0,true,,,true
+G    744,0,true,,,true
+G    745,0,true,,,true
+G    746,0,true,,,true
+G    748,0,true,,,true
+G    750,0,true,,,true
+G    751,0,true,,,true
+G    752,0,true,,,true
+G    753,0,true,,,true
+G    754,0,true,,,true
+G    755,0,true,,,true
+G    760,0,true,,,true
+G    761,0,true,,,true
+G    762,0,true,,,true
+G    763,0,true,,,true
+G    764,0,true,,,true
+GA   765,0,true,,,true
+G    765,0,true,,,true
+G    766,0,true,,,true
+GA   767,0,true,,,true
+G    767,0,true,,,true
+G    768,0,true,,,true
+G    769,0,true,,,true
+G    770,0,true,,,true
+G    771,0,true,,,true
+G    772,0,true,,,true
+G    773,0,true,,,true
+G    774,0,true,,,true
+G    775,0,true,,,true
+G    777,0,true,,,true
+G    778,0,true,,,true
+G    779,0,true,,,true
+G    780,0,true,,,true
+G    781,0,true,,,true
+G    782,0,true,,,true
+G    783,0,true,,,true
+G    784,0,true,,,true
+G    785,0,true,,,true
+G    786,0,true,,,true
+G    787,0,true,,,true
+G    788,0,true,,,true
+G    789,0,true,,,true
+G    790,0,true,,,true
+G   A787,0,true,,,true
+G   A788,0,true,,,true
+G   A789,0,true,,,true
+G   A790,0,true,,,true
+G    791,0,true,,,true
+G    792,0,true,,,true
+G    793,0,true,,,true
+G    794,0,true,,,true
+G    795,0,true,,,true
+G    796,0,true,,,true
+G    797,0,true,,,true
+G    798,0,true,,,true
+G    799,0,true,,,true
+G    800,0,true,,,true
+G    801,0,true,,,true
+G    802,0,true,,,true
+G    803,0,true,,,true
+G    804,0,true,,,true
+G    805,0,true,,,true
+G    806,0,true,,,true
+G    807,0,true,,,true
+G    808,0,true,,,true
+G    809,0,true,,,true
+G    810,0,true,,,true
+G    811,0,true,,,true
+G    812,0,true,,,true
+G    813,0,true,,,true
+G    814,0,true,,,true
+G    815,0,true,,,true
+G    816,0,true,,,true
+G    817,0,true,,,true
+G    818,0,true,,,true
+G    819,0,true,,,true
+G    820,0,true,,,true
+G    821,0,true,,,true
+G    822,0,true,,,true
+G    823,0,true,,,true
+G    825,0,true,,,true
+G    827,0,true,,,true
+G    828,0,true,,,true
+G    829,0,true,,,true
+G    830,0,true,,,true
+G    831,0,true,,,true
+G    832,0,true,,,true
+G    833,0,true,,,true
+G    834,0,true,,,true
+G    835,0,true,,,true
+G    836,0,true,,,true
+G    837,0,true,,,true
+G    838,0,true,,,true
+G    839,0,true,,,true
+G    840,0,true,,,true
+G    841,0,true,,,true
+G    842,0,true,,,true
+G    843,0,true,,,true
+G    844,0,true,,,true
+G    845,0,true,,,true
+GA   845,0,true,,,true
+G    846,0,true,,,true
+G    847,0,true,,,true
+G    848,0,true,,,true
+G    849,0,true,,,true
+G    850,0,true,,,true
+G    851,0,true,,,true
+G    852,0,true,,,true
+G    853,0,true,,,true
+G    854,0,true,,,true
+G    855,0,true,,,true
+G    856,0,true,,,true
+G    857,0,true,,,true
+G    858,0,true,,,true
+G    859,0,true,,,true
+G    860,0,true,,,true
+G    861,0,true,,,true
+G    862,0,true,,,true
+G    863,0,true,,,true
+G    864,0,true,,,true
+G    865,0,true,,,true
+G    866,0,true,,,true
+G    867,0,true,,,true
+G    868,0,true,,,true
+G    869,0,true,,,true
+G    870,0,true,,,true
+G    871,0,true,,,true
+G    872,0,true,,,true
+G    873,0,true,,,true
+G    874,0,true,,,true
+G    875,0,true,,,true
+GA   875,0,true,,,true
+G    876,0,true,,,true
+G    877,0,true,,,true
+G    878,0,true,,,true
+G    879,0,true,,,true
+G    880,0,true,,,true
+G    881,0,true,,,true
+G    882,0,true,,,true
+G    883,0,true,,,true
+G    884,0,true,,,true
+G    885,0,true,,,true
+G    886,0,true,,,true
+G    887,0,true,,,true
+G    888,0,true,,,true
+G    889,0,true,,,true
+G    890,0,true,,,true
+G    891,0,true,,,true
+G    892,0,true,,,true
+G    893,0,true,,,true
+G    894,0,true,,,true
+G    895,0,true,,,true
+G    896,0,true,,,true
+G    897,0,true,,,true
+G    898,0,true,,,true
+G    899,0,true,,,true
+G    900,0,true,,,true
+G    901,0,true,,,true
+G    902,0,true,,,true
+G    903,0,true,,,true
+G    904,0,true,,,true
+G    905,0,true,,,true
+G    906,0,true,,,true
+G    907,0,true,,,true
+G    908,0,true,,,true
+G    909,0,true,,,true
+G    910,0,true,,,true
+G    911,0,true,,,true
+G    912,0,true,,,true
+G    913,0,true,,,true
+G    914,0,true,,,true
+G    915,0,true,,,true
+G    916,0,true,,,true
+G    917,0,true,,,true
+G    918,0,true,,,true
+G    919,0,true,,,true
+G    920,0,true,,,true
+G    921,0,true,,,true
+G    922,0,true,,,true
+G    923,0,true,,,true
+G    924,0,true,,,true
+G    925,0,true,,,true
+G    926,0,true,,,true
+G    927,0,true,,,true
+G    928,0,true,,,true
+G    929,0,true,,,true
+G    930,0,true,,,true
+G    931,0,true,,,true
+G    932,0,true,,,true
+G    933,0,true,,,true
+G    934,0,true,,,true
+G    936,0,true,,,true
+G    937,0,true,,,true
+AG   938,0,true,,,true
+G    938,0,true,,,true
+G    939,0,true,,,true
+G    940,0,true,,,true
+AG   940,0,true,,,true
+G    941,0,true,,,true
+G    942,0,true,,,true
+G    943,0,true,,,true
+G    944,0,true,,,true
+G    945,0,true,,,true
+G    946,0,true,,,true
+G    947,0,true,,,true
+G    948,0,true,,,true
+G    949,0,true,,,true
+G    950,0,true,,,true
+G    951,0,true,,,true
+G    952,0,true,,,true
+G    953,0,true,,,true
+G    954,0,true,,,true
+G    955,0,true,,,true
+G    957,0,true,,,true
+GA   957,0,true,,,true
+GA   957 DUP,0,true,,,true
+G    958,0,true,,,true
+GA   958,0,true,,,true
+G    959,0,true,,,true
+G    963,0,true,,,true
+G    964,0,true,,,true
+G    966,0,true,,,true
+G    967,0,true,,,true
+G    968,0,true,,,true
+G    969,0,true,,,true
+G    970,0,true,,,true
+G    971,0,true,,,true
+G    972,0,true,,,true
+G    973,0,true,,,true
+G    974,0,true,,,true
+G    975,0,true,,,true
+G    976,0,true,,,true
+G    977,0,true,,,true
+G    978,0,true,,,true
+G    979,0,true,,,true
+G    980,0,true,,,true
+G    981,0,true,,,true
+G    982,0,true,,,true
+G    983,0,true,,,true
+G    984,0,true,,,true
+G    985,0,true,,,true
+G    986,0,true,,,true
+G    987,0,true,,,true
+G    988,0,true,,,true
+G    989,0,true,,,true
+G    990,0,true,,,true
+G    991,0,true,,,true
+G    992,0,true,,,true
+G    993,0,true,,,true
+G    994,0,true,,,true
+G    995,0,true,,,true
+G    996,0,true,,,true
+G    997,0,true,,,true
+G    998,0,true,,,true
+G    999,0,true,,,true
+G   1000,0,true,,,true
+G   1001,0,true,,,true
+G   1002,0,true,,,true
+G   1003,0,true,,,true
+G   1004,0,true,,,true
+G   1005,0,true,,,true
+G   1006,0,true,,,true
+G   1007,0,true,,,true
+G   1008,0,true,,,true
+G   1009,0,true,,,true
+G   1010,0,true,,,true
+G   1011,0,true,,,true
+G   1012,0,true,,,true
+G   1016,0,true,,,true
+G   1026,0,true,,,true
+G   1028,0,true,,,true
+G   1029,0,true,,,true
+G   1030,0,true,,,true
+G   1032,0,true,,,true
+G   1033,0,true,,,true
+G   1034,0,true,,,true
+G   1035,0,true,,,true
+G   1036,0,true,,,true
+G   1037,0,true,,,true
+G   1038,0,true,,,true
+G   1039,0,true,,,true
+G   1040,0,true,,,true
+G   1041,0,true,,,true
+G   1042,0,true,,,true
+G   1043,0,true,,,true
+G   1044,0,true,,,true
+G   1045,0,true,,,true
+G   1046,0,true,,,true
+G   1048,0,true,,,true
+G   1049,0,true,,,true
+G   1055,0,true,,,true
+G   1057,0,true,,,true
+G   1058,0,true,,,true
+G   1059,0,true,,,true
+G   1060,0,true,,,true
+G   1061,0,true,,,true
+G   1062,0,true,,,true
+G   1065,0,true,,,true
+G   1068,0,true,,,true
+G   1069,0,true,,,true
+GTS    1,0,true,,,true
+GTS    2,0,true,,,true
+GTS    3,0,true,,,true
+GTS    4,0,true,,,true
+GTS    5,0,true,,,true
+GTS    6,0,true,,,true
+GTS    7,0,true,,,true
+GTS    8,0,true,,,true
+GTS    9,0,true,,,true
+GTS   10,0,true,,,true
+GTS   11,0,true,,,true
+GTS   12,0,true,,,true
+GTS   13,0,true,,,true
+GTS   14,0,true,,,true
+GTS   15,0,true,,,true
+GTS   16,0,true,,,true
+GTS   17,0,true,,,true
+GTS   18,0,true,,,true
+GTS   19,0,true,,,true
+GTS   20,0,true,,,true
+GTS   21,0,true,,,true
+GTS   22,0,true,,,true
+GTS   23,0,true,,,true
+GTS   24,0,true,,,true
+GTS   25,0,true,,,true
+GTS   26,0,true,,,true
+GTS   27,0,true,,,true
+GTS   28,0,true,,,true
+GTS   29,0,true,,,true
+GTS   30,0,true,,,true
+GTS   31,0,true,,,true
+GTS   32,0,true,,,true
+GTS   33,0,true,,,true
+GTS   34,0,true,,,true
+GTS   35,0,true,,,true
+GTS   36,0,true,,,true
+GTS   37,0,true,,,true
+GTS   38,0,true,,,true
+GTS   39,0,true,,,true
+GTS   40,0,true,,,true
+GTS   41,0,true,,,true
+GTS   42,0,true,,,true
+GTS   43,0,true,,,true
+GTS   44,0,true,,,true
+GTS   45,0,true,,,true
+GTS   46,0,true,,,true
+GTS   47,0,true,,,true
+GTS   48,0,true,,,true
+GTS   49,0,true,,,true
+GTS   50,0,true,,,true
+GTS   51,0,true,,,true
+GTS   52,0,true,,,true
+GTS   53,0,true,,,true
+GTS   54,0,true,,,true
+GTS   55,0,true,,,true
+GTS   56,0,true,,,true
+GTS   57,0,true,,,true
+GTS   58,0,true,,,true
+GTS   59,0,true,,,true
+GTS   60,0,true,,,true
+GTS   61,0,true,,,true
+GTS   62,0,true,,,true
+GTS   63,0,true,,,true
+GTS   64,0,true,,,true
+GTS   65,0,true,,,true
+GTS   66,0,true,,,true
+GTS   67,0,true,,,true
+GTSA  67,0,true,,,true
+GTS   68,0,true,,,true
+GTS   69,0,true,,,true
+GTS   70,0,true,,,true
+GTS   71,0,true,,,true
+GTS   72,0,true,,,true
+GTS   74,0,true,,,true
+GTS   75,0,true,,,true
+GTS   76,0,true,,,true
+GTS   77,0,true,,,true
+GTS   78,0,true,,,true
+GTS   79,0,true,,,true
+GTS   80,0,true,,,true
+GTS   81,0,true,,,true
+GTS   82,0,true,,,true
+GTS   83,0,true,,,true
+GTS   84,0,true,,,true
+GTS   85,0,true,,,true
+GTSA  85,0,true,,,true
+GTS   86,0,true,,,true
+GTS   87,0,true,,,true
+GTS   88,0,true,,,true
+GTS   89,0,true,,,true
+GTS   90,0,true,,,true
+GTS   91,0,true,,,true
+GTS   92,0,true,,,true
+GTS   93,0,true,,,true
+GTS   94,0,true,,,true
+GTS   95,0,true,,,true
+GTS   96,0,true,,,true
+GTS   97,0,true,,,true
+GTS   98,0,true,,,true
+GTS   99,0,true,,,true
+GTS  100,0,true,,,true
+GTS  101,0,true,,,true
+GTS  102,0,true,,,true
+GTS  103,0,true,,,true
+GTS  104,0,true,,,true
+GTS  105,0,true,,,true
+GTS  106,0,true,,,true
+GTS  107,0,true,,,true
+GTS  108,0,true,,,true
+GTS  109,0,true,,,true
+GTS  110,0,true,,,true
+GTS  111,0,true,,,true
+GTS  112,0,true,,,true
+GTS  113,0,true,,,true
+GTS  114,0,true,,,true
+GTS  115,0,true,,,true
+GTS  116,0,true,,,true
+GTS  117,0,true,,,true
+GTS  118,0,true,,,true
+GTS  119,0,true,,,true
+GTS  120,0,true,,,true
+GTS  121,0,true,,,true
+GTS  122,0,true,,,true
+YOKSF  1,0,true,,,true
+TAHSF  1,0,true,,,true
+HONSF  1,0,true,,,true
+LEYMEX 1,0,true,,,true
+LEYMEX 2,0,true,,,true
+ALASEA 1,0,true,,,true
+YOKHON 1,0,true,,,true
+CORHON 1,0,true,,,true
+HONLA  1,0,true,,,true
+HONPAN 1,0,true,,,true
+MANHON 1,0,true,,,true
+MANHON 2,0,true,,,true
+TAHPAN 1,0,true,,,true
+COKPAN 1,0,true,,,true
+MONGIB 1,0,true,,,true
+FLANY  1,0,true,,,true
+NY ROQ 1,0,true,,,true
+WINNY  1,0,true,,,true
+WINCAR 2,0,true,,,true
+PA HOP 1,0,true,,,true
+HOPBOM 1,0,true,,,true
+HOPLEU 1,0,true,,,true
+PACSF  1,0,true,,,true
+ASKPAC 1,0,true,,,true
+PA2SF  1,0,true,,,true
+HOKASK 1,0,true,,,true
+PA3SF  1,0,true,,,true
+LEYPA3 1,0,true,,,true
+MANPA3 1,0,true,,,true
+MANPA3 2,0,true,,,true
+PACLA  1,0,true,,,true
+PA3PAC 1,0,true,,,true
+HOKMEX 1,0,true,,,true
+PA4MEX 1,0,true,,,true
+YOKPA4 1,0,true,,,true
+YOKASK 1,0,true,,,true
+MANYOK 1,0,true,,,true
+ALKASK 1,0,true,,,true
+HOKALK 1,0,true,,,true
+YOKALK 1,0,true,,,true
+PA5SEA 1,0,true,,,true
+CORPA6 1,0,true,,,true
+PA6PAN 1,0,true,,,true
+MONAT1 1,0,true,,,true
+AT1GIB 1,0,true,,,true
+NEWBIS 1,0,true,,,true
+NY AT2 1,0,true,,,true
+GULINS 1,0,true,,,true
+AT3    1,0,true,,,true
+PUNBZ  1,0,true,,,true
+BZ2OUE 1,0,true,,,true
+BZ2OUE 2,0,true,,,true
+BZ2GIC 1,0,true,,,true
+GICGIB 1,0,true,,,true
+HOPIN1 1,0,true,,,true
+MADDG  1,0,true,,,true
+DG SRI 1,0,true,,,true
+SRICAL 1,0,true,,,true
+HOPNWC 1,0,true,,,true
+YOKPUN 1,0,true,,,true
+YOKPUN 2,0,true,,,true
+NY ASC 1,0,true,,,true
+NY ASC 2,0,true,,,true
+PP CA  1,0,true,,,true
+ROQHOP 1,0,true,,,true
+SYDTAH 1,0,true,,,true
+SYDTAH 2,0,true,,,true
+SYDNCO 1,0,true,,,true
+WPRNCO 1,0,true,,,true
+SYD PP 1,0,true,,,true
+SYDNCP 1,0,true,,,true
+FLSGIB 1,0,true,,,true
+FLSBIS 1,0,true,,,true
+NEWSCT 1,0,true,,,true
+CFAPUN 1,0,true,,,true
+WAFHOP 1,0,true,,,true
+HONPUN 1,0,true,,,true
+CLABIS 1,0,true,,,true
+CLABIS 2,0,true,,,true
+CLAGIB 1,0,true,,,true
+REDBOM 1,0,true,,,true
+REDSRI 1,0,true,,,true
+REDSUN 1,0,true,,,true
+REDLEE 1,0,true,,,true
+REDLEE 2,0,true,,,true

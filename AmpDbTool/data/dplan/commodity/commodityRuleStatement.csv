@@ -1,0 +1,309 @@
+COMMODITY_NUM,LEG,EXPRESSION_ID,PARENT_EXPR_ID,NEGATE_FLAG,LOGICAL_OPERATOR,DBKEY,KEY,OPERATOR,VALUE_TYPE,VALUE,VALUE_METHOD_CLASS,VALUE_METHOD_ARG,VALUE_METHOD_ARG_TYPE,VALUE_METHOD_PARAM_1,VALUE_METHOD_PARAM_2,USER_ARG_TYPE,USER_ARG_VALUE,IGNORE_CASE
+1,T,0,-1,0,,,,,,,,,,,,,,0
+1,T,1,0,0,,,,,,,,,,,,,,0
+1,T,2,1,0,,,CCC1,=,java.lang.String,K,,,,,,,,0
+1,T,3,1,0,||,,CCC1,=,java.lang.String,L,,,,,,,,0
+1,T,4,1,0,||,,CCC1,=,java.lang.String,R,,,,,,,,0
+1,T,5,0,0,&&,,,,,,,,,,,,,0
+1,T,6,5,0,&&,,CCC2,=,java.lang.String,0,,,,,,,,0
+1,T,7,5,0,||,,CCC2,=,java.lang.String,1,,,,,,,,0
+1,T,8,5,0,||,,CCC2,=,java.lang.String,4,,,,,,,,0
+1,T,9,5,0,||,,CCC2,=,java.lang.String,5,,,,,,,,0
+1,T,10,5,0,||,,CCC2,=,java.lang.String,A,,,,,,,,0
+1,T,11,5,0,||,,CCC2,=,java.lang.String,B,,,,,,,,0
+1,T,12,-1,0,,,Commodity,,ampdom.commodity.Commodity,1,,,,,,,,0
+2,T,0,-1,0,,,,,,,,,,,,,,0
+2,T,1,0,0,,,,,,,,,,,,,,0
+2,T,2,1,0,,,CCC1,=,java.lang.String,K,,,,,,,,0
+2,T,3,1,0,||,,CCC1,=,java.lang.String,L,,,,,,,,0
+2,T,4,1,0,||,,CCC1,=,java.lang.String,R,,,,,,,,0
+2,T,5,0,0,&&,,,,,,,,,,,,,0
+2,T,6,5,0,&&,,CCC2,=,java.lang.String,2,,,,,,,,0
+2,T,7,5,0,||,,CCC2,=,java.lang.String,3,,,,,,,,0
+2,T,8,5,0,||,,CCC2,=,java.lang.String,6,,,,,,,,0
+2,T,9,5,0,||,,CCC2,=,java.lang.String,7,,,,,,,,0
+2,T,10,5,0,||,,CCC2,=,java.lang.String,C,,,,,,,,0
+2,T,11,5,0,||,,CCC2,=,java.lang.String,D,,,,,,,,0
+2,T,12,0,0,&&,,Weight,>=,java.lang.Double,12.0,,,,,,,,0
+2,T,13,-1,0,,,Commodity,,ampdom.commodity.Commodity,2,,,,,,,,0
+3,T,0,-1,0,,,,,,,,,,,,,,0
+3,T,1,0,0,,,,,,,,,,,,,,0
+3,T,2,1,0,,,CCC1,=,java.lang.String,K,,,,,,,,0
+3,T,3,1,0,||,,CCC1,=,java.lang.String,L,,,,,,,,0
+3,T,4,1,0,||,,CCC1,=,java.lang.String,R,,,,,,,,0
+3,T,5,0,0,&&,,,,,,,,,,,,,0
+3,T,6,5,0,&&,,CCC2,=,java.lang.String,2,,,,,,,,0
+3,T,7,5,0,||,,CCC2,=,java.lang.String,3,,,,,,,,0
+3,T,8,5,0,||,,CCC2,=,java.lang.String,6,,,,,,,,0
+3,T,9,5,0,||,,CCC2,=,java.lang.String,7,,,,,,,,0
+3,T,10,5,0,||,,CCC2,=,java.lang.String,C,,,,,,,,0
+3,T,11,5,0,||,,CCC2,=,java.lang.String,D,,,,,,,,0
+3,T,12,0,0,&&,,Weight,<,java.lang.Double,12.0,,,,,,,,0
+3,T,13,-1,0,,,Commodity,,ampdom.commodity.Commodity,3,,,,,,,,0
+4,T,0,-1,0,,,,,,,,,,,,,,0
+4,T,1,0,0,,,CCC1,=,java.lang.String,A,,,,,,,,0
+4,T,2,0,0,&&,,,,,,,,,,,,,0
+4,T,3,2,0,&&,,CCC2,=,java.lang.String,0,,,,,,,,0
+4,T,4,2,0,||,,CCC2,=,java.lang.String,1,,,,,,,,0
+4,T,5,2,0,||,,CCC2,=,java.lang.String,4,,,,,,,,0
+4,T,6,2,0,||,,CCC2,=,java.lang.String,5,,,,,,,,0
+4,T,7,2,0,||,,CCC2,=,java.lang.String,A,,,,,,,,0
+4,T,8,2,0,||,,CCC2,=,java.lang.String,B,,,,,,,,0
+4,T,9,-1,0,,,Commodity,,ampdom.commodity.Commodity,4,,,,,,,,0
+5,T,0,-1,0,,,,,,,,,,,,,,0
+5,T,1,0,0,,,CCC1,=,java.lang.String,A,,,,,,,,0
+5,T,2,0,0,&&,,,,,,,,,,,,,0
+5,T,3,2,0,&&,,CCC2,=,java.lang.String,2,,,,,,,,0
+5,T,4,2,0,||,,CCC2,=,java.lang.String,3,,,,,,,,0
+5,T,5,2,0,||,,CCC2,=,java.lang.String,6,,,,,,,,0
+5,T,6,2,0,||,,CCC2,=,java.lang.String,7,,,,,,,,0
+5,T,7,2,0,||,,CCC2,=,java.lang.String,C,,,,,,,,0
+5,T,8,2,0,||,,CCC2,=,java.lang.String,D,,,,,,,,0
+5,T,9,0,0,&&,,Weight,>=,java.lang.Double,12.0,,,,,,,,0
+5,T,10,-1,0,,,Commodity,,ampdom.commodity.Commodity,5,,,,,,,,0
+6,T,0,-1,0,,,,,,,,,,,,,,0
+6,T,1,0,0,,,CCC1,=,java.lang.String,A,,,,,,,,0
+6,T,2,0,0,&&,,,,,,,,,,,,,0
+6,T,3,2,0,&&,,CCC2,=,java.lang.String,2,,,,,,,,0
+6,T,4,2,0,||,,CCC2,=,java.lang.String,3,,,,,,,,0
+6,T,5,2,0,||,,CCC2,=,java.lang.String,6,,,,,,,,0
+6,T,6,2,0,||,,CCC2,=,java.lang.String,7,,,,,,,,0
+6,T,7,2,0,||,,CCC2,=,java.lang.String,C,,,,,,,,0
+6,T,8,2,0,||,,CCC2,=,java.lang.String,D,,,,,,,,0
+6,T,9,0,0,&&,,Weight,<,java.lang.Double,12.0,,,,,,,,0
+6,T,10,-1,0,,,Commodity,,ampdom.commodity.Commodity,6,,,,,,,,0
+7,T,0,-1,0,,,,,,,,,,,,,,0
+7,T,1,0,0,,,CCC1,=,java.lang.String,M,,,,,,,,0
+7,T,2,0,0,&&,,,,,,,,,,,,,0
+7,T,3,2,0,&&,,CCC3,=,java.lang.String,B,,,,,,,,0
+7,T,4,2,0,||,,CCC3,=,java.lang.String,C,,,,,,,,0
+7,T,5,-1,0,,,Commodity,,ampdom.commodity.Commodity,7,,,,,,,,0
+8,T,0,-1,0,,,,,,,,,,,,,,0
+8,T,1,0,0,,,CCC1,=,java.lang.String,M,,,,,,,,0
+8,T,2,0,0,&&,,CCC3,=,java.lang.String,D,,,,,,,,0
+8,T,3,-1,0,,,Commodity,,ampdom.commodity.Commodity,8,,,,,,,,0
+9,T,0,-1,0,,,,,,,,,,,,,,0
+9,T,1,0,0,,,CCC1,=,java.lang.String,J,,,,,,,,0
+9,T,2,0,0,&&,,CCC3,=,java.lang.String,D,,,,,,,,0
+9,T,3,0,0,&&,,RecordType,=,java.lang.String,G,,,,,,,,0
+9,T,4,-1,0,,,Commodity,,ampdom.commodity.Commodity,9,,,,,,,,0
+10,T,0,-1,0,,,,,,,,,,,,,,0
+10,T,1,0,0,,,CCC1,=,java.lang.String,J,,,,,,,,0
+10,T,2,0,0,&&,,CCC3,=,java.lang.String,B,,,,,,,,0
+10,T,3,0,0,&&,,RecordType,=,java.lang.String,G,,,,,,,,0
+10,T,4,-1,0,,,Commodity,,ampdom.commodity.Commodity,10,,,,,,,,0
+11,T,0,-1,0,,,,,,,,,,,,,,0
+11,T,1,0,0,,,CCC1,=,java.lang.String,J,,,,,,,,0
+11,T,2,0,0,&&,,CCC3,=,java.lang.String,C,,,,,,,,0
+11,T,3,0,0,&&,,RecordType,=,java.lang.String,G,,,,,,,,0
+11,T,4,-1,0,,,Commodity,,ampdom.commodity.Commodity,11,,,,,,,,0
+12,T,0,-1,0,,,,,,,,,,,,,,0
+12,T,1,0,0,,,CCC1,=,java.lang.String,J,,,,,,,,0
+12,T,2,0,0,&&,,CCC3,=,java.lang.String,B,,,,,,,,0
+12,T,3,0,0,&&,,RecordType,=,java.lang.String,U,,,,,,,,0
+12,T,4,-1,0,,,Commodity,,ampdom.commodity.Commodity,12,,,,,,,,0
+13,T,0,-1,0,,,,,,,,,,,,,,0
+13,T,1,0,0,,,CCC1,=,java.lang.String,J,,,,,,,,0
+13,T,2,0,0,&&,,CCC3,=,java.lang.String,D,,,,,,,,0
+13,T,3,0,0,&&,,RecordType,=,java.lang.String,U,,,,,,,,0
+13,T,4,-1,0,,,Commodity,,ampdom.commodity.Commodity,13,,,,,,,,0
+14,T,0,-1,0,,,CCC1,=,java.lang.String,G,,,,,,,,0
+14,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,14,,,,,,,,0
+15,T,0,-1,0,,,CCC,=,java.lang.String,PAX,,,,,,,,0
+15,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,15,,,,,,,,0
+16,T,0,-1,0,,,CCC1,=,java.lang.String,B,,,,,,,,0
+16,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,16,,,,,,,,0
+17,T,0,-1,0,,,,,,,,,,,,,,0
+17,T,1,0,0,,,,,,,,,,,,,,0
+17,T,2,1,0,,,CCC1,=,java.lang.String,A,,,,,,,,0
+17,T,3,1,0,||,,CCC1,=,java.lang.String,B,,,,,,,,0
+17,T,4,1,0,||,,CCC1,=,java.lang.String,C,,,,,,,,0
+17,T,5,1,0,||,,CCC1,=,java.lang.String,D,,,,,,,,0
+17,T,6,1,0,||,,CCC1,=,java.lang.String,E,,,,,,,,0
+17,T,7,1,0,||,,CCC1,=,java.lang.String,F,,,,,,,,0
+17,T,8,1,0,||,,CCC1,=,java.lang.String,G,,,,,,,,0
+17,T,9,1,0,||,,CCC1,=,java.lang.String,H,,,,,,,,0
+17,T,10,1,0,||,,CCC1,=,java.lang.String,J,,,,,,,,0
+17,T,11,1,0,||,,CCC1,=,java.lang.String,K,,,,,,,,0
+17,T,12,1,0,||,,CCC1,=,java.lang.String,L,,,,,,,,0
+17,T,13,1,0,||,,CCC1,=,java.lang.String,M,,,,,,,,0
+17,T,14,1,0,||,,CCC1,=,java.lang.String,N,,,,,,,,0
+17,T,15,1,0,||,,CCC1,=,java.lang.String,P,,,,,,,,0
+17,T,16,1,0,||,,CCC1,=,java.lang.String,R,,,,,,,,0
+17,T,17,1,0,||,,CCC1,=,java.lang.String,X,,,,,,,,0
+17,T,18,-1,0,,,Commodity,,ampdom.commodity.Commodity,17,,,,,,,,0
+18,T,0,-1,0,,,CCC3,=,java.lang.String,A,,,,,,,,0
+18,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,18,,,,,,,,0
+19,T,0,-1,0,,,CCC3,=,java.lang.String,E,,,,,,,,0
+19,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,19,,,,,,,,0
+20,T,0,-1,0,,,CCC3,=,java.lang.String,F,,,,,,,,0
+20,T,1,-1,0,,,Commodity,,ampdom.commodity.Commodity,20,,,,,,,,0
+1,I,0,-1,0,,,,,,,,,,,,,,0
+1,I,1,0,0,,,Service,=,java.lang.String,F,,,,,,,,0
+1,I,2,0,0,&&,,UTC, begins with ,java.lang.String,3,,,,,,,,1
+1,I,3,0,0,&&,,,,,,,,,,,,,0
+1,I,4,3,0,&&,,Name, contains ,java.lang.String,AC*[ -]*0*1[036],,,,,,,,1
+1,I,5,3,0,||,,Name, contains ,java.lang.String,AC*[ -]*0*4M,,,,,,,,1
+1,I,6,3,0,||,,Name, contains ,java.lang.String,AC*[ -]*0*7,,,,,,,,1
+1,I,7,3,0,||,,Name, contains ,java.lang.String,AC*[ -]*0*H*[ -0]*1,,,,,,,,1
+1,I,8,3,0,||,,Name, contains ,java.lang.String,AC*[ -]*0*V[ -0]*8B,,,,,,,,1
+1,I,9,3,0,||,,Name, contains ,java.lang.String,AC*[ -]*0*/OA[ -0]*10,,,,,,,,1
+1,I,10,3,0,||,,Name, contains ,java.lang.String,B[ -]*0*1,,,,,,,,1
+1,I,11,3,0,||,,Name, contains ,java.lang.String,B[ -]*0*2,,,,,,,,1
+1,I,12,3,0,||,,Name, contains ,java.lang.String,B[ -]*0*52,,,,,,,,1
+1,I,13,3,0,||,,Name, contains ,java.lang.String,F[ -0B]*[14][1568CDEF],,,,,,,,1
+1,I,14,3,0,||,,Name, contains ,java.lang.String,F[ -0B]*22A,,,,,,,,1
+1,I,15,3,0,||,,Name, contains ,java.lang.String,F[ -0B]*5,,,,,,,,1
+1,I,16,3,0,||,,Name, contains ,java.lang.String,F[ -0B]*/A[ 0-]*18,,,,,,,,1
+1,I,17,3,0,||,,Name, contains ,java.lang.String,OA[ -]*0*10,,,,,,,,1
+1,I,18,-1,0,,,Commodity_MIDAS,,java.lang.String,AF-AIRCRAFT,,,,,,,,0
+2,I,0,-1,0,,,Service,=,java.lang.String,F,,,,,,,,0
+2,I,1,-1,0,,,Commodity_MIDAS,,java.lang.String,AF-SUPPORT,,,,,,,,0
+6,I,0,-1,0,,,,,,,,,,,,,,0
+6,I,1,0,0,,,TPSN, begins with ,java.lang.String,01,,,,,,,,1
+6,I,2,0,0,||,,TPSN, begins with ,java.lang.String,11,,,,,,,,1
+6,I,3,-1,0,,,Commodity_MIDAS,,java.lang.String,AIRBORNE,,,,,,,,0
+7,I,0,-1,0,,,,,,,,,,,,,,0
+7,I,1,0,0,,,TPSN, begins with ,java.lang.String,00,,,,,,,,1
+7,I,2,0,0,||,,TPSN, begins with ,java.lang.String,02,,,,,,,,1
+7,I,3,0,0,||,,TPSN, begins with ,java.lang.String,10,,,,,,,,1
+7,I,4,0,0,||,,TPSN, begins with ,java.lang.String,12,,,,,,,,1
+7,I,5,-1,0,,,Commodity_MIDAS,,java.lang.String,ARMOR,,,,,,,,0
+8,I,0,-1,0,,,,,,,,,,,,,,0
+8,I,1,0,0,,,TPSN, begins with ,java.lang.String,04,,,,,,,,1
+8,I,2,0,0,||,,TPSN, begins with ,java.lang.String,14,,,,,,,,1
+8,I,3,-1,0,,,Commodity_MIDAS,,java.lang.String,MECH-INFANTRY,,,,,,,,0
+9,I,0,-1,0,,,,,,,,,,,,,,0
+9,I,1,0,0,,,TPSN, begins with ,java.lang.String,05,,,,,,,,1
+9,I,2,0,0,||,,TPSN, begins with ,java.lang.String,15,,,,,,,,1
+9,I,3,-1,0,,,Commodity_MIDAS,,java.lang.String,AIRMOBILE,,,,,,,,0
+10,I,0,-1,0,,,,,,,,,,,,,,0
+10,I,1,0,0,,,TPSN, begins with ,java.lang.String,09,,,,,,,,1
+10,I,2,0,0,||,,TPSN, begins with ,java.lang.String,19,,,,,,,,1
+10,I,3,-1,0,,,Commodity_MIDAS,,java.lang.String,CBAC,,,,,,,,0
+11,I,0,-1,0,,,,,,,,,,,,,,0
+11,I,1,0,0,,,TPSN, begins with ,java.lang.String,03,,,,,,,,1
+11,I,2,0,0,||,,TPSN, begins with ,java.lang.String,06,,,,,,,,1
+11,I,3,0,0,||,,TPSN, begins with ,java.lang.String,07,,,,,,,,1
+11,I,4,0,0,||,,TPSN, begins with ,java.lang.String,13,,,,,,,,1
+11,I,5,0,0,||,,TPSN, begins with ,java.lang.String,16,,,,,,,,1
+11,I,6,0,0,||,,TPSN, begins with ,java.lang.String,17,,,,,,,,1
+11,I,7,0,0,||,,TPSN, begins with ,java.lang.String,253,,,,,,,,1
+11,I,8,0,0,||,,TPSN, begins with ,java.lang.String,353,,,,,,,,1
+11,I,9,-1,0,,,Commodity_MIDAS,,java.lang.String,INFANTRY,,,,,,,,0
+12,I,0,-1,0,,,,,,,,,,,,,,0
+12,I,1,0,0,,,TPSN, begins with ,java.lang.String,08,,,,,,,,1
+12,I,2,0,0,||,,TPSN, begins with ,java.lang.String,18,,,,,,,,1
+12,I,3,-1,0,,,Commodity_MIDAS,,java.lang.String,ARMOR-CAV,,,,,,,,0
+14,I,0,-1,0,,,Service,=,java.lang.String,M,,,,,,,,0
+14,I,1,-1,0,,,Commodity_MIDAS,,java.lang.String,MARINES,,,,,,,,0
+15,I,0,-1,0,,,,,,,,,,,,,,0
+15,I,1,0,0,,,TPSN, begins with ,java.lang.String,213,,,,,,,,1
+15,I,2,0,0,||,,TPSN, begins with ,java.lang.String,214,,,,,,,,1
+15,I,3,0,0,||,,TPSN, begins with ,java.lang.String,215,,,,,,,,1
+15,I,4,0,0,||,,TPSN, begins with ,java.lang.String,216,,,,,,,,1
+15,I,5,-1,0,,,Commodity_MIDAS,,java.lang.String,CS-ENGINEER,,,,,,,,0
+16,I,0,-1,0,,,,,,,,,,,,,,0
+16,I,1,0,0,,,TPSN, begins with ,java.lang.String,218,,,,,,,,1
+16,I,2,0,0,||,,TPSN, begins with ,java.lang.String,219,,,,,,,,1
+16,I,3,0,0,||,,TPSN, begins with ,java.lang.String,375,,,,,,,,1
+16,I,4,-1,0,,,Commodity_MIDAS,,java.lang.String,CS-ARTILLERY,,,,,,,,0
+17,I,0,-1,0,,,,,,,,,,,,,,0
+17,I,1,0,0,,,TPSN, begins with ,java.lang.String,20,,,,,,,,1
+17,I,2,0,0,||,,TPSN, begins with ,java.lang.String,210,,,,,,,,1
+17,I,3,0,0,||,,TPSN, begins with ,java.lang.String,211,,,,,,,,1
+17,I,4,0,0,||,,TPSN, begins with ,java.lang.String,22,,,,,,,,1
+17,I,5,0,0,||,,TPSN, begins with ,java.lang.String,23,,,,,,,,1
+17,I,6,0,0,||,,TPSN, begins with ,java.lang.String,24,,,,,,,,1
+17,I,7,0,0,||,,TPSN, begins with ,java.lang.String,250,,,,,,,,1
+17,I,8,0,0,||,,TPSN, begins with ,java.lang.String,251,,,,,,,,1
+17,I,9,0,0,||,,TPSN, begins with ,java.lang.String,252,,,,,,,,1
+17,I,10,0,0,||,,TPSN, begins with ,java.lang.String,255,,,,,,,,1
+17,I,11,0,0,||,,TPSN, begins with ,java.lang.String,256,,,,,,,,1
+17,I,12,0,0,||,,TPSN, begins with ,java.lang.String,257,,,,,,,,1
+17,I,13,0,0,||,,TPSN, begins with ,java.lang.String,258,,,,,,,,1
+17,I,14,0,0,||,,TPSN, begins with ,java.lang.String,259,,,,,,,,1
+17,I,15,0,0,||,,TPSN, begins with ,java.lang.String,822,,,,,,,,1
+17,I,16,-1,0,,,Commodity_MIDAS,,java.lang.String,CS-OTHER,,,,,,,,0
+18,I,0,-1,0,,,,,,,,,,,,,,0
+18,I,1,0,0,,,TPSN, begins with ,java.lang.String,313,,,,,,,,1
+18,I,2,0,0,||,,TPSN, begins with ,java.lang.String,314,,,,,,,,1
+18,I,3,0,0,||,,TPSN, begins with ,java.lang.String,315,,,,,,,,1
+18,I,4,0,0,||,,TPSN, begins with ,java.lang.String,316,,,,,,,,1
+18,I,5,-1,0,,,Commodity_MIDAS,,java.lang.String,CSS-ENGINEER,,,,,,,,0
+1,M,0,-1,0,,,,,,,,,,,,,,0
+1,M,1,0,0,,,PreferredModeSource,=,java.lang.String,AC,,,,,,,,0
+1,M,2,0,0,||,,PreferredModeSource,=,java.lang.String,AD,,,,,,,,0
+1,M,3,0,0,||,,PreferredModeSource,=,java.lang.String,AG,,,,,,,,0
+1,M,4,0,0,||,,PreferredModeSource,=,java.lang.String,AH,,,,,,,,0
+1,M,5,0,0,||,,PreferredModeSource,=,java.lang.String,AK,,,,,,,,0
+1,M,6,0,0,||,,PreferredModeSource,=,java.lang.String,AM,,,,,,,,0
+1,M,7,0,0,||,,PreferredModeSource,=,java.lang.String,AN,,,,,,,,0
+1,M,8,0,0,||,,PreferredModeSource,=,java.lang.String,AS,,,,,,,,0
+1,M,9,0,0,||,,PreferredModeSource,=,java.lang.String,LC,,,,,,,,0
+1,M,10,0,0,||,,PreferredModeSource,=,java.lang.String,LD,,,,,,,,0
+1,M,11,0,0,||,,PreferredModeSource,=,java.lang.String,LG,,,,,,,,0
+1,M,12,0,0,||,,PreferredModeSource,=,java.lang.String,LH,,,,,,,,0
+1,M,13,0,0,||,,PreferredModeSource,=,java.lang.String,LM,,,,,,,,0
+1,M,14,0,0,||,,PreferredModeSource,=,java.lang.String,LN,,,,,,,,0
+1,M,15,0,0,||,,PreferredModeSource,=,java.lang.String,LP,,,,,,,,0
+1,M,16,0,0,||,,PreferredModeSource,=,java.lang.String,PC,,,,,,,,0
+1,M,17,0,0,||,,PreferredModeSource,=,java.lang.String,PD,,,,,,,,0
+1,M,18,0,0,||,,PreferredModeSource,=,java.lang.String,PG,,,,,,,,0
+1,M,19,0,0,||,,PreferredModeSource,=,java.lang.String,PN,,,,,,,,0
+1,M,20,0,0,||,,PreferredModeSource,=,java.lang.String,SC,,,,,,,,0
+1,M,21,0,0,||,,PreferredModeSource,=,java.lang.String,SD,,,,,,,,0
+1,M,22,0,0,||,,PreferredModeSource,=,java.lang.String,SE,,,,,,,,0
+1,M,23,0,0,||,,PreferredModeSource,=,java.lang.String,SH,,,,,,,,0
+1,M,24,0,0,||,,PreferredModeSource,=,java.lang.String,SN,,,,,,,,0
+1,M,25,0,0,||,,PreferredModeSource,=,java.lang.String,SP,,,,,,,,0
+1,M,26,0,0,||,,PreferredModeSource,=,java.lang.String,SW,,,,,,,,0
+1,M,27,0,0,||,,PreferredModeSource,=,java.lang.String,XG,,,,,,,,0
+1,M,28,0,0,||,,PreferredModeSource,=,java.lang.String,XX,,,,,,,,0
+1,M,29,0,0,||,,PreferredModeSource,=,java.lang.String,Z,,,,,,,,0
+1,M,30,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,RA,,,,,,,,0
+2,M,0,-1,0,,,PreferredModeSource,=,java.lang.String,LG,,,,,,,,0
+2,M,1,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,IA,,,,,,,,0
+3,M,0,-1,0,,,,,,,,,,,,,,0
+3,M,1,0,0,,,PreferredModeSource,=,java.lang.String,SC,,,,,,,,0
+3,M,2,0,0,||,,PreferredModeSource,=,java.lang.String,SD,,,,,,,,0
+3,M,3,0,0,||,,PreferredModeSource,=,java.lang.String,SE,,,,,,,,0
+3,M,4,0,0,||,,PreferredModeSource,=,java.lang.String,SN,,,,,,,,0
+3,M,5,0,0,||,,PreferredModeSource,=,java.lang.String,SP,,,,,,,,0
+3,M,6,0,0,||,,PreferredModeSource,=,java.lang.String,SW,,,,,,,,0
+3,M,7,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,SA,,,,,,,,0
+5,M,0,-1,0,,,,,,,,,,,,,,0
+5,M,1,0,0,,,PreferredModeSource,=,java.lang.String,AC,,,,,,,,0
+5,M,2,0,0,||,,PreferredModeSource,=,java.lang.String,AD,,,,,,,,0
+5,M,3,0,0,||,,PreferredModeSource,=,java.lang.String,AG,,,,,,,,0
+5,M,4,0,0,||,,PreferredModeSource,=,java.lang.String,AK,,,,,,,,0
+5,M,5,0,0,||,,PreferredModeSource,=,java.lang.String,AN,,,,,,,,0
+5,M,6,0,0,||,,PreferredModeSource,=,java.lang.String,AS,,,,,,,,0
+5,M,7,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,AA,,,,,,,,0
+13,M,0,-1,0,,,,,,,,,,,,,,0
+13,M,1,0,0,,,,,,,,,,,,,,0
+13,M,2,1,0,,,,,,,,,,,,,,0
+13,M,3,2,0,,,Leg,=,java.lang.String,S,,,,,,,,1
+13,M,4,2,0,||,,Leg,=,java.lang.String,T,,,,,,,,1
+13,M,5,1,0,&&,,,,,,,,,,,,,0
+13,M,6,5,0,&&,,PreferredModeSource,=,java.lang.String,AN,,,,,,,,0
+13,M,7,5,0,||,,PreferredModeSource,=,java.lang.String,AS,,,,,,,,0
+13,M,8,5,0,||,,PreferredModeSource,=,java.lang.String,PG,,,,,,,,0
+13,M,9,5,0,||,,PreferredModeSource,=,java.lang.String,SN,,,,,,,,0
+13,M,10,5,0,||,,PreferredModeSource,=,java.lang.String,SP,,,,,,,,0
+13,M,11,0,0,||,,,,,,,,,,,,,0
+13,M,12,11,0,||,,Leg,=,java.lang.String,O,,,,,,,,0
+13,M,13,11,0,&&,,PreferredModeSource,=,java.lang.String,AM,,,,,,,,0
+13,M,14,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,UA,,,,,,,,0
+15,M,0,-1,0,,,PreferredModeSource,=,java.lang.String,LH,,,,,,,,0
+15,M,1,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,RS,,,,,,,,0
+19,M,0,-1,0,,,PreferredModeSource,=,java.lang.String,SH,,,,,,,,0
+19,M,1,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,SS,,,,,,,,0
+20,M,0,-1,0,,,,,,,,,,,,,,0
+20,M,1,0,0,,,PreferredModeSource,=,java.lang.String,AH,,,,,,,,0
+20,M,2,0,0,||,,PreferredModeSource,=,java.lang.String,AM,,,,,,,,0
+20,M,3,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,AS,,,,,,,,0
+21,M,0,-1,0,,,,,,,,,,,,,,0
+21,M,1,0,0,,,PreferredModeSource,=,java.lang.String,PC,,,,,,,,0
+21,M,2,0,0,&&,,Leg,=,java.lang.String,S,,,,,,,,0
+21,M,3,-1,0,,,ModelModeSource,,ampdom.dplan.activity.TransportationModeSource,OA,,,,,,,,0

@@ -1,0 +1,6 @@
+Name,MaxRefuelingRate,ContactTime,RendezvousTime,SwitchTankerTime,TakeoffFuel,ApproachAndLandingFuel,MinLandingFuel,HoldingFuel,TaxiToTakeoffFuel,FuelCapacity,EmptyWeight
+B-747P,6800,0.15,0.25,,,3000,5200,18000,0,332500,372500
+KC-10,6800,0.15,0.25,,,3000,5200,18000,0,332500,372500
+CH47,6800,0.15,0.25,,,3000,5200,18000,0,332500,372500
+C-5A,6800,0.15,0.25,,,3000,5200,18000,0,332500,372500
+C-17,6800,0.15,0.25,,,3000,5200,18000,0,332500,372500

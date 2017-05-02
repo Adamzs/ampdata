@@ -1,0 +1,115 @@
+{
+    "id": "/tplan/airports/airports.csv.meta",
+    "title": "Airport",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.airport.Airport",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "GeolocCode",
+                "titles": "GeolocCode",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "FuelOrg",
+                "titles": "FuelOrg",
+                "description": "The name of the organization",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "Active",
+                "titles": "Active",
+                "description": "Is this port/terminal active",
+                "datatype": "boolean"
+            },
+            {
+                "name": "DirectDelivery",
+                "titles": "DirectDelivery",
+                "description": "The direct delivery of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "MilitaryGateway",
+                "titles": "MilitaryGateway",
+                "description": "The military gateway of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "CRAFGateway",
+                "titles": "CRAFGateway",
+                "description": "The CRAF gateway of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "AugmentedRequired",
+                "titles": "AugmentedRequired",
+                "description": "Is airport located in an area that requires crews to use augmented crew duty (e.g. a risk area)?",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Recovery",
+                "titles": "Recovery",
+                "description": "The recovery of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "ARTrack",
+                "titles": "ARTrack",
+                "description": "The ARTrack of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "CrewRestAllowed",
+                "titles": "CrewRestAllowed",
+                "description": "Whether crew rest is allowed for the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "MOGConstrained",
+                "titles": "MOGConstrained",
+                "description": "The MOGConstrained value of the airport",
+                "datatype": "boolean"
+            },
+            {
+                "name": "CostPerSTON",
+                "titles": "CostPerSTON",
+                "description": "The cost per STON of the airport",
+                "datatype": "integer"
+            },
+            {
+                "name": "CostPerPAX",
+                "titles": "CostPerPAX",
+                "description": "The cost per PAX of the airport",
+                "datatype": "integer"
+            },
+            {
+                "name": "CustomsRegion",
+                "titles": "CustomsRegion",
+                "description": "The Customs Region ID",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "GeolocCode",
+        "foreignKeys": [
+            {
+                "columnReference": "GeolocCode",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "FuelOrg",
+                "reference": {
+                    "schemaReference": "/tplan/organizations/organizations.csv.meta",
+                    "columnReference": "Key"
+                }
+            }
+        ]
+    }
+}

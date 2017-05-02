@@ -1,0 +1,20 @@
+{
+    "id": "/fedResults/aircraftTypeSize.csv.meta",
+    "title": "AircraftTypeSize",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.fedenum.AircraftTypeSize",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "AircraftTypeSize",
+                "titles": "AircraftTypeSize",
+                "description": "The size of the aircraft type",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "AircraftTypeSize",
+        "foreignKeys": [
+        ]
+    }
+}

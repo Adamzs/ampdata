@@ -1,0 +1,19 @@
+connector,served,typeName,priority
+T-AKE,true,CONT-NSS,1
+T-AKE,false,T-AVB,2
+T-AKE,true,FSS,3
+T-AKE,true,COMBO,4
+T-AKE,false,BULK CARRIER,5
+T-AKE,true,T-AH,6
+T-AKE,true,CLF,7
+T-AKE,false,POL TANKER,8
+T-AKE,true,BARGE(LASH),9
+T-AKE,true,BREAKBULK,10
+T-AKE,false,PAX,11
+T-AKE,true,BARGE(T-AKB),12
+T-AKE,true,CONT-SS,13
+T-AKE,true,RO/RO(T-AKR),14
+T-AKE,true,CAR TRANS,15
+T-AKE,true,RO/RO,16
+T-AKE,true,VISA CONT,17
+T-AKE,true,T-ACS,18

@@ -1,0 +1,7 @@
+ConfigurationTypeNumber,ConfigurationType,ConfigurationTypeUnit
+0,PAX,PAX
+1,AREA,SQFT
+2,VOLUME,NCNTMT
+3,CONTAINERS,TEU
+4,CONTAINER VOLUME,CONTMT
+5,POL,CBBLS

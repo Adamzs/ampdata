@@ -1,0 +1,23 @@
+day_granularity 1440
+time_step 72
+  scen       scen
+  events     events-0
+  sealines   SEANET.SEALINES
+  req        REQ.csv
+  aircraft   Aircraft.csv
+  ships      Ships.csv
+  scap       SCap.csv
+  splan      splan-0
+  berths     Berths.csv
+  ramps      Ramps.csv
+  text       MIDAS.TEXT
+  output     MIDAS.INPUT
+  scen_validation   scen
+  reports    MIDAS.OUTPUT
+  log        MIDAS.LOG
+  ports      MIDAS.PORTS
+  airports   MIDAS.AIRPORTS
+  load       MIDAS.LOAD
+  supply     MIDAS.SUPPLY
+  locations   Locations.csv
+start 0

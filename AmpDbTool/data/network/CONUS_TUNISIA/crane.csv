@@ -1,0 +1,414 @@
+KEY,SHAPE_ROW,AvailableMilitary,type,CraneQuantity,ContOffRate,ContOnRate,BBOffRate,BBOnRate,ServeAll,Port,BerthsServed,FromDay,ToDay,Available,Ramps,Modified,DifferentCSC
+00A1BBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"00A1BBULK/RORO01,",-999.0,99999.0,true,,M,false
+00IOGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"00IOGENERAL PU01,",-999.0,99999.0,true,,M,false
+00XTALL-PURPOS01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"00XTALL-PURPOS01,",-999.0,99999.0,true,,M,false
+AAPVVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"AAPVVISA      01,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO01,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO02,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO03,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO04,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO05,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO06,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO07,",-999.0,99999.0,true,,M,false
+ABFLBBULK/RORO08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLBBULK/RORO08,",-999.0,99999.0,true,,M,false
+ABFLBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"ABFLBREAKBULK 01,",-999.0,99999.0,true,,M,false
+ABFLBREAKBULK 02_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"ABFLBREAKBULK 02,",-999.0,99999.0,true,,M,false
+ABFLGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLGENERAL PU01,",-999.0,99999.0,true,,M,false
+ABFLGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLGENERAL PU02,",-999.0,99999.0,true,,M,false
+ABFLGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ABFLGENERAL PU03,",-999.0,99999.0,true,,M,false
+ABFLVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"ABFLVISA      01,",-999.0,99999.0,true,,M,false
+ADKHBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ADKHBBULK/RORO01,",-999.0,99999.0,true,,M,false
+ADKHBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ADKHBBULK/RORO02,",-999.0,99999.0,true,,M,false
+ADKHBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ADKHBBULK/RORO03,",-999.0,99999.0,true,,M,false
+ADKHGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ADKHGENERAL PU01,",-999.0,99999.0,true,,M,false
+AELUVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"AELUVISA      01,",-999.0,99999.0,true,,M,false
+AEQTVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"AEQTVISA      01,",-999.0,99999.0,true,,M,false
+AJGXVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"AJGXVISA      01,",-999.0,99999.0,true,,M,false
+ALRFVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"ALRFVISA      01,",-999.0,99999.0,true,,M,false
+AMCQGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"AMCQGENERAL PU01,",-999.0,99999.0,true,,M,false
+APGWVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"APGWVISA      01,",-999.0,99999.0,true,,M,false
+AVYXVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"AVYXVISA      01,",-999.0,99999.0,true,,M,false
+BBNQ CRANE,0,,mobile crane,3,288.0,288.0,8000.0,8000.0,true,null,null,0.0,99999.0,true,,M,false
+BBNVBBULK/CONT01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"BBNVBBULK/CONT01,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU01,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU02,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU03,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU04,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU05,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU06,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU07,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU08,",-999.0,99999.0,true,,M,false
+BBNVGENERAL PU09_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"BBNVGENERAL PU09,",-999.0,99999.0,true,,M,false
+BQWAVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"BQWAVISA      01,",-999.0,99999.0,true,,M,false
+CHCYBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYBBULK/RORO01,",-999.0,99999.0,true,,M,false
+CHCYBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYBBULK/RORO02,",-999.0,99999.0,true,,M,false
+CHCYBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYBBULK/RORO03,",-999.0,99999.0,true,,M,false
+CHCYGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYGENERAL PU01,",-999.0,99999.0,true,,M,false
+CHCYGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYGENERAL PU02,",-999.0,99999.0,true,,M,false
+CHCYGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"CHCYGENERAL PU03,",-999.0,99999.0,true,,M,false
+CWCPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"CWCPVISA      01,",-999.0,99999.0,true,,M,false
+CWGVVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"CWGVVISA      01,",-999.0,99999.0,true,,M,false
+Container: ADLS berth container 1,3,,container crane,1,144.0,144.0,4000.0,4000.0,false,AL MAHDIYAH -ADLS-PRT,"ADLS berth container,",-999.0,99999.0,true,,M,false
+Container: ADLS berth general purpose 1,30,,container crane,1,144.0,144.0,4000.0,4000.0,false,AL MAHDIYAH -ADLS-PRT,"ADLS berth general purpose,",-999.0,99999.0,true,,M,false
+Container: BSRL berth container 1,12,,container crane,1,144.0,144.0,4000.0,4000.0,false,BIZERTE -BSRL-PRT,"BSRL berth container,",-999.0,99999.0,true,,M,false
+Container: BSRL berth general purpose 1,49,,container crane,1,144.0,144.0,4000.0,4000.0,false,BIZERTE -BSRL-PRT,"BSRL berth general purpose,",-999.0,99999.0,true,,M,false
+Container: FGTW berth container 1,17,,container crane,1,144.0,144.0,4000.0,4000.0,false,DJERBA -FGTW-PRT,"FGTW berth container,",-999.0,99999.0,true,,M,false
+Container: FGTW berth general purpose 1,25,,container crane,1,144.0,144.0,4000.0,4000.0,false,DJERBA -FGTW-PRT,"FGTW berth general purpose,",-999.0,99999.0,true,,M,false
+Container: Gabes berth1 1,15,,container crane,1,144.0,144.0,4000.0,4000.0,false,GABES -HNTS-PRT,"Gabes berth1,",-999.0,99999.0,true,,M,false
+Container: Gabes berth2 1,41,,container crane,1,144.0,144.0,4000.0,4000.0,false,GABES -HNTS-PRT,"Gabes berth2,",-999.0,99999.0,true,,M,false
+Container: Gabes tanker berth 1,38,,container crane,1,144.0,144.0,4000.0,4000.0,false,GABES -HNTS-PRT,"Gabes tanker berth,",-999.0,99999.0,true,,M,false
+Container: SALT 1,36,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"SALT,",-999.0,99999.0,true,,M,false
+Container: Safaqis NE-1 berth 1,21,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NE-1 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis NE-2 berth 1,37,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NE-2 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis NW-1 berth 1,18,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NW-1 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis NW-2 berth 1,0,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NW-2 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis cont-1 berth 1,22,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis cont-1 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis cont-2 berth 1,42,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis cont-2 berth,",-999.0,99999.0,true,,M,false
+Container: Safaqis tanker berth 1,9,,container crane,1,144.0,144.0,4000.0,4000.0,false,SAFAQIS -VKNP-PRT,"Safaqis tanker berth,",-999.0,99999.0,true,,M,false
+DRUGBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"DRUGBREAKBULK 01,",-999.0,99999.0,true,,M,false
+DRUGGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"DRUGGENERAL PU01,",-999.0,99999.0,true,,M,false
+EDMEVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"EDMEVISA      01,",-999.0,99999.0,true,,M,false
+EGNNBBULK/AMMO01_Crane,134217727,,mobile crane,1,875.0,875.0,3500.0,3500.0,false,null,"EGNNBBULK/AMMO01,",-999.0,99999.0,true,,M,false
+EGNNBBULK/AMMO02_Crane,134217727,,mobile crane,1,875.0,875.0,3500.0,3500.0,false,null,"EGNNBBULK/AMMO02,",-999.0,99999.0,true,,M,false
+EGNNCONT/AMMO 01_Crane,134217727,,mobile crane,1,1750.0,1750.0,7000.0,7000.0,false,null,"EGNNCONT/AMMO 01,",-999.0,99999.0,true,,M,false
+ENCNBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ENCNBBULK/RORO01,",-999.0,99999.0,true,,M,false
+ENCNBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ENCNBBULK/RORO02,",-999.0,99999.0,true,,M,false
+ENCNBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"ENCNBREAKBULK 01,",-999.0,99999.0,true,,M,false
+ENCNGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ENCNGENERAL PU01,",-999.0,99999.0,true,,M,false
+EZMUVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"EZMUVISA      01,",-999.0,99999.0,true,,M,false
+FGDDBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"FGDDBBULK/RORO01,",-999.0,99999.0,true,,M,false
+FGDDGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"FGDDGENERAL PU01,",-999.0,99999.0,true,,M,false
+FMAZVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"FMAZVISA      01,",-999.0,99999.0,true,,M,false
+FNLDGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"FNLDGENERAL PU01,",-999.0,99999.0,true,,M,false
+FNSHVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"FNSHVISA      01,",-999.0,99999.0,true,,M,false
+FVMTBBULK/RORO01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTBBULK/RORO01,",,,,,,false
+FVMTBBULK/RORO02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTBBULK/RORO02,",,,,,,false
+FVMTGENERAL PU01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU01,",,,,,,false
+FVMTGENERAL PU02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU02,",,,,,,false
+FVMTGENERAL PU03_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU03,",,,,,,false
+FVMTGENERAL PU04_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU04,",,,,,,false
+FVMTGENERAL PU05_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU05,",,,,,,false
+FVMTGENERAL PU06_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"FVMTGENERAL PU06,",,,,,,false
+GPENVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"GPENVISA      01,",-999.0,99999.0,true,,M,false
+GULFPORT gantry crane-JTVH -19785,53,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,GULFPORT -JTVH-PRT,all,-999.0,99999.0,true,,M,false
+GWZPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"GWZPVISA      01,",-999.0,99999.0,true,,M,false
+Gantry: ADLS berth container 1,4,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,AL MAHDIYAH -ADLS-PRT,"ADLS berth container,",-999.0,99999.0,true,,M,false
+Gantry: ADLS berth general purpose 1,27,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,AL MAHDIYAH -ADLS-PRT,"ADLS berth general purpose,",-999.0,99999.0,true,,M,false
+Gantry: BSRL berth container 1,11,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,BIZERTE -BSRL-PRT,"BSRL berth container,",-999.0,99999.0,true,,M,false
+Gantry: BSRL berth general purpose 1,50,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,BIZERTE -BSRL-PRT,"BSRL berth general purpose,",-999.0,99999.0,true,,M,false
+Gantry: FGTW berth container 1,7,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,DJERBA -FGTW-PRT,"FGTW berth container,",-999.0,99999.0,true,,M,false
+Gantry: FGTW berth general purpose 1,33,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,DJERBA -FGTW-PRT,"FGTW berth general purpose,",-999.0,99999.0,true,,M,false
+Gantry: Gabes berth1 1,2,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,GABES -HNTS-PRT,"Gabes berth1,",-999.0,99999.0,true,,M,false
+Gantry: Gabes berth2 1,16,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,GABES -HNTS-PRT,"Gabes berth2,",-999.0,99999.0,true,,M,false
+Gantry: Gabes tanker berth 1,28,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,GABES -HNTS-PRT,"Gabes tanker berth,",-999.0,99999.0,true,,M,false
+Gantry: SALT 1,34,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"SALT,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis NE-1 berth 1,1,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NE-1 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis NE-2 berth 1,47,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NE-2 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis NW-1 berth 1,13,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NW-1 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis NW-2 berth 1,5,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis NW-2 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis cont-1 berth 1,19,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis cont-1 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis cont-2 berth 1,23,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis cont-2 berth,",-999.0,99999.0,true,,M,false
+Gantry: Safaqis tanker berth 1,46,,gantry crane,1,288.0,288.0,8000.0,8000.0,false,SAFAQIS -VKNP-PRT,"Safaqis tanker berth,",-999.0,99999.0,true,,M,false
+HAGCVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"HAGCVISA      01,",-999.0,99999.0,true,,M,false
+HMGBVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"HMGBVISA      01,",-999.0,99999.0,true,,M,false
+HUPRVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"HUPRVISA      01,",-999.0,99999.0,true,,M,false
+JACKSONVILLE gantry crane-LSGM,62,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,JACKSONVILLE -LSGM-PRT,all,-999.0,99999.0,true,,M,false
+JJRPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JJRPVISA      01,",-999.0,99999.0,true,,M,false
+JSSNVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JSSNVISA      01,",-999.0,99999.0,true,,M,false
+JWJYVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JWJYVISA      01,",-999.0,99999.0,true,,M,false
+JWTDVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JWTDVISA      01,",-999.0,99999.0,true,,M,false
+JXKMGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"JXKMGENERAL PU01,",-999.0,99999.0,true,,M,false
+JXKMVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JXKMVISA      01,",-999.0,99999.0,true,,M,false
+JYPNVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"JYPNVISA      01,",-999.0,99999.0,true,,M,false
+KZPHVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"KZPHVISA      01,",-999.0,99999.0,true,,M,false
+KZTZVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"KZTZVISA      01,",-999.0,99999.0,true,,M,false
+LCMTVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LCMTVISA      01,",-999.0,99999.0,true,,M,false
+LKPEBBULK/AMMO01_Crane,134217727,,mobile crane,1,875.0,875.0,3500.0,3500.0,false,null,"LKPEBBULK/AMMO01,",-999.0,99999.0,true,,M,false
+LKPECONT/AMMO 01_Crane,134217727,,mobile crane,1,1750.0,1750.0,7000.0,7000.0,false,null,"LKPECONT/AMMO 01,",-999.0,99999.0,true,,M,false
+LONG BEACH gantry crane-NPTU,58,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,LONG BEACH -NPTU-PRT,all,-999.0,99999.0,true,,M,false
+LRNCVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LRNCVISA      01,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO01,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO02,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO03,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO04,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO05,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO06,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO07,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO08,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO09_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO09,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO10_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO10,",-999.0,99999.0,true,,M,false
+LUTPBBULK/RORO11_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPBBULK/RORO11,",-999.0,99999.0,true,,M,false
+LUTPGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPGENERAL PU01,",-999.0,99999.0,true,,M,false
+LUTPGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPGENERAL PU02,",-999.0,99999.0,true,,M,false
+LUTPRORO      01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LUTPRORO      01,",-999.0,99999.0,true,,M,false
+LUTPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LUTPVISA      01,",-999.0,99999.0,true,,M,false
+LWEVBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LWEVBBULK/RORO01,",-999.0,99999.0,true,,M,false
+LWEVGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LWEVGENERAL PU01,",-999.0,99999.0,true,,M,false
+LWEVGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LWEVGENERAL PU02,",-999.0,99999.0,true,,M,false
+LWEVGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"LWEVGENERAL PU03,",-999.0,99999.0,true,,M,false
+LYAPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LYAPVISA      01,",-999.0,99999.0,true,,M,false
+LYRVVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LYRVVISA      01,",-999.0,99999.0,true,,M,false
+LYTMJLOTS     01_Crane,134217727,,mobile crane,1,750.0,750.0,3000.0,3000.0,false,null,"LYTMJLOTS     01,",-999.0,99999.0,true,,M,false
+LYTMVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"LYTMVISA      01,",-999.0,99999.0,true,,M,false
+MKAGVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"MKAGVISA      01,",-999.0,99999.0,true,,M,false
+MLDLGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MLDLGENERAL PU01,",-999.0,99999.0,true,,M,false
+MLDLVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"MLDLVISA      01,",-999.0,99999.0,true,,M,false
+MLWYBBULK/RORO01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"MLWYBBULK/RORO01,",,,,,,false
+MLWYBBULK/RORO02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"MLWYBBULK/RORO02,",,,,,,false
+MLWYGENERAL PU01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"MLWYGENERAL PU01,",,,,,,false
+MMGHGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MMGHGENERAL PU01,",-999.0,99999.0,true,,M,false
+MMGHGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MMGHGENERAL PU02,",-999.0,99999.0,true,,M,false
+MMGHGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MMGHGENERAL PU03,",-999.0,99999.0,true,,M,false
+MMGHGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MMGHGENERAL PU04,",-999.0,99999.0,true,,M,false
+MMGHRORO      01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"MMGHRORO      01,",-999.0,99999.0,true,,M,false
+MMGHVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"MMGHVISA      01,",-999.0,99999.0,true,,M,false
+MOREHEAD CITY gantry crane-QTUP,54,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,MOREHEAD CITY -QTUP-PRT,all,-999.0,99999.0,true,,M,false
+MZJKVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"MZJKVISA      01,",-999.0,99999.0,true,,M,false
+MobCranes: AL MAHDIYAH -ADLS-PRT,48,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,AL MAHDIYAH -ADLS-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: AS SUKHAYRAH -APFD-PRT,6,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,AS SUKHAYRAH -APFD-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: ASHTART -APRJ-PRT,40,,mobile crane,2,,,,,,ASHTART -APRJ-PRT,,,,,,,false
+MobCranes: BANZART -AVTB-PRT,44,,mobile crane,2,,,,,,BANZART -AVTB-PRT,,,,,,,false
+MobCranes: BIZERTE -BSRL-PRT,10,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,BIZERTE -BSRL-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: BONE -BYKC-PRT,45,,mobile crane,2,,,,,,BONE -BYKC-PRT,,,,,,,false
+MobCranes: DJERBA -FGTW-PRT,8,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,DJERBA -FGTW-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: EL KALA -FUPD-PRT,43,,mobile crane,2,,,,,,EL KALA -FUPD-PRT,,,,,,,false
+MobCranes: GABES -HNTS-PRT,14,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,GABES -HNTS-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: KELIBIA -MBJJ-PRT,32,,mobile crane,2,,,,,,KELIBIA -MBJJ-PRT,,,,,,,false
+MobCranes: PORTO FARINA -TQPB-PRT,20,,mobile crane,2,,,,,,PORTO FARINA -TQPB-PRT,,,,,,,false
+MobCranes: SAFAQIS -VKNP-PRT,29,,mobile crane,2,100.0,100.0,3000.0,3000.0,true,SAFAQIS -VKNP-PRT,all,-999.0,99999.0,true,,M,false
+MobCranes: SOUSSE -VXTY-PRT,31,,mobile crane,2,,,,,,SOUSSE -VXTY-PRT,,,,,,,false
+MobCranes: SUSAH -WMY2-PRT,26,,mobile crane,2,,,,,,SUSAH -WMY2-PRT,,,,,,,false
+MobCranes: TABARQAH -WPKZ-PRT,39,,mobile crane,2,,,,,,TABARQAH -WPKZ-PRT,,,,,,,false
+MobCranes: TUNIS -XJCS-PRT,35,,mobile crane,2,,,,,,TUNIS -XJCS-PRT,,,,,,,false
+MobCranes: ZARZIS -ZSAK-PRT,24,,mobile crane,2,,,,,,ZARZIS -ZSAK-PRT,,,,,,,false
+NBDYVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"NBDYVISA      01,",-999.0,99999.0,true,,M,false
+NEW YORK gantry crane-RRRK,60,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,NEW YORK PORT EMB -RRRK-PRT,all,-999.0,99999.0,true,,M,false
+NEWPORT NEWS gantry crane-RULV,61,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,NEWPORT NEWS -RULV-PRT,all,-999.0,99999.0,true,,M,false
+NLFLGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"NLFLGENERAL PU01,",-999.0,99999.0,true,,M,false
+NNWHVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"NNWHVISA      01,",-999.0,99999.0,true,,M,false
+NORFOLK gantry crane-SBEA,55,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,NORFOLK -SBEA-PRT,all,-999.0,99999.0,true,,M,false
+NSANGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"NSANGENERAL PU01,",-999.0,99999.0,true,,M,false
+NSANVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"NSANVISA      01,",-999.0,99999.0,true,,M,false
+PAXMVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"PAXMVISA      01,",-999.0,99999.0,true,,M,false
+PCFCVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"PCFCVISA      01,",-999.0,99999.0,true,,M,false
+PCFGVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"PCFGVISA      01,",-999.0,99999.0,true,,M,false
+PKVPBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"PKVPBBULK/RORO01,",-999.0,99999.0,true,,M,false
+PKVPBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"PKVPBBULK/RORO02,",-999.0,99999.0,true,,M,false
+PKVPGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"PKVPGENERAL PU01,",-999.0,99999.0,true,,M,false
+QCFFVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"QCFFVISA      01,",-999.0,99999.0,true,,M,false
+QHPBBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPBBBULK/RORO01,",-999.0,99999.0,true,,M,false
+QHPBBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPBBBULK/RORO02,",-999.0,99999.0,true,,M,false
+QHPBBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPBBBULK/RORO03,",-999.0,99999.0,true,,M,false
+QHPBGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPBGENERAL PU01,",-999.0,99999.0,true,,M,false
+QHPBVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"QHPBVISA      01,",-999.0,99999.0,true,,M,false
+QHPDBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPDBBULK/RORO01,",-999.0,99999.0,true,,M,false
+QHPDBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPDBBULK/RORO02,",-999.0,99999.0,true,,M,false
+QHPDGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPDGENERAL PU01,",-999.0,99999.0,true,,M,false
+QHPFBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFBBULK/RORO01,",-999.0,99999.0,true,,M,false
+QHPFBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFBBULK/RORO02,",-999.0,99999.0,true,,M,false
+QHPFBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFBBULK/RORO03,",-999.0,99999.0,true,,M,false
+QHPFBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFBBULK/RORO04,",-999.0,99999.0,true,,M,false
+QHPFGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFGENERAL PU01,",-999.0,99999.0,true,,M,false
+QHPFGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QHPFGENERAL PU02,",-999.0,99999.0,true,,M,false
+QHPFVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"QHPFVISA      01,",-999.0,99999.0,true,,M,false
+QNPWBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"QNPWBBULK/RORO01,",-999.0,99999.0,true,,M,false
+QNPWBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"QNPWBREAKBULK 01,",-999.0,99999.0,true,,M,false
+RBXHBBULK/RORO01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RBXHBBULK/RORO01,",,,,,,false
+RBXHGENERAL PU01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RBXHGENERAL PU01,",,,,,,false
+RCYQVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RCYQVISA      01,",-999.0,99999.0,true,,M,false
+RCYTVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RCYTVISA      01,",-999.0,99999.0,true,,M,false
+RELGVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RELGVISA      01,",-999.0,99999.0,true,,M,false
+REPVBBULK/AMMO01_Crane,134217727,,mobile crane,1,875.0,875.0,3500.0,3500.0,false,null,"REPVBBULK/AMMO01,",-999.0,99999.0,true,,M,false
+REPVBBULK/CONT01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"REPVBBULK/CONT01,",-999.0,99999.0,true,,M,false
+REPVBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"REPVBBULK/RORO01,",-999.0,99999.0,true,,M,false
+REPVBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"REPVBBULK/RORO02,",-999.0,99999.0,true,,M,false
+REPVBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"REPVBBULK/RORO03,",-999.0,99999.0,true,,M,false
+REPVBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"REPVBBULK/RORO04,",-999.0,99999.0,true,,M,false
+REPVVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"REPVVISA      01,",-999.0,99999.0,true,,M,false
+RGJWGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"RGJWGENERAL PU01,",-999.0,99999.0,true,,M,false
+RGJWVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RGJWVISA      01,",-999.0,99999.0,true,,M,false
+RQNKVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RQNKVISA      01,",-999.0,99999.0,true,,M,false
+RRHUVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"RRHUVISA      01,",-999.0,99999.0,true,,M,false
+RRQLBBULK/RORO01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RRQLBBULK/RORO01,",,,,,,false
+RRQLBBULK/RORO02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RRQLBBULK/RORO02,",,,,,,false
+RRQLBBULK/RORO03_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RRQLBBULK/RORO03,",,,,,,false
+RRQLBREAKBULK 01_Crane,134217727,,mobile crane,,450.0,450.0,1800.0,1800.0,,null,"RRQLBREAKBULK 01,",,,,,,false
+RRQLBREAKBULK 02_Crane,134217727,,mobile crane,,450.0,450.0,1800.0,1800.0,,null,"RRQLBREAKBULK 02,",,,,,,false
+RRQLBREAKBULK 03_Crane,134217727,,mobile crane,,450.0,450.0,1800.0,1800.0,,null,"RRQLBREAKBULK 03,",,,,,,false
+RRQLGENERAL PU01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RRQLGENERAL PU01,",,,,,,false
+RRQLGENERAL PU02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"RRQLGENERAL PU02,",,,,,,false
+RUAQ CRANE,0,,mobile crane,3,288.0,288.0,8000.0,8000.0,true,null,null,0.0,99999.0,true,,M,false
+SAN DIEGO gantry crane-UTAC,59,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,SAN DIEGO -UTAC-PRT,all,-999.0,99999.0,true,,M,false
+SAVANNAH gantry crane-UZXJ,63,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,SAVANNAH -UZXJ-PRT,all,-999.0,99999.0,true,,M,false
+SBEQ CRANE,0,,mobile crane,3,288.0,288.0,8000.0,8000.0,true,null,null,0.0,99999.0,true,,M,false
+SERUBBULK/CONT01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"SERUBBULK/CONT01,",-999.0,99999.0,true,,M,false
+SERUBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUBBULK/RORO01,",-999.0,99999.0,true,,M,false
+SERUBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUBBULK/RORO02,",-999.0,99999.0,true,,M,false
+SERUBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUBBULK/RORO03,",-999.0,99999.0,true,,M,false
+SERUBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUBBULK/RORO04,",-999.0,99999.0,true,,M,false
+SERUBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUBBULK/RORO05,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU01,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU02,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU03,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU04,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU05,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU06,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU07,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU08,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU09_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU09,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU10_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU10,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU11_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU11,",-999.0,99999.0,true,,M,false
+SERUGENERAL PU12_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERUGENERAL PU12,",-999.0,99999.0,true,,M,false
+SERURORO/CONTN01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SERURORO/CONTN01,",-999.0,99999.0,true,,M,false
+SERUVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"SERUVISA      01,",-999.0,99999.0,true,,M,false
+SMXSVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"SMXSVISA      01,",-999.0,99999.0,true,,M,false
+STRMGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"STRMGENERAL PU01,",-999.0,99999.0,true,,M,false
+SVCNVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"SVCNVISA      01,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO01,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO02,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO03,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO04,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO05,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO06,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO07,",-999.0,99999.0,true,,M,false
+SYZZBBULK/RORO08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"SYZZBBULK/RORO08,",-999.0,99999.0,true,,M,false
+TACOMA gantry crane-WPVT,56,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,TACOMA -WPVT-PRT,all,-999.0,99999.0,true,,M,false
+TGWSVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TGWSVISA      01,",-999.0,99999.0,true,,M,false
+TKDWBBULK/CONT01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TKDWBBULK/CONT01,",-999.0,99999.0,true,,M,false
+TKDWBBULK/CONT02_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TKDWBBULK/CONT02,",-999.0,99999.0,true,,M,false
+TKDWBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWBBULK/RORO01,",-999.0,99999.0,true,,M,false
+TKDWBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWBBULK/RORO02,",-999.0,99999.0,true,,M,false
+TKDWBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWBBULK/RORO03,",-999.0,99999.0,true,,M,false
+TKDWBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWBBULK/RORO04,",-999.0,99999.0,true,,M,false
+TKDWBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWBBULK/RORO05,",-999.0,99999.0,true,,M,false
+TKDWGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWGENERAL PU01,",-999.0,99999.0,true,,M,false
+TKDWGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWGENERAL PU02,",-999.0,99999.0,true,,M,false
+TKDWGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWGENERAL PU03,",-999.0,99999.0,true,,M,false
+TKDWGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TKDWGENERAL PU04,",-999.0,99999.0,true,,M,false
+TNVXVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TNVXVISA      01,",-999.0,99999.0,true,,M,false
+TNZYBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TNZYBBULK/RORO01,",-999.0,99999.0,true,,M,false
+TNZYBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TNZYBBULK/RORO02,",-999.0,99999.0,true,,M,false
+TNZYBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TNZYBBULK/RORO03,",-999.0,99999.0,true,,M,false
+TNZYBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TNZYBBULK/RORO04,",-999.0,99999.0,true,,M,false
+TNZYBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TNZYBBULK/RORO05,",-999.0,99999.0,true,,M,false
+TNZYBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TNZYBREAKBULK 01,",-999.0,99999.0,true,,M,false
+TPPRGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TPPRGENERAL PU01,",-999.0,99999.0,true,,M,false
+TPPRVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TPPRVISA      01,",-999.0,99999.0,true,,M,false
+TPRWVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TPRWVISA      01,",-999.0,99999.0,true,,M,false
+TQKGGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TQKGGENERAL PU01,",-999.0,99999.0,true,,M,false
+TQKGVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TQKGVISA      01,",-999.0,99999.0,true,,M,false
+TRZPGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TRZPGENERAL PU01,",-999.0,99999.0,true,,M,false
+TVJDBBULK/CONT01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TVJDBBULK/CONT01,",-999.0,99999.0,true,,M,false
+TVJDBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDBBULK/RORO01,",-999.0,99999.0,true,,M,false
+TVJDBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TVJDBREAKBULK 01,",-999.0,99999.0,true,,M,false
+TVJDBREAKBULK 02_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TVJDBREAKBULK 02,",-999.0,99999.0,true,,M,false
+TVJDBREAKBULK 03_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TVJDBREAKBULK 03,",-999.0,99999.0,true,,M,false
+TVJDBREAKBULK 04_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TVJDBREAKBULK 04,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU01,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU02,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU03,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU04,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU05,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU06,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU07,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU08,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU09_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU09,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU10_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU10,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU11_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU11,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU12_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU12,",-999.0,99999.0,true,,M,false
+TVJDGENERAL PU13_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVJDGENERAL PU13,",-999.0,99999.0,true,,M,false
+TVJDVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"TVJDVISA      01,",-999.0,99999.0,true,,M,false
+TVXABBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVXABBULK/RORO01,",-999.0,99999.0,true,,M,false
+TVXABBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVXABBULK/RORO02,",-999.0,99999.0,true,,M,false
+TVXABBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVXABBULK/RORO03,",-999.0,99999.0,true,,M,false
+TVXABREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TVXABREAKBULK 01,",-999.0,99999.0,true,,M,false
+TVXAGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVXAGENERAL PU01,",-999.0,99999.0,true,,M,false
+TVXAGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TVXAGENERAL PU02,",-999.0,99999.0,true,,M,false
+TZL4GENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TZL4GENERAL PU01,",-999.0,99999.0,true,,M,false
+TZL4GENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TZL4GENERAL PU02,",-999.0,99999.0,true,,M,false
+TZYRBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"TZYRBREAKBULK 01,",-999.0,99999.0,true,,M,false
+TZYRGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"TZYRGENERAL PU01,",-999.0,99999.0,true,,M,false
+UMXAALL-PURPOS01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UMXAALL-PURPOS01,",-999.0,99999.0,true,,M,false
+UMXABBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UMXABBULK/RORO01,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO01,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO02,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO03,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO04,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO05,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO06,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO07,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO08,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO09_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO09,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO10_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO10,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO11_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO11,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO12_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO12,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO13_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO13,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO14_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO14,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO15_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO15,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO16_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO16,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO17_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO17,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO18_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO18,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO19_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO19,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO20_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO20,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO21_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO21,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO22_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO22,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO23_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO23,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO24_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO24,",-999.0,99999.0,true,,M,false
+UNAPBBULK/RORO25_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPBBULK/RORO25,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU01,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU02,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU03,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU04,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU05,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU06_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU06,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU07_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU07,",-999.0,99999.0,true,,M,false
+UNAPGENERAL PU08_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UNAPGENERAL PU08,",-999.0,99999.0,true,,M,false
+UNAPVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"UNAPVISA      01,",-999.0,99999.0,true,,M,false
+UTVTGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UTVTGENERAL PU01,",-999.0,99999.0,true,,M,false
+UTVTVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"UTVTVISA      01,",-999.0,99999.0,true,,M,false
+UULAVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"UULAVISA      01,",-999.0,99999.0,true,,M,false
+UULBVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"UULBVISA      01,",-999.0,99999.0,true,,M,false
+UULXVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"UULXVISA      01,",-999.0,99999.0,true,,M,false
+UYQRBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"UYQRBREAKBULK 01,",-999.0,99999.0,true,,M,false
+UYQRGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"UYQRGENERAL PU01,",-999.0,99999.0,true,,M,false
+VFVNGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"VFVNGENERAL PU01,",-999.0,99999.0,true,,M,false
+VFVNGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"VFVNGENERAL PU02,",-999.0,99999.0,true,,M,false
+VFVNGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"VFVNGENERAL PU03,",-999.0,99999.0,true,,M,false
+VFVNVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"VFVNVISA      01,",-999.0,99999.0,true,,M,false
+VPRFVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"VPRFVISA      01,",-999.0,99999.0,true,,M,false
+VSNFVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"VSNFVISA      01,",-999.0,99999.0,true,,M,false
+WILMINGTON gantry crane-ZBES,57,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,WILMINGTON -ZBES-PRT,all,-999.0,99999.0,true,,M,false
+WMPTBBULK/AMMO01_Crane,134217727,,mobile crane,1,875.0,875.0,3500.0,3500.0,false,null,"WMPTBBULK/AMMO01,",-999.0,99999.0,true,,M,false
+WMPTBREAKBULK 01_Crane,134217727,,mobile crane,1,450.0,450.0,1800.0,1800.0,false,null,"WMPTBREAKBULK 01,",-999.0,99999.0,true,,M,false
+WMPTCONT/AMMO 01_Crane,134217727,,mobile crane,1,1750.0,1750.0,7000.0,7000.0,false,null,"WMPTCONT/AMMO 01,",-999.0,99999.0,true,,M,false
+WPAUGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"WPAUGENERAL PU01,",-999.0,99999.0,true,,M,false
+WQZMVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"WQZMVISA      01,",-999.0,99999.0,true,,M,false
+WTJGVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"WTJGVISA      01,",-999.0,99999.0,true,,M,false
+WYKZVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"WYKZVISA      01,",-999.0,99999.0,true,,M,false
+XEXWVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XEXWVISA      01,",-999.0,99999.0,true,,M,false
+XRVJVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XRVJVISA      01,",-999.0,99999.0,true,,M,false
+XUDTVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XUDTVISA      01,",-999.0,99999.0,true,,M,false
+XVMNVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XVMNVISA      01,",-999.0,99999.0,true,,M,false
+XVRVVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XVRVVISA      01,",-999.0,99999.0,true,,M,false
+XYNKVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"XYNKVISA      01,",-999.0,99999.0,true,,M,false
+YRTKGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"YRTKGENERAL PU01,",-999.0,99999.0,true,,M,false
+ZLVWBBULK/RORO01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"ZLVWBBULK/RORO01,",,,,,,false
+ZLVWBBULK/RORO02_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"ZLVWBBULK/RORO02,",,,,,,false
+ZLVWBREAKBULK 01_Crane,134217727,,mobile crane,,450.0,450.0,1800.0,1800.0,,null,"ZLVWBREAKBULK 01,",,,,,,false
+ZLVWGENERAL PU01_Crane,134217727,,mobile crane,,2250.0,2250.0,9000.0,9000.0,,null,"ZLVWGENERAL PU01,",,,,,,false
+ZMJJVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"ZMJJVISA      01,",-999.0,99999.0,true,,M,false
+ZNMCBBULK/RORO01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCBBULK/RORO01,",-999.0,99999.0,true,,M,false
+ZNMCBBULK/RORO02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCBBULK/RORO02,",-999.0,99999.0,true,,M,false
+ZNMCBBULK/RORO03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCBBULK/RORO03,",-999.0,99999.0,true,,M,false
+ZNMCBBULK/RORO04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCBBULK/RORO04,",-999.0,99999.0,true,,M,false
+ZNMCGENERAL PU01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCGENERAL PU01,",-999.0,99999.0,true,,M,false
+ZNMCGENERAL PU02_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCGENERAL PU02,",-999.0,99999.0,true,,M,false
+ZNMCGENERAL PU03_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCGENERAL PU03,",-999.0,99999.0,true,,M,false
+ZNMCGENERAL PU04_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCGENERAL PU04,",-999.0,99999.0,true,,M,false
+ZNMCGENERAL PU05_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCGENERAL PU05,",-999.0,99999.0,true,,M,false
+ZNMCRORO      01_Crane,134217727,,mobile crane,1,2250.0,2250.0,9000.0,9000.0,false,null,"ZNMCRORO      01,",-999.0,99999.0,true,,M,false
+ZNMCVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"ZNMCVISA      01,",-999.0,99999.0,true,,M,false
+ZSJCVISA      01_Crane,134217727,,mobile crane,1,1400.0,1400.0,5600.0,5600.0,false,null,"ZSJCVISA      01,",-999.0,99999.0,true,,M,false
+gantry crane-AVBU Terminal-19774,51,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,BALTIMORE -AVBU-PRT,all,-999.0,99999.0,true,,M,false
+gantry crane-DKSD Terminal-19779,52,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,CHARLESTON -DKSD-PRT,all,-999.0,99999.0,true,,M,false
+gantry crane-FQZF Terminal-19856,64,,gantry crane,10,288.0,288.0,8000.0,8000.0,true,EARLE NWS -FQZF-NYI,all,-999.0,99999.0,true,,M,false

@@ -1,0 +1,7 @@
+Name,Start,Format
+TailNumber,1,A12
+Type,14,A12
+TypeId,26,I5
+Home,32,A4
+StartDay,36,F10.3
+EndDay,46,F10.3

@@ -1,0 +1,6 @@
+AircraftTypes,Name,Augmented,Enabled,BasicAugmentedCrewRatio,CrewDutyDay,AugmentedCrewDutyDay,CrewPrepTime,CrewRestTime
+"""STRATEGIC##B-747P""",CREW-STRATEGIC-B-747P,false,true,1.5,16,24,2.5,15
+"""STRATEGIC##C-17""",CREW-STRATEGIC-C-17,false,true,1.5,16,24,2.5,15
+"""STRATEGIC##C-5A""",CREW-STRATEGIC-C-5A,false,true,1.5,16,24,2.5,15
+"""STRATEGIC##CH47""",CREW-STRATEGIC-CH47,false,true,1.5,16,24,2.5,15
+"""STRATEGIC##KC-10""",CREW-STRATEGIC-KC-10,false,true,1.5,16,24,2.5,15

@@ -1,0 +1,414 @@
+KEY,SHAPE_ROW,AvailableMilitary,type,CraneQuantity,ContOffRate,ContOnRate,BBOffRate,BBOnRate,ServeAll,Port,BerthsServed,FromDay,ToDay,Available,Ramps,Modified,DifferentCSC
+00A1BBULK/RORO01_Crane,134217727,,,,,,,,,00A1,,,,,,,null
+00IOGENERAL PU01_Crane,134217727,,,,,,,,,00IO,,,,,,,null
+00XTALL-PURPOS01_Crane,134217727,,,,,,,,,00XT,,,,,,,null
+AAPVVISA      01_Crane,134217727,,,,,,,,,AAPV,,,,,,,null
+ABFLBBULK/RORO01_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO02_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO03_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO04_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO05_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO06_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO07_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBBULK/RORO08_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBREAKBULK 01_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLBREAKBULK 02_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLGENERAL PU01_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLGENERAL PU02_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLGENERAL PU03_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ABFLVISA      01_Crane,134217727,,,,,,,,,ABFL,,,,,,,null
+ADKHBBULK/RORO01_Crane,134217727,,,,,,,,,ADKH,,,,,,,null
+ADKHBBULK/RORO02_Crane,134217727,,,,,,,,,ADKH,,,,,,,null
+ADKHBBULK/RORO03_Crane,134217727,,,,,,,,,ADKH,,,,,,,null
+ADKHGENERAL PU01_Crane,134217727,,,,,,,,,ADKH,,,,,,,null
+AELUVISA      01_Crane,134217727,,,,,,,,,AELU,,,,,,,null
+AEQTVISA      01_Crane,134217727,,,,,,,,,AEQT,,,,,,,null
+AJGXVISA      01_Crane,134217727,,,,,,,,,AJGX,,,,,,,null
+ALRFVISA      01_Crane,134217727,,,,,,,,,ALRF,,,,,,,null
+AMCQGENERAL PU01_Crane,134217727,,,,,,,,,AMCQ,,,,,,,null
+APGWVISA      01_Crane,134217727,,,,,,,,,APGW,,,,,,,null
+AVYXVISA      01_Crane,134217727,,,,,,,,,AVYX,,,,,,,null
+BBNQ CRANE,0,,,,,,,,,BBNQ,,,,,,,null
+BBNVBBULK/CONT01_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU01_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU02_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU03_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU04_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU05_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU06_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU07_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU08_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BBNVGENERAL PU09_Crane,134217727,,,,,,,,,BBNV,,,,,,,null
+BQWAVISA      01_Crane,134217727,,,,,,,,,BQWA,,,,,,,null
+CHCYBBULK/RORO01_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CHCYBBULK/RORO02_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CHCYBBULK/RORO03_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CHCYGENERAL PU01_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CHCYGENERAL PU02_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CHCYGENERAL PU03_Crane,134217727,,,,,,,,,CHCY,,,,,,,null
+CWCPVISA      01_Crane,134217727,,,,,,,,,CWCP,,,,,,,null
+CWGVVISA      01_Crane,134217727,,,,,,,,,CWGV,,,,,,,null
+Container: ADLS berth container 1,3,,,,,,,,,ADLS,,,,,,,null
+Container: ADLS berth general purpose 1,30,,,,,,,,,ADLS,,,,,,,null
+Container: BSRL berth container 1,12,,,,,,,,,BSRL,,,,,,,null
+Container: BSRL berth general purpose 1,49,,,,,,,,,BSRL,,,,,,,null
+Container: FGTW berth container 1,17,,,,,,,,,FGTW,,,,,,,null
+Container: FGTW berth general purpose 1,25,,,,,,,,,FGTW,,,,,,,null
+Container: Gabes berth1 1,15,,,,,,,,,HNTS,,,,,,,null
+Container: Gabes berth2 1,41,,,,,,,,,HNTS,,,,,,,null
+Container: Gabes tanker berth 1,38,,,,,,,,,HNTS,,,,,,,null
+Container: SALT 1,36,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis NE-1 berth 1,21,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis NE-2 berth 1,37,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis NW-1 berth 1,18,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis NW-2 berth 1,0,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis cont-1 berth 1,22,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis cont-2 berth 1,42,,,,,,,,,VKNP,,,,,,,null
+Container: Safaqis tanker berth 1,9,,,,,,,,,VKNP,,,,,,,null
+DRUGBREAKBULK 01_Crane,134217727,,,,,,,,,DRUG,,,,,,,null
+DRUGGENERAL PU01_Crane,134217727,,,,,,,,,DRUG,,,,,,,null
+EDMEVISA      01_Crane,134217727,,,,,,,,,EDME,,,,,,,null
+EGNNBBULK/AMMO01_Crane,134217727,,,,,,,,,EGNN,,,,,,,null
+EGNNBBULK/AMMO02_Crane,134217727,,,,,,,,,EGNN,,,,,,,null
+EGNNCONT/AMMO 01_Crane,134217727,,,,,,,,,EGNN,,,,,,,null
+ENCNBBULK/RORO01_Crane,134217727,,,,,,,,,ENCN,,,,,,,null
+ENCNBBULK/RORO02_Crane,134217727,,,,,,,,,ENCN,,,,,,,null
+ENCNBREAKBULK 01_Crane,134217727,,,,,,,,,ENCN,,,,,,,null
+ENCNGENERAL PU01_Crane,134217727,,,,,,,,,ENCN,,,,,,,null
+EZMUVISA      01_Crane,134217727,,,,,,,,,EZMU,,,,,,,null
+FGDDBBULK/RORO01_Crane,134217727,,,,,,,,,FGDD,,,,,,,null
+FGDDGENERAL PU01_Crane,134217727,,,,,,,,,FGDD,,,,,,,null
+FMAZVISA      01_Crane,134217727,,,,,,,,,FMAZ,,,,,,,null
+FNLDGENERAL PU01_Crane,134217727,,,,,,,,,FNLD,,,,,,,null
+FNSHVISA      01_Crane,134217727,,,,,,,,,FNSH,,,,,,,null
+FVMTBBULK/RORO01_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTBBULK/RORO02_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU01_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU02_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU03_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU04_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU05_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+FVMTGENERAL PU06_Crane,134217727,,,,,,,,,FVMT,,,,,,,null
+GPENVISA      01_Crane,134217727,,,,,,,,,GPEN,,,,,,,null
+GULFPORT gantry crane-JTVH -19785,53,,,,,,,,,JTVH,"GULFPORT all-purpose berth-JTVH,",,,,,,null
+GWZPVISA      01_Crane,134217727,,,,,,,,,GWZP,,,,,,,null
+Gantry: ADLS berth container 1,4,,,,,,,,,ADLS,,,,,,,null
+Gantry: ADLS berth general purpose 1,27,,,,,,,,,ADLS,,,,,,,null
+Gantry: BSRL berth container 1,11,,,,,,,,,BSRL,,,,,,,null
+Gantry: BSRL berth general purpose 1,50,,,,,,,,,BSRL,,,,,,,null
+Gantry: FGTW berth container 1,7,,,,,,,,,FGTW,,,,,,,null
+Gantry: FGTW berth general purpose 1,33,,,,,,,,,FGTW,,,,,,,null
+Gantry: Gabes berth1 1,2,,,,,,,,,HNTS,,,,,,,null
+Gantry: Gabes berth2 1,16,,,,,,,,,HNTS,,,,,,,null
+Gantry: Gabes tanker berth 1,28,,,,,,,,,HNTS,,,,,,,null
+Gantry: SALT 1,34,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis NE-1 berth 1,1,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis NE-2 berth 1,47,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis NW-1 berth 1,13,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis NW-2 berth 1,5,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis cont-1 berth 1,19,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis cont-2 berth 1,23,,,,,,,,,VKNP,,,,,,,null
+Gantry: Safaqis tanker berth 1,46,,,,,,,,,VKNP,,,,,,,null
+HAGCVISA      01_Crane,134217727,,,,,,,,,HAGC,,,,,,,null
+HMGBVISA      01_Crane,134217727,,,,,,,,,HMGB,,,,,,,null
+HUPRVISA      01_Crane,134217727,,,,,,,,,HUPR,,,,,,,null
+JACKSONVILLE gantry crane-LSGM,62,,,,,,,,,LSGM,"JACKSONVILLE all-purpose berth-LSGM,",,,,,,null
+JJRPVISA      01_Crane,134217727,,,,,,,,,JJRP,,,,,,,null
+JSSNVISA      01_Crane,134217727,,,,,,,,,JSSN,,,,,,,null
+JWJYVISA      01_Crane,134217727,,,,,,,,,JWJY,,,,,,,null
+JWTDVISA      01_Crane,134217727,,,,,,,,,JWTD,,,,,,,null
+JXKMGENERAL PU01_Crane,134217727,,,,,,,,,JXKM,,,,,,,null
+JXKMVISA      01_Crane,134217727,,,,,,,,,JXKM,,,,,,,null
+JYPNVISA      01_Crane,134217727,,,,,,,,,JYPN,,,,,,,null
+KZPHVISA      01_Crane,134217727,,,,,,,,,KZPH,,,,,,,null
+KZTZVISA      01_Crane,134217727,,,,,,,,,KZTZ,,,,,,,null
+LCMTVISA      01_Crane,134217727,,,,,,,,,LCMT,,,,,,,null
+LKPEBBULK/AMMO01_Crane,134217727,,,,,,,,,LKPE,,,,,,,null
+LKPECONT/AMMO 01_Crane,134217727,,,,,,,,,LKPE,,,,,,,null
+LONG BEACH gantry crane-NPTU,58,,,,,,,,,NPTU,"LONG BEACH all-purpose berth-NPTU,",,,,,,null
+LRNCVISA      01_Crane,134217727,,,,,,,,,LRNC,,,,,,,null
+LUTPBBULK/RORO01_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO02_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO03_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO04_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO05_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO06_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO07_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO08_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO09_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO10_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPBBULK/RORO11_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPGENERAL PU01_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPGENERAL PU02_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPRORO      01_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LUTPVISA      01_Crane,134217727,,,,,,,,,LUTP,,,,,,,null
+LWEVBBULK/RORO01_Crane,134217727,,,,,,,,,LWEV,,,,,,,null
+LWEVGENERAL PU01_Crane,134217727,,,,,,,,,LWEV,,,,,,,null
+LWEVGENERAL PU02_Crane,134217727,,,,,,,,,LWEV,,,,,,,null
+LWEVGENERAL PU03_Crane,134217727,,,,,,,,,LWEV,,,,,,,null
+LYAPVISA      01_Crane,134217727,,,,,,,,,LYAP,,,,,,,null
+LYRVVISA      01_Crane,134217727,,,,,,,,,LYRV,,,,,,,null
+LYTMJLOTS     01_Crane,134217727,,,,,,,,,LYTM,,,,,,,null
+LYTMVISA      01_Crane,134217727,,,,,,,,,LYTM,,,,,,,null
+MKAGVISA      01_Crane,134217727,,,,,,,,,MKAG,,,,,,,null
+MLDLGENERAL PU01_Crane,134217727,,,,,,,,,MLDL,,,,,,,null
+MLDLVISA      01_Crane,134217727,,,,,,,,,MLDL,,,,,,,null
+MLWYBBULK/RORO01_Crane,134217727,,,,,,,,,MLWY,,,,,,,null
+MLWYBBULK/RORO02_Crane,134217727,,,,,,,,,MLWY,,,,,,,null
+MLWYGENERAL PU01_Crane,134217727,,,,,,,,,MLWY,,,,,,,null
+MMGHGENERAL PU01_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MMGHGENERAL PU02_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MMGHGENERAL PU03_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MMGHGENERAL PU04_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MMGHRORO      01_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MMGHVISA      01_Crane,134217727,,,,,,,,,MMGH,,,,,,,null
+MOREHEAD CITY gantry crane-QTUP,54,,,,,,,,,QTUP,"MOREHEAD CITY All PurP-QTUP -19793,",,,,,,null
+MZJKVISA      01_Crane,134217727,,,,,,,,,MZJK,,,,,,,null
+MobCranes: AL MAHDIYAH -ADLS-PRT,48,,,,,,,,,ADLS,"ADLS berth general purpose,ADLS berth container,",,,,,,null
+MobCranes: AS SUKHAYRAH -APFD-PRT,6,,,,,,,,,APFD,"all-purpose berth-APFD Terminal-19858,",,,,,,null
+MobCranes: ASHTART -APRJ-PRT,40,,,,,,,,,APRJ,,,,,,,null
+MobCranes: BANZART -AVTB-PRT,44,,,,,,,,,AVTB,,,,,,,null
+MobCranes: BIZERTE -BSRL-PRT,10,,,,,,,,,BSRL,"BSRL berth container,BSRL berth general purpose,",,,,,,null
+MobCranes: BONE -BYKC-PRT,45,,,,,,,,,BYKC,,,,,,,null
+MobCranes: DJERBA -FGTW-PRT,8,,,,,,,,,FGTW,"FGTW berth container,FGTW berth general purpose,",,,,,,null
+MobCranes: EL KALA -FUPD-PRT,43,,,,,,,,,FUPD,,,,,,,null
+MobCranes: GABES -HNTS-PRT,14,,,,,,,,,HNTS,"Gabes berth1,Gabes berth2,Gabes tanker berth,",,,,,,null
+MobCranes: KELIBIA -MBJJ-PRT,32,,,,,,,,,MBJJ,,,,,,,null
+MobCranes: PORTO FARINA -TQPB-PRT,20,,,,,,,,,TQPB,,,,,,,null
+MobCranes: SAFAQIS -VKNP-PRT,29,,,,,,,,,VKNP,"Safaqis cont-1 berth,Safaqis cont-2 berth,Safaqis NE-1 berth,Safaqis NE-2 berth,Safaqis NW-1 berth,Safaqis tanker berth,Safaqis NW-2 berth,SALT,",,,,,,null
+MobCranes: SOUSSE -VXTY-PRT,31,,,,,,,,,VXTY,,,,,,,null
+MobCranes: SUSAH -WMY2-PRT,26,,,,,,,,,WMY2,,,,,,,null
+MobCranes: TABARQAH -WPKZ-PRT,39,,,,,,,,,WPKZ,,,,,,,null
+MobCranes: TUNIS -XJCS-PRT,35,,,,,,,,,XJCS,,,,,,,null
+MobCranes: ZARZIS -ZSAK-PRT,24,,,,,,,,,ZSAK,,,,,,,null
+NBDYVISA      01_Crane,134217727,,,,,,,,,NBDY,,,,,,,null
+NEW YORK gantry crane-RRRK,60,,,,,,,,,RRRK,"NEW YORK all-purpose berth-RRRK,",,,,,,null
+NEWPORT NEWS gantry crane-RULV,61,,,,,,,,,RULV,"NEWPORT NEWS all-purpose berth-RULV,",,,,,,null
+NLFLGENERAL PU01_Crane,134217727,,,,,,,,,NLFL,,,,,,,null
+NNWHVISA      01_Crane,134217727,,,,,,,,,NNWH,,,,,,,null
+NORFOLK gantry crane-SBEA,55,,,,,,,,,SBEA,"NORFOLK all-purpose berth-SBEA,",,,,,,null
+NSANGENERAL PU01_Crane,134217727,,,,,,,,,NSAN,,,,,,,null
+NSANVISA      01_Crane,134217727,,,,,,,,,NSAN,,,,,,,null
+PAXMVISA      01_Crane,134217727,,,,,,,,,PAXM,,,,,,,null
+PCFCVISA      01_Crane,134217727,,,,,,,,,PCFC,,,,,,,null
+PCFGVISA      01_Crane,134217727,,,,,,,,,PCFG,,,,,,,null
+PKVPBBULK/RORO01_Crane,134217727,,,,,,,,,PKVP,,,,,,,null
+PKVPBBULK/RORO02_Crane,134217727,,,,,,,,,PKVP,,,,,,,null
+PKVPGENERAL PU01_Crane,134217727,,,,,,,,,PKVP,,,,,,,null
+QCFFVISA      01_Crane,134217727,,,,,,,,,QCFF,,,,,,,null
+QHPBBBULK/RORO01_Crane,134217727,,,,,,,,,QHPB,,,,,,,null
+QHPBBBULK/RORO02_Crane,134217727,,,,,,,,,QHPB,,,,,,,null
+QHPBBBULK/RORO03_Crane,134217727,,,,,,,,,QHPB,,,,,,,null
+QHPBGENERAL PU01_Crane,134217727,,,,,,,,,QHPB,,,,,,,null
+QHPBVISA      01_Crane,134217727,,,,,,,,,QHPB,,,,,,,null
+QHPDBBULK/RORO01_Crane,134217727,,,,,,,,,QHPD,,,,,,,null
+QHPDBBULK/RORO02_Crane,134217727,,,,,,,,,QHPD,,,,,,,null
+QHPDGENERAL PU01_Crane,134217727,,,,,,,,,QHPD,,,,,,,null
+QHPFBBULK/RORO01_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFBBULK/RORO02_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFBBULK/RORO03_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFBBULK/RORO04_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFGENERAL PU01_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFGENERAL PU02_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QHPFVISA      01_Crane,134217727,,,,,,,,,QHPF,,,,,,,null
+QNPWBBULK/RORO01_Crane,134217727,,,,,,,,,QNPW,,,,,,,null
+QNPWBREAKBULK 01_Crane,134217727,,,,,,,,,QNPW,,,,,,,null
+RBXHBBULK/RORO01_Crane,134217727,,,,,,,,,RBXH,,,,,,,null
+RBXHGENERAL PU01_Crane,134217727,,,,,,,,,RBXH,,,,,,,null
+RCYQVISA      01_Crane,134217727,,,,,,,,,RCYQ,,,,,,,null
+RCYTVISA      01_Crane,134217727,,,,,,,,,RCYT,,,,,,,null
+RELGVISA      01_Crane,134217727,,,,,,,,,RELG,,,,,,,null
+REPVBBULK/AMMO01_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVBBULK/CONT01_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVBBULK/RORO01_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVBBULK/RORO02_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVBBULK/RORO03_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVBBULK/RORO04_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+REPVVISA      01_Crane,134217727,,,,,,,,,REPV,,,,,,,null
+RGJWGENERAL PU01_Crane,134217727,,,,,,,,,RGJW,,,,,,,null
+RGJWVISA      01_Crane,134217727,,,,,,,,,RGJW,,,,,,,null
+RQNKVISA      01_Crane,134217727,,,,,,,,,RQNK,,,,,,,null
+RRHUVISA      01_Crane,134217727,,,,,,,,,RRHU,,,,,,,null
+RRQLBBULK/RORO01_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLBBULK/RORO02_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLBBULK/RORO03_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLBREAKBULK 01_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLBREAKBULK 02_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLBREAKBULK 03_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLGENERAL PU01_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RRQLGENERAL PU02_Crane,134217727,,,,,,,,,RRQL,,,,,,,null
+RUAQ CRANE,0,,,,,,,,,RUAQ,,,,,,,null
+SAN DIEGO gantry crane-UTAC,59,,,,,,,,,UTAC,"SAN DIEGO all-purpose berth-UTAC,",,,,,,null
+SAVANNAH gantry crane-UZXJ,63,,,,,,,,,UZXJ,"SAVANNAH all-purpose berth-UZXJ,",,,,,,null
+SBEQ CRANE,0,,,,,,,,,SBEQ,,,,,,,null
+SERUBBULK/CONT01_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUBBULK/RORO01_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUBBULK/RORO02_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUBBULK/RORO03_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUBBULK/RORO04_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUBBULK/RORO05_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU01_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU02_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU03_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU04_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU05_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU06_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU07_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU08_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU09_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU10_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU11_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUGENERAL PU12_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERURORO/CONTN01_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SERUVISA      01_Crane,134217727,,,,,,,,,SERU,,,,,,,null
+SMXSVISA      01_Crane,134217727,,,,,,,,,SMXS,,,,,,,null
+STRMGENERAL PU01_Crane,134217727,,,,,,,,,STRM,,,,,,,null
+SVCNVISA      01_Crane,134217727,,,,,,,,,SVCN,,,,,,,null
+SYZZBBULK/RORO01_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO02_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO03_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO04_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO05_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO06_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO07_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+SYZZBBULK/RORO08_Crane,134217727,,,,,,,,,SYZZ,,,,,,,null
+TACOMA gantry crane-WPVT,56,,,,,,,,,WPVT,"TACOMA all-purpose berth-WPVT,",,,,,,null
+TGWSVISA      01_Crane,134217727,,,,,,,,,TGWS,,,,,,,null
+TKDWBBULK/CONT01_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/CONT02_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/RORO01_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/RORO02_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/RORO03_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/RORO04_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWBBULK/RORO05_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWGENERAL PU01_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWGENERAL PU02_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWGENERAL PU03_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TKDWGENERAL PU04_Crane,134217727,,,,,,,,,TKDW,,,,,,,null
+TNVXVISA      01_Crane,134217727,,,,,,,,,TNVX,,,,,,,null
+TNZYBBULK/RORO01_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TNZYBBULK/RORO02_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TNZYBBULK/RORO03_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TNZYBBULK/RORO04_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TNZYBBULK/RORO05_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TNZYBREAKBULK 01_Crane,134217727,,,,,,,,,TNZY,,,,,,,null
+TPPRGENERAL PU01_Crane,134217727,,,,,,,,,TPPR,,,,,,,null
+TPPRVISA      01_Crane,134217727,,,,,,,,,TPPR,,,,,,,null
+TPRWVISA      01_Crane,134217727,,,,,,,,,TPRW,,,,,,,null
+TQKGGENERAL PU01_Crane,134217727,,,,,,,,,TQKG,,,,,,,null
+TQKGVISA      01_Crane,134217727,,,,,,,,,TQKG,,,,,,,null
+TRZPGENERAL PU01_Crane,134217727,,,,,,,,,TRZP,,,,,,,null
+TVJDBBULK/CONT01_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDBBULK/RORO01_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDBREAKBULK 01_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDBREAKBULK 02_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDBREAKBULK 03_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDBREAKBULK 04_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU01_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU02_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU03_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU04_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU05_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU06_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU07_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU08_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU09_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU10_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU11_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU12_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDGENERAL PU13_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVJDVISA      01_Crane,134217727,,,,,,,,,TVJD,,,,,,,null
+TVXABBULK/RORO01_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TVXABBULK/RORO02_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TVXABBULK/RORO03_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TVXABREAKBULK 01_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TVXAGENERAL PU01_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TVXAGENERAL PU02_Crane,134217727,,,,,,,,,TVXA,,,,,,,null
+TZL4GENERAL PU01_Crane,134217727,,,,,,,,,TZL4,,,,,,,null
+TZL4GENERAL PU02_Crane,134217727,,,,,,,,,TZL4,,,,,,,null
+TZYRBREAKBULK 01_Crane,134217727,,,,,,,,,TZYR,,,,,,,null
+TZYRGENERAL PU01_Crane,134217727,,,,,,,,,TZYR,,,,,,,null
+UMXAALL-PURPOS01_Crane,134217727,,,,,,,,,UMXA,,,,,,,null
+UMXABBULK/RORO01_Crane,134217727,,,,,,,,,UMXA,,,,,,,null
+UNAPBBULK/RORO01_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO02_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO03_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO04_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO05_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO06_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO07_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO08_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO09_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO10_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO11_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO12_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO13_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO14_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO15_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO16_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO17_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO18_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO19_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO20_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO21_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO22_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO23_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO24_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPBBULK/RORO25_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU01_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU02_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU03_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU04_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU05_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU06_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU07_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPGENERAL PU08_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UNAPVISA      01_Crane,134217727,,,,,,,,,UNAP,,,,,,,null
+UTVTGENERAL PU01_Crane,134217727,,,,,,,,,UTVT,,,,,,,null
+UTVTVISA      01_Crane,134217727,,,,,,,,,UTVT,,,,,,,null
+UULAVISA      01_Crane,134217727,,,,,,,,,UULA,,,,,,,null
+UULBVISA      01_Crane,134217727,,,,,,,,,UULB,,,,,,,null
+UULXVISA      01_Crane,134217727,,,,,,,,,UULX,,,,,,,null
+UYQRBREAKBULK 01_Crane,134217727,,,,,,,,,UYQR,,,,,,,null
+UYQRGENERAL PU01_Crane,134217727,,,,,,,,,UYQR,,,,,,,null
+VFVNGENERAL PU01_Crane,134217727,,,,,,,,,VFVN,,,,,,,null
+VFVNGENERAL PU02_Crane,134217727,,,,,,,,,VFVN,,,,,,,null
+VFVNGENERAL PU03_Crane,134217727,,,,,,,,,VFVN,,,,,,,null
+VFVNVISA      01_Crane,134217727,,,,,,,,,VFVN,,,,,,,null
+VPRFVISA      01_Crane,134217727,,,,,,,,,VPRF,,,,,,,null
+VSNFVISA      01_Crane,134217727,,,,,,,,,VSNF,,,,,,,null
+WILMINGTON gantry crane-ZBES,57,,,,,,,,,ZBES,"WILMINGTON all-purpose berth-ZBES,",,,,,,null
+WMPTBBULK/AMMO01_Crane,134217727,,,,,,,,,WMPT,,,,,,,null
+WMPTBREAKBULK 01_Crane,134217727,,,,,,,,,WMPT,,,,,,,null
+WMPTCONT/AMMO 01_Crane,134217727,,,,,,,,,WMPT,,,,,,,null
+WPAUGENERAL PU01_Crane,134217727,,,,,,,,,WPAU,,,,,,,null
+WQZMVISA      01_Crane,134217727,,,,,,,,,WQZM,,,,,,,null
+WTJGVISA      01_Crane,134217727,,,,,,,,,WTJG,,,,,,,null
+WYKZVISA      01_Crane,134217727,,,,,,,,,WYKZ,,,,,,,null
+XEXWVISA      01_Crane,134217727,,,,,,,,,XEXW,,,,,,,null
+XRVJVISA      01_Crane,134217727,,,,,,,,,XRVJ,,,,,,,null
+XUDTVISA      01_Crane,134217727,,,,,,,,,XUDT,,,,,,,null
+XVMNVISA      01_Crane,134217727,,,,,,,,,XVMN,,,,,,,null
+XVRVVISA      01_Crane,134217727,,,,,,,,,XVRV,,,,,,,null
+XYNKVISA      01_Crane,134217727,,,,,,,,,XYNK,,,,,,,null
+YRTKGENERAL PU01_Crane,134217727,,,,,,,,,YRTK,,,,,,,null
+ZLVWBBULK/RORO01_Crane,134217727,,,,,,,,,ZLVW,,,,,,,null
+ZLVWBBULK/RORO02_Crane,134217727,,,,,,,,,ZLVW,,,,,,,null
+ZLVWBREAKBULK 01_Crane,134217727,,,,,,,,,ZLVW,,,,,,,null
+ZLVWGENERAL PU01_Crane,134217727,,,,,,,,,ZLVW,,,,,,,null
+ZMJJVISA      01_Crane,134217727,,,,,,,,,ZMJJ,,,,,,,null
+ZNMCBBULK/RORO01_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCBBULK/RORO02_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCBBULK/RORO03_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCBBULK/RORO04_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCGENERAL PU01_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCGENERAL PU02_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCGENERAL PU03_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCGENERAL PU04_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCGENERAL PU05_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCRORO      01_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZNMCVISA      01_Crane,134217727,,,,,,,,,ZNMC,,,,,,,null
+ZSJCVISA      01_Crane,134217727,,,,,,,,,ZSJC,,,,,,,null
+gantry crane-AVBU Terminal-19774,51,,,,,,,,,AVBU,"all-purpose berth-AVBU Terminal-19773,",,,,,,null
+gantry crane-DKSD Terminal-19779,52,,,,,,,,,DKSD,"Charleston-all-purpose berth-DKSD -19778,",,,,,,null
+gantry crane-FQZF Terminal-19856,64,,,,,,,,,FQZF,"all-purpose berth-FQZF Terminal-19855,",,,,,,null

@@ -1,0 +1,8 @@
+connector,served,seabaseGeo,priority
+BD 1-crane,false,SEA1,1
+OPDS-IPDS,false,SEA1,1
+RRDF 1-SP,false,SEA1,1
+RRDF 2-SP,false,SEA1,1
+Self,false,SEA1,1
+T-ACS 1-crane,false,SEA1,1
+T-ACS 2-crane,false,SEA1,1

@@ -1,0 +1,31 @@
+"CONUS: Commodities Arriving, Available, and Stranded"
+Commodity<String:Commodity>,Units<String>,Arriving<Float>,Available<Float>,Strat Pending<Float>,Total<Float>
+FortyFootContainer,ST,0.0,0.0,0.0,0.0
+TwentyFootContainer,ST,0.0,0.0,0.0,0.0
+SecondaryCargo,ST,0.0,0.0,0.0,0.0
+NSDA,ST,0.0,10.2,0.0,10.2
+PAX,PAX,0.0,38331.0,0.0,38331.0
+Large Wheels,ST,0.0,35786.582,0.0,35786.582
+Medium Wheels,ST,0.0,9941.905,0.0,9941.905
+Small Wheels,ST,0.0,38897.53,0.0,38897.53
+Large Tracks,ST,0.0,29266.902,0.0,29266.902
+Medium Tracks,ST,0.0,10634.298,0.0,10634.298
+Small Tracks,ST,0.0,2813.6006,0.0,2813.6006
+Palletized UE,ST,0.0,794.4,0.0,794.4
+TEU UE,ST,0.0,0.0,0.0,0.0
+FEU Resupply,ST,0.0,0.0,0.0,0.0
+TEU Resupply,ST,0.0,463.12543,0.0,463.12543
+Bulk Resupply,ST,0.0,615.2,0.0,615.2
+Bulk Ammo,ST,0.0,0.0,0.0,0.0
+POL,CBBL,0.0,1479.9996,0.0,1479.9996
+Cont Ammo,ST,0.0,0.0,0.0,0.0
+Catch All,ST,0.0,4785.8994,0.0,4785.8994
+Mixed Container20 Hot,ST,0.0,319.49997,0.0,319.49997
+Mixed Container20,ST,0.0,59248.832,0.0,59248.832
+Mixed Container40 Hot,ST,0.0,0.0,0.0,0.0
+Mixed Container40,ST,0.0,0.0,0.0,0.0
+Mixed Pallet Hot,ST,0.0,34.999996,0.0,34.999996
+Mixed Pallet,ST,0.0,8309.65,13.125422,8322.775
+Total ST,ST,0.0,201922.64,13.125422,201935.77
+Total PAX,PAX,0.0,38331.0,0.0,38331.0
+Total POL,CBBL,0.0,1479.9996,0.0,1479.9996

@@ -1,0 +1,94 @@
+{
+    "id": "/fedResults/aircraftType.csv.meta",
+    "title": "AircraftType",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.entity.AircraftType",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "Name",
+                "titles": "Name",
+                "description": "Type of aircraft",
+                "datatype": "string"
+            },
+            {
+                "name": "Size",
+                "titles": "Size",
+                "description": "The size of the aircraft type",
+                "datatype": "string"
+            },
+            {
+                "name": "WeightCapacity",
+                "titles": "WeightCapacity",
+                "description": "Max cargo payload in stons.",
+                "datatype": "float"
+            },
+            {
+                "name": "PaxCapacity",
+                "titles": "PaxCapacity",
+                "description": "Max PAX capacity.",
+                "datatype": "float"
+            },
+            {
+                "name": "OnloadTime",
+                "titles": "OnloadTime",
+                "description": "Time to onload in hours.",
+                "datatype": "float"
+            },
+            {
+                "name": "OffloadTime",
+                "titles": "OffloadTime",
+                "description": "Time to offload in hours.",
+                "datatype": "float"
+            },
+            {
+                "name": "BlockSpeed500",
+                "titles": "BlockSpeed500",
+                "description": "500 nm block speed in knots.",
+                "datatype": "float"
+            },
+            {
+                "name": "BlockSpeed1000",
+                "titles": "BlockSpeed1000",
+                "description": "1000 nm block speed in knots.",
+                "datatype": "float"
+            },
+            {
+                "name": "BlockSpeed1500",
+                "titles": "BlockSpeed1500",
+                "description": "1500 nm block speed in knots.",
+                "datatype": "float"
+            }
+        ],
+        
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            },
+            {
+                "columnReference": "Size",
+                "reference": {
+                    "schemaReference": "/fedResults/aircraftTypeSize.csv.meta",
+                    "columnReference": "AircraftTypeSize"
+                }
+            }
+        ]
+    }
+}

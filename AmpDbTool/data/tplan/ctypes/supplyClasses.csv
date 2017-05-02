@@ -1,0 +1,9 @@
+Commodity,Class,Subclass,FuelClass
+GEN-RESUPPLY,1,"",""
+GEN-RESUPPLY,2,"",""
+GEN-RESUPPLY,6,"",""
+GEN-RESUPPLY,8,"",""
+GEN-POL,3,A,JP8
+GEN-RESUPPLY,9,"",""
+GEN-RESUPPLY,4,"",""
+GEN-POL,3,A,JP5

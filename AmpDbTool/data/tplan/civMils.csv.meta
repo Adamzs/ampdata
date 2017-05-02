@@ -1,0 +1,20 @@
+{
+    "id": "/tplan/civMils.csv.meta",
+    "title": "CivMils",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.actype.CivMil",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "CivMilType",
+                "titles": "CivMilType",
+                "description": "The civilian or military type",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "CivMilType",
+        "foreignKeys": [
+        ]
+    }
+}

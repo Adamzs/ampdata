@@ -1,0 +1,24 @@
+All Constrained Assets and Resources
+Resource<String>,First Used<Time>,Last Used<Time>,First Queued<Time>,Last Queued<Time>,Max Interval Use (%)<Float>,Intervals Used Over 90% of Capacity<Integer>,Ave Interval Use (%)<Float>,Max Day Use (%)<Float>,Days Used Over 90% of Capacity<Integer>,Days with Waiting Carry-Over<Integer>
+M1074 PLS,Tunisia,8.5,180.0,8.5,180.0,100.0,135,89.455605,100.0,138
+Commercial Bus 45-pax,Tunisia,11.5,74.219,11.5,73.0,17.763157,0,2.754463,15.473671,0
+M123 10-Ton Tractor/M870 40-Ton Lowbed,Tunisia,13.25,57.789,13.25,56.5,66.66667,0,3.883646,56.63318,0
+Serial for GABES -HNTS-PRT to GABES -HNTM-CTY(Military Self-Directed),Tunisia,24.75,56.75,24.75,56.75,,,,,
+Serial for GABES -HNTS-PRT to CHEIKH LARBI TEBE -WSVC-CAP(Military Self-Directed),Tunisia,25.0,73.75278,25.0,44.25,,,,,
+Serial for THYNA -FUQN-IAP to CHEIKH LARBI TEBE -WSVC-CAP(Military Self-Directed),Tunisia,25.0,41.750694,25.0,32.5,,,,,
+Serial for MATMATA -HNTK-APT to GAFSA -HPBF-APT(Military Self-Directed),Tunisia,25.5,54.0,25.5,54.0,,,,,
+Commercial 10-Ton Tractor/Commercial Semitrailer,Tunisia,26.25,180.0,26.25,180.0,100.0,21,49.293247,100.0,10
+Serial for GABES -HNTS-PRT to GAFSA -HPBF-APT(Military Self-Directed),Tunisia,26.5,73.75347,26.5,63.5,,,,,
+Commercial HET Tractor/Commercial HET Trailer,Tunisia,26.75,61.538,26.75,60.25,100.0,7,8.938549,100.0,4
+M1083 WOWN 5-Ton MTV,Tunisia,27.25,69.397,27.25,68.0,77.24867,0,3.6181679,60.025955,0
+Serial for AS SUKHAYRAH -APFD-PRT to FWD BASE -OPA1-OPA(Military Self-Directed),Tunisia,27.5,29.502083,27.5,27.5,,,,,
+Serial for SFAX -VKNP-PRT to CHEIKH LARBI TEBE -WSVC-CAP(Military Self-Directed),Tunisia,29.0,55.750694,29.0,42.5,,,,,
+Serial for SFAX -VKNP-PRT to BIR EL ATER -BQWK-APT(Military Self-Directed),Tunisia,29.25,43.002777,29.25,29.25,,,,,
+Serial for SFAX -VKNP-PRT to MADANIYIN -NWXN-AFD(Military Self-Directed),Tunisia,30.0,77.25139,30.0,30.0,,,,,
+Serial for SFAX -VKNP-PRT to SFAX -VKNG-CTY(Military Self-Directed),Tunisia,30.5,33.502083,30.5,30.5,,,,,
+Serial for GABES -HNTS-PRT to MADANIYIN -NWXN-AFD(Military Self-Directed),Tunisia,30.5,42.005554,30.5,30.75,,,,,
+Serial for GABES -HNTS-PRT to SFAX -VKNG-CTY(Military Self-Directed),Tunisia,31.0,32.50625,31.0,32.0,,,,,
+M1070 HET Tractor/M1000 70-Ton HET Trailer,Tunisia,31.75,47.1,31.75,45.75,100.0,1,2.7457938,93.75625,1
+Serial for SFAX -VKNP-PRT to GAFSA -HPBF-APT(Military Self-Directed),Tunisia,34.75,44.254166,34.75,44.25,,,,,
+Serial for SFAX -VKNP-PRT to THYNA -FUQN-IAP(Military Self-Directed),Tunisia,35.0,44.25,35.0,44.25,,,,,
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,Tunisia,43.75,46.429,43.75,45.5,100.0,3,1.8706759,100.0,2

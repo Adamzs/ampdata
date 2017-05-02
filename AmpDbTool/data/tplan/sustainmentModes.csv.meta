@@ -1,0 +1,20 @@
+{
+    "id": "/tplan/sustainmentModes.csv.meta",
+    "title": "SustainmentMode",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.sustainment.Mode",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "SustainmentModeType",
+                "titles": "SustainmentModeType",
+                "description": "The Enum name for SustainmentMode type",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "SustainmentModeType",
+        "foreignKeys": [
+        ]
+    }
+}

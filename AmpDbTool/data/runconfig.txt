@@ -1,0 +1,8 @@
+Configuration for AMP
+Version: 14.13.0 alpha1
+Build: unknown -- not built with ant?
+VM: Java HotSpot(TM) 64-Bit Server VM 1.8.0_25
+AMP Home: C:\Users\Szymanski\amp-git-workspaces\clone1\amp\amprun\.
+UserDataDir: C:\data\AMP
+
+Airlift Scheduler:1

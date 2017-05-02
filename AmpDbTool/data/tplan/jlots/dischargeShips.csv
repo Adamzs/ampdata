@@ -1,0 +1,127 @@
+connector,served,typeName,priority
+BD 1-crane,true,CONT-NSS,1
+BD 1-crane,true,T-AVB,2
+BD 1-crane,true,FSS,3
+BD 1-crane,true,COMBO,4
+BD 1-crane,true,BULK CARRIER,5
+BD 1-crane,true,T-AH,6
+BD 1-crane,true,CLF,7
+BD 1-crane,false,POL TANKER,8
+BD 1-crane,true,BARGE(LASH),9
+BD 1-crane,true,BREAKBULK,10
+BD 1-crane,false,PAX,11
+BD 1-crane,true,BARGE(T-AKB),12
+BD 1-crane,true,CONT-SS,13
+BD 1-crane,true,RO/RO(T-AKR),14
+BD 1-crane,true,CAR TRANS,15
+BD 1-crane,true,RO/RO,16
+BD 1-crane,true,VISA CONT,17
+BD 1-crane,true,T-ACS,18
+OPDS-IPDS,false,CONT-NSS,1
+OPDS-IPDS,false,T-AVB,2
+OPDS-IPDS,false,FSS,3
+OPDS-IPDS,false,COMBO,4
+OPDS-IPDS,false,BULK CARRIER,5
+OPDS-IPDS,false,T-AH,6
+OPDS-IPDS,false,CLF,7
+OPDS-IPDS,false,POL TANKER,8
+OPDS-IPDS,false,BARGE(LASH),9
+OPDS-IPDS,false,BREAKBULK,10
+OPDS-IPDS,false,PAX,11
+OPDS-IPDS,false,BARGE(T-AKB),12
+OPDS-IPDS,false,CONT-SS,13
+OPDS-IPDS,false,RO/RO(T-AKR),14
+OPDS-IPDS,false,CAR TRANS,15
+OPDS-IPDS,false,RO/RO,16
+OPDS-IPDS,false,VISA CONT,17
+OPDS-IPDS,false,T-ACS,18
+RRDF 1-SP,false,CONT-NSS,1
+RRDF 1-SP,false,T-AVB,2
+RRDF 1-SP,true,FSS,3
+RRDF 1-SP,true,COMBO,4
+RRDF 1-SP,false,BULK CARRIER,5
+RRDF 1-SP,false,T-AH,6
+RRDF 1-SP,false,CLF,7
+RRDF 1-SP,false,POL TANKER,8
+RRDF 1-SP,false,BARGE(LASH),9
+RRDF 1-SP,false,BREAKBULK,10
+RRDF 1-SP,false,PAX,11
+RRDF 1-SP,false,BARGE(T-AKB),12
+RRDF 1-SP,false,CONT-SS,13
+RRDF 1-SP,true,RO/RO(T-AKR),14
+RRDF 1-SP,true,CAR TRANS,15
+RRDF 1-SP,true,RO/RO,16
+RRDF 1-SP,false,VISA CONT,17
+RRDF 1-SP,false,T-ACS,18
+RRDF 2-SP,false,CONT-NSS,1
+RRDF 2-SP,false,T-AVB,2
+RRDF 2-SP,true,FSS,3
+RRDF 2-SP,true,COMBO,4
+RRDF 2-SP,false,BULK CARRIER,5
+RRDF 2-SP,false,T-AH,6
+RRDF 2-SP,false,CLF,7
+RRDF 2-SP,false,POL TANKER,8
+RRDF 2-SP,false,BARGE(LASH),9
+RRDF 2-SP,false,BREAKBULK,10
+RRDF 2-SP,false,PAX,11
+RRDF 2-SP,false,BARGE(T-AKB),12
+RRDF 2-SP,false,CONT-SS,13
+RRDF 2-SP,true,RO/RO(T-AKR),14
+RRDF 2-SP,true,CAR TRANS,15
+RRDF 2-SP,true,RO/RO,16
+RRDF 2-SP,false,VISA CONT,17
+RRDF 2-SP,false,T-ACS,18
+Self,false,CONT-NSS,1
+Self,false,T-AVB,2
+Self,false,FSS,3
+Self,false,COMBO,4
+Self,false,BULK CARRIER,5
+Self,false,T-AH,6
+Self,false,CLF,7
+Self,false,POL TANKER,8
+Self,false,BARGE(LASH),9
+Self,false,BREAKBULK,10
+Self,false,PAX,11
+Self,false,BARGE(T-AKB),12
+Self,false,CONT-SS,13
+Self,false,RO/RO(T-AKR),14
+Self,false,CAR TRANS,15
+Self,false,RO/RO,16
+Self,false,VISA CONT,17
+Self,false,T-ACS,18
+T-ACS 1-crane,false,CONT-NSS,1
+T-ACS 1-crane,false,T-AVB,2
+T-ACS 1-crane,false,FSS,3
+T-ACS 1-crane,false,COMBO,4
+T-ACS 1-crane,false,BULK CARRIER,5
+T-ACS 1-crane,false,T-AH,6
+T-ACS 1-crane,false,CLF,7
+T-ACS 1-crane,false,POL TANKER,8
+T-ACS 1-crane,false,BARGE(LASH),9
+T-ACS 1-crane,false,BREAKBULK,10
+T-ACS 1-crane,false,PAX,11
+T-ACS 1-crane,false,BARGE(T-AKB),12
+T-ACS 1-crane,false,CONT-SS,13
+T-ACS 1-crane,false,RO/RO(T-AKR),14
+T-ACS 1-crane,false,CAR TRANS,15
+T-ACS 1-crane,false,RO/RO,16
+T-ACS 1-crane,false,VISA CONT,17
+T-ACS 1-crane,false,T-ACS,18
+T-ACS 2-crane,false,CONT-NSS,1
+T-ACS 2-crane,false,T-AVB,2
+T-ACS 2-crane,false,FSS,3
+T-ACS 2-crane,false,COMBO,4
+T-ACS 2-crane,false,BULK CARRIER,5
+T-ACS 2-crane,false,T-AH,6
+T-ACS 2-crane,false,CLF,7
+T-ACS 2-crane,false,POL TANKER,8
+T-ACS 2-crane,false,BARGE(LASH),9
+T-ACS 2-crane,false,BREAKBULK,10
+T-ACS 2-crane,false,PAX,11
+T-ACS 2-crane,false,BARGE(T-AKB),12
+T-ACS 2-crane,false,CONT-SS,13
+T-ACS 2-crane,false,RO/RO(T-AKR),14
+T-ACS 2-crane,false,CAR TRANS,15
+T-ACS 2-crane,false,RO/RO,16
+T-ACS 2-crane,false,VISA CONT,17
+T-ACS 2-crane,false,T-ACS,18

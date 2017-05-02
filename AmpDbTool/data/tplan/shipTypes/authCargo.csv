@@ -1,0 +1,19 @@
+ShipType,Day,Enabled,Description,EventPhase,AF-AIRCRAFT,AF-SUPPORT,AF-PREPO,MARINE-PREPO,ARMY-PREPO,AIRBORNE,ARMOR,MECH-INFANTRY,AIRMOBILE,CBAC,INFANTRY,ARMOR-CAV,AMPH-MARINES,MARINES,CS-ENGINEER,CS-ARTILLERY,CS-OTHER,CSS-ENGINEER,CSS-MEDICAL,CSS-SIGNAL,CSS-SUPPLY,CSS-TRANSPORTATION,CSS-OTHER,NAVY-UE,RESUPPLY,AMMUNITION,POL,GEN-RESUPPLY,GEN-AMMO,GEN-POL
+T-AVB,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+T-AH,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+PAX,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+FSS,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+RO/RO,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+CAR TRANS,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+POL TANKER,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+T-ACS,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+BREAKBULK,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+BARGE(LASH),0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+RO/RO(T-AKR),0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+VISA CONT,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+BULK CARRIER,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+BARGE(T-AKB),0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+CONT-NSS,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+CONT-SS,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+COMBO,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+CLF,0,true,,,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true

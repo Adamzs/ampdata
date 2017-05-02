@@ -1,0 +1,5 @@
+KEY,SHAPE_ROW,CountryState,CountryStateCode,Length,LineStyle,LineWidth,LineColor,PipelineRate,AvailableMilitary,type,From,To,PricePerBBL,DisplayName,Modified
+pipeline-0,0,TN,TN,,,,,,,,HNTS intersection,intersection 6722,,,
+pipeline-1,1,TN,TN,,,,,,,,intersection 6722,intersection 6723,,,
+pipeline-2,2,TN,TN,,,,,,,,intersection 6723,intersection 6724,,,
+pipeline-3,3,TN,TN,,,,,,,,intersection 6724,APFD intersection,,,

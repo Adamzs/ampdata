@@ -1,0 +1,10 @@
+MS_NUM,PRIORITY,NAME,VALUE
+1,9,Road,RA
+2,2,Rail,IA
+3,4,Water,SA
+5,6,Air,AA
+13,1,Reject,UA
+15,7,"Road, Self",RS
+19,3,"Water, Self",SS
+20,5,"Air, Self",AS
+21,8,Optional,OA

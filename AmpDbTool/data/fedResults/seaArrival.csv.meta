@@ -1,0 +1,135 @@
+{
+    "id": "/fedResults/seaArrival.csv.meta",
+    "title": "SeaArrivals",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.interaction.SeaArrival",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "Visa",
+                "titles": "Visa",
+                "description": "Is this ship VISA",
+                "datatype": "boolean"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "LoadedDraft",
+                "titles": "LoadedDraft",
+                "description": "Loaded draft of the ship",
+                "datatype": "integer"
+            },
+            {
+                "name": "ToTime",
+                "titles": "ToTime",
+                "description": "Time asset arrives at next locaiton",
+                "datatype": "float"
+            },
+            {
+                "name": "ToPurpose",
+                "titles": "ToPurpose",
+                "description": "The activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "ToLocation",
+                "titles": "ToLocation",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "FromTime",
+                "titles": "FromTime",
+                "description": "Time asset left from locaiton",
+                "datatype": "float"
+            },
+            {
+                "name": "FromPurpose",
+                "titles": "FromPurpose",
+                "description": "The activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "FromLocation",
+                "titles": "FromLocation",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "Mode",
+                "titles": "Mode",
+                "description": "The movement Mode",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetType",
+                "titles": "AssetType",
+                "description": "The type of asset",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetID",
+                "titles": "AssetID",
+                "description": "The asset id",
+                "datatype": "string"
+            },
+            {
+                "name": "MissionID",
+                "titles": "MissionID",
+                "description": "The ID of the mission",
+                "datatype": "string"
+            },
+            {
+                "name": "VoyageNum",
+                "titles": "VoyageNum",
+                "description": "The current total number of voyages this ship has been on over the entire scenario",
+                "datatype": "integer"
+            },
+            {
+                "name": "Hot",
+                "titles": "Hot",
+                "description": "Does the asset have hot cargo",
+                "datatype": "boolean"
+            }
+        ],
+        
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            },
+            {
+                "columnReference": "ToLocation",
+                "reference": {
+                    "schemaReference": "/tplan/locations/locations.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "FromLocation",
+                "reference": {
+                    "schemaReference": "/tplan/locations/locations.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "/tplan/airFleetTypes.csv.meta",
+    "title": "AirFleetTypes",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.acfleet.AirFleetType",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "AirFleetType",
+                "titles": "AirFleetType",
+                "description": "The type of air fleet",
+                "datatype": "string"
+            },
+            {
+                "name": "AirFleetTypeLabel",
+                "titles": "AirFleetTypeLabel",
+                "description": "The type of air fleet label",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "AirFleetType",
+        "foreignKeys": [
+        ]
+    }
+}

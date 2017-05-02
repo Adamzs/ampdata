@@ -1,0 +1,5 @@
+KEY,SHAPE_ROW,CountryState,CountryStateCode,Length,LineStyle,LineWidth,LineColor,PipelineRate,AvailableMilitary,type,From,To,PricePerBBL,DisplayName,Modified
+pipeline-0,0,null,null,8.995465,,,,,,pipeline,geos-HNTS,ints-6722,,,
+pipeline-1,1,null,null,11.863093,,,,,,pipeline,ints-6722,ints-6723,,,
+pipeline-2,2,null,null,7.505428,,,,,,pipeline,ints-6723,ints-6724,,,
+pipeline-3,3,null,null,6.6429625,,,,,,pipeline,ints-6724,geos-APFD,,,

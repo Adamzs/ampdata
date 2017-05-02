@@ -1,0 +1,12 @@
+LoadCategoryType,LoadCategoryAbbrev
+Pax,PAX
+Bulk,BULK
+Oversize,OVER
+Outsize,OUT
+Fuel,FUEL
+Military,MIL
+Air Drop,AIRDROP
+Direct Delivery,DIRDEL
+Medevac Ambulatory,MEDAMB
+Medevac Litter,MEDLIT
+Operational Support,OPSUPPORT

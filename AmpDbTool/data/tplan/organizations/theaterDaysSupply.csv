@@ -1,0 +1,85 @@
+Key,Day,Enabled,Description,EventPhase,Commodity,SchedDay,SchedEnabled,Value
+TEBESSA,0,true,,,GEN-RESUPPLY,0,true,5
+TEBESSA,0,true,,,GEN-RESUPPLY,10,true,30
+TEBESSA,0,true,,,GEN-AMMO,0,true,5
+TEBESSA,0,true,,,GEN-AMMO,10,true,30
+TEBESSA,0,true,,,GEN-POL,0,true,5
+TEBESSA,0,true,,,GEN-POL,10,true,30
+MECHANICSBURG,0,true,,,GEN-RESUPPLY,0,true,0
+MECHANICSBURG,0,true,,,GEN-AMMO,0,true,0
+MECHANICSBURG,0,true,,,GEN-POL,0,true,0
+PHILADELPHIA,0,true,,,GEN-RESUPPLY,0,true,0
+PHILADELPHIA,0,true,,,GEN-AMMO,0,true,0
+PHILADELPHIA,0,true,,,GEN-POL,0,true,0
+JERBA-ZARZIS,0,true,,,GEN-RESUPPLY,0,true,5
+JERBA-ZARZIS,0,true,,,GEN-RESUPPLY,10,true,30
+JERBA-ZARZIS,0,true,,,GEN-AMMO,0,true,5
+JERBA-ZARZIS,0,true,,,GEN-AMMO,10,true,30
+JERBA-ZARZIS,0,true,,,GEN-POL,0,true,5
+JERBA-ZARZIS,0,true,,,GEN-POL,10,true,30
+SFAX,0,true,,,GEN-RESUPPLY,0,true,5
+SFAX,0,true,,,GEN-RESUPPLY,10,true,30
+SFAX,0,true,,,GEN-AMMO,0,true,5
+SFAX,0,true,,,GEN-AMMO,10,true,30
+SFAX,0,true,,,GEN-POL,0,true,5
+SFAX,0,true,,,GEN-POL,10,true,30
+ABN,0,true,,,GEN-RESUPPLY,0,true,5
+ABN,0,true,,,GEN-RESUPPLY,10,true,30
+ABN,0,true,,,GEN-AMMO,0,true,5
+ABN,0,true,,,GEN-AMMO,10,true,30
+ABN,0,true,,,GEN-POL,0,true,5
+ABN,0,true,,,GEN-POL,10,true,30
+THYNA-EL MAOU,0,true,,,GEN-RESUPPLY,0,true,5
+THYNA-EL MAOU,0,true,,,GEN-RESUPPLY,10,true,30
+THYNA-EL MAOU,0,true,,,GEN-AMMO,0,true,5
+THYNA-EL MAOU,0,true,,,GEN-AMMO,10,true,30
+THYNA-EL MAOU,0,true,,,GEN-POL,0,true,5
+THYNA-EL MAOU,0,true,,,GEN-POL,10,true,30
+MADANIYIN,0,true,,,GEN-RESUPPLY,0,true,5
+MADANIYIN,0,true,,,GEN-RESUPPLY,10,true,30
+MADANIYIN,0,true,,,GEN-AMMO,0,true,5
+MADANIYIN,0,true,,,GEN-AMMO,10,true,30
+MADANIYIN,0,true,,,GEN-POL,0,true,5
+MADANIYIN,0,true,,,GEN-POL,10,true,30
+GABES,0,true,,,GEN-RESUPPLY,0,true,5
+GABES,0,true,,,GEN-RESUPPLY,10,true,30
+GABES,0,true,,,GEN-AMMO,0,true,5
+GABES,0,true,,,GEN-AMMO,10,true,30
+GABES,0,true,,,GEN-POL,0,true,5
+GABES,0,true,,,GEN-POL,10,true,30
+GABES (HNTM),0,true,,,GEN-RESUPPLY,0,true,5
+GABES (HNTM),0,true,,,GEN-RESUPPLY,10,true,30
+GABES (HNTM),0,true,,,GEN-AMMO,0,true,5
+GABES (HNTM),0,true,,,GEN-AMMO,10,true,30
+GABES (HNTM),0,true,,,GEN-POL,0,true,5
+GABES (HNTM),0,true,,,GEN-POL,10,true,30
+SIGONELLA,0,true,,,GEN-RESUPPLY,0,true,5
+SIGONELLA,0,true,,,GEN-RESUPPLY,10,true,30
+SIGONELLA,0,true,,,GEN-AMMO,0,true,5
+SIGONELLA,0,true,,,GEN-AMMO,10,true,30
+SIGONELLA,0,true,,,GEN-POL,0,true,5
+SIGONELLA,0,true,,,GEN-POL,10,true,30
+SEABASE,0,true,,,GEN-RESUPPLY,0,true,5
+SEABASE,0,true,,,GEN-RESUPPLY,10,true,30
+SEABASE,0,true,,,GEN-AMMO,0,true,5
+SEABASE,0,true,,,GEN-AMMO,10,true,30
+SEABASE,0,true,,,GEN-POL,0,true,5
+SEABASE,0,true,,,GEN-POL,10,true,30
+GABES (HNTS),0,true,,,GEN-RESUPPLY,0,true,5
+GABES (HNTS),0,true,,,GEN-RESUPPLY,10,true,30
+GABES (HNTS),0,true,,,GEN-AMMO,0,true,5
+GABES (HNTS),0,true,,,GEN-AMMO,10,true,30
+GABES (HNTS),0,true,,,GEN-POL,0,true,5
+GABES (HNTS),0,true,,,GEN-POL,10,true,30
+BIR EL ATER,0,true,,,GEN-RESUPPLY,0,true,5
+BIR EL ATER,0,true,,,GEN-RESUPPLY,10,true,30
+BIR EL ATER,0,true,,,GEN-AMMO,0,true,5
+BIR EL ATER,0,true,,,GEN-AMMO,10,true,30
+BIR EL ATER,0,true,,,GEN-POL,0,true,5
+BIR EL ATER,0,true,,,GEN-POL,10,true,30
+GAFSA,0,true,,,GEN-RESUPPLY,0,true,5
+GAFSA,0,true,,,GEN-RESUPPLY,10,true,30
+GAFSA,0,true,,,GEN-AMMO,0,true,5
+GAFSA,0,true,,,GEN-AMMO,10,true,30
+GAFSA,0,true,,,GEN-POL,0,true,5
+GAFSA,0,true,,,GEN-POL,10,true,30

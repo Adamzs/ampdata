@@ -1,0 +1,36 @@
+seaport,parent,serves,typeName,priority
+"",BD 1-crane,true,CF,1
+"",BD 1-crane,true,LCAC,2
+"",BD 1-crane,true,LCM-8,3
+"",BD 1-crane,true,LCU-1600,4
+"",BD 1-crane,true,LCU-2000,5
+"",OPDS-IPDS,false,CF,1
+"",OPDS-IPDS,false,LCAC,2
+"",OPDS-IPDS,false,LCM-8,3
+"",OPDS-IPDS,false,LCU-1600,4
+"",OPDS-IPDS,false,LCU-2000,5
+"",RRDF 1-SP,true,CF,1
+"",RRDF 1-SP,true,LCAC,2
+"",RRDF 1-SP,true,LCM-8,3
+"",RRDF 1-SP,true,LCU-1600,4
+"",RRDF 1-SP,true,LCU-2000,5
+"",RRDF 2-SP,true,CF,1
+"",RRDF 2-SP,true,LCAC,2
+"",RRDF 2-SP,true,LCM-8,3
+"",RRDF 2-SP,true,LCU-1600,4
+"",RRDF 2-SP,true,LCU-2000,5
+"",Self,false,CF,1
+"",Self,false,LCAC,2
+"",Self,false,LCM-8,3
+"",Self,false,LCU-1600,4
+"",Self,false,LCU-2000,5
+"",T-ACS 1-crane,false,CF,1
+"",T-ACS 1-crane,false,LCAC,2
+"",T-ACS 1-crane,false,LCM-8,3
+"",T-ACS 1-crane,false,LCU-1600,4
+"",T-ACS 1-crane,false,LCU-2000,5
+"",T-ACS 2-crane,false,CF,1
+"",T-ACS 2-crane,false,LCAC,2
+"",T-ACS 2-crane,false,LCM-8,3
+"",T-ACS 2-crane,false,LCU-1600,4
+"",T-ACS 2-crane,false,LCU-2000,5

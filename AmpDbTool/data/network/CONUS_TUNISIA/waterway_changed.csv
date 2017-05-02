@@ -1,0 +1,12 @@
+KEY,SHAPE_ROW,CountryState,CountryStateCode,Length,LineStyle,LineWidth,LineColor,WaterwayRate,WaterwayRateOfMarch,AvailableMilitary,type,From,To,DisplayName,Modified
+waterway-0,0,TN,TN,,,,,,,,,VKNP intersection,intersection 6725,,
+waterway-1,1,TN,TN,,,,,,,,,intersection 6725,intersection 6726,,
+waterway-10,10,TN,TN,,,,,,,,,intersection 6725,intersection 6731,,
+waterway-2,2,TN,TN,,,,,,,,,intersection 6726,intersection 6727,,
+waterway-3,3,TN,TN,,,,,,,,,intersection 6727,APFD intersection,,
+waterway-4,4,TN,TN,,,,,,,,,intersection 6727,intersection 6728,,
+waterway-5,5,TN,TN,,,,,,,,,intersection 6728,intersection 6729,,
+waterway-6,6,TN,TN,,,,,,,,,intersection 6729,HNTS intersection,,
+waterway-7,7,TN,TN,,,,,,,,,intersection 6729,intersection 6730,,
+waterway-8,8,TN,TN,,,,,,,,,intersection 6730,intersection 6731,,
+waterway-9,9,TN,TN,,,,,,,,,intersection 6731,FGTW intersection,,

@@ -1,0 +1,63 @@
+Name,Start,Format
+Name,1,A10
+Commodity Code,11,I3
+Service Index,14,I2
+Split RLN Code,16,A10
+Cargo Category Code,26,A3
+Parent Unit Code,29,A10
+Unit Name,39,A30
+Description,69,A31
+TPSN,100,A5
+Aircraft Name,105,A6
+Brigade Key,111,A4
+UTC,115,A11
+UIC,126,A6
+First FM,132,A4
+Aircraft Count,136,I4
+Origin,140,A4
+Destination,144,A4
+APOE,148,A4
+SPOE,152,A4
+APOD,156,A4
+SPOD,160,A4
+Strat ILOC,164,A4
+Dep Theater,168,I4
+RLD,172,I4
+Air ALD,176,I4
+Sea ALD,180,I4
+ILOC Delay,184,I4
+EAD,188,I4
+LAD,192,I4
+RDD,196,I4
+Mode,200,I4
+Means,204,I4
+POL,208,F10.2
+PAX,218,I7
+Bulk STons,225,F10.2
+Over STons,235,F10.2
+Out STons,245,F10.2
+Total STons,255,F10.2
+Cont STons,265,F10.2
+Wheeled STons,275,F10.2
+Tracked STons,285,F10.2
+NSDA STons,295,F10.2
+NonCont STons,305,F10.2
+Cont MTons,315,F10.2
+Wheeled MTons,325,F10.2
+Tracked MTons,335,F10.2
+NSDA MTons,345,F10.2
+NonCont MTons,355,F10.2
+Cont Sqft,365,I8
+Wheeled Sqft,373,I8
+Tracked Sqft,381,I8
+NSDA Sqft,389,I8
+NonCont Sqft,397,I8
+FM List,405,A24
+Organization,430,A24
+NextRln,454,A10
+Retrograde,464,I1
+HandoffOrigin,465,A4
+HandoffDate,469,I4
+PreemptivePriority,473,I5
+MaxSchedDay,478,I4
+ILOC Mode,482,I4

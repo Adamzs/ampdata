@@ -1,0 +1,124 @@
+KEY,ATTRIBUTE_NUM,VALUE
+ALL-PURPOSE,215,null
+BARGE,215,null
+BBULK/AMMO,215,null
+BBULK/CONTNR,215,null
+BBULK/RORO,215,null
+BREAKBULK,215,null
+CONT/AMMO,215,null
+CONTAINER,215,null
+DOCK,215,null
+GENERAL PURP,215,null
+INTRA WATER,215,null
+JLOTS,215,null
+LIGHTER,215,null
+OTHER,215,null
+RORO,215,null
+RORO berth,215,null
+RORO-container berth,215,null
+RORO/CONTNR,215,null
+TANKER,215,null
+VISA,215,null
+VISA berth,215,null
+admin,215,true
+air force station,215,true
+air national guard station,215,true
+air station,215,true
+air terminal,215,true
+airfield,215,true
+airport,215,true
+all-purpose berth,215,null
+ammunition storage,215,true
+annex,215,true
+apron,215,null
+army installation,215,true
+austere port,215,true
+barge berth,215,null
+bay,215,true
+berth,215,null
+breakbulk berth,215,null
+breakbulk-ammunition berth,215,null
+breakbulk-container berth,215,null
+breakbulk-roro berth,215,null
+canal,215,true
+capacitated land link,215,null
+cape,215,true
+channel,215,true
+city,215,true
+civil air patrol,215,true
+clinic,215,true
+coast guard installation,215,true
+command operations,215,true
+communication,215,true
+container berth,215,null
+container crane,215,null
+container-ammunition berth,215,null
+crane,215,null
+defense fuel support point,215,true
+depot,215,true
+dispensary,215,true
+dualport,215,true
+family housing,215,true
+feature,215,null
+fixed port,215,true
+gantry crane,215,null
+general purpose berth,215,null
+gulf,215,true
+hospital,215,true
+international airport,215,true
+intra water berth,215,null
+island,215,true
+joint use airport,215,true
+joint-use airport,215,true
+lake,215,true
+land node,215,true
+landnode,215,true
+maintenance,215,true
+marine barracks,215,true
+marine corps camp,215,true
+marine ground installation,215,true
+military airport,215,true
+military node,215,true
+missile,215,true
+mobile crane,215,null
+navaid,215,true
+naval activity,215,true
+naval base,215,true
+navy installation,215,true
+node,215,true
+ocean,215,true
+operating area,215,true
+parking,215,null
+passage,215,true
+pipeline node,215,true
+pol retail distribution,215,true
+pol retail distribution station,215,true
+port,215,true
+radar installation,215,true
+radar receiver,215,true
+radio relay,215,true
+railroad junction,215,true
+recreation,215,true
+refugee camp,215,true
+reserve training center,215,true
+road junction,215,true
+runway,215,null
+rural populated area,215,true
+school,215,true
+sea,215,true
+sea node,215,true
+seanode,215,true
+seaport,215,true
+service,215,true
+shipping lane node,215,true
+staging area,215,true
+storage,215,true
+strait,215,true
+tanker berth,215,null
+terminal,215,null
+training,215,true
+unit_node,215,true
+vulnerable point,215,null
+waterway node,215,true
+weather station,215,true
+wharf crane,215,null

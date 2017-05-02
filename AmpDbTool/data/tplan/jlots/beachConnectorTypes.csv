@@ -1,0 +1,7 @@
+seaport,name,numServicePoints,roroRate,stRate,contRate,polRate
+APFD,Fixed Berth all-purpose berth-APFD Terminal-19858,0,0,0,0,0
+"",Beach Head 3-service points,3,10,500,6,0
+"",CWP 1-service point,1,10,500,8,0
+"",ELCAS 1-crane,2,10,500,5,0
+"",IPDS-OPDS,1,0,0,0,5000
+"",Trident Pier 3-service points,3,10,500,8,0

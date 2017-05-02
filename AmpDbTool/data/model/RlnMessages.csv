@@ -1,0 +1,9 @@
+RLN,FirstTime,LastTime,Message,Count
+1:00FF,0,0,Setting APOD to small load airport: FWD BASE,1
+1:00FF,27360,27360,"Changing APOD to small load PAX airport Name: FWD BASE, Geoloc: OPA1 [local], Location: (34.283333, 9.6)",1
+1:00GDP,0,0,Setting APOD to small load airport: FWD BASE,1
+1:00GDP,2880,2880,"Changing APOD to small load PAX airport Name: FWD BASE, Geoloc: OPA1 [local], Location: (34.283333, 9.6)",1
+1:00GFA,0,0,Setting APOD to small load airport: FWD BASE,1
+1:00GFA,2880,2880,"Changing APOD to small load PAX airport Name: FWD BASE, Geoloc: OPA1 [local], Location: (34.283333, 9.6)",1
+1:00GH,0,0,No remaining ship can load requirement for special means 50; 0 Stons and 0 Cbbls not scheduled,1
+1:0TABC,0,0,No remaining ship can load requirement for special means 50; 0 Stons and 0 Cbbls not scheduled,1

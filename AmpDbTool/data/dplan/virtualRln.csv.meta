@@ -1,0 +1,20 @@
+{
+    "id": "/dplan/virtualRln.csv.meta",
+    "title": "VirtualRLNs",
+    "scenario": "metadata-scenario",
+    "classname": "ampdom.dplan.vrln.VirtualRln",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Key",
+                "titles": "Key",
+                "description": "The Virtual RLN ID",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "Key",
+        "foreignKeys": [
+        ]
+    }
+}

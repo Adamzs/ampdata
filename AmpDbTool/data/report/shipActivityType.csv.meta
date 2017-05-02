@@ -1,0 +1,1 @@
+{"id":"/report/shipActivityType.csv.meta","title":"ShipActivityType","scenario":"metadata-scenario","classname":"ampmod.io.ShipActivityWriter$ActivityType","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"ActivityType","titles":"ActivityType","description":"The ship activity type","datatype":"string"}],"primaryKey":"ActivityType","foreignKeys":[]}}

@@ -1,0 +1,12 @@
+Key,Day,Enabled,Description,EventPhase,Unrestricted,MARINES,NAVY,ARMY,AIR-FORCE
+RRF,0,true,,,true,true,true,true,true
+FLOW,0,true,,,true,true,true,true,true
+PREPO,0,true,,,true,true,true,true,true
+AMMO,0,true,,,true,true,true,true,true
+MPS,0,true,,,true,true,true,true,true
+MSC,0,true,,,true,true,true,true,true
+ORG SURGE,0,true,,,true,true,true,true,true
+EUSC,0,true,,,true,true,true,true,true
+VISA,0,true,,,true,true,true,true,true
+FF-LINER,0,true,,,true,true,true,true,true
+PORT AUG,0,true,,,true,true,true,true,true

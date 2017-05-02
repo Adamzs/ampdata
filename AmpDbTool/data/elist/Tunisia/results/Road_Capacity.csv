@@ -1,0 +1,95 @@
+Road Capacities
+ID<>,Name<>,Capacity<STON>,Capacity Rate<Veh/Day>,Usage Rating<Float>
+10546,APFD VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10159,BQWK VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10734,BSRL VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10045,BSRR VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+6470,Connector Road -1-234,2000.0,0.0,0.0
+6240,Connector Road -2-4,2000.0,0.0,0.0
+10064,FUQN VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+6352,Gabes Connector Road-116,2000.0,0.0,0.0
+9754,HNTK VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10636,HNTM VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+9587,HNTS VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+9679,HPBF VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10080,JEAH VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10153,NWXN VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+10694,OPA1 VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+9609,OPA2 VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+6476,Thelepta-Ferana connect road-240,2000.0,0.0,0.0
+6369,Tunisia Road Link - 100-133,2000.0,0.0,0.0
+6341,Tunisia Road Link - 101-105,2000.0,0.0,0.0
+6450,Tunisia Road Link - 103-214,2000.0,0.0,0.0
+6245,Tunisia Road Link - 105-9,2000.0,0.0,0.0
+6498,Tunisia Road Link - 12-262,2000.0,0.0,0.0
+6372,Tunisia Road Link - 121-136,2000.0,0.0,0.0
+6302,Tunisia Road Link - 124-66,2000.0,0.0,0.0
+6380,Tunisia Road Link - 125-144,2000.0,0.0,0.0
+6295,Tunisia Road Link - 128-59,2000.0,0.0,0.0
+6246,Tunisia Road Link - 13-10,2000.0,0.0,0.0
+6271,Tunisia Road Link - 135-35,2000.0,0.0,0.0
+6425,Tunisia Road Link - 137-189,2000.0,0.0,0.0
+6260,Tunisia Road Link - 139-24,2000.0,0.0,0.0
+6387,Tunisia Road Link - 150-151,2000.0,0.0,0.0
+6278,Tunisia Road Link - 152-42,2000.0,0.0,0.0
+6309,Tunisia Road Link - 156-73,2000.0,0.0,0.0
+6398,Tunisia Road Link - 158-162,2000.0,0.0,0.0
+6479,Tunisia Road Link - 162-243,2000.0,0.0,0.0
+6315,Tunisia Road Link - 163-79,2000.0,0.0,0.0
+6484,Tunisia Road Link - 165-248,200.0,0.0,0.0
+6268,Tunisia Road Link - 166-32,2000.0,0.0,0.0
+6333,Tunisia Road Link - 167-97,2000.0,0.0,0.0
+6418,Tunisia Road Link - 168-182,2000.0,0.0,0.0
+6272,Tunisia Road Link - 17-36,2000.0,0.0,0.0
+6258,Tunisia Road Link - 172-22,2000.0,0.0,0.0
+6502,Tunisia Road Link - 174-266,2000.0,0.0,0.0
+6452,Tunisia Road Link - 175-216,2000.0,0.0,0.0
+6294,Tunisia Road Link - 177-58,2000.0,0.0,0.0
+6454,Tunisia Road Link - 179-218,2000.0,0.0,0.0
+6383,Tunisia Road Link - 210-147,2000.0,0.0,0.0
+6473,Tunisia Road Link - 211-237,2000.0,0.0,0.0
+6459,Tunisia Road Link - 226-223,2000.0,0.0,0.0
+6521,Tunisia Road Link - 227-285,2000.0,0.0,0.0
+6253,Tunisia Road Link - 228-17,2000.0,0.0,0.0
+6539,Tunisia Road Link - 23-303,2000.0,0.0,0.0
+6468,Tunisia Road Link - 236-232,2000.0,0.0,0.0
+6261,Tunisia Road Link - 239-25,2000.0,0.0,0.0
+6520,Tunisia Road Link - 244-284,2000.0,0.0,0.0
+6303,Tunisia Road Link - 247-67,2000.0,0.0,0.0
+6376,Tunisia Road Link - 250-140,2000.0,0.0,0.0
+6304,Tunisia Road Link - 251-68,2000.0,0.0,0.0
+6345,Tunisia Road Link - 252-0-109,2000.0,0.0,0.0
+6346,Tunisia Road Link - 252-1-110,2000.0,0.0,0.0
+6356,Tunisia Road Link - 253-120,2000.0,0.0,0.0
+6442,Tunisia Road Link - 254-206,2000.0,0.0,0.0
+6537,Tunisia Road Link - 255-301,2000.0,0.0,0.0
+6239,Tunisia Road Link - 256-3,2000.0,0.0,0.0
+6316,Tunisia Road Link - 257-80,2000.0,0.0,0.0
+6340,Tunisia Road Link - 265-104,2000.0,0.0,0.0
+6293,Tunisia Road Link - 265-split-57,2000.0,0.0,0.0
+6408,Tunisia Road Link - 266-172,2000.0,0.0,0.0
+6307,Tunisia Road Link - 268-71,2000.0,0.0,0.0
+6384,Tunisia Road Link - 269-148,2000.0,0.0,0.0
+6441,Tunisia Road Link - 274-205,2000.0,0.0,0.0
+6477,Tunisia Road Link - 278-241,200.0,0.0,0.0
+6322,Tunisia Road Link - 28-86,2000.0,0.0,0.0
+6417,Tunisia Road Link - 34-181,2000.0,0.0,0.0
+6280,Tunisia Road Link - 4-44,2000.0,0.0,0.0
+6532,Tunisia Road Link - 46-296,2000.0,0.0,0.0
+6505,Tunisia Road Link - 5-269,2000.0,0.0,0.0
+6273,Tunisia Road Link - 63-37,2000.0,0.0,0.0
+6317,Tunisia Road Link - 72-81,2000.0,0.0,0.0
+6360,Tunisia Road Link - 76-124,2000.0,0.0,0.0
+6519,Tunisia Road Link - 78-283,2000.0,0.0,0.0
+6292,Tunisia Road Link - 8-56,2000.0,0.0,0.0
+6367,Tunisia Road Link - 91-131,2000.0,0.0,0.0
+6256,Tunisia Road Link - 92-20,2000.0,0.0,0.0
+10188,VKNG VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+9660,VKNP VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+9608,WSVC VIRTUAL ROAD LINK,3.4028235E38,0.0,0.0
+6414,auto_link1-178,2000.0,0.0,0.0
+6299,auto_link10-63,2000.0,0.0,0.0
+6456,auto_link12-220,2000.0,0.0,0.0
+6440,auto_link22-204,2000.0,0.0,0.0
+6393,auto_link8-157,2000.0,0.0,0.0
+6432,auto_link9-196,2000.0,0.0,0.0

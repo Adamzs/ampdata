@@ -1,0 +1,20 @@
+{
+    "id": "/fedResults/serviceCodes.csv.meta",
+    "title": "ServiceCodes",
+    "scenario": "metadata-scenario",
+    "classname": "ampdom.dplan.ServiceCode",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ServiceCode",
+                "titles": "ServiceCode",
+                "description": "Code that represents the various states a requirement can be in",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "ServiceCode",
+        "foreignKeys": [
+        ]
+    }
+}

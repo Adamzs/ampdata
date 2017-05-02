@@ -1,0 +1,14 @@
+ShipState,ShipStateDescription
+QUEUED,Queued
+ONLOADING,Onloading
+OFFLOADING,Offloading
+ONANDOFFLOADING,On/OffLoading
+IDLE_AT_BERTH,Idle At Berth
+ENROUTE_TO_HOME,Enroute To Home
+ENROUTE_TO_ONLOAD,Enroute To Onload
+ENROUTE_TO_OFFLOAD,Enroute To Offload
+ENROUTE_VISA,Enroute Visa
+ENROUTE_EMPTY,Enroute to Collection Point or Initial Position
+IDLE_EMPTY,Idle At Collection Point or Initial Position
+UNKNOWN,Unknown
+UNUSED,Unused

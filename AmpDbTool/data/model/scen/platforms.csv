@@ -1,0 +1,6 @@
+Name,Collapsible,Stackable,Length,Width,Height,CollapsedHeight,TareWeight,MaxPayload,DefaultStowFactor,ReturnLocation,CCC
+CONTAINER_20_FOOT,false,true,20,8,8.5,8.5,45000,40000,0.75,,JCB
+CONTAINER_40_FOOT,false,true,40,8,8.5,8.5,7000,60000,0.75,,JCC
+FLATRACK,false,false,40,8,8.5,8.5,10910,88300,0.75,,JCC
+JMIC,true,true,4.3,3.6,3.6,1.3,329,3000,0.75,,JDB
+PALLET_463L,false,false,7.3,9,0.2,0.2,300,10000,0.75,,JCD

@@ -1,0 +1,4 @@
+Commodity,CCC,POL Den,Percent,Area,Volume,Air Type,Cont
+GEN-RESUPPLY,,,1,12.5,2,1,true
+GEN-AMMO,,,0,0,0,0,false
+GEN-POL,,,0,0,0,0,false

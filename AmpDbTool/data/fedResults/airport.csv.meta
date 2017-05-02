@@ -1,0 +1,75 @@
+{
+    "id": "/fedResults/airport.csv.meta",
+    "title": "Airport",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.entity.Airport",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "NumPlanesWaitingToOffload",
+                "titles": "NumPlanesWaitingToOffload",
+                "description": "Number of planes waiting to offload at the end of the interval.",
+                "datatype": "integer"
+            },
+            {
+                "name": "NumPlanesOffloaded",
+                "titles": "NumPlanesOffloaded",
+                "description": "Number of planes offloaded in this interval.",
+                "datatype": "integer"
+            },
+            {
+                "name": "Longitude",
+                "titles": "Longitude",
+                "description": "Longitude of the location in decidegrees.",
+                "datatype": "double"
+            },
+            {
+                "name": "Latitude",
+                "titles": "Latitude",
+                "description": "Latitude of the location in decidegrees.",
+                "datatype": "double"
+            },
+            {
+                "name": "Geoloc",
+                "titles": "Geoloc",
+                "description": "Geolocation code of the location.",
+                "datatype": "string"
+            },
+            {
+                "name": "Name",
+                "titles": "Name",
+                "description": "Long name of the location (in the form 'NAME -GEOLOC-INSTTYPE').",
+                "datatype": "string"
+            },
+            {
+                "name": "Capability",
+                "titles": "Capability",
+                "description": "The capability of the location.",
+                "datatype": "float"
+            }
+        ],
+        "primaryKey": "Model",
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            }
+        ]
+    }
+}

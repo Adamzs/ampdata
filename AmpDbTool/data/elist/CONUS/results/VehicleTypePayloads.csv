@@ -1,0 +1,306 @@
+Vehicle Type Payloads in CONUS
+Vehicle Type<String>,Time<Day>,Num<Integer>,Ave % Payload<Float>,Max % Payload<Float>,Ave % Payload Area<Float>
+54DODX,9,65,9.584617,16.636362,315.41937
+54DODX,10,30,4.5454545,4.5454545,86.98435
+54DODX,11,58,17.996864,37.81818,370.90256
+54DODX,12,92,15.482212,37.81818,364.56412
+54DODX,15,90,16.216162,37.81818,377.02496
+54DODX,16,51,7.579323,11.909092,187.41362
+54DODX,17,66,15.356749,26.90909,374.33676
+54DODX,18,37,12.189188,19.727272,356.83572
+54DODX,19,22,11.586777,11.909091,317.44507
+54DODX,20,30,11.363636,11.363636,307.2
+54DODX,21,106,15.788163,37.81818,380.86563
+54DODX,22,29,10.347963,12.545455,344.80554
+54DODX,23,37,7.6240788,16.181818,165.57124
+54DODX,24,45,9.660605,17.545454,261.0866
+54DODX,25,39,12.006992,21.272728,323.03952
+54DODX,26,39,15.7832155,26.90909,344.945
+54DODX,27,13,22.545454,23.818182,469.91843
+54DODX,28,4,15.863637,17.363638,411.13043
+54DODX,29,21,14.233767,19.818182,358.62262
+54DODX,34,1,8.181818,8.181818,313.87827
+68FLAT,8,2,12.2,12.2,370.4
+68FLAT,10,133,4.9481206,7.6,148.71819
+68FLAT,11,84,7.495341,21.8,167.83237
+68FLAT,12,122,6.526978,17.9,185.46362
+68FLAT,13,75,5.0,5.0,159.68
+68FLAT,14,50,4.9599996,21.8,204.27199
+68FLAT,15,70,5.917143,21.8,233.56343
+68FLAT,18,3,6.1666665,12.2,185.06667
+68FLAT,19,35,6.174286,15.5,208.384
+68FLAT,20,35,3.5628572,6.7,176.87772
+68FLAT,22,43,9.746512,15.5,255.1814
+68FLAT,23,3,1.7999998,3.6,161.06667
+68FLAT,24,25,3.0879998,3.7,215.42398
+68FLAT,25,75,4.681333,17.9,144.46933
+68FLAT,27,36,5.769883,5.9473686,5.013325
+68FLAT,28,22,5.947368,5.9473686,0.0
+68FLAT,29,57,4.6369343,5.9473686,121.71228
+68FLAT,30,10,4.0,4.0,172.8
+68FLAT,31,6,4.0,4.0,172.8
+Commercial 10-Ton Tractor/Commercial Semitrailer,5,7,59.52381,64.00001,69.75446
+Commercial 10-Ton Tractor/Commercial Semitrailer,6,14,31.928572,40.0,73.20982
+Commercial 10-Ton Tractor/Commercial Semitrailer,7,1,14.3333435,14.3333435,33.8125
+Commercial 10-Ton Tractor/Commercial Semitrailer,8,1,1.6666666,1.6666666,20.625
+Commercial 10-Ton Tractor/Commercial Semitrailer,9,76,40.026318,59.523808,43.219162
+Commercial 10-Ton Tractor/Commercial Semitrailer,10,33,52.767673,59.523808,13.787879
+Commercial 10-Ton Tractor/Commercial Semitrailer,11,15,19.833334,40.0,45.397915
+Commercial 10-Ton Tractor/Commercial Semitrailer,12,9,36.055557,64.00001,29.791666
+Commercial 10-Ton Tractor/Commercial Semitrailer,13,6,48.0,64.0,71.015625
+Commercial 10-Ton Tractor/Commercial Semitrailer,14,30,51.222225,59.523808,15.010417
+Commercial 10-Ton Tractor/Commercial Semitrailer,15,11,32.87879,40.0,69.744316
+Commercial 10-Ton Tractor/Commercial Semitrailer,16,6,33.77778,40.0,76.354164
+Commercial 10-Ton Tractor/Commercial Semitrailer,17,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,18,1,0.33333334,0.33333334,0.625
+Commercial 10-Ton Tractor/Commercial Semitrailer,19,3,55.555553,55.555553,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,20,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,21,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,22,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,23,35,59.523815,64.00001,27.901789
+Commercial 10-Ton Tractor/Commercial Semitrailer,24,24,59.027782,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,25,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,26,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,27,28,59.523808,64.00001,17.438616
+Commercial 10-Ton Tractor/Commercial Semitrailer,29,18,59.523808,59.523808,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,30,35,59.523815,64.00001,27.901789
+Commercial 10-Ton Tractor/Commercial Semitrailer,31,24,59.523815,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,32,33,57.215008,64.00001,31.13731
+Commercial 10-Ton Tractor/Commercial Semitrailer,33,24,59.523815,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,34,15,56.444443,64.00001,66.6125
+Commercial 10-Ton Tractor/Commercial Semitrailer,35,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,36,35,59.523815,64.00001,27.901787
+Commercial 10-Ton Tractor/Commercial Semitrailer,39,35,59.523815,64.00001,27.901787
+Commercial 10-Ton Tractor/Commercial Semitrailer,40,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,41,14,59.52381,64.00001,69.75447
+Commercial 10-Ton Tractor/Commercial Semitrailer,42,29,56.896553,59.52381,18.59483
+Commercial 10-Ton Tractor/Commercial Semitrailer,43,7,61.42857,64.00001,72.98661
+Commercial 10-Ton Tractor/Commercial Semitrailer,44,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,45,14,59.52381,64.00001,69.75447
+Commercial 10-Ton Tractor/Commercial Semitrailer,46,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,48,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,49,14,59.52381,64.00001,69.75447
+Commercial 10-Ton Tractor/Commercial Semitrailer,50,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,52,28,59.523808,64.00001,17.438616
+Commercial 10-Ton Tractor/Commercial Semitrailer,53,24,59.027782,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,54,7,59.52381,64.00001,69.75446
+Commercial 10-Ton Tractor/Commercial Semitrailer,55,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,56,7,59.52381,64.00001,69.75446
+Commercial 10-Ton Tractor/Commercial Semitrailer,57,21,59.52381,59.52381,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,58,7,59.52381,64.00001,69.75446
+Commercial 10-Ton Tractor/Commercial Semitrailer,59,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,60,32,59.895832,64.00001,15.258789
+Commercial 10-Ton Tractor/Commercial Semitrailer,62,39,59.829063,64.00001,25.040068
+Commercial 10-Ton Tractor/Commercial Semitrailer,63,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,65,32,59.895832,64.00001,15.258789
+Commercial 10-Ton Tractor/Commercial Semitrailer,66,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,67,32,59.895832,64.00001,15.258789
+Commercial 10-Ton Tractor/Commercial Semitrailer,69,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,70,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,71,33,55.555557,64.00001,11.837121
+Commercial 10-Ton Tractor/Commercial Semitrailer,72,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,73,28,59.523808,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,74,33,55.555557,64.00001,11.837121
+Commercial 10-Ton Tractor/Commercial Semitrailer,76,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,77,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,78,27,56.987656,60.0,1.6782404
+Commercial 10-Ton Tractor/Commercial Semitrailer,79,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,80,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,82,35,53.485725,64.00001,12.455358
+Commercial 10-Ton Tractor/Commercial Semitrailer,83,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,84,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,85,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,86,28,59.523808,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,87,10,46.13334,64.00001,54.0625
+Commercial 10-Ton Tractor/Commercial Semitrailer,88,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,89,35,53.485725,64.00001,12.455358
+Commercial 10-Ton Tractor/Commercial Semitrailer,90,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,91,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,93,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,94,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,95,35,57.142857,64.00001,16.741072
+Commercial 10-Ton Tractor/Commercial Semitrailer,96,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,97,27,56.987656,60.0,1.6782404
+Commercial 10-Ton Tractor/Commercial Semitrailer,99,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,100,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,101,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,102,31,55.01075,64.00001,7.7620964
+Commercial 10-Ton Tractor/Commercial Semitrailer,103,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,104,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,105,35,57.142857,64.00001,16.741072
+Commercial 10-Ton Tractor/Commercial Semitrailer,107,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,108,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,109,31,59.139782,64.00001,12.600806
+Commercial 10-Ton Tractor/Commercial Semitrailer,110,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,112,38,56.0,64.00001,14.226974
+Commercial 10-Ton Tractor/Commercial Semitrailer,113,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,114,86,57.80385,64.00001,9.332634
+Commercial 10-Ton Tractor/Commercial Semitrailer,116,1,29.778324,29.778324,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,117,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,118,10,46.13334,64.00001,54.0625
+Commercial 10-Ton Tractor/Commercial Semitrailer,119,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,120,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,121,31,55.01075,64.00001,7.762097
+Commercial 10-Ton Tractor/Commercial Semitrailer,122,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,123,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,124,8,41.666668,64.00001,48.828125
+Commercial 10-Ton Tractor/Commercial Semitrailer,125,28,59.523808,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,126,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,127,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,128,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,129,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,130,67,57.742626,64.00001,12.546641
+Commercial 10-Ton Tractor/Commercial Semitrailer,131,5,42.74914,64.00001,50.09665
+Commercial 10-Ton Tractor/Commercial Semitrailer,132,31,56.52943,64.00001,9.541799
+Commercial 10-Ton Tractor/Commercial Semitrailer,134,28,59.52381,64.00001,6.975446
+Commercial 10-Ton Tractor/Commercial Semitrailer,135,10,50.0,64.00001,58.59375
+Commercial 10-Ton Tractor/Commercial Semitrailer,136,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,137,30,58.333332,64.00001,9.765625
+Commercial 10-Ton Tractor/Commercial Semitrailer,138,30,58.333332,64.00001,9.765625
+Commercial 10-Ton Tractor/Commercial Semitrailer,139,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,140,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,141,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,143,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,144,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,145,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,146,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,147,35,57.142857,64.00001,16.741072
+Commercial 10-Ton Tractor/Commercial Semitrailer,148,28,59.31474,59.31474,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,149,10,51.78681,64.00001,60.687664
+Commercial 10-Ton Tractor/Commercial Semitrailer,150,28,59.523808,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,151,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,152,29,57.471268,64.00001,6.734914
+Commercial 10-Ton Tractor/Commercial Semitrailer,154,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,155,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,156,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,157,31,55.01075,64.00001,7.762097
+Commercial 10-Ton Tractor/Commercial Semitrailer,158,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,159,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,160,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,161,10,46.13334,64.00001,54.0625
+Commercial 10-Ton Tractor/Commercial Semitrailer,162,28,59.523808,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,163,27,56.987656,60.0,1.6782404
+Commercial 10-Ton Tractor/Commercial Semitrailer,164,25,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,165,35,56.038097,64.00001,15.446428
+Commercial 10-Ton Tractor/Commercial Semitrailer,166,28,59.52381,59.523808,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,167,10,52.06724,64.00001,61.016296
+Commercial 10-Ton Tractor/Commercial Semitrailer,168,26,58.437866,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,169,10,50.0,64.00001,58.59375
+Commercial 10-Ton Tractor/Commercial Semitrailer,170,50,60.0,60.0,0.0
+Commercial 10-Ton Tractor/Commercial Semitrailer,171,2,19.333332,19.333332,22.656246
+Commercial 10-Ton Tractor/Commercial Semitrailer,173,10,46.13334,64.00001,54.0625
+Commercial 10-Ton Tractor/Commercial Semitrailer,176,6,34.22222,64.00001,40.104168
+Commercial Bus 45-pax,3,5,86.66667,100.0,0.0
+Commercial Bus 45-pax,5,12,100.0,100.0,0.0
+Commercial Bus 45-pax,6,2,34.444443,53.333332,0.0
+Commercial Bus 45-pax,7,11,100.0,100.0,0.0
+Commercial Bus 45-pax,8,1,26.666666,26.666666,0.0
+Commercial Bus 45-pax,9,13,92.13676,100.0,0.0
+Commercial Bus 45-pax,10,5,95.55556,100.0,0.0
+Commercial Bus 45-pax,11,2,74.44444,100.0,0.0
+Commercial Bus 45-pax,12,15,93.481476,100.0,0.0
+Commercial Bus 45-pax,13,18,91.60495,100.0,0.0
+Commercial Bus 45-pax,14,14,95.2381,100.0,0.0
+Commercial Bus 45-pax,15,14,95.07936,100.0,0.0
+Commercial Bus 45-pax,16,38,94.56141,100.0,0.0
+Commercial Bus 45-pax,17,85,98.2745,100.0,0.0
+Commercial Bus 45-pax,18,46,98.21256,100.0,0.0
+Commercial Bus 45-pax,20,2,35.555557,42.22222,0.0
+Commercial Bus 45-pax,21,66,99.6633,100.0,0.0
+Commercial Bus 45-pax,22,57,98.2846,100.0,0.0
+Commercial Bus 45-pax,23,97,98.0527,100.0,0.0
+Commercial Bus 45-pax,24,71,97.65258,100.0,0.0
+Commercial Bus 45-pax,25,24,98.61111,100.0,0.0
+Commercial Bus 45-pax,26,35,93.333336,100.0,0.0
+Commercial Bus 45-pax,27,6,100.0,100.0,0.0
+Commercial Bus 45-pax,28,31,100.0,100.0,0.0
+Commercial Bus 45-pax,29,48,95.231476,100.0,0.0
+Commercial Bus 45-pax,30,18,100.0,100.0,0.0
+Commercial Bus 45-pax,31,54,98.60082,100.0,0.0
+Commercial Bus 45-pax,32,27,95.55556,100.0,0.0
+Commercial Bus 45-pax,33,10,92.22222,100.0,0.0
+Commercial Bus 45-pax,34,1,6.6666665,6.6666665,0.0
+Commercial Bus 45-pax,35,26,97.4359,100.0,0.0
+Commercial Bus 45-pax,37,20,97.11111,100.0,0.0
+Commercial Bus 45-pax,41,3,93.333336,100.0,0.0
+Commercial HET Tractor/Commercial HET Trailer,10,89,15.885767,30.499998,69.49948
+Commercial HET Tractor/Commercial HET Trailer,15,43,10.972867,13.666667,81.18394
+M1070 HET Tractor/M1000 70-Ton HET Trailer,9,237,92.03375,92.28571,83.25481
+M1070 HET Tractor/M1000 70-Ton HET Trailer,10,86,12.431893,25.42857,53.911495
+M1070 HET Tractor/M1000 70-Ton HET Trailer,11,49,50.734703,92.00001,68.041954
+M1070 HET Tractor/M1000 70-Ton HET Trailer,12,2,41.0,41.0,84.166664
+M1070 HET Tractor/M1000 70-Ton HET Trailer,13,5,25.457142,41.0,56.27778
+M1070 HET Tractor/M1000 70-Ton HET Trailer,14,3,39.57143,41.0,76.388885
+M1070 HET Tractor/M1000 70-Ton HET Trailer,15,65,92.03077,92.28571,83.188034
+M1070 HET Tractor/M1000 70-Ton HET Trailer,16,133,71.14286,92.28571,75.06266
+M1070 HET Tractor/M1000 70-Ton HET Trailer,18,107,27.064083,91.71429,60.290756
+M1070 HET Tractor/M1000 70-Ton HET Trailer,19,9,8.285714,8.714286,42.746914
+M1070 HET Tractor/M1000 70-Ton HET Trailer,21,3,13.761906,16.285715,54.074078
+M1083 WOWN 5-Ton MTV,9,52,135.53847,244.0,157.26923
+M1083 WOWN 5-Ton MTV,10,16,39.875,46.0,60.39375
+M1083 WOWN 5-Ton MTV,12,2,25.000008,46.0,91.34999
+M1083 WOWN 5-Ton MTV,15,13,135.53847,244.0,157.26923
+M1083 WOWN 5-Ton MTV,16,15,123.33335,244.0,156.5
+M1083 WOWN 5-Ton MTV,18,1,44.0,44.0,151.5
+M1083 WOWN 5-Ton MTV,24,3,28.0,30.0,98.0
+M1083 WOWN 5-Ton MTV,25,25,99.2,100.0,107.88001
+M1083 WOWN 5-Ton MTV,26,5,32.4,36.0,59.4
+M1083 WOWN 5-Ton MTV,29,3,28.0,30.0,98.0
+M1083 WOWN 5-Ton MTV,37,25,99.2,100.0,107.88001
+M1083 WOWN 5-Ton MTV,42,24,99.333336,100.0,108.00001
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,28,267,100.02996,100.27584,0.0
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,29,267,100.0,101.59993,0.0
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,30,267,100.0,100.00026,0.0
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,31,267,100.0,100.00026,0.0
+M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,32,175,100.06855,100.8,0.0
+M123 10-Ton Tractor/M870 40-Ton Lowbed,11,89,25.0,25.0,67.092445
+commercial boxcar,3,12,0.9375,5.75,67.61739
+commercial boxcar,9,16,5.09375,5.75,77.76
+commercial boxcar,10,10,4.6249995,5.75,81.474785
+commercial boxcar,13,1,0.5000019,0.5000019,34.726936
+commercial boxcar,15,11,4.590909,5.0,64.87021
+commercial boxcar,16,7,4.071428,4.4999995,66.21019
+commercial boxcar,19,10,0.5,0.50000006,58.434784
+commercial boxcar,20,6,0.5,0.5,58.434784
+commercial boxcar,21,4,3.8125,5.75,92.66087
+commercial boxcar,22,4,4.5,4.5,71.791306
+commercial boxcar,24,1,5.75,5.75,168.62608
+commercial boxcar,29,7,4.75,5.75,76.561485
+commercial boxcar,30,7,3.3571427,4.5,67.97516
+commercial boxcar,36,2,5.125,5.75,120.208694
+commercial medium railcar,0,60,48.11389,109.83334,141.18181
+commercial medium railcar,1,113,24.68068,33.999996,49.73142
+commercial medium railcar,2,54,16.771605,35.333332,59.522144
+commercial medium railcar,3,60,18.006945,30.0,63.279015
+commercial medium railcar,8,10,12.1,24.500002,68.46294
+commercial medium railcar,9,451,21.751722,69.333336,52.48767
+commercial medium railcar,10,394,19.80457,43.0,50.981895
+commercial medium railcar,11,390,19.271793,46.333332,58.444435
+commercial medium railcar,12,284,19.626173,43.666668,57.10919
+commercial medium railcar,13,365,19.604568,41.333332,61.837997
+commercial medium railcar,14,183,23.772314,39.333332,57.498573
+commercial medium railcar,15,130,14.7243595,43.0,51.430714
+commercial medium railcar,16,231,19.030922,45.333332,50.077934
+commercial medium railcar,17,214,22.2391,69.333336,59.846287
+commercial medium railcar,18,179,21.053383,59.666668,60.61882
+commercial medium railcar,19,182,18.76344,43.666668,58.8623
+commercial medium railcar,20,139,21.553963,62.0,55.60437
+commercial medium railcar,21,230,23.254341,59.666664,56.880875
+commercial medium railcar,22,96,20.173178,43.666668,53.896404
+commercial medium railcar,23,205,28.216259,59.666664,56.475323
+commercial medium railcar,24,103,18.8932,59.666668,59.408108
+commercial medium railcar,25,70,14.396034,48.666668,59.299004
+commercial medium railcar,26,207,24.211958,62.0,60.713493
+commercial medium railcar,27,118,21.624886,45.333332,61.38551
+commercial medium railcar,28,124,31.257994,46.0,43.712498
+commercial medium railcar,29,133,25.815788,46.333332,59.07835
+commercial medium railcar,30,93,19.937275,46.333332,63.956245
+commercial medium railcar,31,40,22.154167,62.0,62.26049
+commercial medium railcar,32,10,17.116667,28.333334,60.36924
+commercial medium railcar,33,5,45.3,56.63636,5.991609
+commercial medium railcar,34,7,24.57143,28.333334,54.46754
+commercial medium railcar,35,2,6.25,11.833334,2.1608398
+commercial medium railcar,36,1,24.500002,24.500002,61.363636
+commercial medium railcar,37,5,15.888887,25.0,55.55245
+commercial medium railcar,38,2,24.749998,28.333334,63.167843
+commercial medium railcar,40,3,23.77778,28.333334,60.293716

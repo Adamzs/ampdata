@@ -1,0 +1,46 @@
+CommodityType,Supplied,Supplier,Primary,Mode,PercentSupplied,ReplenishmentFlowLimit,ConsolidationLoc,ConsolidationGeoloc,DeconsolidationLoc,DeconsolidationGeoloc
+GEN-RESUPPLY,GABES,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,GABES (HNTM),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,GABES (HNTS),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,GAFSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,JERBA-ZARZIS,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,MADANIYIN,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,SFAX,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,TEBESSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,THYNA-EL MAOU,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-RESUPPLY,BIR EL ATER,MECHANICSBURG,false,SEA,75,90,none,????,none,????
+GEN-RESUPPLY,BIR EL ATER,MECHANICSBURG,false,AIR,10,5,CCP,FJXT,none,????
+GEN-RESUPPLY,SEABASE,MECHANICSBURG,false,SEA,100,100,none,????,none,????
+GEN-RESUPPLY,SIGONELLA,MECHANICSBURG,false,NO_PREF,100,100,none,????,none,????
+GEN-RESUPPLY,BIR EL ATER,PHILADELPHIA,false,AIR,15,5,CCP,FJXT,none,????
+GEN-RESUPPLY,ABN,SEABASE,false,AIR,100,100,none,????,none,????
+GEN-AMMO,GABES,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,GABES (HNTM),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,GABES (HNTS),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,GAFSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,JERBA-ZARZIS,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,MADANIYIN,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,SFAX,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,TEBESSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,THYNA-EL MAOU,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-AMMO,BIR EL ATER,MECHANICSBURG,false,SEA,75,90,none,????,none,????
+GEN-AMMO,BIR EL ATER,MECHANICSBURG,false,AIR,10,5,CCP,FJXT,none,????
+GEN-AMMO,SEABASE,MECHANICSBURG,false,SEA,100,100,none,????,none,????
+GEN-AMMO,SIGONELLA,MECHANICSBURG,false,NO_PREF,100,100,none,????,none,????
+GEN-AMMO,BIR EL ATER,PHILADELPHIA,false,AIR,15,5,CCP,FJXT,none,????
+GEN-AMMO,ABN,SEABASE,false,AIR,100,100,none,????,none,????
+GEN-POL,GABES,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,GABES (HNTM),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,GABES (HNTS),BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,GAFSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,JERBA-ZARZIS,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,MADANIYIN,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,SFAX,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,TEBESSA,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,THYNA-EL MAOU,BIR EL ATER,false,LAND,100,100,none,????,none,????
+GEN-POL,BIR EL ATER,MECHANICSBURG,false,SEA,75,90,none,????,none,????
+GEN-POL,BIR EL ATER,MECHANICSBURG,false,AIR,10,5,CCP,FJXT,none,????
+GEN-POL,SEABASE,MECHANICSBURG,false,SEA,100,100,none,????,none,????
+GEN-POL,SIGONELLA,MECHANICSBURG,false,NO_PREF,100,100,none,????,none,????
+GEN-POL,BIR EL ATER,PHILADELPHIA,false,AIR,15,5,CCP,FJXT,none,????
+GEN-POL,ABN,SEABASE,false,AIR,100,100,none,????,none,????

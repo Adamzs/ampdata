@@ -1,0 +1,44 @@
+COMMODITY_NUM,LEG,NAME
+1,T,Large Wheels
+2,T,Medium Wheels
+3,T,Small Wheels
+4,T,Large Tracks
+5,T,Medium Tracks
+6,T,Small Tracks
+7,T,Cont Ammo
+8,T,Bulk Ammo
+9,T,Bulk Resupply
+10,T,TEU Resupply
+11,T,FEU Resupply
+12,T,TEU UE
+13,T,Palletized UE
+14,T,POL
+15,T,PAX
+16,T,NSDA
+17,T,Catch All
+18,T,SecondaryCargo
+19,T,TwentyFootContainer
+20,T,FortyFootContainer
+1,I,AF-AIRCRAFT
+2,I,AF-SUPPORT
+6,I,AIRBORNE
+7,I,ARMOR
+8,I,MECH-INFANTRY
+9,I,AIRMOBILE
+10,I,CBAC
+11,I,INFANTRY
+12,I,ARMOR-CAV
+14,I,MARINES
+15,I,CS-ENGINEER
+16,I,CS-ARTILLERY
+17,I,CS-OTHER
+18,I,CSS-ENGINEER
+1,M,Road
+2,M,Rail
+3,M,Water
+5,M,Air
+13,M,Reject
+15,M,"Road, Self"
+19,M,"Water, Self"
+20,M,"Air, Self"
+21,M,Strategic Optional

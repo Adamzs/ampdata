@@ -1,0 +1,14 @@
+Load Category,Load Cat Idx,Priority,AcType
+Pax,0,0,B-747P
+Bulk,1,0,KC-10
+Bulk,1,1,C-5A
+Bulk,1,2,C-17
+Bulk,1,3,CH47
+Oversize,2,0,C-17
+Oversize,2,1,C-5A
+Oversize,2,2,KC-10
+Outsize,3,0,C-17
+Outsize,3,1,C-5A
+Air Drop,6,0,C-17
+Air Drop,6,1,C-5A
+Direct Delivery,7,0,C-17

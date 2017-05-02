@@ -1,0 +1,224 @@
+RLN,ServiceCode,ProvidingOrganization,Description,UnitName,PIC,UTC,SIC,UIC,TPSN,ReservedNonBaseline,ProjectCode,ScheduleStatusFlag,ProblemIndicatorFlag,PAX,POL,ULC,AuthPersonnel,TuchaStatus,CritIndicator,CincRdd,SplitCode,FragCode,RelUlnId,OnCallToPod,OnCallToDest,ErrorCode,UlnArr,FtnCode,SRC
+00DDA,A,7,"HQS   HQS CO, SPT BN, ABN",,,6ZZZZ,N,,64ZZZ,,,,,95,0,HHC,95,,,,Y,,,false,false,,,,
+00DDC,A,7,"HQS   HQS CO, SPT BN, ABN",,,6ZZZZ,P,,64ZZZ,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+00DDP,A,7,"HQS   HQS CO, SPT BN, ABN",,,6ZZZZ,C,,64ZZZ,,,,,9,0,HHC,9,,,,Y,,,false,false,,,,
+00DEA,A,7,HHC SIG BDE  ABN,,,6RB22,C,,,,,,,152,0,HHC,156,,,,Y,,,false,false,,,,
+00DEC,A,7,HHC SIG BDE  ABN,,,6RB22,P,,,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+00FB,A,7,HHC AIRBORNE DIVISION,,,0MBNN,N,,01082,,,,,25,0,HHC,259,,,,Y,,,false,false,,,,
+00FC,A,7,"HHC/MMC, SPT CMD, ABN DIV",,,NTCNN,N,,01082,,,,,21,0,HHC,187,,,,Y,,,false,false,,,,
+00FD,A,7,"HHC/MMC, SPT CMD, ABN DIV",,,NTCNN,N,,01082,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+00FDA,A,7,"HHC/MMC, SPT CMD, ABN DIV",,,NTCNN,N,,01082,,,,,20,0,HHC,203,,,,Y,,,false,false,,,,
+00FE,A,7,HHC AIRBORNE BRIGADE,,,3MBNN,N,,01082,,,,,30,0,HHC,89,,,,Y,,,false,false,,,,
+00FF,A,7,HHC AIRBORNE DIVISION,,,099BB,N,,01082,,,,,150,0,HHC,150,,,,Y,,,false,false,,,,
+00FG,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00FH,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00FJ,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00FK,A,7,ADA BTRY VUL/MPDS  ABN,,,1S7NN,N,,01082,,,,,50,0,BTY,112,,,,Y,,,false,false,,,,
+00FL,A,7,ADA BTRY VUL/MPDS  ABN,,,1S7NN,N,,01082,,,,,17,0,BTY,112,,,,Y,,,false,false,,,,
+00FQ,A,7,MP COMPANY AIRBORNE DIV,,,QXTTT,N,,01082,,,,,21,0,CO,98,,,,Y,,,false,false,,,,
+00FR,A,7,MP COMPANY AIRBORNE DIV,,,QXTTT,N,,01082,,,,,5,0,CO,98,,,,Y,,,false,false,,,,
+00FS,A,7,FWD COMM CO  ABN,,,6D444,N,,01082,,,,,15,0,CO,183,,,,Y,,,false,false,,,,
+00FTC,A,7,FWD COMM CO  ABN,,,6D444,N,,01082,,,,,0,0,CO,183,,,,Y,,,false,false,,,,
+00FTP,A,7,FWD COMM CO  ABN,,,6D444,C,,01082,,,,,10,0,CO,183,,,,Y,,,false,false,,,,
+00FV,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00FVA,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,C,,01082,,,,,94,0,CO,94,,,,Y,,,false,false,,,,05027L000
+00GB,A,7,C J CO MI BN ABN DIV,,,PC4NN,N,,01082,,,,,12,0,CO,113,,,,Y,,,false,false,,,,
+00GC,A,7,C J CO MI BN ABN DIV,,,PC4NN,N,,01082,,,,,11,0,CO,113,,,,Y,,,false,false,,,,
+00GDC,A,7,AR CO AR BN ABN DIV/SEPBD,,,2AAFF,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00GDP,A,7,AR CO AR BN ABN DIV/SEPBD,,,2AAFF,N,,01082,,,,,20,0,CO,86,,,,Y,,,false,false,,,,
+00GE,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,N,,01082,,,,,23,0,CO,56,,,,Y,,,false,false,,,,
+00GF,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00GFA,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,C,,01082,,,,,46,0,CO,57,,,,Y,,,false,false,,,,
+00GG,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,N,,01082,,,,,43,0,CO,68,,,,Y,,,false,false,,,,
+00GH,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00GHA,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,C,,01082,,,,,63,0,CO,68,,,,Y,,,false,false,,,,
+00HB,A,7,HHC AIRBORNE DIVISION,,,0MBNN,N,,01082,,,,,25,0,HHC,259,,,,Y,,,false,false,,,,
+00HC,A,7,HHC AIRBORNE BRIGADE,,,3MBNN,N,,01082,,,,,30,0,HHC,89,,,,Y,,,false,false,,,,
+00HDC,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+00HDP,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00HE,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00HF,A,7,INF BN  ABN,,,0YSNN,N,,01082,,,,,517,0,BN,697,,,,Y,,,false,false,,,,
+00HG,A,7,ADA BTRY VUL/MPDS  ABN,,,1S7NN,N,,01082,,,,,50,0,BTY,112,,,,Y,,,false,false,,,,
+00HK,A,7,MP COMPANY AIRBORNE DIV,,,QXTTT,N,,01082,,,,,21,0,CO,98,,,,Y,,,false,false,,,,
+00HL,A,7,MP COMPANY AIRBORNE DIV,,,QXTTT,N,,01082,,,,,5,0,CO,98,,,,Y,,,false,false,,,,
+00JC,A,7,AR CO AR BN ABN DIV/SEPBD,,,2AAFF,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00JCC,A,7,AR CO AR BN ABN DIV/SEPBD,,,2AAFF,N,,01082,,,,,20,0,CO,86,,,,Y,,,false,false,,,,
+00JCP,A,7,AR CO AR BN ABN DIV/SEPBD,,,2AAFF,N,,01082,,,,,20,0,CO,86,,,,Y,,,false,false,,,,
+00JD,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+00JDA,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,N,,01082,,,,,52,0,CO,78,,,,Y,,,false,false,,,,
+00JE,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,N,,01082,,,,,23,0,CO,56,,,,Y,,,false,false,,,,
+00JFA,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,N,,01082,,,,,52,0,CO,56,,,,Y,,,false,false,,,,
+03AEC,A,7,INF BN  MECH,,,05TTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07245L000
+03AEP,A,7,INF BN  MECH,,,05TTT,C,,00001,,,,,821,0,BN,821,,,,Y,,,false,false,,,,07245L000
+03AFC,A,7,INF BN  MECH,,,05TTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07245L000
+03AFP,A,7,INF BN  MECH,,,05TTT,C,,00001,,,,,821,0,BN,821,,,,Y,,,false,false,,,,07245L000
+03AGC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+03AGP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,C,,00001,,,,,633,0,BN,633,,,,Y,,,false,false,,,,17375L000
+03AJC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+03AJP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,C,,00001,,,,,633,0,BN,633,,,,Y,,,false,false,,,,17375L000
+03AKC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+03AKP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,N,,00001,,,,,551,0,BN,551,,,,Y,,,false,false,,,,
+03AUC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,00001,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+03AUP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,C,,00001,,,,,633,0,BN,633,,,,Y,,,false,false,,,,17375L000
+04DDC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+04DDP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0DAAC,A,7,HHC PSYOP BATTALION,,,PHNEE,P,,34319,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,33706L000
+0DAAP,A,7,HHC PSYOP BATTALION,,,PHNEE,C,,34319,,,,,100,0,HHC,100,,,,Y,,,false,false,,,,33706L000
+0DBBC,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,P,,34363,,,,,0,0,CO,0,,,,Y,,,false,false,,,,33707L000
+0DBBP,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,C,,34363,,,,,110,0,CO,110,,,,Y,,,false,false,,,,33707L000
+0DBCC,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,P,,34363,,,,,0,0,CO,0,,,,Y,,,false,false,,,,33707L000
+0DBCP,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,C,,34363,,,,,110,0,CO,110,,,,Y,,,false,false,,,,33707L000
+0DBDC,A,7,PSYOP STRAT DISSEM CO,,,PCMEE,P,,34364,,,,,0,0,CO,0,,,,Y,,,false,false,,,,33703L000
+0DBDP,A,7,PSYOP STRAT DISSEM CO,,,PCMEE,C,,34364,,,,,118,0,CO,118,,,,Y,,,false,false,,,,33703L000
+0EBFC,A,7,"ENGR CO, PIPELINE CONST",,,4AAAD,P,,31497,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0EBFP,A,7,"ENGR CO, PIPELINE CONST",,,4AAAD,C,,31497,,,,,181,0,CO,181,,,,Y,,,false,false,,,,
+0EBQC,A,7,"ENGR CBT BN, CORPS",,,48AAT,P,,21353,,,,,0,0,BN,0,,,,Y,,,false,false,,,,05035H500
+0EBQP,A,7,"ENGR CBT BN, CORPS",,,48AAT,C,,21353,,,,,784,0,BN,784,,,,Y,,,false,false,,,,05035H500
+0EBRC,A,7,"ENGR CBT BN, CORPS",,,48AAT,P,,21353,,,,,0,0,BN,0,,,,Y,,,false,false,,,,05035H500
+0EBRP,A,7,"ENGR CBT BN, CORPS",,,48AAT,N,,21353,,,,,739,0,BN,791,,,,Y,,,false,false,,,,
+0EGBC,A,7,"ENGR CO, LIGHT EQUIP, ABN",,,4M222,P,,,,,,,0,0,CO,0,,,,Y,,,false,false,,,,05443L100
+0EGBP,A,7,"ENGR CO, LIGHT EQUIP, ABN",,,4M222,C,,,,,,,176,0,CO,176,,,,Y,,,false,false,,,,05443L100
+0HBGC,A,7,TRANS MED WATERCRAFT CO,,,UKBNN,P,,,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55828L000
+0HBGP,A,7,TRANS MED WATERCRAFT CO,,,UKBNN,N,,,,,,,24,0,CO,173,,,,Y,,,true,false,,,,
+0HBH,A,7,TRANS HEAVY WATERCRAFT CO,,,UMBNN,N,,,,,,,30,0,CO,155,,,,Y,,,true,false,,,,
+0HBL,A,7,TRANS MED WATERCRAFT CO,,,UKBNN,N,,,,,,,0,0,CO,0,,,,Y,,,true,false,,,,
+0HEDC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+0HEDP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0HEEC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,P,,35692,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55728L200
+0HEEP,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,C,,35692,,,,,170,0,CO,170,,,,Y,,,false,false,,,,55728L200
+0HEHC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+0HEHP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0HHD,A,7,HHC PSYOP BATTALION,,,PHNEE,C,,34319,,,,,100,0,HHC,100,,,,Y,,,false,false,,,,33706L000
+0HNBC,A,7,TRANS LIGHT MDM TRUCK CO,,,U5BNN,P,,35686,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0HNBP,A,7,TRANS LIGHT MDM TRUCK CO,,,U5BNN,C,,35686,,,,,109,0,CO,109,,,,Y,,,false,false,,,,
+0HVCC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+0HVCP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0J1EC,A,7,FINANCE SUPPORT UNIT,,,S4322,P,,32020,,,,,0,0,U,0,,,,Y,,,false,false,,,,
+0J1EP,A,7,FINANCE SUPPORT UNIT,,,S4322,C,,32020,,,,,66,0,U,93,,,,Y,,,false,false,,,,
+0JAAC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,N,,,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0JAAP,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,C,,,,,,,170,0,CO,170,,,,Y,,,false,false,,,,55728L200
+0JKBC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,P,,35692,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55728L200
+0JKBP,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,C,,35692,,,,,170,0,CO,170,,,,Y,,,false,false,,,,55728L200
+0JLBC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,P,,35692,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55728L200
+0JLDP,A,7,T MDM TRK CO 5000 GAL TAN,,,U7BNN,C,,35704,,,,,166,0,CO,166,,,,Y,,,false,false,,,,55727L200
+0JXC,A,7,ENGR FFTG TM   FIRE TRUCK,,,49ZFF,S,,31573,,,,,6,0,TM,6,,,,Y,,,false,false,,,,
+0KFA,A,7,COMBAT HET CO,,,U4477,N,,,,,,,0,0,CO,298,,,,Y,,,false,false,,,,
+0KFBC,A,7,INF BN  MECH,,,05TTT,P,,02002,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07245L000
+0KFBP,A,7,INF BN  MECH,,,05TTT,C,,02002,,,,,821,0,BN,821,,,,Y,,,false,false,,,,07245L000
+0KGA,A,7,COMBAT HET CO,,,U4477,N,,,,,,,0,0,CO,298,,,,Y,,,false,false,,,,
+0KGBC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,P,,35692,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55728L200
+0KGBP,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,C,,35692,,,,,170,0,CO,170,,,,Y,,,false,false,,,,55728L200
+0KHA,A,7,COMBAT HET CO,,,U4477,N,,,,,,,0,0,CO,298,,,,Y,,,false,false,,,,
+0LAA,A,7,"HHC, AIRBORNE CORPS",,,CAAAC,N,,,,,,,220,0,HHC,220,,,,Y,,,false,false,,,,
+0LAB,A,7,"HHC, AIRBORNE CORPS",,,C99BB,N,,,,,,,150,0,HHC,150,,,,Y,,,false,false,,,,
+0LBGC,A,7,SMOKE GENERATOR CO  MECH,,,GXVVV,P,,,,,,,0,0,CO,0,,,,Y,,,false,false,,,,03437L000
+0LBGP,A,7,SMOKE GENERATOR CO  MECH,,,GXVVV,C,,,,,,,111,0,CO,111,,,,Y,,,false,false,,,,03437L000
+0MAAC,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,P,,,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55728L200
+0MAAP,A,7,T MDM TRK CO 5000 GAL TAN,,,UBBNN,C,,,,,,,170,0,CO,170,,,,Y,,,false,false,,,,55728L200
+0MBDC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+0MBDP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0MBKC,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,P,,35690,,,,,0,0,CO,0,,,,Y,,,false,false,,,,55727L100
+0MBKP,A,7,T MDM TRK CO 40 FT CNR/CG,,,UL444,C,,35690,,,,,169,0,CO,169,,,,Y,,,false,false,,,,55727L100
+0NACC,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,P,,34363,,,,,0,0,CO,0,,,,Y,,,false,false,,,,33707L000
+0NACP,A,7,PSYOP OPNL SPT COMPANY,,,PKNEE,C,,34363,,,,,110,0,CO,110,,,,Y,,,false,false,,,,33707L000
+0QAAC,A,7,"ENGR CBT BN, ABN",,,4P222,P,,21350,,,,,0,0,BN,0,,,,Y,,,false,false,,,,05445L100
+0QAAP,A,7,"ENGR CBT BN, ABN",,,4P222,C,,21350,,,,,580,0,BN,580,,,,Y,,,false,false,,,,05445L100
+0QAEC,A,7,"ENGR CBT BN, CORPS",,,48AAT,P,,21353,,,,,0,0,BN,0,,,,Y,,,false,false,,,,05035H500
+0QAEP,A,7,"ENGR CBT BN, CORPS",,,48AAT,C,,21353,,,,,784,0,BN,784,,,,Y,,,false,false,,,,05035H500
+0QAFC,A,7,"ENGR CBT BN, ABN",,,4P222,P,,21350,,,,,0,0,BN,0,,,,Y,,,false,false,,,,05445L100
+0QAFP,A,7,"ENGR CBT BN, ABN",,,4P222,C,,21350,,,,,580,0,BN,580,,,,Y,,,false,false,,,,05445L100
+0QBJ,A,7,ENGR FFTG TM   WATER TRUC,,,4AAFZ,S,,31575,,,,,2,0,TM,2,,,,Y,,,false,false,,,,
+0RAAC,A,7,FORWARD OPNS BN  ABN,,,6ZB22,P,,35037,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0RAAP,A,7,FORWARD OPNS BN  ABN,,,6ZB22,C,,35037,,,,,514,0,BN,514,,,,Y,,,false,false,,,,
+0TABC,A,7,"FA BN, 155MM T, ABN",,,1R633,P,,21862,,,,,0,0,BN,0,,,,Y,,,false,false,,,,06435L000
+0TABP,A,7,"FA BN, 155MM T, ABN",,,1R633,C,,21862,,,,,581,0,BN,581,,,,Y,,,false,false,,,,06435L000
+0TAE1,A,7,FA BTRY MLRS,,,12JJJ,N,,21825,,,,,59,0,BTY,100,,,,Y,,,false,false,,,,
+0TAEC,A,7,FA BATTALION MLRS (-),,,171TT,N,,21825,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0TAEP,A,7,FA BATTALION MLRS (-),,,171TT,N,,21825,,,,,350,0,BN,352,,,,Y,,,false,false,,,,
+0VAAC,A,7,HQ HQ DET MI BDE ABN CORP,,,PM4NN,P,,33394,,,,,0,0,HHD,0,,,,Y,,,false,false,,,,
+0VAAP,A,7,HQ HQ DET MI BDE ABN CORP,,,PM4NN,C,,33394,,,,,61,0,HHD,62,,,,Y,,,false,false,,,,
+0VABC,A,7,OPS BN MI BDE ABN,,,P6TTT,P,,33350,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0VABP,A,7,OPS BN MI BDE ABN,,,P6TTT,C,,33350,,,,,489,0,BN,489,,,,Y,,,false,false,,,,
+0YABC,A,7,"AVN MAINT CO, ABN  AH 64",,,3MPNN,P,,01082,,,,,0,0,CO,219,,,,Y,,,false,false,,,,
+0YABP,A,7,"AVN MAINT CO, ABN  AH 64",,,3MPNN,C,,01082,,,,,219,0,CO,219,,,,Y,,,false,false,,,,
+0YACC,A,7,"ATK HEL BN, ABN  AH 64",,,3PPNN,P,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0YACP,A,7,"ATK HEL BN, ABN  AH 64",,,3PPNN,C,,01082,,,,,252,0,BN,252,,,,Y,,,false,false,,,,
+0YADC,A,7,"HHB, DIVARTY AIRBORNE",,,14SNN,P,,01082,,,,,0,0,HHB,144,,,,Y,,,false,false,,,,06202L000
+0YADP,A,7,"HHB, DIVARTY AIRBORNE",,,14SNN,C,,01082,,,,,118,0,HHB,118,,,,Y,,,false,false,,,,06202L000
+0YAFC,A,7,"FA BN,105MM T  ABN AOE",,,1R444,P,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,06205L000
+0YAFP,A,7,"FA BN,105MM T  ABN AOE",,,1R444,C,,01082,,,,,449,0,BN,449,,,,Y,,,false,false,,,,06205L000
+0YB C,A,7,INTEL SURVL CO MI BN ABN,,,PD4NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YB P,A,7,INTEL SURVL CO MI BN ABN,,,PD4NN,C,,01082,,,,,70,0,CO,70,,,,Y,,,false,false,,,,
+0YB3C,A,7,CMD COMMM CO  ABN,,,6A444,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YB3P,A,7,CMD COMMM CO  ABN,,,6A444,C,,01082,,,,,204,0,CO,211,,,,Y,,,false,false,,,,
+0YB4C,A,7,HHC SIG BN  ABN,,,65444,P,,01082,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0YB4P,A,7,HHC SIG BN  ABN,,,65444,C,,01082,,,,,111,0,HHC,111,,,,Y,,,false,false,,,,
+0YBAC,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,05027L000
+0YBAP,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,C,,01082,,,,,94,0,CO,94,,,,Y,,,false,false,,,,05027L000
+0YBBC,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,05027L000
+0YBBP,A,7,"ENGR CO, ENGR BN, ABN DIV",,,44RNN,C,,01082,,,,,94,0,CO,94,,,,Y,,,false,false,,,,05027L000
+0YBCC,A,7,"HHC, ENGR BN, ABN DIV",,,43RNN,P,,01082,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,05026L000
+0YBCP,A,7,"HHC, ENGR BN, ABN DIV",,,43RNN,C,,01082,,,,,153,0,HHC,153,,,,Y,,,false,false,,,,05026L000
+0YBDC,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,P,,01082,,,,,0,0,HQS,0,,,,Y,,,false,false,,,,
+0YBDP,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,C,,01082,,,,,63,0,HQS,68,,,,Y,,,false,false,,,,
+0YBEC,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,P,,01082,,,,,0,0,HQS,0,,,,Y,,,false,false,,,,
+0YBEP,A,7,FWD SPT MEDICAL CO  ABN,,,F3WNN,C,,01082,,,,,63,0,HQS,68,,,,Y,,,false,false,,,,
+0YBFC,A,7,"HQS   CO A, MED BN  ABN",,,F2WNN,P,,01082,,,,,0,0,HQS,0,,,,Y,,,false,false,,,,
+0YBFP,A,7,"HQS   CO A, MED BN  ABN",,,F2WNN,C,,01082,,,,,167,0,HQS,167,,,,Y,,,false,false,,,,
+0YBKC,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBKP,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,C,,01082,,,,,78,0,CO,78,,,,Y,,,false,false,,,,
+0YBLC,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBLP,A,7,FWD SPT CO ORD BN  ABN,,,HE6NN,C,,01082,,,,,78,0,CO,78,,,,Y,,,false,false,,,,
+0YBMC,A,7,HVY ORD  MT  CO  ABN,,,HF6NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBMP,A,7,HVY ORD  MT  CO  ABN,,,HF6NN,C,,01082,,,,,116,0,CO,116,,,,Y,,,false,false,,,,
+0YBNC,A,7,HQ   LT ORD  MT  CO  ABN,,,HD6NN,P,,01082,,,,,0,0,HMC,0,,,,Y,,,false,false,,,,
+0YBNP,A,7,HQ   LT ORD  MT  CO  ABN,,,HD6NN,C,,01082,,,,,164,0,HMC,164,,,,Y,,,false,false,,,,
+0YBPC,A,7,ADA BTRY VUL/MPDS  ABN,,,1S7NN,P,,01082,,,,,0,0,BTY,0,,,,Y,,,false,false,,,,
+0YBPP,A,7,ADA BTRY VUL/MPDS  ABN,,,1S7NN,C,,01082,,,,,112,0,BTY,112,,,,Y,,,false,false,,,,
+0YBQC,A,7,"HHB ADA BN, ABN DIV",,,1R7NN,N,,01082,,,,,0,0,HHB,101,,,,Y,,,false,false,,,,
+0YBQP,A,7,"HHB ADA BN, ABN DIV",,,1R7NN,C,,01082,,,,,101,0,HHB,101,,,,Y,,,false,false,,,,
+0YBRC,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBRP,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,C,,01082,,,,,46,0,CO,57,,,,Y,,,false,false,,,,
+0YBSC,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBSP,A,7,FWD SUP CO S T BN ABN DIV,,,JH5NN,C,,01082,,,,,46,0,CO,57,,,,Y,,,false,false,,,,
+0YBTC,A,7,"FWD S S DET,S S BN,ABN DI",,,X3AAF,P,,01082,,,,,0,0,DET,0,,,,Y,,,false,false,,,,
+0YBTP,A,7,"FWD S S DET,S S BN,ABN DI",,,X3AAF,C,,01082,,,,,49,0,DET,49,,,,Y,,,false,false,,,,
+0YBUC,A,7,QM AD EQ  SPT CO ABN CORP,,,HHXNN,P,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBUP,A,7,QM AD EQ  SPT CO ABN CORP,,,HHXNN,C,,01082,,,,,327,0,CO,327,,,,Y,,,false,false,,,,
+0YBVC,A,7,HQ   SUP CO S T BN ABN DI,,,JG5NN,P,,01082,,,,,0,0,HSC,0,,,,Y,,,false,false,,,,
+0YBVP,A,7,HQ   SUP CO S T BN ABN DI,,,JG5NN,C,,01082,,,,,184,0,HSC,184,,,,Y,,,false,false,,,,
+0YBWC,A,7,SVC SPT CO MI BN ABN DIV,,,PE4NN,N,,01082,,,,,0,0,CO,0,,,,Y,,,false,false,,,,
+0YBWP,A,7,INTEL SURVL CO MI BN ABN,,,PD4NN,C,,01082,,,,,70,0,CO,70,,,,Y,,,false,false,,,,
+0YBYC,A,7,"HQ,HQ OP CO MI BN ABN DIV",,,PB4NN,P,,01082,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0YBYP,A,7,"HQ,HQ OP CO MI BN ABN DIV",,,PB4NN,C,,01082,,,,,98,0,HHC,98,,,,Y,,,false,false,,,,
+0YC C,A,7,HHC AIRBORNE BRIGADE,,,3MBNN,P,,01082,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0YC P,A,7,HHC AIRBORNE BRIGADE,,,3MBNN,C,,01082,,,,,87,0,HHC,87,,,,Y,,,false,false,,,,
+0YCAC,A,7,INF BN  ABN,,,0YSNN,P,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07035L000
+0YCAP,A,7,INF BN  ABN,,,0YSNN,C,,01082,,,,,675,0,BN,675,,,,Y,,,false,false,,,,07035L000
+0YCBC,A,7,INF BN  ABN,,,0YSNN,P,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07035L000
+0YCBP,A,7,INF BN  ABN,,,0YSNN,C,,01082,,,,,675,0,BN,675,,,,Y,,,false,false,,,,07035L000
+0YCCC,A,7,INF BN  ABN,,,0YSNN,P,,01082,,,,,0,0,BN,0,,,,Y,,,false,false,,,,07035L000
+0YCCP,A,7,INF BN  ABN,,,0YSNN,C,,01082,,,,,675,0,BN,675,,,,Y,,,false,false,,,,07035L000
+0ZABC,A,7,24TH INF DIV (MECH) ADVON,,,0L766,N,,04024,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0ZABP,A,7,24TH INF DIV (MECH) ADVON,,,0L766,N,,04024,,,,,100,0,HHC,100,,,,Y,,,false,false,,,,
+0ZACA,A,7,24TH INF DIV (MECH) - PAX ONLY,,,0L766,N,,04024,,,,,2401,0,HHC,2401,,,,Y,,,false,false,,,,
+0ZACB,A,7,24TH INF DIV (MECH) - PAX ONLY,,,0L766,N,,04024,,,,,2002,0,HHC,2002,,,,Y,,,false,false,,,,
+0ZACD,A,7,24TH INF DIV (MECH) - PAX ONLY,,,0L766,N,,04024,,,,,2002,0,HHC,2002,,,,Y,,,false,false,,,,
+0ZACG,A,7,24TH INF DIV (MECH) - PAX ONLY,,,0L766,N,,04024,,,,,1306,0,HHC,1306,,,,Y,,,false,false,,,,
+0ZACH,A,7,24TH INF DIV (MECH) - PAX ONLY,,,0L766,N,,04024,,,,,1306,0,HHC,1306,,,,Y,,,false,false,,,,
+0ZBB,A,7,HHC INF DIV  MECH  BDE,,,0H766,P,,04024,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0ZCB,A,7,INF BN MECH E/W BFVS,,,0M666,P,,04024,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0ZDA,A,7,HHC INF DIV  MECH  BDE,,,0H766,P,,04024,,,,,0,0,HHC,0,,,,Y,,,false,false,,,,
+0ZDB,A,7,INF BN MECH E/W BFVS,,,0M666,P,,04024,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0ZDC,A,7,INF BN MECH E/W BFVS,,,0M666,P,,04024,,,,,0,0,BN,0,,,,Y,,,false,false,,,,
+0ZHCC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,02002,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+0ZHCP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,C,,02002,,,,,633,0,BN,633,,,,Y,,,false,false,,,,17375L000
+0ZHFC,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,P,,02002,,,,,0,0,BN,0,,,,Y,,,false,false,,,,17375L000
+0ZHFP,A,7,"TANK BATTALION, EQ/W, M6O",,,2JTTT,C,,02002,,,,,633,0,BN,633,,,,Y,,,false,false,,,,17375L000
+5BCAA,F,E,MNT    F/RF  4 FUEL TANK BU TM 0TR,,,HFBZM,S,,,,,,,12,0,ELE,12,,,,Y,,,false,false,,,,
+5CCAB,F,E,MNT     F 16  TANK B-U TM      0TR,,,HFBZP,S,,,,,,,12,0,ELE,12,,,,Y,,,false,false,,,,
+5CCAD,F,E,MNT     F 16  TANK B-U TM      0TR,,,HFBZP,S,,,,,,,12,0,ELE,12,,,,Y,,,false,false,,,,
+5CCAU,F,E,MNT     F 16  TANK B-U TM      0TR,,,HFBZP,S,,,,,,,12,0,ELE,12,,,,Y,,,false,false,,,,
+5CCAV,F,E,MNT     F 16  TANK B-U TM      0TR,,,HFBZP,S,,,,,,,12,0,ELE,12,,,,Y,,,false,false,,,,
+5HDC9,F,8,POL 400  GAL LOX STORAGE TANK  0SR,,,JFDEQ,P,,,,,,,0,0,ELE,0,,,,Y,,,false,false,,,,
+5NMH1,F,C,WATER TANKS (3 EA),,,XFZ99,N,,,,,,,0,0,ELE,0,,,,Y,,,false,false,,,,

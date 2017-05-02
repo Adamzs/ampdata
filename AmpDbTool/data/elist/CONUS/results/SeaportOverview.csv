@@ -1,0 +1,14 @@
+CONUS Terminal Overview
+Terminal<Node>,Seaport<String>,Berth Group<String>,Arrivals<Integer>,Departures<Integer>,Strat Onloads<Integer>,Strat Offloads<Integer>,Intra Onloads<Integer>,Intra Offloads<Integer>
+LONG BEACH,NPTU,<LONG BEACH berth group-NPTU>,4,4,4,0,0,0
+NEWPORT T2,RUAM,<RUAQ BG>,2,2,2,0,0,0
+NORFOLK T2,SBEA,<SBEQ>,1,1,1,0,0,0
+SAN DIEGO,UTAC,<SAN DIEGO berth group-UTAC>,5,5,5,0,0,0
+CHARLESTON,DKSD,<Charleston-DKSD Terminal-19777>,21,21,21,0,0,0
+GULFPORT,JTVH,<GULFPORT BG-JTVH Terminal-19783>,4,4,4,0,0,0
+MOREHEAD CITY,QTUP,<MOREHEAD CITY BG-QTUP -19792>,19,19,19,0,0,0
+NEW YORK PORT EMB,RRRK,<NEW YORK berth group-RRRK>,13,13,13,0,0,0
+NEWPORT NEWS,RULV,<NEWPORT NEWS berth group-RULV>,1,1,1,0,0,0
+NORFOLK,SBEA,<NORFOLK berth group-SBEA>,4,4,4,0,0,0
+TACOMA,WPVT,<TACOMA berth group-WPVT>,4,4,4,0,0,0
+WILMINGTON,ZBES,<WILMINGTON berth group-ZBES>,3,3,3,0,0,0

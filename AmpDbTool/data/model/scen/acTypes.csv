@@ -1,0 +1,6 @@
+Name,Config,Substitute,MaxPayloadRange,MaxFuelLoadRange,MaxRangeOfAC,MaxFuelLoad,MaxCargoPayload,CargoPayloadMaxFuel,BurnRate,CivMil,RestrictCargo,FuelCommodityType,MaxOperatingTime,DirtyConfig,PalletCapacity,DoorHeight,DoorWidth
+B-747P,0,1,4500,7750,9250,0,243200,103742,0,false,false,0,100,,36,,
+C-17,3,2,2250,3250,4750,0,172200,133500,0,true,false,0,100,,18,,
+C-5A,3,3,1500,5500,6500,0,260000,69000,0,true,false,0,100,,36,,
+CH47,3,4,200,400,1200,0,21000,15000,0,true,false,0,100,,18,,
+KC-10,2,5,2750,3500,4000,0,169350,141000,0,true,false,0,100,,27,,

@@ -1,0 +1,167 @@
+CLASSNAME,SUBCLASSNAME
+berth,ALL-PURPOSE
+berth,BARGE
+berth,BBULK/AMMO
+berth,BBULK/CONTNR
+berth,BBULK/RORO
+berth,BREAKBULK
+berth,CONT/AMMO
+berth,CONTAINER
+berth,DOCK
+berth,GENERAL PURP
+berth,INTRA WATER
+berth,JLOTS
+berth,LIGHTER
+berth,OTHER
+berth,RORO
+berth,RORO berth
+berth,RORO-container berth
+berth,RORO/CONTNR
+berth,TANKER
+berth,VISA
+berth,VISA berth
+road,added road
+military node,admin
+airport,air force station
+airport,air national guard station
+airport,air station
+airport,air terminal
+airport,airfield
+node,airport
+berth,all-purpose berth
+military node,ammunition storage
+military node,annex
+feature,apron
+military node,army installation
+seaport,austere port
+connector pipeline,auto connector pipeline
+connector rail,auto connector rail
+connector road,auto connector road
+connector shipping lane,auto connector shipping lane
+connector waterway,auto connector waterway
+berth,barge berth
+sea node,bay
+network,berth
+berth,breakbulk berth
+berth,breakbulk-ammunition berth
+berth,breakbulk-container berth
+berth,breakbulk-roro berth
+link feature,bridge
+sea node,canal
+network,capacitated land link
+sea node,cape
+sea node,channel
+node,city
+airport,civil air patrol
+landnode,clinic
+port,coast guard installation
+landnode,command operations
+node,communication
+pipeline,connector pipeline
+rail,connector rail
+road,connector road
+shipping lane,connector shipping lane
+waterway,connector waterway
+berth,container berth
+crane,container crane
+berth,container-ammunition berth
+network,crane
+landnode,defense fuel support point
+network,deployment area
+landnode,depot
+landnode,dispensary
+node,dualport
+node,family housing
+network,feature
+seaport,fixed port
+crane,gantry crane
+berth,general purpose berth
+road,gravel road
+sea node,gulf
+landnode,hospital
+airport,international airport
+network,intersection
+berth,intra water berth
+land node,island
+airport,joint use airport
+airport,joint-use airport
+sea node,lake
+node,land node
+node,landnode
+rail,large rail
+rail,large railroad
+road,large road
+network,link
+network,link feature
+landnode,maintenance
+landnode,marine barracks
+landnode,marine corps camp
+landnode,marine ground installation
+rail,medium rail
+rail,medium railroad
+road,medium road
+airport,military airport
+node,military node
+landnode,missile
+crane,mobile crane
+port,navaid
+landnode,naval activity
+port,naval base
+port,navy installation
+network,node
+sea,ocean
+military node,operating area
+network,parking
+link feature,pass
+sea,passage
+link,pipeline
+node,pipeline node
+node,pol retail distribution
+port,pol retail distribution station
+seaport,port
+landnode,radar installation
+landnode,radar receiver
+node,radio relay
+link,rail
+link feature,rail bridge
+link feature,rail tunnel
+landnode,railroad junction
+landnode,recreation
+military node,refugee camp
+landnode,reserve training center
+link,road
+link feature,road bridge
+landnode,road junction
+link feature,road tunnel
+feature,runway
+node,rural populated area
+landnode,school
+node,sea
+node,sea node
+node,seanode
+node,seaport
+landnode,service
+link,shipping lane
+sea,shipping lane node
+rail,small rail
+rail,small railroad
+road,small road
+military node,staging area
+military node,storage
+sea node,strait
+berth,tanker berth
+network,terminal
+military node,training
+road,trans-shipment link
+link feature,tunnel
+landnode,unit_node
+pipeline,virtual pipeline
+rail,virtual rail
+road,virtual road
+waterway,virtual waterway
+feature,vulnerable point
+link feature,water
+link,waterway
+sea node,waterway node
+node,weather station
+crane,wharf crane

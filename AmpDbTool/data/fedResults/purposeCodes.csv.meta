@@ -1,0 +1,1 @@
+{"id":"/fedResults/purposeCodes.csv.meta","title":"PurposeCodes","scenario":"metadata-scenario","classname":"ampfed.domain.fedenum.PurposeCode","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"PurposeCode","titles":"PurposeCode","description":"The activity purpose","datatype":"string"}],"primaryKey":"PurposeCode","foreignKeys":[]}}

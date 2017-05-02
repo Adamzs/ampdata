@@ -1,0 +1,244 @@
+{
+    "id": "/fedResults/airArrival.csv.meta",
+    "title": "AirArrivals",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.interaction.AirArrival",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "ToTime",
+                "titles": "ToTime",
+                "description": "Time asset arrives at next locaiton",
+                "datatype": "float"
+            },
+            {
+                "name": "ToPurpose",
+                "titles": "ToPurpose",
+                "description": "The activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "ToLocation",
+                "titles": "ToLocation",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "RampName",
+                "titles": "RampName",
+                "description": "the name of the ramp being used.",
+                "datatype": "string"
+            },
+            {
+                "name": "FromTime",
+                "titles": "FromTime",
+                "description": "Time asset left from locaiton",
+                "datatype": "float"
+            },
+            {
+                "name": "FromPurpose",
+                "titles": "FromPurpose",
+                "description": "The activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "FromLocation",
+                "titles": "FromLocation",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "Mode",
+                "titles": "Mode",
+                "description": "The movement Mode",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetType",
+                "titles": "AssetType",
+                "description": "The type of asset",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetID",
+                "titles": "AssetID",
+                "description": "The asset id",
+                "datatype": "string"
+            },
+            {
+                "name": "Fleet",
+                "titles": "Fleet",
+                "description": "Name of fleet",
+                "datatype": "string"
+            },
+            {
+                "name": "CrewType",
+                "titles": "CrewType",
+                "description": "type of arriving crew.",
+                "datatype": "string"
+            },
+            {
+                "name": "CrewID",
+                "titles": "CrewID",
+                "description": "ID of crew (if staging crews).",
+                "datatype": "string"
+            },
+            {
+                "name": "CrewAugmentedSize",
+                "titles": "CrewAugmentedSize",
+                "description": "Whether the crew is augmented size.",
+                "datatype": "boolean"
+            },
+            {
+                "name": "CrewAugmentedDuty",
+                "titles": "CrewAugmentedDuty",
+                "description": "Whether the crew flew using augmented crew duty.",
+                "datatype": "boolean"
+            },
+            {
+                "name": "MissionID",
+                "titles": "MissionID",
+                "description": "The ID of the mission",
+                "datatype": "string"
+            },
+            {
+                "name": "EarliestReleaseTime",
+                "titles": "EarliestReleaseTime",
+                "description": "earliest time plane can be released.",
+                "datatype": "float"
+            },
+            {
+                "name": "Craf",
+                "titles": "Craf",
+                "description": "A boolean to identify an arriving aircraft as a Civilian Reserve.",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Contam",
+                "titles": "Contam",
+                "description": "A boolean to identify NBC compromised aircraft.",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Hot",
+                "titles": "Hot",
+                "description": "Does the asset have hot cargo",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Acl",
+                "titles": "Acl",
+                "description": "available cabin load.",
+                "datatype": "float"
+            },
+            {
+                "name": "CrewDutyLeft",
+                "titles": "CrewDutyLeft",
+                "description": "crew duty days remaining at time of arrival.",
+                "datatype": "float"
+            },
+            {
+                "name": "OnGroundTime",
+                "titles": "OnGroundTime",
+                "description": "expected time (days) this aircraft will spend on ground at this stop (usually for cargo load/unload & fueling).",
+                "datatype": "float"
+            },
+            {
+                "name": "ServiceTime",
+                "titles": "ServiceTime",
+                "description": "aircraft service time for the stop.",
+                "datatype": "float"
+            },
+            {
+                "name": "ScheduleDelay",
+                "titles": "ScheduleDelay",
+                "description": "all delays other than crew for the stop.",
+                "datatype": "float"
+            },
+            {
+                "name": "CrewRestTime",
+                "titles": "CrewRestTime",
+                "description": "expected time this aircraft will spend on ground at this stop for crew rest.",
+                "datatype": "float"
+            },
+            {
+                "name": "FuelAmount",
+                "titles": "FuelAmount",
+                "description": "fuel (pounds) that the aircraft expects to load at this stop.",
+                "datatype": "integer"
+            },
+            {
+                "name": "ChannelMissionId",
+                "titles": "ChannelMissionId",
+                "description": "the ID of the channel mission.",
+                "datatype": "string"
+            },
+            {
+                "name": "SaamId",
+                "titles": "SaamId",
+                "description": "SAAM ID.",
+                "datatype": "string"
+            },
+            {
+                "name": "SaamLegId",
+                "titles": "SaamLegId",
+                "description": "ID of SAAM leg.",
+                "datatype": "string"
+            },
+            {
+                "name": "ReconfigureTime",
+                "titles": "ReconfigureTime",
+                "description": "time it takes to reconfigure aircraft after the service time has been subtracted.",
+                "datatype": "float"
+            }
+        ],
+        
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            },
+            {
+                "columnReference": "ToLocation",
+                "reference": {
+                    "schemaReference": "/tplan/locations/locations.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "FromLocation",
+                "reference": {
+                    "schemaReference": "/tplan/locations/locations.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "Fleet",
+                "reference": {
+                    "schemaReference": "/tplan/fleets/fleets.csv.meta",
+                    "columnReference": "Fleet"
+                }
+            }
+        ]
+    }
+}

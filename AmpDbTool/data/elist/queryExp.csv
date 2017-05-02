@@ -1,0 +1,8 @@
+query_num,expression_id,parent_expr_id,negate_flag,logical_operator,dbkey,key,operator,value_type,value,value_method_class,value_method_arg,value_method_arg_type,value_method_param_1,value_method_param_2,user_arg_type,user_arg_value,ignore_case
+0,0,-1,0, ,,RLNName,=,java.lang.String,0000020,,,,,,,,1
+1,0,-1,0, ,,CCC,=,java.lang.String,A2C,,,,,,,,0
+2,0,-1,0, ,,CCC1,=,java.lang.String,R,,,,,,,,0
+3,0,-1,0, ,,CCC3,=,java.lang.String,C,,,,,,,,0
+4,0,-1,0, ,,CommodityCategory,=,java.lang.Short,1,,,,,,,,0
+5,0,-1,0, ,,Weight,>,java.lang.Double,20.0,,,,,,,,0
+6,0,-1,0, ,,Mode,=,java.lang.Boolean,true,,,,,,java.lang.String,Road,0

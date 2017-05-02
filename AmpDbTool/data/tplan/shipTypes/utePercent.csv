@@ -1,0 +1,67 @@
+ShipType,Day,Enabled,Description,EventPhase,LimitType,Deadweight,Container,Square,Volume,POL
+T-AVB,0,true,,,MIN,0,0,0,30,0
+T-AVB,0,true,,,MAX,0,0,0,75,0
+T-AVB,60,true,,,MIN,0,0,0,0,0
+T-AVB,60,true,,,MAX,0,0,0,0,0
+T-AH,0,true,,,MIN,0,0,0,0,0
+T-AH,0,true,,,MAX,0,0,0,0,0
+T-AH,60,true,,,MIN,0,0,0,0,0
+T-AH,60,true,,,MAX,0,0,0,0,0
+PAX,0,true,,,MIN,0,0,0,0,0
+PAX,0,true,,,MAX,0,0,0,0,0
+PAX,60,true,,,MIN,0,0,0,0,0
+PAX,60,true,,,MAX,0,0,0,0,0
+FSS,0,true,,,MIN,0,0,40,0,0
+FSS,0,true,,,MAX,0,0,60,0,0
+FSS,55,true,,Phase4:START,MIN,0,0,0,0,0
+FSS,55,true,,Phase4:START,MAX,0,0,20,0,0
+RO/RO,0,true,,,MIN,0,0,40,0,0
+RO/RO,0,true,,,MAX,0,0,60,0,0
+RO/RO,55,true,,Phase4:START,MIN,0,0,0,0,0
+RO/RO,55,true,,Phase4:START,MAX,0,0,20,0,0
+CAR TRANS,0,true,,,MIN,0,0,40,0,0
+CAR TRANS,0,true,,,MAX,0,0,60,0,0
+CAR TRANS,130,true,,,MIN,0,0,20,0,0
+CAR TRANS,130,true,,,MAX,0,0,20,0,0
+POL TANKER,0,true,,,MIN,0,0,0,0,0
+POL TANKER,0,true,,,MAX,0,0,0,0,0
+T-ACS,0,true,,,MIN,0,0,0,30,0
+T-ACS,0,true,,,MAX,0,0,0,60,0
+T-ACS,60,true,,,MIN,0,0,0,0,0
+T-ACS,60,true,,,MAX,0,0,0,0,0
+BREAKBULK,0,true,,,MIN,0,0,0,30,0
+BREAKBULK,0,true,,,MAX,0,0,0,75,0
+BREAKBULK,60,true,,,MIN,0,0,0,0,0
+BREAKBULK,60,true,,,MAX,0,0,0,0,0
+BARGE(LASH),0,true,,,MIN,0,0,0,40,0
+BARGE(LASH),0,true,,,MAX,0,0,0,60,0
+BARGE(LASH),60,true,,,MIN,0,0,0,0,0
+BARGE(LASH),60,true,,,MAX,0,0,0,0,0
+RO/RO(T-AKR),0,true,,,MIN,0,0,40,0,0
+RO/RO(T-AKR),0,true,,,MAX,0,0,60,0,0
+RO/RO(T-AKR),55,true,,Phase4:START,MIN,0,0,0,0,0
+RO/RO(T-AKR),55,true,,Phase4:START,MAX,0,0,20,0,0
+VISA CONT,0,true,,,MIN,0,0,0,0,0
+VISA CONT,0,true,,,MAX,0,0,0,0,0
+BULK CARRIER,0,true,,,MIN,0,0,0,0,0
+BULK CARRIER,0,true,,,MAX,0,0,0,0,0
+BULK CARRIER,60,true,,,MIN,0,0,0,0,0
+BULK CARRIER,60,true,,,MAX,0,0,0,0,0
+BARGE(T-AKB),0,true,,,MIN,0,0,0,40,0
+BARGE(T-AKB),0,true,,,MAX,0,0,0,60,0
+BARGE(T-AKB),60,true,,,MIN,0,0,0,0,0
+BARGE(T-AKB),60,true,,,MAX,0,0,0,0,0
+CONT-NSS,0,true,,,MIN,0,0,0,0,0
+CONT-NSS,0,true,,,MAX,0,60,0,0,0
+CONT-NSS,130,true,,,MIN,0,0,0,0,0
+CONT-NSS,130,true,,,MAX,0,0,0,0,0
+CONT-SS,0,true,,,MIN,0,30,0,0,0
+CONT-SS,0,true,,,MAX,0,60,0,0,0
+COMBO,0,true,,,MIN,0,0,40,0,0
+COMBO,0,true,,,MAX,0,0,40,0,0
+COMBO,150,true,,,MIN,0,0,0,0,0
+COMBO,150,true,,,MAX,0,0,0,0,0
+CLF,0,true,,,MIN,0,0,0,50,0
+CLF,0,true,,,MAX,0,0,0,60,0
+CLF,60,true,,,MIN,0,0,0,0,0
+CLF,60,true,,,MAX,0,0,0,0,0

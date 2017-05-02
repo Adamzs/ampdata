@@ -1,0 +1,8 @@
+name,numServicePoints,roroRate,stRate,contRate,polRate,roro,shipArrivePrepTime,shipDepartPrepTime
+BD 1-crane,1,6,500,8,0,false,10,10
+OPDS-IPDS,1,0,0,0,5000,false,1,1
+RRDF 1-SP,1,9,500,1,0,true,2.5,1
+RRDF 2-SP,2,9,500,1,0,true,2.5,1
+Self,0,0,0,0,0,false,0,0
+T-ACS 1-crane,1,4,500,8,0,false,10,10
+T-ACS 2-crane,2,6,500,11,0,false,10,10

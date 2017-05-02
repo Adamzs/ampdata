@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policy-Specifications>
+    <Policy-Specification is-selected="YES" policy-specification-name="Untitled Policy Set">
+        <Policy-Group policy-group-name="Airlift 3 Requirement Policies">
+            <Policy-Type
+                policy-instantiator-name="Default Requirement Selection Policy" policy-type-name="Requirement Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Requirement Traversal Policy" policy-type-name="Requirement Traversal Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift 3 Tour Policies">
+            <Policy-Type
+                policy-instantiator-name="Default Tour Selection Policy" policy-type-name="Tour Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Tour Traversal Policy" policy-type-name="Tour Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Simple Tour Evaluation Policy" policy-type-name="Tour Evaluation Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift 3 Cargo Policies">
+            <Policy-Type
+                policy-instantiator-name="Default Cargo Selection Policy" policy-type-name="Cargo Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Cargo Traversal Policy" policy-type-name="Cargo Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Simple Cargo Evaluation Policy" policy-type-name="Cargo Evaluation Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift 3 Aircraft Policies">
+            <Policy-Type
+                policy-instantiator-name="Default Aircraft Selection Policy" policy-type-name="Aircraft Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Aircraft Traversal Policy" policy-type-name="Aircraft Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Aircraft Evaluation Policy" policy-type-name="Aircraft Evaluation Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift 3 Interleave Policies">
+            <Policy-Type
+                policy-instantiator-name="Single Interleave Selection Policy" policy-type-name="Interleave Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Greedy Interleave Traversal Policy" policy-type-name="Interleave Traversal Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift 3 Route Policies">
+            <Policy-Type
+                policy-instantiator-name="Default Route Selection Policy" policy-type-name="Route Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Default Route Traversal Policy" policy-type-name="Route Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Simple Route Evaluation Policy" policy-type-name="Route Evaluation Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Constraint Scheduler Policies">
+            <Policy-Type policy-instantiator-name="Best First" policy-type-name="Crew Choice Policy"/>
+            <Policy-Type policy-instantiator-name="Standard Crew Duty" policy-type-name="Crew Duty Policy"/>
+            <Policy-Type policy-instantiator-name="Assume Rest Required" policy-type-name="Departure Window Policy">
+                <Policy-Parameter policy-parameter-name="Max Delay" policy-parameter-value="0.75"/>
+            </Policy-Type>
+            <Policy-Type policy-instantiator-name="Never" policy-type-name="Departure Window Cache Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Single Stop Lookahead" policy-type-name="Lookahead Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Weighted Mission Evaluation" policy-type-name="Mission Evaluation Policy">
+                <Policy-Parameter
+                    policy-parameter-name="Crew Staging Weight" policy-parameter-value="0.5f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Crew Rest Weight" policy-parameter-value="1.0f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Soft Constraint Violation Weight" policy-parameter-value="1.0f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Ground Waittime Weight" policy-parameter-value="1.0f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Mission Duration Weight" policy-parameter-value="1.0f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Mission Completion Time Weight" policy-parameter-value="1.0f"/>
+                <Policy-Parameter
+                    policy-parameter-name="Minimize PAX Transit Time Weight" policy-parameter-value="10.0f"/>
+            </Policy-Type>
+            <Policy-Type policy-instantiator-name="Time Ordered" policy-type-name="Ramp Parking Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Most Restrictive First" policy-type-name="Ramp Selection Policy"/>
+            <Policy-Type policy-instantiator-name="Two-Pass Best-First" policy-type-name="Route Stop Traversal Policy">
+                <Policy-Parameter
+                    policy-parameter-name="Excessive Delay Bottleneck Threshold" policy-parameter-value="3f"/>
+            </Policy-Type>
+            <Policy-Type policy-instantiator-name="Greedy" policy-type-name="Wait Time Policy"/>
+            <Policy-Type policy-instantiator-name="None" policy-type-name="Multiscoop Mission Similarity Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Airlift2 Miscellaneous Policies">
+            <Policy-Type
+                policy-instantiator-name="Strict Priority Order" policy-type-name="Aircraft Assignment Priority Policy"/>
+            <Policy-Type
+                policy-instantiator-name="No Group Aircraft Selection" policy-type-name="Group Aircraft Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Limited Route Generation" policy-type-name="Route Generation Policy">
+                <Policy-Parameter policy-parameter-name="Router Type" policy-parameter-value="LEGACY"/>
+                <Policy-Parameter
+                    policy-parameter-name="Flight Route Number" policy-parameter-value="3"/>
+                <Policy-Parameter
+                    policy-parameter-name="Pickup Route Number" policy-parameter-value="3"/>
+                <Policy-Parameter
+                    policy-parameter-name="Return Route Number" policy-parameter-value="3"/>
+                <Policy-Parameter
+                    policy-parameter-name="Max End-to-End Routes" policy-parameter-value="10"/>
+            </Policy-Type>
+            <Policy-Type
+                policy-instantiator-name="Productivity Router Configuration" policy-type-name="Router Configuration Policy"/>
+        </Policy-Group>
+        <Policy-Group policy-group-name="Sealift Planning Policies">
+            <Policy-Type
+                policy-instantiator-name="Expected + Shortest Time-Distance SPOE Selection" policy-type-name="SPOE Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Exhaustive Serial SPOE Traversal" policy-type-name="SPOE Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Earliest complete delivery through SPOE" policy-type-name="SPOE Evaluation Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Expected + Shortest Time-Distance SPOD Selection" policy-type-name="SPOD Selection Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Exhaustive Serial SPOD Traversal" policy-type-name="SPOD Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Earliest complete delivery through SPOD" policy-type-name="SPOD Evaluation Policy"/>
+            <Policy-Type
+                policy-instantiator-name="First N Viable Single Set Ship Set Selection" policy-type-name="Ship Set Selection Policy">
+                <Policy-Parameter policy-parameter-name="N" policy-parameter-value="25"/>
+            </Policy-Type>
+            <Policy-Type
+                policy-instantiator-name="Exhaustive Serial Ship Set Traversal" policy-type-name="Ship Set Traversal Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Fewest Ships Ship Set Evaluation" policy-type-name="Ship Set Evaluation Policy"/>
+            <Policy-Type
+                policy-instantiator-name="Breakbulk First to Area Cargo Assignment" policy-type-name="Ship Cargo Assignment"/>
+        </Policy-Group>
+    </Policy-Specification>
+</Policy-Specifications>

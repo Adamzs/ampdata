@@ -1,0 +1,31 @@
+"Tunisia: Commodities Arriving, Available, and Stranded"
+Commodity<String:Commodity>,Units<String>,Arriving<Float>,Available<Float>,Strat Pending<Float>,Total<Float>
+FortyFootContainer,ST,0.0,0.0,0.0,0.0
+TwentyFootContainer,ST,0.0,0.0,0.0,0.0
+SecondaryCargo,ST,0.0,0.0,0.0,0.0
+NSDA,ST,10.2,0.0,0.0,10.2
+PAX,PAX,38331.0,0.0,0.0,38331.0
+Large Wheels,ST,35786.598,0.0,0.0,35786.598
+Medium Wheels,ST,9941.9,0.0,0.0,9941.9
+Small Wheels,ST,38897.52,0.0,0.0,38897.52
+Large Tracks,ST,29266.904,0.0,0.0,29266.904
+Medium Tracks,ST,10634.3,0.0,0.0,10634.3
+Small Tracks,ST,2813.6006,0.0,0.0,2813.6006
+Palletized UE,ST,794.4001,0.0,0.0,794.4001
+TEU UE,ST,0.0,0.0,0.0,0.0
+FEU Resupply,ST,0.0,0.0,0.0,0.0
+TEU Resupply,ST,13.125422,0.0,450.0,463.12543
+Bulk Resupply,ST,615.2,0.0,0.0,615.2
+Bulk Ammo,ST,0.0,0.0,0.0,0.0
+POL,CBBL,1479.9996,0.0,0.0,1479.9996
+Cont Ammo,ST,0.0,0.0,0.0,0.0
+Catch All,ST,4785.899,0.0,0.0,4785.899
+Mixed Container20 Hot,ST,319.5,0.0,0.0,319.5
+Mixed Container20,ST,53839.83,0.0,5409.0,59248.83
+Mixed Container40 Hot,ST,0.0,0.0,0.0,0.0
+Mixed Container40,ST,0.0,0.0,0.0,0.0
+Mixed Pallet Hot,ST,34.999996,0.0,0.0,34.999996
+Mixed Pallet,ST,8309.651,58693.98,13.125422,67016.76
+Total ST,ST,196063.64,58693.98,5872.1255,260629.75
+Total PAX,PAX,38331.0,0.0,0.0,38331.0
+Total POL,CBBL,1479.9996,0.0,0.0,1479.9996

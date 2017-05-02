@@ -1,0 +1,253 @@
+{
+    "id": "/adHoc/auto/shipBerthTime.csv.meta",
+    "title": "ShipBerthTimes",
+    "scenario": "metadata-scenario",
+    "classname": "amp.report.sealift.ShipBerthTimeRecord",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Ship Name",
+                "titles": "Ship Name",
+                "description": "Name of this Ship",
+                "datatype": "string"
+            },
+            {
+                "name": "Lloyds",
+                "titles": "Lloyds",
+                "description": "Lloyds Registry Number of ship, used as identification number for MIDAS.",
+                "datatype": "string"
+            },
+            {
+                "name": "Fleet",
+                "titles": "Fleet",
+                "description": "Name of fleet",
+                "datatype": "string"
+            },
+            {
+                "name": "Ship Type",
+                "titles": "Ship Type",
+                "description": "Name of this ShipType",
+                "datatype": "string"
+            },
+            {
+                "name": "Terminal",
+                "titles": "Terminal",
+                "description": "Human-readable location name.",
+                "datatype": "string"
+            },
+            {
+                "name": "Geoloc",
+                "titles": "Geoloc",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "Berth Name",
+                "titles": "Berth Name",
+                "description": "The name of the Berth",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "Berth Type",
+                "titles": "Berth Type",
+                "description": "The name of this BerthType",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "Visa",
+                "titles": "Visa",
+                "description": "Is this ship considered VISA",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Voyage Number",
+                "titles": "Voyage Number",
+                "description": "The voyage number of the ship at this time",
+                "datatype": "integer"
+            },
+            {
+                "name": "Offshort Port",
+                "titles": "Offshort Port",
+                "description": "The day the ship arrived offshort at port",
+                "datatype": "float"
+            },
+            {
+                "name": "Entry Day",
+                "titles": "Entry Day",
+                "description": "The day the ship is allowed to enter port",
+                "datatype": "float"
+            },
+            {
+                "name": "Berth Day",
+                "titles": "Berth Day",
+                "description": "The day the ship berthed",
+                "datatype": "float"
+            },
+            {
+                "name": "Depart Day",
+                "titles": "Depart Day",
+                "description": "The day the ship departed",
+                "datatype": "float"
+            },
+            {
+                "name": "Entry Delay",
+                "titles": "Entry Delay",
+                "description": "number of days ship waits to enter port",
+                "datatype": "float"
+            },
+            {
+                "name": "Berth Delay",
+                "titles": "Berth Delay",
+                "description": "number of day ship waits to berth after gaining port entry",
+                "datatype": "float"
+            },
+            {
+                "name": "Days On Berth",
+                "titles": "Days On Berth",
+                "description": "number of days the ship was on berth",
+                "datatype": "float"
+            },
+            {
+                "name": "STons Loaded",
+                "titles": "STons Loaded",
+                "description": "The amount in STONS that was loaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "STons Offload",
+                "titles": "STons Offload",
+                "description": "The amount in STONS that was offloaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "POL Loaded",
+                "titles": "POL Loaded",
+                "description": "The amount of POL that was loaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "POL Offoad",
+                "titles": "POL Offoad",
+                "description": "The amount of POL that was offloaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "PAX Loaded",
+                "titles": "PAX Loaded",
+                "description": "The amount of PAX that was loaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "PAX Offload",
+                "titles": "PAX Offload",
+                "description": "The amount of PAX that was offloaded during the berth",
+                "datatype": "float"
+            },
+            {
+                "name": "Next Port Arrival",
+                "titles": "Next Port Arrival",
+                "description": "The estimated time of arrival at the next port",
+                "datatype": "float"
+            },
+            {
+                "name": "Next Port",
+                "titles": "Next Port",
+                "description": "Human-readable location name.",
+                "datatype": "string"
+            },
+            {
+                "name": "Next Port Geoloc",
+                "titles": "Next Port Geoloc",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            }
+        ],
+        "primaryKey": "Ship Name",
+        "foreignKeys": [
+            {
+                "columnReference": "Ship Name",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "Lloyds",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Lloyds"
+                }
+            },
+            {
+                "columnReference": "Fleet",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Fleet"
+                }
+            },
+            {
+                "columnReference": "Ship Type",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Type"
+                }
+            },
+            {
+                "columnReference": "Terminal",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "Geoloc",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "Berth Name",
+                "reference": {
+                    "schemaReference": "/tplan/seaports/berths.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "Berth Type",
+                "reference": {
+                    "schemaReference": "/tplan/seaports/berths.csv.meta",
+                    "columnReference": "BerthType"
+                }
+            },
+            {
+                "columnReference": "Visa",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Visa"
+                }
+            },
+            {
+                "columnReference": "Next Port",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "Next Port Geoloc",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            }
+        ]
+    }
+}

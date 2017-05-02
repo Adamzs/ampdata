@@ -1,0 +1,2 @@
+Seaport Usage
+GEOLOC<String>,COUNTRY STATE CODE<String>,NAME<String>,Time<Day>,Min Ships On Berth<Integer>,Avg Ships On Berth<Integer>,Max Ships On Berth<Integer>,Min Ships Waiting to Berth<Integer>,Avg Ships Waiting to Berth<Integer>,Max Ships Waiting to Berth<Integer>

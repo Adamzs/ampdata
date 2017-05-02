@@ -1,0 +1,33 @@
+Asset Use Statistics
+Pool<String>,Vehicle<String>,Max Vehs Avail<Integer>,Num Loaded Trips<Integer>,Num Empty Trips<Integer>,Num Wasted Trips<Integer>,Ave Miles Loaded Trips<Float>,Ave Miles Empty Trips<Float>,Ave ST<Float>,Ave PAX<Float>,Ave Cbbl POL<Float>
+one,54DODX,270,809,1106,0,1427.1312,1069.7557,14.860202,0.0,0.0
+one,Commercial 10-Ton Tractor/Commercial Semitrailer,180,4,8,0,132.61179,240.78587,10.849999,0.0,0.0
+one,Commercial Bus 45-pax,95,223,448,1,88.469864,310.8754,0.0,43.47085,0.0
+one,M1070 HET Tractor/M1000 70-Ton HET Trailer,243,502,980,0,1236.1681,661.2651,57.88864,0.0,0.0
+one,M1083 WOWN 5-Ton MTV,180,82,164,0,1205.2415,625.9449,6.554878,0.0,0.0
+one,commercial medium railcar,450,1885,2457,27,1353.517,1112.342,13.41931,0.0,0.0
+two,Commercial 10-Ton Tractor/Commercial Semitrailer,89,4,8,0,1464.0209,1516.2704,7.75,0.0,0.0
+two,Commercial Bus 45-pax,94,95,194,2,5.5190573,888.4713,0.0,43.547367,0.0
+two,Commercial HET Tractor/Commercial HET Trailer,89,132,222,1,1935.6803,1831.5623,8.571212,0.0,0.0
+two,M1083 WOWN 5-Ton MTV,89,96,192,0,1652.4948,1063.6593,4.24375,0.0,0.0
+four,Commercial Bus 45-pax,94,2,4,0,286.0692,872.59705,0.0,12.0,0.0
+four,M1070 HET Tractor/M1000 70-Ton HET Trailer,89,24,48,0,1903.8002,2443.952,9.670834,0.0,0.0
+four,M1083 WOWN 5-Ton MTV,89,6,12,0,286.0692,872.59686,1.4,0.0,0.0
+four,M123 10-Ton Tractor/M870 40-Ton Lowbed,89,89,178,0,1903.8,2443.9521,10.0,0.0,0.0
+five,54DODX,89,66,132,0,1147.7095,763.50684,10.713636,0.0,0.0
+five,commercial boxcar,22,23,46,0,1269.9312,851.03644,1.9043478,0.0,0.0
+five,commercial medium railcar,22,66,88,0,1141.306,950.11346,6.783334,0.0,0.0
+six,M1088 WOWN MTV Tractor/M967A1 5000-Gal Tanker,89,1243,1333,1,91.79999,187.92342,0.0,0.0,1.1906674
+seven,Commercial Bus 45-pax,94,7,14,0,59.475124,553.98694,0.0,39.857143,0.0
+seven,M1070 HET Tractor/M1000 70-Ton HET Trailer,89,173,271,0,2807.2761,2101.9326,9.326011,0.0,0.0
+nine,Commercial 10-Ton Tractor/Commercial Semitrailer,180,3560,7137,1,279.73315,230.28488,17.48802,0.0,0.0
+nine,Commercial Bus 45-pax,47,8,16,0,6.2565184,99.79371,0.0,42.375,0.0
+nine,commercial medium railcar,270,322,626,1,549.4651,362.87097,9.353725,0.0,0.0
+ten,commercial boxcar,90,75,150,0,232.01318,274.88046,1.1893334,0.0,0.0
+ten,commercial medium railcar,225,608,1209,0,230.83784,224.81938,12.068654,0.0,0.0
+eleven,68FLAT,225,886,1556,0,393.2383,356.79355,5.6710668,0.0,0.0
+eleven,Commercial 10-Ton Tractor/Commercial Semitrailer,90,109,226,4,743.1893,479.22797,9.396329,0.0,0.0
+eleven,Commercial Bus 45-pax,19,319,542,1,10.584958,134.49655,0.0,43.517242,0.0
+eleven,commercial medium railcar,225,2012,3311,4,290.4626,278.17435,13.577426,0.0,0.0
+twelve,Commercial 10-Ton Tractor/Commercial Semitrailer,90,11,24,1,495.7402,254.30247,6.7363644,0.0,0.0
+twelve,Commercial Bus 45-pax,19,223,317,0,42.67948,107.571014,0.0,44.013454,0.0

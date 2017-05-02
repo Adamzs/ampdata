@@ -1,0 +1,2 @@
+Flatcar Usage
+Time<Day>,Asset Pool<String>,Vehicle Type<String>,Capacity<Float>,InUse<Float>,Available<Float>,Utilization<Percent>

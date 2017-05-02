@@ -1,0 +1,9 @@
+Tunisia Terminal Overview
+Terminal<Node>,Seaport<String>,Berth Group<String>,Arrivals<Integer>,Departures<Integer>,Strat Onloads<Integer>,Strat Offloads<Integer>,Intra Onloads<Integer>,Intra Offloads<Integer>
+AS SUKHAYRAH,APFD,<InStreamAnchor1>,1,1,0,1,0,0
+GABES,HNTS,<BG Gabes berth1>,33,33,0,33,0,0
+GABES,HNTS,<BG Gabes berth2>,4,4,0,4,0,0
+SFAX,VKNP,<BG Safaqis NE-1 berth>,1,1,0,1,0,0
+SFAX,VKNP,<BG Safaqis NE-2 berth>,1,1,0,1,0,0
+SFAX,VKNP,<BG Safaqis cont-1 berth>,116,116,0,116,0,0
+SFAX,VKNP,<BG Safaqis cont-2 berth>,19,19,0,19,0,0

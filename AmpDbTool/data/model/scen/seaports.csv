@@ -1,0 +1,141 @@
+GeolocCode,Name,Latitude,Longitude,Draft,OceanPort,ConusPort,BunkeringPort,ConstrainedPort,MaximumPortQueue,HlaShared
+00A1,NW ATLANTIC,40,-66,999,true,false,false,false,30,0
+00IO,INDIAN OCEAN,-15,75,999,true,false,false,false,30,0
+00XT,WESTERN MED,40,6,999,true,false,false,false,30,0
+AAPV,ABIDJAN,5.25,-4.016667,999,false,false,false,true,30,0
+ABFL,AD DAMMAM,26.433332,50.1,999,false,false,false,true,30,0
+ADKH,AL BAHRAYN MINA S,26.2,50.6,999,false,false,false,true,30,0
+ADLS,AL MAHDIYAH,35.5,11.05,999,false,false,false,true,30,0
+AELU,ALEXANDRIA,31.183332,29.9,999,false,false,false,true,30,0
+AEQT,ALGECIRAS,36.133335,-5.45,999,false,false,false,true,30,0
+AJGX,ANCONA,43.616665,13.5,999,false,false,false,true,30,0
+ALRF,ANTWERP,51.266666,4.3333335,999,false,false,false,true,30,0
+AMCQ,APRA HARBOR,13.45,144.61667,999,false,false,false,true,30,0
+APFD,AS SUKHAYRAH,34.316666,10.15,999,false,false,false,true,30,0
+APGW,ASH SHUWAIKH COMM,29.35,47.916668,999,false,false,false,true,30,0
+AVBU,BALTIMORE OUTPORT,39.266666,-76.583336,999,false,true,true,false,30,0
+AVYX,BARCELONA,41.35,2.1666667,999,false,false,false,true,30,0
+BBNQ,BEAUMONT T2,30.083334,-94.083336,999,false,true,true,true,30,0
+BBNV,BEAUMONT,30.083334,-94.083336,999,false,true,true,true,30,0
+BQWA,MUHAMMAD QASIM,24.766666,67.333336,999,false,false,false,true,30,0
+BSRL,BIZERTE,37.283333,9.9,999,false,false,false,true,30,0
+CHCY,BREMERHAVEN,53.55,8.55,999,false,false,false,true,30,0
+CWCP,CADIZ,36.383335,-6.284167,999,false,false,false,true,30,0
+CWGV,CAGAYAN DE ORO,8.5,124.65,999,false,false,false,true,30,0
+DKSD,CHARLESTON,32.783333,-79.916664,999,false,true,true,true,30,0
+DRUG,CHINHAE,35.133335,128.66667,999,false,false,false,true,30,0
+EDME,COLOMBO,6.9333334,79.85,999,false,false,false,true,30,0
+EGNN,CONCORD,37.933334,-121.933334,999,false,true,true,true,30,0
+ENCN,CORPUS CHRISTI NA,27.816668,-97.4,999,false,true,true,true,30,0
+EZMU,DAKAR,14.683333,-17.433332,999,false,false,false,true,30,0
+FGDB,DIEGO GARCIA EAST,-7.35,72.46667,999,false,false,false,false,30,0
+FGDD,DIEGO GARCIA,-7.2555556,72.405556,999,false,false,false,true,30,0
+FGTW,DJERBA,33.833332,10.833333,999,false,false,false,true,30,0
+FMAZ,DUBAI,25.25,55.266666,999,false,false,false,true,30,0
+FNLD,DURBAN,-29.966667,30.966667,999,false,false,false,true,30,0
+FNSH,DUTCH HARBOR,53.916668,-166.6,999,false,false,false,true,30,0
+FQZF,EARLE NWS,40.016666,-74.6,999,false,true,true,false,30,0
+GPEN,FELIXSTOWE,51.95,1.3166667,999,false,false,false,true,30,0
+GWZP,FOS,43.4,4.866667,999,false,false,false,true,30,0
+HAGC,FREEPORT,29,-95.4,999,false,true,true,true,30,0
+HMGB,FUJAIRAH,25.083334,56.3,999,false,false,false,true,30,0
+HNTS,GABES,33.85,10.116667,999,false,false,false,true,30,0
+HUPR,GENOVA,44.416668,8.833333,999,false,false,false,true,30,0
+JJRP,GRAVESEND,51.45,0.38333333,999,false,false,false,true,30,0
+JSSN,GUAM PORT,13.580556,144.92778,999,false,false,false,true,30,0
+JTVH,GULFPORT,30.35,-89.083336,999,false,true,true,true,30,0
+JWJY,HAIFA,32.8,35.033333,999,false,false,false,true,30,0
+JWTD,HAKATA,33.6,130.4,999,false,false,false,true,30,0
+JXKM,HALIFAX,44.65,-63.583332,999,false,false,false,true,30,0
+JYPN,HAMBURG,53.533333,9.95,999,false,false,false,true,30,0
+KZPH,HONG KONG ABERDEE,22.233334,114.13333,999,false,false,false,true,30,0
+KZTZ,HONOLULU,21.333334,-157.95,999,false,false,false,true,30,0
+LCMT,HOUSTON,29.75,-95.416664,999,false,true,true,true,30,0
+LKPE,INDIAN ISLAND,48.075,-122.75,999,false,true,true,true,30,0
+LRNC,IZMIR,38.42389,27.129723,999,false,false,false,true,30,0
+LSGM,JACKSONVILLE,30.333334,-81.666664,999,false,true,true,true,30,0
+LUTP,JEDDAH,21.5,39.2,999,false,false,false,true,30,0
+LWEV,JUBAIL PORT,27,49.666668,999,false,false,false,true,30,0
+LYAP,KANDLA,23.016666,70.21667,999,false,false,false,true,30,0
+LYRV,KAOHSIUNG TSOYING,22.6,120.36667,999,false,false,false,true,30,0
+LYTM,KARACHI,24.783333,66.98333,999,false,false,false,true,30,0
+MKAG,KOBE,34.666668,135.2,999,false,false,false,true,30,0
+MLDL,KOPER,45.55,13.733334,999,false,false,false,true,30,0
+MMGH,KWANGYANG,34.894444,127.64667,999,false,false,false,true,30,0
+MZJK,LE HAVRE,49.466667,0.11666667,999,false,false,false,true,30,0
+NBDY,LIVORNO,43.566666,10.3,999,false,false,false,true,30,0
+NLFL,LIVERPOOL,53.416668,-3,999,false,false,false,true,30,0
+NNWH,LOME,6.1666665,1.25,999,false,false,false,true,30,0
+NPTU,LONG BEACH,33.766666,-118.183334,999,false,true,true,true,30,0
+NSAN,LOS ANGELES,33.716667,-118.26667,999,false,true,true,true,30,0
+PAXM,MANILA,14.583333,120.96667,999,false,false,false,true,30,0
+PCFC,MANZANILLO,19.033333,-104.316666,999,false,false,false,true,30,0
+PCFG,MANZANILLO,9.363334,-79.88361,999,false,false,false,true,30,0
+PKVP,MASAN,35.183334,128.56667,999,false,false,false,true,30,0
+PPSH,MAYPORT NAVAL ST,30.4,-81.433334,999,false,true,true,false,30,0
+QCFF,MIAMI,25.783333,-80.183334,999,false,true,true,true,30,0
+QHPB,JEBEL ALI,24.983334,55.05,999,false,false,false,true,30,0
+QHPD,MINA SAQR,25.966667,56.05,999,false,false,false,true,30,0
+QHPF,MINA ZAYED,24.516666,54.366665,999,false,false,false,true,30,0
+QNPW,MOKPO,34.783333,126.38333,999,false,false,false,false,30,0
+QTUP,MOREHEAD CITY,34.65278,-76.675835,999,false,true,true,true,30,0
+RCYQ,MUSCAT,23.616667,58.633335,999,false,false,false,true,30,0
+RCYT,MUSCAT,23.616667,58.6,999,false,false,false,true,30,0
+RELG,NAGOYA,35.05,136.86667,999,false,false,false,true,30,0
+REPV,NAHA,26.205278,127.67167,999,false,false,false,true,30,0
+RGJW,NAPLES,40.833332,14.266666,999,false,false,false,true,30,0
+RQNK,NEW ORLEANS,29.95,-90.01667,999,false,true,true,true,30,0
+RRHU,NEW YORK,40.716667,-74.03333,999,false,true,true,true,30,0
+RRRK,NEW YORK PORT EMB,40.666668,-73.96667,999,false,true,true,true,30,0
+RUAM,NEWPORT,41.5,-71.333336,999,false,true,true,false,30,0
+RUAQ,NEWPORT T2,41.5,-71.333336,999,false,true,true,true,30,0
+RULV,NEWPORT NEWS,37,-76.4,999,false,true,true,true,30,0
+SBEA,NORFOLK,36.91,-76.3275,999,false,true,true,true,30,0
+SBEQ,NORFOLK T2,36.933334,-76.28333,999,false,true,true,true,30,0
+SERU,OAKLAND SEALAND T,37.816666,-122.333336,999,false,true,true,true,30,0
+SMXS,OSAKA,34.6475,135.4289,999,false,false,false,true,30,0
+STRM,PALERMO,38.12611,13.368889,999,false,false,false,true,30,0
+SVCN,PANAMA CITY,8.95,-79.53333,999,false,false,false,true,30,0
+SYZZ,PEARL HARBOR NAD,21.333334,-157.96666,999,false,false,false,true,30,0
+TGWS,PARAIEVS,37.933334,23.633333,999,false,false,false,true,30,0
+TKDW,POHANG,36.05,129.36667,999,false,false,false,true,30,0
+TNVX,PORT EVERGLADES,26.1,-80.11667,999,false,true,true,true,30,0
+TNZY,PORT HUENEME NCBC,34.15,-119.2,999,false,true,true,true,30,0
+TPPR,PORT SAID,31.25,32.3,999,false,false,false,true,30,0
+TPRW,PORT KELANG,3.0166667,101.35,999,false,false,false,true,30,0
+TQKG,PORTLAND,45.583332,-122.6,999,false,true,true,true,30,0
+TRZP,PRAIA DE VITORIA,38.716667,-27.05,999,false,false,false,true,30,0
+TVJD,PUSAN MILITARY TE,35.083332,129.08223,999,false,false,false,true,30,0
+TVXA,MINA QABOOS,23.616667,58.55,999,false,false,false,true,30,0
+TZL4,RAS AL MISHAB,28.1,48.633335,999,false,false,false,true,30,0
+TZYR,SALALAH MINA RAYS,16.933332,54,999,false,false,false,true,30,0
+UMXA,ROTA,36.64639,-6.349167,999,false,false,false,true,30,0
+UNAP,ROTTERDAM,51.883335,4.45,999,false,false,false,true,30,0
+UTAC,SAN DIEGO,32.75,-117.166664,999,false,true,true,true,30,0
+UTVT,SAN JUAN,18.516666,-67.15,999,false,false,false,true,30,0
+UULA,SAN PEDRO,-33.683334,-59.633335,999,false,false,false,true,30,0
+UULB,SAN PEDRO,4.733333,-6.616667,999,false,false,false,true,30,0
+UULX,SAN PEDRO,33.75,-118.25,999,false,true,true,true,30,0
+UYQR,SASEBO,33.166668,129.71666,999,false,false,false,true,30,0
+UZXJ,SAVANNAH,32.083332,-81.11667,999,false,true,true,true,30,0
+VFVN,SEATTLE,47.6,-122.333336,999,false,true,true,true,30,0
+VKNP,SFAX,34.733334,10.766666,999,false,false,false,true,30,0
+VPRF,SHIMIZU,35.004166,138.49945,999,false,false,false,true,30,0
+VSNF,SINGAPORE,1.35,103.916664,999,false,false,false,true,30,0
+WMPT,SOUTHPORT MILITAR,33.983334,-77.933334,999,false,true,true,true,30,0
+WPAU,SYDNEY,-33.966667,151.2,999,false,false,false,true,30,0
+WPVT,TACOMA,47.266666,-122.5,999,false,true,true,true,30,0
+WQZM,TAKORADI,4.883333,-1.75,999,false,false,false,true,30,0
+WTJG,TEMA,5.633333,0.016666668,999,false,false,false,true,30,0
+WYKZ,TOKYO,35.666668,139.75,999,false,false,false,true,30,0
+XEXW,TRIESTE,45.65,13.766666,999,false,false,false,true,30,0
+XRVJ,VALENCIA,39.45,-0.31666666,999,false,false,false,true,30,0
+XUDT,VANCOUVER,45.633335,-122.683334,999,false,true,true,true,30,0
+XVMN,VENICE,45.433334,12.333333,999,false,false,false,true,30,0
+XVRV,VERACRUZ,19.2,-96.13333,999,false,false,false,true,30,0
+XYNK,VILLA SAN GIOVANN,38.216667,15.633333,999,false,false,false,true,30,0
+YRTK,WELLINGTON,-41.366665,174.85,999,false,false,false,true,30,0
+ZBES,WILMINGTON,34.233334,-77.95,999,false,true,true,true,30,0
+ZMJJ,YANTIAN PORT FAC,22.6,114.26667,999,false,false,false,true,30,0
+ZNMC,YOKOHAMA COMMERCI,35.45,139.65,999,false,false,false,true,30,0
+ZSJC,ZHAPU,30.583334,121.1,999,false,false,false,true,30,0

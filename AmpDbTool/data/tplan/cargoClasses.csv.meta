@@ -1,0 +1,20 @@
+{
+    "id": "/tplan/cargoClasses.csv.meta",
+    "title": "CargoClasses",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.actype.CargoClass",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "CargoClassType",
+                "titles": "CargoClassType",
+                "description": "The cargo class",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "CargoClassType",
+        "foreignKeys": [
+        ]
+    }
+}

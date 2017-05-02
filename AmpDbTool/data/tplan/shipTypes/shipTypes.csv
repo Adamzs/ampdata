@@ -1,0 +1,19 @@
+Name,SelfSustaining,MaxPOE,MaxPOD
+T-AVB,false,1,1
+T-AH,false,1,1
+PAX,false,1,1
+FSS,false,1,1
+RO/RO,false,1,1
+CAR TRANS,false,1,1
+POL TANKER,false,1,1
+T-ACS,false,1,1
+BREAKBULK,false,1,1
+BARGE(LASH),false,1,1
+RO/RO(T-AKR),false,1,1
+VISA CONT,false,1,1
+BULK CARRIER,false,1,1
+BARGE(T-AKB),false,1,1
+CONT-NSS,false,1,1
+CONT-SS,false,1,1
+COMBO,false,1,1
+CLF,false,1,1

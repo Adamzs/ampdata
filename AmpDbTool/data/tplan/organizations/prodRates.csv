@@ -1,0 +1,7 @@
+Key,Day,Enabled,Description,EventPhase,Commodity,SchedDay,SchedEnabled,Rate
+MECHANICSBURG,0,true,,,GEN-RESUPPLY,0,true,999999
+MECHANICSBURG,0,true,,,GEN-AMMO,0,true,0
+MECHANICSBURG,0,true,,,GEN-POL,0,true,0
+PHILADELPHIA,0,true,,,GEN-RESUPPLY,0,true,999999
+PHILADELPHIA,0,true,,,GEN-AMMO,0,true,0
+PHILADELPHIA,0,true,,,GEN-POL,0,true,0

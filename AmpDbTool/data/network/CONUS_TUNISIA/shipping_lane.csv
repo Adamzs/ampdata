@@ -1,0 +1,11 @@
+KEY,SHAPE_ROW,CountryState,CountryStateCode,Length,LineStyle,LineWidth,LineColor,WaterwayRate,WaterwayRateOfMarch,AvailableMilitary,type,From,To,DisplayName,Modified
+NEW 10-4,4,null,null,383.655,,,,,,,shipping lane,ints-4962,ints-2898,,
+NEW 11-8,8,null,null,366.319,,,,,,,shipping lane,ints-55,ints-4962,,
+NEW 12-7,7,null,null,41.818,,,,,,,shipping lane,geos-AZTG,ints-55,,
+NEW 3-0,0,null,null,7.734,,,,,,,shipping lane,geos-SERU,geos-UEND,,
+NEW 4-9,9,null,null,17.192,,,,,,,shipping lane,ints-3508,geos-RQNK,,
+NEW 5-5,5,null,null,41.643,,,,,,,shipping lane,ints-1943,ints-3508,,
+NEW 6-2,2,null,null,62.677,,,,,,,shipping lane,ints-1278,ints-1943,,
+NEW 7-3,3,null,null,550.825,,,,,,,shipping lane,ints-4736,ints-1278,,
+NEW 8-1,1,null,null,177.075,,,,,,,shipping lane,ints-1030,ints-4736,,
+NEW 9-6,6,null,null,457.427,,,,,,,shipping lane,ints-2898,ints-1030,,

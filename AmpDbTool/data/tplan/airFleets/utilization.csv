@@ -1,0 +1,6 @@
+Name,AcType,Day,Enabled,Description,EventPhase,Hours
+STRATEGIC,B-747P,0,true,,,10
+STRATEGIC,C-17,0,true,,,12.7
+STRATEGIC,C-5A,0,true,,,9.7
+STRATEGIC,CH47,0,true,,,10
+STRATEGIC,KC-10,0,true,,,10

@@ -1,0 +1,20 @@
+{
+    "id": "/model/rlnType.csv.meta",
+    "title": "RLNTypes",
+    "scenario": "metadata-scenario",
+    "classname": "ampdom.dplan.RlnType",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "RlnType",
+                "titles": "RlnType",
+                "description": "Type of RLN code",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": "RlnType",
+        "foreignKeys": [
+        ]
+    }
+}

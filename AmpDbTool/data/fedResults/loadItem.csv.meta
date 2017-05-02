@@ -1,0 +1,187 @@
+{
+    "id": "/fedResults/loadItem.csv.meta",
+    "title": "LoadItems",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.interaction.LoadItem",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "RLN",
+                "titles": "RLN",
+                "description": "The name of the RLN",
+                "datatype": "string"
+            },
+            {
+                "name": "VirtualRlnId",
+                "titles": "VirtualRlnId",
+                "description": "The Virtual RLN ID",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetID",
+                "titles": "AssetID",
+                "description": "The id of the asset, for ships it is the lloyds id, for aircraft it is the tail number",
+                "datatype": "string"
+            },
+            {
+                "name": "MissionID",
+                "titles": "MissionID",
+                "description": "The id of the mission, for ships this is [lloyds]-[numvoyages], for air it is the mission id",
+                "datatype": "string"
+            },
+            {
+                "name": "MissionNum",
+                "titles": "MissionNum",
+                "description": "The mission number",
+                "datatype": "integer"
+            },
+            {
+                "name": "Amount",
+                "titles": "Amount",
+                "description": "The amount of cargo",
+                "datatype": "float"
+            },
+            {
+                "name": "CargoType",
+                "titles": "CargoType",
+                "description": "The base cargo types",
+                "datatype": "string"
+            },
+            {
+                "name": "CCC",
+                "titles": "CCC",
+                "description": "The cargo commodity code that is a combination of CCC1, CCC2 and CCC3",
+                "datatype": "string"
+            },
+            {
+                "name": "Hot",
+                "titles": "Hot",
+                "description": "hot cargo indicator",
+                "datatype": "boolean"
+            },
+            {
+                "name": "LocationGeoloc",
+                "titles": "LocationGeoloc",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "UpdateID",
+                "titles": "UpdateID",
+                "description": "index for updates, used to tie items to a ManifestUpdate",
+                "datatype": "integer"
+            },
+            {
+                "name": "IncomingMode",
+                "titles": "IncomingMode",
+                "description": "The movement Mode",
+                "datatype": "string"
+            },
+            {
+                "name": "OutgoingMode",
+                "titles": "OutgoingMode",
+                "description": "The movement Mode",
+                "datatype": "string"
+            },
+            {
+                "name": "Purpose",
+                "titles": "Purpose",
+                "description": "The activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "LoadRule",
+                "titles": "LoadRule",
+                "description": "rule defining how the cargo should be loaded onto the ship",
+                "datatype": "integer"
+            },
+            {
+                "name": "Decontaminatable",
+                "titles": "Decontaminatable",
+                "description": "can this item be decontaminated",
+                "datatype": "boolean"
+            }
+        ],
+        
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            },
+            {
+                "columnReference": "RLN",
+                "reference": {
+                    "schemaReference": "/fedResults/rlns.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "VirtualRlnId",
+                "reference": {
+                    "schemaReference": "/dplan/virtualRln.csv.meta",
+                    "columnReference": "Key"
+                }
+            },
+            {
+                "columnReference": "CargoType",
+                "reference": {
+                    "schemaReference": "/fedResults/cargotypes.csv.meta",
+                    "columnReference": "CargoType"
+                }
+            },
+            {
+                "columnReference": "CCC",
+                "reference": {
+                    "schemaReference": "/tplan/cargoCommodityCodes.csv.meta",
+                    "columnReference": "CCC"
+                }
+            },
+            {
+                "columnReference": "LocationGeoloc",
+                "reference": {
+                    "schemaReference": "/tplan/locations/locations.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "IncomingMode",
+                "reference": {
+                    "schemaReference": "/fedResults/modes.csv.meta",
+                    "columnReference": "Mode"
+                }
+            },
+            {
+                "columnReference": "OutgoingMode",
+                "reference": {
+                    "schemaReference": "/fedResults/modes.csv.meta",
+                    "columnReference": "Mode"
+                }
+            },
+            {
+                "columnReference": "Purpose",
+                "reference": {
+                    "schemaReference": "/fedResults/purposeCodes.csv.meta",
+                    "columnReference": "PurposeCode"
+                }
+            }
+        ]
+    }
+}
