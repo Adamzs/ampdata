@@ -108,8 +108,7 @@ public class SQLFactory {
     }
 
     public String toLoadSql(MetaTable meta) {
-        String metaFilePath = meta.getFile().getAbsolutePath();
-        String csvFilePath = metaFilePath.replaceAll(".meta", "");
+        String csvFilePath = metadataToCsvFile(meta);
         StringBuilder sql = new StringBuilder();
         sql.append("LOAD DATA LOCAL INFILE '" + csvFilePath + "'");
         sql.append("\n INTO TABLE " + normalize(meta.getTableName()));
@@ -133,6 +132,12 @@ public class SQLFactory {
             sql.append(Joiner.on(",\n     ").join(assignments));
         }
         return sql.toString();
+    }
+
+    public String metadataToCsvFile(MetaTable meta) {
+        String metaFilePath = meta.getFile().getAbsolutePath();
+        String csvFilePath = metaFilePath.replaceAll(".meta", "");
+        return csvFilePath;
     }
 
     public String toPrimaryIndexSQL(PrimaryKey pk) {

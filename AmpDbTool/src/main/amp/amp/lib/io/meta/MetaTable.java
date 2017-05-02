@@ -25,6 +25,8 @@ package amp.lib.io.meta;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.common.base.Joiner;
+
 import amp.lib.io.MetadataObject;
 
 public class MetaTable extends MetaObject {
@@ -238,14 +240,15 @@ public class MetaTable extends MetaObject {
 
         @Override
         public String toString() {
-            return getName();
+            String tableName = getTable() == null ? "<unknown>" : getTable().getTableName();
+            String columnName = getName() == null ? "<unknown>" : getName();
+            return tableName + "(" + columnName + ")";
         }
     }
 
     public static class ForeignKey {
 
         private String fkTableName;
-
         private MetaTable fkTable;
 
         private String fkColumnName;
@@ -257,6 +260,11 @@ public class MetaTable extends MetaObject {
         private String refColumnName;
         private Column refColumn;
 
+
+        public MetaTable getFkTable() {
+            return fkTable;
+        }
+
         public ForeignKey(MetaTable table, amp.lib.io.MetadataObject.ForeignKey metaColumn) {
             this.fkTable = table;
             this.setFkTableName(table.getTableName());
@@ -264,10 +272,6 @@ public class MetaTable extends MetaObject {
             this.fkColumn = table.getColumnByName(fkColumnName);
             this.refTableName = metaColumn.getReference().getSchemaReference();
             this.refColumnName = metaColumn.getReference().getColumnReference();
-        }
-
-        public String dump() {
-            return "FOREIGN KEY(" + this.refTableName + ") -> " + this.refTableName + "." + this.refColumnName;
         }
 
         public Column getFkColumn() {
@@ -317,7 +321,7 @@ public class MetaTable extends MetaObject {
 
         @Override
         public String toString() {
-            return fkTable.getTableName() + "." + fkColumnName;
+            return fkColumn + " REFERENCES (" + refColumn + ")";
         }
     }
 
@@ -338,8 +342,8 @@ public class MetaTable extends MetaObject {
             }
         }
 
-        public String dump() {
-            return "PRIMARY KEY(" + table + ") COLUMNS " + pkColumns;
+        public String toString() {
+            return "(" + Joiner.on(",").join(pkColumns) + ")";
         }
 
         public List<Column> getPrimaryKeyColumns() {

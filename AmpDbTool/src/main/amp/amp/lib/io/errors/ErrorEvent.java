@@ -37,10 +37,14 @@ public class ErrorEvent {
 
     @Override
     public String toString() {
+        String severity = "";
+        if (getSeverity() != Severity.INFO) {
+            severity = getSeverity().toString() + ": ";
+        }
         if (source == null) {
-            return getSeverity() + ": " + message;
+            return severity + message;
         } else {
-            return getSeverity() + " " + source.getIdentifier() + ": " + message;
+            return severity + " " + source.getIdentifier() + ": " + message;
         }
     }
 

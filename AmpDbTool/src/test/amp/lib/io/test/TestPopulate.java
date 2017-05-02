@@ -18,9 +18,9 @@ public class TestPopulate implements ErrorListener {
     @Override
     public void errorOccurred(ErrorEvent event) {
         if (event.getSeverity() == Severity.ERROR) {
-            System.err.println(event.getInfo());
+            System.err.println(event);
         } else {
-            System.out.println(event.getInfo());
+            System.out.println(event);
         }
     }
 

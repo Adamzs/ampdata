@@ -1,6 +1,11 @@
 package amp.lib.io.db;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -271,11 +276,11 @@ public class Database {
         }
     }
 
-    private void countRowsLoaded(MetaTable meta) throws SQLException {
+    private int countRowsLoaded(MetaTable meta) throws SQLException {
         SQLFactory sqlm = SQLFactory.getSQLManager();
         ResultSet rs = query(sqlm.toCountRowsSql(meta));
         int rows = rs.next() ? rs.getInt(1) : 0;
-        Report.info(meta, "imported " + rows + " rows");
+        return rows;
     }
 
     private Connection getConnection() {
@@ -285,10 +290,16 @@ public class Database {
     private void importCSVFile(MetaTable meta) {
         SQLFactory sqlm = SQLFactory.getSQLManager();
         try {
-            Report.info(meta, "-- IMPORT");
             execute(sqlm.toDeleteAllSql(meta));
             execute(sqlm.toLoadSql(meta));
-            countRowsLoaded(meta);
+            int rowsLoaded = countRowsLoaded(meta);
+            int fileRecords = countFileRecords(meta);
+            int notLoaded = Math.abs(rowsLoaded-fileRecords);
+            Report.info(meta, "read " + fileRecords + " records from " + sqlm.metadataToCsvFile(meta));
+            Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());            
+            if (notLoaded > 2) {
+                Report.error(meta, notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
+            }
         } catch (Exception e) {
             String message = e.getMessage();
             Pattern p = Pattern.compile("MESSAGE: *(.*\\n)", Pattern.MULTILINE);
@@ -299,6 +310,33 @@ public class Database {
             Report.error(meta, message);
         }
     }
+
+    private int countFileRecords(MetaTable meta) {
+        SQLFactory sqlm = SQLFactory.getSQLManager();
+        String csvFilePath = sqlm.metadataToCsvFile(meta);
+        File csvFile = new File(csvFilePath);
+        int records = 0;
+        InputStream is = null;
+            try { 
+                is = new BufferedInputStream(new FileInputStream(csvFile));
+                for (int c = is.read(); c >= 0; c = is.read()) {
+                    if (c == '\n') {
+                        records++;
+                    }
+                }
+                is.close();
+            } catch (IOException e) {
+            }
+            finally {
+                try {
+                    if (is != null) is.close();
+                } catch (IOException e) {
+                    // no-op
+                }
+            }
+        return Math.max(0, records-1);
+    }
+
 
     private void isUniqueTable(MetaTable mt) {
         for (MetaTable mt1 : MetadataFactory.getMetadataFactory().getAllMetaTables()) {
