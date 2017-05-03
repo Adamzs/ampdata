@@ -13,6 +13,12 @@
                 "datatype": "string"
             },
             {
+                "name": "ACType",
+                "titles": "ACType",
+                "description": "The aircraft type used.",
+                "datatype": "string"
+            },
+            {
                 "name": "Active",
                 "titles": "Active",
                 "description": "If this Fleet is active",

@@ -1,1 +1,53 @@
-{"id":"/tplan/jlots/dischargeShips.csv.meta","title":"StratShipTypesServed","scenario":"metadata-scenario","classname":"amp.domain.jlots.StratShipTypesServed","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"connector","titles":"connector","description":"The  name of the discharge connector type","datatype":"string","required":true},{"name":"served","titles":"served","description":"Whether or not the base is served","datatype":"boolean"},{"name":"typeName","titles":"typeName","description":"Name of this ShipType","datatype":"string"},{"name":"priority","titles":"priority","description":"The  priority of the discharge seabase","datatype":"integer"}],"primaryKey":"connector","foreignKeys":[{"columnReference":"connector","reference":{"schemaReference":"/tplan/jlots/dischangeConnectorTypes.csv.meta","columnReference":"name"}},{"columnReference":"typeName","reference":{"schemaReference":"/tplan/shipTypes/shipTypes.csv.meta","columnReference":"Name"}}]}}
+{
+    "id": "/tplan/jlots/dischargeShips.csv.meta",
+    "title": "StratShipTypesServed",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.jlots.StratShipTypesServed",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "connector",
+                "titles": "connector",
+                "description": "The  name of the discharge connector type",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "served",
+                "titles": "served",
+                "description": "Whether or not the base is served",
+                "datatype": "boolean"
+            },
+            {
+                "name": "typeName",
+                "titles": "typeName",
+                "description": "Name of this ShipType",
+                "datatype": "string"
+            },
+            {
+                "name": "priority",
+                "titles": "priority",
+                "description": "The  priority of the discharge seabase",
+                "datatype": "integer"
+            }
+        ],
+        "primaryKey": ["connector","typeName"],
+        "foreignKeys": [
+            {
+                "columnReference": "connector",
+                "reference": {
+                    "schemaReference": "/tplan/jlots/dischangeConnectorTypes.csv.meta",
+                    "columnReference": "name"
+                }
+            },
+            {
+                "columnReference": "typeName",
+                "reference": {
+                    "schemaReference": "/tplan/shipTypes/shipTypes.csv.meta",
+                    "columnReference": "Name"
+                }
+            }
+        ]
+    }
+}

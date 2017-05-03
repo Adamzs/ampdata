@@ -211,7 +211,7 @@
                 "datatype": "string"
             }
         ],
-        "primaryKey": "Name",
+        "primaryKey": ["Name"],
         "foreignKeys": [
             {
                 "columnReference": "CivMil",

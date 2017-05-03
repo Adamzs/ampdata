@@ -107,7 +107,9 @@ public abstract class MetaObject {
 
     @Override
     public String toString() {
-        return getIdentifier();
+        if (identifier != null) return identifier;
+        if (file != null) return file.getPath();
+        return "<unknown>";
     }
 
 }

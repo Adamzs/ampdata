@@ -59,16 +59,16 @@ public class MetadataFactory {
     }
 
     public void readMetaFiles(File dir) {
-        MetaObject mo = null;
         for (File f : dir.listFiles()) {
+            MetaObject mo = null;
             if (f.isDirectory()) {
                 readMetaFiles(f);
             } else if (isMeta(f)) {
                 try {
                     mo = parseMetaFile(f);
                     metadataMap.put(mo.getIdentifier(), mo);
-                } catch (Exception e) {
-                    Report.error(mo, e.getMessage());
+                } catch (MetaException e) {
+                    Report.error(e.toString());
                 }
             }
         }
@@ -93,10 +93,10 @@ public class MetadataFactory {
             } else if (metaObject.getViewSchema() != null) {
                 mo = new MetaView(metaObject);
             } else {
-                throw new RuntimeException("table and view definitions missing");
+                throw new MetaException(metaObject, "table and view definitions missing");
             }
         } catch (IOException e) {
-            throw new RuntimeException(e.getMessage());
+            throw new MetaException(file, e.getMessage());
         }
         mo.setFile(file);
         return mo;

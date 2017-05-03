@@ -1,6 +1,6 @@
 {
     "id": "/fedResults/rlnTypes.csv.meta",
-    "title": "RLNTypes",
+    "title": "FedRLNTypes",
     "scenario": "metadata-scenario",
     "classname": "ampfed.domain.entity.RlnType",
     "ampversion": "14.13.0 alpha1",

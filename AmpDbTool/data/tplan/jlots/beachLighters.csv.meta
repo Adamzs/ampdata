@@ -1,6 +1,6 @@
 {
     "id": "/tplan/jlots/beachLighters.csv.meta",
-    "title": "beachConnectors",
+    "title": "BeachLighters",
     "scenario": "metadata-scenario",
     "classname": "amp.domain.jlots.LighterVesselTypesServed",
     "ampversion": "14.13.0 alpha1",
@@ -37,7 +37,7 @@
                 "datatype": "integer"
             }
         ],
-        "primaryKey": "seaport",
+        "primaryKey": ["seaport","parent","typeName"],
         "foreignKeys": [
             {
                 "columnReference": "seaport",

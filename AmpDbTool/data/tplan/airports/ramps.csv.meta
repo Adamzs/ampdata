@@ -1,1 +1,133 @@
-{"id":"/tplan/airports/ramps.csv.meta","title":"Ramps","scenario":"metadata-scenario","classname":"amp.domain.airport.RampsTimelineIO","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"Airport","titles":"Airport","description":"The geoloc code, a 4-character alphanumeric key.","datatype":"string","maxLength":4,"required":true},{"name":"Day","titles":"Day","description":"The day of the event","datatype":"integer"},{"name":"Enabled","titles":"Enabled","description":"Whether or not the event is enabled","datatype":"boolean"},{"name":"Description","titles":"Description","description":"The description of the event","datatype":"string"},{"name":"EventPhase","titles":"EventPhase","description":"The phase and role associated with this event","datatype":"string"},{"name":"ACType","titles":"ACType","description":"Name of this aircraft","datatype":"string"},{"name":"WorkingMOG","titles":"WorkingMOG","description":"The working MOG","datatype":"string"},{"name":"ParkingMOG","titles":"ParkingMOG","description":"The parking MOG","datatype":"string"},{"name":"HotCargoStatus","titles":"HotCargoStatus","description":"The hot cargo status","datatype":"string"},{"name":"Ramp","titles":"Ramp","description":"The ramp name","datatype":"string","required":true}],"primaryKey":"Airport","foreignKeys":[{"columnReference":"Airport","reference":{"schemaReference":"/tplan/airports/airports.csv.meta","columnReference":"GeolocCode"}},{"columnReference":"ACType","reference":{"schemaReference":"/tplan/aircraftTypes/aircraftTypes.csv.meta","columnReference":"Name"}}]}}
+{
+    "id": "/tplan/airports/ramps.csv.meta",
+    "title": "Ramps",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.airport.RampsTimelineIO",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Airport",
+                "titles": "Airport",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "Day",
+                "titles": "Day",
+                "description": "The day of the event",
+                "datatype": "integer"
+            },
+            {
+                "name": "Enabled",
+                "titles": "Enabled",
+                "description": "Whether or not the event is enabled",
+                "datatype": "boolean"
+            },
+            {
+                "name": "Description",
+                "titles": "Description",
+                "description": "The description of the event",
+                "datatype": "string"
+            },
+            {
+                "name": "EventPhase",
+                "titles": "EventPhase",
+                "description": "The phase and role associated with this event",
+                "datatype": "string"
+            },
+            {
+                "name": "ACType",
+                "titles": "ACType",
+                "description": "Name of this aircraft",
+                "datatype": "string"
+            },
+            {
+                "name": "WorkingMOG",
+                "titles": "WorkingMOG",
+                "description": "The working MOG",
+                "datatype": "float"
+            },
+            {
+                "name": "ParkingMOG",
+                "titles": "ParkingMOG",
+                "description": "The parking MOG",
+                "datatype": "float"
+            },
+            {
+                "name": "HotCargoStatus",
+                "titles": "HotCargoStatus",
+                "description": "The hot cargo status",
+                "datatype": "string"
+            },
+            {
+                "name": "Ramp",
+                "titles": "Ramp",
+                "description": "The ramp name",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "MOGEquivalent",
+                "titles": "MOGEquivalent",
+                "description": "MOGEquivalent",
+                "datatype": "float",
+                "required": true
+            },
+            {
+                "name": "HoursHome",
+                "titles": "HoursHome",
+                "description": "HoursHome",
+                "datatype": "float",
+                "required": true
+            },
+            {
+                "name": "HoursUpload",
+                "titles": "HoursUpload",
+                "description": "HoursUpload",
+                "datatype": "float",
+                "required": true
+            },
+            {
+                "name": "HoursEnroute",
+                "titles": "HoursEnroute",
+                "description": "HoursEnroute",
+                "datatype": "float",
+                "required": true
+            },
+            {
+                "name": "HoursDownload",
+                "titles": "HoursDownload",
+                "description": "HoursDownload",
+                "datatype": "float",
+                "required": true
+            },
+            {
+                "name": "HoursRecovery",
+                "titles": "HoursRecovery",
+                "description": "HoursRecovery",
+                "datatype": "float",
+                "required": true
+            }
+        ],
+        "primaryKey": ["Airport","Ramp","ACType"],
+        "foreignKeys": [
+            {
+                "columnReference": "Airport",
+                "reference": {
+                    "schemaReference": "/tplan/airports/airports.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "ACType",
+                "reference": {
+                    "schemaReference": "/tplan/aircraftTypes/aircraftTypes.csv.meta",
+                    "columnReference": "Name"
+                }
+            }
+        ]
+    }
+}

@@ -13,16 +13,16 @@
                 "datatype": "string"
             },
             {
-                "name": "Visa",
-                "titles": "Visa",
-                "description": "Is this ship VISA",
-                "datatype": "boolean"
-            },
-            {
                 "name": "FedTime",
                 "titles": "FedTime",
                 "description": "The federation time of this interaction",
                 "datatype": "float"
+            },
+            {
+                "name": "Visa",
+                "titles": "Visa",
+                "description": "Is this ship VISA",
+                "datatype": "boolean"
             },
             {
                 "name": "LoadedDraft",

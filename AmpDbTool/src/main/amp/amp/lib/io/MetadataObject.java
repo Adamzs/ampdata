@@ -43,6 +43,11 @@ public class MetadataObject {
     public MetadataObject() {
         super();
     }
+    
+    @Override
+    public String toString() {
+        return (id != null) ? id : super.toString();
+    }
 
     public String getAmpversion() {
         return ampversion;

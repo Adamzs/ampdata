@@ -31,12 +31,6 @@
                 "datatype": "float"
             },
             {
-                "name": "VirtualRlnId",
-                "titles": "VirtualRlnId",
-                "description": "The Virtual RLN ID",
-                "datatype": "string"
-            },
-            {
                 "name": "NumContainers",
                 "titles": "NumContainers",
                 "description": "number of containers in manifest, num containers is set if the CargoType is one of CONTAINER_20 or CONTAINER_40",
@@ -76,6 +70,12 @@
                 "name": "RLN",
                 "titles": "RLN",
                 "description": "The name of the RLN",
+                "datatype": "string"
+            },
+            {
+                "name": "VirtualRlnId",
+                "titles": "VirtualRlnId",
+                "description": "The Virtual RLN ID",
                 "datatype": "string"
             },
             {

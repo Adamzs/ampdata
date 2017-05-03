@@ -98,7 +98,7 @@ public class MetaTable extends MetaObject {
         for (MetadataObject.Column metaCol : columnList) {
             Column col = new Column(this, metaCol);
             if (getAllColumns().contains(col)) {
-                throw new RuntimeException("duplicate column " + col);
+                throw new MetaException(metadata, "duplicate column " + col);
             }
             addColumn(col);
         }
@@ -107,11 +107,11 @@ public class MetaTable extends MetaObject {
         if (pkColumnNames != null && pkColumnNames.length > 0) {
             for (String pk : pkColumnNames) {
                 if (pk == null || pk.trim().isEmpty()) {
-                    throw new RuntimeException("primary key column is null");
+                    throw new MetaException(metadata, "primary key column is null");
                 }
                 Column col = getColumnByName(pk);
                 if (col == null) {
-                    throw new RuntimeException("primary key column " + pk + " is not defined");
+                    throw new MetaException(metadata, "primary key column " + pk + " is not defined");
                 }
             }
             setPrimaryKey(new PrimaryKey(this, metadata));
@@ -122,11 +122,11 @@ public class MetaTable extends MetaObject {
             for (amp.lib.io.MetadataObject.ForeignKey fk : foreignKeys) {
                 String ref = fk.getColumnReference();
                 if (ref == null || ref.trim().isEmpty()) {
-                    throw new RuntimeException("foreign key column is null");
+                    throw new MetaException(metadata, "foreign key column is null");
                 }
                 Column col = getColumnByName(ref);
                 if (col == null) {
-                    throw new RuntimeException("foreign key column " + ref + " is not defined");
+                    throw new MetaException(metadata, "foreign key column " + ref + " is not defined");
                 }
                 ForeignKey fkCol = new ForeignKey(this, fk);
                 addForeignKey(fkCol);
@@ -290,15 +290,15 @@ public class MetaTable extends MetaObject {
             if (refColumn == null) {
                 MetaObject mo = MetadataFactory.getMetadataFactory().getMetadataByName(this.refTableName);
                 if (mo == null) {
-                    throw new RuntimeException("foreign key reference table " + refTableName + " is not defined");
+                    throw new MetaException(getFkTable(), "foreign key reference table " + refTableName + " is not defined");
                 }
                 if (!(mo instanceof MetaTable)) {
-                    throw new RuntimeException("foreign key reference table " + refTableName + " is not to a table");
+                    throw new MetaException(getFkTable(), "foreign key reference table " + refTableName + " is not to a table");
                 }
                 refTable = (MetaTable) mo;
                 refColumn = refTable.getColumnByName(this.refColumnName);
                 if (refColumn == null) {
-                    throw new RuntimeException("foreign key reference column " + refColumnName + " is not defined");
+                    throw new MetaException(getFkTable(), "foreign key reference column " + refColumnName + " is not defined");
                 }
             }
             return refColumn;
@@ -335,7 +335,7 @@ public class MetaTable extends MetaObject {
                 if (pkColumnName != null && !pkColumnName.isEmpty()) {
                     Column pkColumn = table.getColumnByName(pkColumnName);
                     if (pkColumn == null) {
-                        throw new RuntimeException("primary key column " + pkColumnName + " does not exist");
+                        throw new MetaException(getTable(), "primary key column " + pkColumnName + " does not exist");
                     }
                     pkColumns.add(pkColumn);
                 }

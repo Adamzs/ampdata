@@ -1,1 +1,221 @@
-{"id":"/model/AIRPORTS.csv.meta","title":"AirportActivity","scenario":"metadata-scenario","classname":"ampmod.io.AirportsWriter","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"Day","titles":"Day","description":"The event time in days","datatype":"float"},{"name":"ActivityType","titles":"ActivityType","description":"The aircraft activity type","datatype":"string"},{"name":"TailNumber","titles":"TailNumber","description":"The tail number of the aircraft","datatype":"string"},{"name":"AirportName","titles":"AirportName","description":"Human-readable location name.","datatype":"string"},{"name":"AirportGeoloc","titles":"AirportGeoloc","description":"The geoloc code, a 4-character alphanumeric key.","datatype":"string","maxLength":4,"required":true},{"name":"AircraftType","titles":"AircraftType","description":"Name of this aircraft","datatype":"string"},{"name":"MissionCount","titles":"MissionCount","description":"The mission count number for the aircraft","datatype":"integer"},{"name":"FuelCapacity","titles":"FuelCapacity","description":"The fuel storage capacity of the airport on this day","datatype":"integer"},{"name":"FuelLoaded","titles":"FuelLoaded","description":"The fuel loaded","datatype":"integer"},{"name":"AirportActivity","titles":"AirportActivity","description":"The stop activity type at the airport","datatype":"string"},{"name":"Bulk","titles":"Bulk","description":"The amount of bulk cargo","datatype":"float"},{"name":"Oversize","titles":"Oversize","description":"The amount of oversize cargo","datatype":"float"},{"name":"Outsize","titles":"Outsize","description":"The amount of outsize cargo","datatype":"float"},{"name":"TotalWeight","titles":"TotalWeight","description":"The total amount of cargo by weight","datatype":"float"},{"name":"Pax","titles":"Pax","description":"The number of passengers","datatype":"integer"},{"name":"RampName","titles":"RampName","description":"The ramp used","datatype":"string"},{"name":"MogUsed","titles":"MogUsed","description":"The amount of MOG used","datatype":"float"},{"name":"MogAvailable","titles":"MogAvailable","description":"The amount of MOG available","datatype":"float"},{"name":"ParkingMogUsed","titles":"ParkingMogUsed","description":"The amount of parking MOG used","datatype":"float"},{"name":"ParkingMogAvailable","titles":"ParkingMogAvailable","description":"The amount of parking MOG available","datatype":"float"},{"name":"AircraftUse","titles":"AircraftUse","description":"The number of aircraft used","datatype":"integer"},{"name":"GroundDelay","titles":"GroundDelay","description":"The amount of time of a ground delay","datatype":"float"},{"name":"NextAirport","titles":"NextAirport","description":"Human-readable location name.","datatype":"string"},{"name":"ChannelStop","titles":"ChannelStop","description":"Is this a channel mission (YES/NO)","datatype":"string"},{"name":"Miles","titles":"Miles","description":"The miles of something?","datatype":"integer"},{"name":"ChannelMissionId","titles":"ChannelMissionId","description":"The non-containerized cube transported","datatype":"string"}],"primaryKey":"Day","foreignKeys":[{"columnReference":"ActivityType","reference":{"schemaReference":"/model/aircraftActivityType.csv.meta","columnReference":"AircraftActivity"}},{"columnReference":"TailNumber","reference":{"schemaReference":"/model/Aircraft.csv.meta","columnReference":"TailNum"}},{"columnReference":"AirportName","reference":{"schemaReference":"/tplan/geolocs.csv.meta","columnReference":"Name"}},{"columnReference":"AirportGeoloc","reference":{"schemaReference":"/tplan/airports/airports.csv.meta","columnReference":"GeolocCode"}},{"columnReference":"AircraftType","reference":{"schemaReference":"/model/Aircraft.csv.meta","columnReference":"TypeName"}},{"columnReference":"AirportActivity","reference":{"schemaReference":"/model/airportsStopActivity.csv.meta","columnReference":"StopActivity"}},{"columnReference":"NextAirport","reference":{"schemaReference":"/tplan/geolocs.csv.meta","columnReference":"Name"}}]}}
+{
+    "id": "/model/AIRPORTS.csv.meta",
+    "title": "AirportActivity",
+    "scenario": "metadata-scenario",
+    "classname": "ampmod.io.AirportsWriter",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Day",
+                "titles": "Day",
+                "description": "The event time in days",
+                "datatype": "float"
+            },
+            {
+                "name": "ActivityType",
+                "titles": "ActivityType",
+                "description": "The aircraft activity type",
+                "datatype": "string"
+            },
+            {
+                "name": "TailNumber",
+                "titles": "TailNumber",
+                "description": "The tail number of the aircraft",
+                "datatype": "string"
+            },
+            {
+                "name": "AirportName",
+                "titles": "AirportName",
+                "description": "Human-readable location name.",
+                "datatype": "string"
+            },
+            {
+                "name": "AirportGeoloc",
+                "titles": "AirportGeoloc",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "AircraftType",
+                "titles": "AircraftType",
+                "description": "Name of this aircraft",
+                "datatype": "string"
+            },
+            {
+                "name": "MissionCount",
+                "titles": "MissionCount",
+                "description": "The mission count number for the aircraft",
+                "datatype": "integer"
+            },
+            {
+                "name": "FuelCapacity",
+                "titles": "FuelCapacity",
+                "description": "The fuel storage capacity of the airport on this day",
+                "datatype": "integer"
+            },
+            {
+                "name": "FuelLoaded",
+                "titles": "FuelLoaded",
+                "description": "The fuel loaded",
+                "datatype": "integer"
+            },
+            {
+                "name": "AirportActivity",
+                "titles": "AirportActivity",
+                "description": "The stop activity type at the airport",
+                "datatype": "string"
+            },
+            {
+                "name": "Bulk",
+                "titles": "Bulk",
+                "description": "The amount of bulk cargo",
+                "datatype": "float"
+            },
+            {
+                "name": "Oversize",
+                "titles": "Oversize",
+                "description": "The amount of oversize cargo",
+                "datatype": "float"
+            },
+            {
+                "name": "Outsize",
+                "titles": "Outsize",
+                "description": "The amount of outsize cargo",
+                "datatype": "float"
+            },
+            {
+                "name": "TotalWeight",
+                "titles": "TotalWeight",
+                "description": "The total amount of cargo by weight",
+                "datatype": "float"
+            },
+            {
+                "name": "Pax",
+                "titles": "Pax",
+                "description": "The number of passengers",
+                "datatype": "integer"
+            },
+            {
+                "name": "RampName",
+                "titles": "RampName",
+                "description": "The ramp used",
+                "datatype": "string"
+            },
+            {
+                "name": "MogUsed",
+                "titles": "MogUsed",
+                "description": "The amount of MOG used",
+                "datatype": "float"
+            },
+            {
+                "name": "MogAvailable",
+                "titles": "MogAvailable",
+                "description": "The amount of MOG available",
+                "datatype": "float"
+            },
+            {
+                "name": "ParkingMogUsed",
+                "titles": "ParkingMogUsed",
+                "description": "The amount of parking MOG used",
+                "datatype": "float"
+            },
+            {
+                "name": "ParkingMogAvailable",
+                "titles": "ParkingMogAvailable",
+                "description": "The amount of parking MOG available",
+                "datatype": "float"
+            },
+            {
+                "name": "AircraftUse",
+                "titles": "AircraftUse",
+                "description": "The number of aircraft used",
+                "datatype": "integer"
+            },
+            {
+                "name": "GroundDelay",
+                "titles": "GroundDelay",
+                "description": "The amount of time of a ground delay",
+                "datatype": "float"
+            },
+            {
+                "name": "NextAirport",
+                "titles": "NextAirport",
+                "description": "Human-readable location name.",
+                "datatype": "string"
+            },
+            {
+                "name": "ChannelStop",
+                "titles": "ChannelStop",
+                "description": "Is this a channel mission (YES/NO)",
+                "datatype": "string"
+            },
+            {
+                "name": "Miles",
+                "titles": "Miles",
+                "description": "The miles of something?",
+                "datatype": "integer"
+            },
+            {
+                "name": "ChannelMissionId",
+                "titles": "ChannelMissionId",
+                "description": "The non-containerized cube transported",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": ["AirportName","TailNumber","ActivityType","Day"],
+        "foreignKeys": [
+            {
+                "columnReference": "ActivityType",
+                "reference": {
+                    "schemaReference": "/model/aircraftActivityType.csv.meta",
+                    "columnReference": "AircraftActivity"
+                }
+            },
+            {
+                "columnReference": "TailNumber",
+                "reference": {
+                    "schemaReference": "/model/Aircraft.csv.meta",
+                    "columnReference": "TailNum"
+                }
+            },
+            {
+                "columnReference": "AirportName",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "AirportGeoloc",
+                "reference": {
+                    "schemaReference": "/tplan/airports/airports.csv.meta",
+                    "columnReference": "GeolocCode"
+                }
+            },
+            {
+                "columnReference": "AircraftType",
+                "reference": {
+                    "schemaReference": "/model/Aircraft.csv.meta",
+                    "columnReference": "TypeName"
+                }
+            },
+            {
+                "columnReference": "AirportActivity",
+                "reference": {
+                    "schemaReference": "/model/airportsStopActivity.csv.meta",
+                    "columnReference": "StopActivity"
+                }
+            },
+            {
+                "columnReference": "NextAirport",
+                "reference": {
+                    "schemaReference": "/tplan/geolocs.csv.meta",
+                    "columnReference": "Name"
+                }
+            }
+        ]
+    }
+}

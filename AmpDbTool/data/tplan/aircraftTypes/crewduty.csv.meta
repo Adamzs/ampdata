@@ -7,6 +7,12 @@
     "tableSchema": {
         "columns": [
             {
+                "name": "Name",
+                "titles": "Name",
+                "description": "Name of the crew duty",
+                "datatype": "string"
+            },
+            {
                 "name": "MissionPrepTime",
                 "titles": "MissionPrepTime",
                 "description": "MissionPrepTime of this aircraft",
@@ -38,13 +44,6 @@
                 "reference": {
                     "schemaReference": "/tplan/airFleets/airliftFleets.csv.meta",
                     "columnReference": "Name"
-                }
-            },
-            {
-                "columnReference": "CrewDutyEnabled",
-                "reference": {
-                    "schemaReference": "/tplan/airFleets/airliftFleets.csv.meta",
-                    "columnReference": "CrewDutyEnabled"
                 }
             }
         ]

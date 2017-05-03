@@ -1,1 +1,181 @@
-{"id":"/model/ShipActivity.csv.meta","title":"ShipActivity","scenario":"metadata-scenario","classname":"ampmod.io.ShipActivityWriter","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"Day","titles":"Day","description":"The time in days of the activity","datatype":"float"},{"name":"Activity","titles":"Activity","description":"The ship activity type","datatype":"string"},{"name":"Purpose","titles":"Purpose","description":"The ship activity purpose","datatype":"string"},{"name":"ShipName","titles":"ShipName","description":"Name of this Ship","datatype":"string"},{"name":"ShipID","titles":"ShipID","description":"Lloyds Registry Number of ship, used as identification number for MIDAS.","datatype":"string"},{"name":"ShipType","titles":"ShipType","description":"Name of this ShipType","datatype":"string"},{"name":"ShipFleet","titles":"ShipFleet","description":"Name of fleet","datatype":"string"},{"name":"IsVisaShip","titles":"IsVisaShip","description":"Is this ship considered VISA","datatype":"boolean"},{"name":"VoyageNumber","titles":"VoyageNumber","description":"Is the voyage number of the ship","datatype":"integer"},{"name":"SeaportGeoloc","titles":"SeaportGeoloc","description":"The geoloc code, a 4-character alphanumeric key.","datatype":"string","maxLength":4,"required":true},{"name":"BerthName","titles":"BerthName","description":"The name of the Berth","datatype":"string","required":true},{"name":"BerthType","titles":"BerthType","description":"The name of this BerthType","datatype":"string","required":true},{"name":"BerthLength","titles":"BerthLength","description":"The length of this Berth","datatype":"float"},{"name":"PaxLoaded","titles":"PaxLoaded","description":"Amount of PAX loaded during the activity","datatype":"float"},{"name":"PaxOffloaded","titles":"PaxOffloaded","description":"Amount of PAX unloaded during the activity","datatype":"float"},{"name":"STonsLoaded","titles":"STonsLoaded","description":"Amount of STons loaded during the activity","datatype":"float"},{"name":"STonsOffloaded","titles":"STonsOffloaded","description":"Amount of STons offloaded during the activity","datatype":"float"},{"name":"POLLoaded","titles":"POLLoaded","description":"Amount of POL loaded during the activity","datatype":"float"},{"name":"POLOffloaded","titles":"POLOffloaded","description":"Amount of POL offloaded during the activity","datatype":"float"}],"primaryKey":"Day","foreignKeys":[{"columnReference":"Activity","reference":{"schemaReference":"/report/shipActivityType.csv.meta","columnReference":"ActivityType"}},{"columnReference":"Purpose","reference":{"schemaReference":"/report/shipActivityPurpose.csv.meta","columnReference":"ActivityPurpose"}},{"columnReference":"ShipID","reference":{"schemaReference":"/tplan/ships/ships.csv.meta","columnReference":"Lloyds"}},{"columnReference":"ShipType","reference":{"schemaReference":"/tplan/shipTypes/shipTypes.csv.meta","columnReference":"Name"}},{"columnReference":"SeaportGeoloc","reference":{"schemaReference":"/tplan/seaports/seaports.csv.meta","columnReference":"Geoloc"}},{"columnReference":"BerthName","reference":{"schemaReference":"/tplan/seaports/berths.csv.meta","columnReference":"Name"}}]}}
+{
+    "id": "/model/ShipActivity.csv.meta",
+    "title": "ShipActivity",
+    "scenario": "metadata-scenario",
+    "classname": "ampmod.io.ShipActivityWriter",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Day",
+                "titles": "Day",
+                "description": "The time in days of the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "Activity",
+                "titles": "Activity",
+                "description": "The ship activity type",
+                "datatype": "string"
+            },
+            {
+                "name": "Purpose",
+                "titles": "Purpose",
+                "description": "The ship activity purpose",
+                "datatype": "string"
+            },
+            {
+                "name": "ShipName",
+                "titles": "ShipName",
+                "description": "Name of this Ship",
+                "datatype": "string"
+            },
+            {
+                "name": "ShipID",
+                "titles": "ShipID",
+                "description": "Lloyds Registry Number of ship, used as identification number for MIDAS.",
+                "datatype": "string"
+            },
+            {
+                "name": "ShipType",
+                "titles": "ShipType",
+                "description": "Name of this ShipType",
+                "datatype": "string"
+            },
+            {
+                "name": "ShipFleet",
+                "titles": "ShipFleet",
+                "description": "Name of fleet",
+                "datatype": "string"
+            },
+            {
+                "name": "IsVisaShip",
+                "titles": "IsVisaShip",
+                "description": "Is this ship considered VISA",
+                "datatype": "boolean"
+            },
+            {
+                "name": "VoyageNumber",
+                "titles": "VoyageNumber",
+                "description": "Is the voyage number of the ship",
+                "datatype": "integer"
+            },
+            {
+                "name": "SeaportName",
+                "titles": "SeaportName",
+                "description": "SeaportName",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "SeaportGeoloc",
+                "titles": "SeaportGeoloc",
+                "description": "The geoloc code, a 4-character alphanumeric key.",
+                "datatype": "string",
+                "maxLength": 4,
+                "required": true
+            },
+            {
+                "name": "BerthName",
+                "titles": "BerthName",
+                "description": "The name of the Berth",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "BerthType",
+                "titles": "BerthType",
+                "description": "The name of this BerthType",
+                "datatype": "string",
+                "required": true
+            },
+            {
+                "name": "BerthLength",
+                "titles": "BerthLength",
+                "description": "The length of this Berth",
+                "datatype": "float"
+            },
+            {
+                "name": "PaxLoaded",
+                "titles": "PaxLoaded",
+                "description": "Amount of PAX loaded during the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "PaxOffloaded",
+                "titles": "PaxOffloaded",
+                "description": "Amount of PAX unloaded during the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "STonsLoaded",
+                "titles": "STonsLoaded",
+                "description": "Amount of STons loaded during the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "STonsOffloaded",
+                "titles": "STonsOffloaded",
+                "description": "Amount of STons offloaded during the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "POLLoaded",
+                "titles": "POLLoaded",
+                "description": "Amount of POL loaded during the activity",
+                "datatype": "float"
+            },
+            {
+                "name": "POLOffloaded",
+                "titles": "POLOffloaded",
+                "description": "Amount of POL offloaded during the activity",
+                "datatype": "float"
+            }
+        ],
+        "primaryKey": ["Day","ShipId","Activity"],
+        "foreignKeys": [
+            {
+                "columnReference": "Activity",
+                "reference": {
+                    "schemaReference": "/report/shipActivityType.csv.meta",
+                    "columnReference": "ActivityType"
+                }
+            },
+            {
+                "columnReference": "Purpose",
+                "reference": {
+                    "schemaReference": "/report/shipActivityPurpose.csv.meta",
+                    "columnReference": "ActivityPurpose"
+                }
+            },
+            {
+                "columnReference": "ShipID",
+                "reference": {
+                    "schemaReference": "/tplan/ships/ships.csv.meta",
+                    "columnReference": "Lloyds"
+                }
+            },
+            {
+                "columnReference": "ShipType",
+                "reference": {
+                    "schemaReference": "/tplan/shipTypes/shipTypes.csv.meta",
+                    "columnReference": "Name"
+                }
+            },
+            {
+                "columnReference": "SeaportGeoloc",
+                "reference": {
+                    "schemaReference": "/tplan/seaports/seaports.csv.meta",
+                    "columnReference": "Geoloc"
+                }
+            },
+            {
+                "columnReference": "BerthName",
+                "reference": {
+                    "schemaReference": "/tplan/seaports/berths.csv.meta",
+                    "columnReference": "Name"
+                }
+            }
+        ]
+    }
+}

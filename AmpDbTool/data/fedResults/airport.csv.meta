@@ -1,6 +1,6 @@
 {
     "id": "/fedResults/airport.csv.meta",
-    "title": "Airport",
+    "title": "FedAirport",
     "scenario": "metadata-scenario",
     "classname": "ampfed.domain.entity.Airport",
     "ampversion": "14.13.0 alpha1",
@@ -61,7 +61,7 @@
                 "datatype": "float"
             }
         ],
-        "primaryKey": "Model",
+        "primaryKey": ["Model","FedTime","Geoloc"],
         "foreignKeys": [
             {
                 "columnReference": "Model",

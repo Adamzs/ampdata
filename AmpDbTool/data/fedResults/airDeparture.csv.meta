@@ -1,1 +1,135 @@
-{"id":"/fedResults/airDeparture.csv.meta","title":"AirDeparture","scenario":"metadata-scenario","classname":"ampfed.domain.interaction.AirDeparture","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"Model","titles":"Model","description":"Enumerated type enumerating the models supported by this federation","datatype":"string"},{"name":"FedTime","titles":"FedTime","description":"The federation time of this interaction","datatype":"float"},{"name":"AssetID","titles":"AssetID","description":"ID of the asset used","datatype":"string"},{"name":"AssetType","titles":"AssetType","description":"Type of asset used","datatype":"string"},{"name":"FromLocation","titles":"FromLocation","description":"Location departing from","datatype":"string"},{"name":"RampName","titles":"RampName","description":"Ramp used in departure","datatype":"string"},{"name":"FromTime","titles":"FromTime","description":"Time asset left from Location","datatype":"float"},{"name":"MissionID","titles":"MissionID","description":"ID used for this departure","datatype":"string"},{"name":"Mode","titles":"Mode","description":"The movement Mode","datatype":"string"},{"name":"ToLocation","titles":"ToLocation","description":"Location departing to","datatype":"string"},{"name":"ToTime","titles":"ToTime","description":"Time asset arrives at next Location","datatype":"float"},{"name":"CrewDutyLeft","titles":"CrewDutyLeft","description":"Crew duty days remaining at time of departure","datatype":"float"},{"name":"CrewStatus","titles":"CrewStatus","description":"The status for the crew","datatype":"string"},{"name":"GroundDelay","titles":"GroundDelay","description":"Time added for wait on the ground","datatype":"float"},{"name":"LoadDelay","titles":"LoadDelay","description":"Time added to wait for late load items","datatype":"float"},{"name":"FuelAmount","titles":"FuelAmount","description":"Amount of fuel","datatype":"integer"},{"name":"ChannelMissionId","titles":"ChannelMissionId","description":"ID used for channel mission that the departure is part of (if any)","datatype":"string"},{"name":"ConfigurationChange","titles":"ConfigurationChange","description":"Whether or not the configuration changed","datatype":"boolean"},{"name":"ReconfigureTime","titles":"ReconfigureTime","description":"Time of reconfiguration","datatype":"float"}],"primaryKey":"Model","foreignKeys":[{"columnReference":"Model","reference":{"schemaReference":"/fedResults/modelTypes.csv.meta","columnReference":"ModelType"}}]}}
+{
+    "id": "/fedResults/airDeparture.csv.meta",
+    "title": "AirDeparture",
+    "scenario": "metadata-scenario",
+    "classname": "ampfed.domain.interaction.AirDeparture",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
+                "name": "AssetID",
+                "titles": "AssetID",
+                "description": "ID of the asset used",
+                "datatype": "string"
+            },
+            {
+                "name": "AssetType",
+                "titles": "AssetType",
+                "description": "Type of asset used",
+                "datatype": "string"
+            },
+            {
+                "name": "FromLocation",
+                "titles": "FromLocation",
+                "description": "Location departing from",
+                "datatype": "string"
+            },
+            {
+                "name": "RampName",
+                "titles": "RampName",
+                "description": "Ramp used in departure",
+                "datatype": "string"
+            },
+            {
+                "name": "FromTime",
+                "titles": "FromTime",
+                "description": "Time asset left from Location",
+                "datatype": "float"
+            },
+            {
+                "name": "MissionID",
+                "titles": "MissionID",
+                "description": "ID used for this departure",
+                "datatype": "string"
+            },
+            {
+                "name": "Mode",
+                "titles": "Mode",
+                "description": "The movement Mode",
+                "datatype": "string"
+            },
+            {
+                "name": "ToLocation",
+                "titles": "ToLocation",
+                "description": "Location departing to",
+                "datatype": "string"
+            },
+            {
+                "name": "ToTime",
+                "titles": "ToTime",
+                "description": "Time asset arrives at next Location",
+                "datatype": "float"
+            },
+            {
+                "name": "CrewDutyLeft",
+                "titles": "CrewDutyLeft",
+                "description": "Crew duty days remaining at time of departure",
+                "datatype": "float"
+            },
+            {
+                "name": "CrewStatus",
+                "titles": "CrewStatus",
+                "description": "The status for the crew",
+                "datatype": "string"
+            },
+            {
+                "name": "GroundDelay",
+                "titles": "GroundDelay",
+                "description": "Time added for wait on the ground",
+                "datatype": "float"
+            },
+            {
+                "name": "LoadDelay",
+                "titles": "LoadDelay",
+                "description": "Time added to wait for late load items",
+                "datatype": "float"
+            },
+            {
+                "name": "FuelAmount",
+                "titles": "FuelAmount",
+                "description": "Amount of fuel",
+                "datatype": "integer"
+            },
+            {
+                "name": "ChannelMissionId",
+                "titles": "ChannelMissionId",
+                "description": "ID used for channel mission that the departure is part of (if any)",
+                "datatype": "string"
+            },
+            {
+                "name": "ConfigurationChange",
+                "titles": "ConfigurationChange",
+                "description": "Whether or not the configuration changed",
+                "datatype": "boolean"
+            },
+            {
+                "name": "ReconfigureTime",
+                "titles": "ReconfigureTime",
+                "description": "Time of reconfiguration",
+                "datatype": "float"
+            }
+        ],
+        "primaryKey": [],
+        "foreignKeys": [
+            {
+                "columnReference": "Model",
+                "reference": {
+                    "schemaReference": "/fedResults/modelTypes.csv.meta",
+                    "columnReference": "ModelType"
+                }
+            }
+        ]
+    }
+}

@@ -7,6 +7,18 @@
     "tableSchema": {
         "columns": [
             {
+                "name": "Model",
+                "titles": "Model",
+                "description": "Enumerated type enumerating the models supported by this federation",
+                "datatype": "string"
+            },
+            {
+                "name": "FedTime",
+                "titles": "FedTime",
+                "description": "The federation time of this interaction",
+                "datatype": "float"
+            },
+            {
                 "name": "Name",
                 "titles": "Name",
                 "description": "The name of the RLN",

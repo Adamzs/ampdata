@@ -1,9 +1,11 @@
 package amp.lib.io.db;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
@@ -14,12 +16,16 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
+
+import com.google.common.base.Splitter;
+import com.google.common.collect.Lists;
 
 import amp.lib.io.errors.Report;
 import amp.lib.io.meta.MetaObject;
@@ -290,16 +296,16 @@ public class Database {
     private void importCSVFile(MetaTable meta) {
         SQLFactory sqlm = SQLFactory.getSQLManager();
         try {
+            File csvFile = new File(sqlm.metadataToCsvFile(meta));
+            if (!csvFile.exists()) {
+                Report.error(meta, "Can't load from missing file " + csvFile.getPath());
+                return;
+            }
+            CsvFileSummary csvfs = getCsvSummary(csvFile);
+            ensureColumnsMatch(meta, csvfs);
             execute(sqlm.toDeleteAllSql(meta));
             execute(sqlm.toLoadSql(meta));
-            int rowsLoaded = countRowsLoaded(meta);
-            int fileRecords = countFileRecords(meta);
-            int notLoaded = Math.abs(rowsLoaded-fileRecords);
-            Report.info(meta, "read " + fileRecords + " records from " + sqlm.metadataToCsvFile(meta));
-            Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());            
-            if (notLoaded > 2) {
-                Report.error(meta, notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
-            }
+            ensureAllRowsLoaded(meta, csvfs);
         } catch (Exception e) {
             String message = e.getMessage();
             Pattern p = Pattern.compile("MESSAGE: *(.*\\n)", Pattern.MULTILINE);
@@ -309,6 +315,64 @@ public class Database {
             }
             Report.error(meta, message);
         }
+    }
+
+    private void ensureAllRowsLoaded(MetaTable meta, CsvFileSummary csvfs) throws SQLException {
+        int rowsLoaded = countRowsLoaded(meta);
+        int fileRecords = csvfs.records;
+        int notLoaded = Math.abs(rowsLoaded-fileRecords);
+        Report.info(meta, "read " + fileRecords + " records from " + csvfs.csvFile.getPath());
+        Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());            
+        if (notLoaded > 0) {
+            Report.error(meta, notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
+        }
+    }
+
+    private void ensureColumnsMatch(MetaTable meta, CsvFileSummary csvfs) {
+        boolean columnsMatch = true;
+        List<String> csvColumns = csvfs.columnNames;
+        List<String> tblColumns = new ArrayList<>();
+        for (Column c : meta.getAllColumns()) {
+            tblColumns.add(c.getName());
+        }
+        if (csvColumns.size() != tblColumns.size()) {
+            columnsMatch = false;
+        }
+        else {
+            for (int i = 0; i < csvColumns.size(); i++) {
+                if (!csvColumns.get(i).equalsIgnoreCase(tblColumns.get(i))) {
+                    columnsMatch = false;
+                    break;
+                }
+            }
+        }
+        if (!columnsMatch) {
+            String message = "column lists do not match for load" + "\n" +
+                            csvfs.csvFile.getPath() + ": " + csvColumns + "\n" +
+                            meta + ": " + tblColumns;
+            Report.error(meta, message);
+        }
+    }
+    
+    private CsvFileSummary getCsvSummary(File csvFile) {
+        CsvFileSummary csvfs = new CsvFileSummary();
+        csvfs.csvFile = csvFile;
+        try (BufferedReader bsr = new BufferedReader(new FileReader(csvFile))) {
+            String columns = bsr.readLine();
+            csvfs.columnNames = Lists.newArrayList(Splitter.on(",").split(columns));
+            while (bsr.readLine() != null) {
+                csvfs.records++;
+            }
+        } catch (IOException e) {
+            // no-op
+        }
+        return csvfs;
+    }
+    
+    private class CsvFileSummary {
+        File csvFile = null;
+        List<String> columnNames = new ArrayList<>(); 
+        int records = 0;
     }
 
     private int countFileRecords(MetaTable meta) {

@@ -1,6 +1,6 @@
 {
     "id": "/model/rlnType.csv.meta",
-    "title": "RLNTypes",
+    "title": "ModelRLNTypes",
     "scenario": "metadata-scenario",
     "classname": "ampdom.dplan.RlnType",
     "ampversion": "14.13.0 alpha1",

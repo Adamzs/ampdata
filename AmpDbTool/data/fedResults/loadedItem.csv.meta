@@ -76,13 +76,6 @@
             }
         ],
         "foreignKeys": [
-            {
-                "columnReference": "",
-                "reference": {
-                    "schemaReference": "/fedResults/loadItem.csv.meta",
-                    "columnReference": ""
-                }
-            }
         ]
     }
 }

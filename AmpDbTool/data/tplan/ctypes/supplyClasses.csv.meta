@@ -1,1 +1,45 @@
-{"id":"/tplan/ctypes/supplyClasses.csv.meta","title":"SupplyClasses","scenario":"metadata-scenario","classname":"amp.domain.rates.SupplyClassCType","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"Commodity","titles":"Commodity","description":"The commodity name","datatype":"string"},{"name":"Class","titles":"Class","description":"The subclass of the supply","datatype":"integer"},{"name":"Subclass","titles":"Subclass","description":"The subclass of the supply","datatype":"string"},{"name":"FuelClass","titles":"FuelClass","description":"The fuel class","datatype":"string"}],"primaryKey":"Commodity","foreignKeys":[{"columnReference":"Commodity","reference":{"schemaReference":"/tplan/ctypes/commodityTypes.csv.meta","columnReference":"Name"}}]}}
+{
+    "id": "/tplan/ctypes/supplyClasses.csv.meta",
+    "title": "SupplyClasses",
+    "scenario": "metadata-scenario",
+    "classname": "amp.domain.rates.SupplyClassCType",
+    "ampversion": "14.13.0 alpha1",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "Commodity",
+                "titles": "Commodity",
+                "description": "The commodity name",
+                "datatype": "string"
+            },
+            {
+                "name": "Class",
+                "titles": "Class",
+                "description": "The subclass of the supply",
+                "datatype": "integer"
+            },
+            {
+                "name": "Subclass",
+                "titles": "Subclass",
+                "description": "The subclass of the supply",
+                "datatype": "string"
+            },
+            {
+                "name": "FuelClass",
+                "titles": "FuelClass",
+                "description": "The fuel class",
+                "datatype": "string"
+            }
+        ],
+        "primaryKey": ["Commodity","Class","SubClass","FuelClass"],
+        "foreignKeys": [
+            {
+                "columnReference": "Commodity",
+                "reference": {
+                    "schemaReference": "/tplan/ctypes/commodityTypes.csv.meta",
+                    "columnReference": "Name"
+                }
+            }
+        ]
+    }
+}
