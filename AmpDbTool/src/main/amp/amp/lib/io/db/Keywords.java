@@ -1,10 +1,32 @@
+/***************************************************************************
+ *
+ * <rrl>
+ * =========================================================================
+ *                                  LEGEND
+ *
+ * Use, duplication, or disclosure by the Government is as set forth in the
+ * Rights in technical data noncommercial items clause DFAR 252.227-7013 and
+ * Rights in noncommercial computer software and noncommercial computer
+ * software documentation clause DFAR 252.227-7014, with the exception of
+ * third party software known as Sun Microsystems' Java Runtime Environment
+ * (JRE), Quest Software's JClass, Oracle's JDBC, and JGoodies which are
+ * separately governed under their commercial licenses.  Refer to the
+ * license directory for information regarding the open source packages used
+ * by this software.
+ *
+ * Copyright 2016 by BBN Technologies Corporation.
+ * =========================================================================
+ * </rrl>
+ *
+ **************************************************************************/
 package amp.lib.io.db;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.google.common.base.Joiner;
-
+/**
+ * The Set of all reserved MySQL Keywords.
+ */
 public class Keywords {
 
     public static final Set<String> keywordSet = new HashSet<>();
@@ -51,19 +73,5 @@ public class Keywords {
         for (String keyword : keywordArray) {
             keywordSet.add(keyword);
         }
-    }
-
-    public static String escapeKeywords(String statement) {
-        String[] tokens = statement.split("(?<=[, ]+)|(?=[, ]+)");
-        for (int i = 0; i < tokens.length; i++) {
-            if (Keywords.isKeyword(tokens[i])) {
-                tokens[i] = "`" + tokens[i] + "`";
-            }
-        }
-        return Joiner.on("").join(tokens);
-    }
-
-    public static boolean isKeyword(String word) {
-        return keywordSet.contains(word.toUpperCase());
     }
 }

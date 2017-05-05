@@ -25,7 +25,7 @@ public class TestSchema implements ErrorListener {
         if (event.getSeverity() == Severity.ERROR) {
             System.err.println(event + "\n--");
         } else {
-            System.out.println(event.getInfo());
+            System.out.println(event.getMessage());
         }
     }
 
@@ -34,7 +34,7 @@ public class TestSchema implements ErrorListener {
             Report.addListener(this);
             dbm = Database.getDatabase();
             mfh = MetadataFactory.getMetadataFactory();
-            sqlh = SQLFactory.getSQLManager();
+            sqlh = SQLFactory.getSQLFactory();
             initialized = true;
         }
     }

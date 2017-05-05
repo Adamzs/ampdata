@@ -1,3 +1,24 @@
+/***************************************************************************
+ *
+ * <rrl>
+ * =========================================================================
+ *                                  LEGEND
+ *
+ * Use, duplication, or disclosure by the Government is as set forth in the
+ * Rights in technical data noncommercial items clause DFAR 252.227-7013 and
+ * Rights in noncommercial computer software and noncommercial computer
+ * software documentation clause DFAR 252.227-7014, with the exception of
+ * third party software known as Sun Microsystems' Java Runtime Environment
+ * (JRE), Quest Software's JClass, Oracle's JDBC, and JGoodies which are
+ * separately governed under their commercial licenses.  Refer to the
+ * license directory for information regarding the open source packages used
+ * by this software.
+ *
+ * Copyright 2016 by BBN Technologies Corporation.
+ * =========================================================================
+ * </rrl>
+ *
+ **************************************************************************/
 package amp.lib.io.ui;
 
 import java.awt.BorderLayout;
@@ -35,6 +56,9 @@ import amp.lib.io.errors.Report;
 import amp.lib.io.meta.MetadataFactory;
 import amp.lib.io.props.Properties;
 
+/**
+ * The main class for the AMP Database Tool User Interface.
+ */
 public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
     private ProjectMenu projectMenu = new ProjectMenu();
     private DatabaseMenu databaseMenu = new DatabaseMenu();
@@ -64,7 +88,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         } else if (e.getActionCommand().equals(DatabaseMenu.SCHEMA)) {
             createSchema();
         } else if (e.getActionCommand().equals(DatabaseMenu.SQL)) {
-            executeSQL();
+            executeCustomSQL();
         } else if (e.getActionCommand().equals(DatabaseMenu.DROP)) {
             dropDatabase();
         } else if (e.getActionCommand().equals(DatabaseMenu.POPULATE)) {
@@ -73,6 +97,10 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
 
     }
 
+    /**
+     * Reports an error from the error listeners to the progress window.
+     * @see amp.lib.io.errors.ErrorListener#errorOccurred(amp.lib.io.errors.ErrorEvent)
+     */
     @Override
     public void errorOccurred(ErrorEvent event) {
         String text;
@@ -81,7 +109,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
             text = "\n" + event.toString();
             style = redStyle;
         } else {
-            text = "\n" + event.getInfo().toString();
+            text = "\n" + event.getMessage().toString();
             style = blackStyle;
         }
         StyledDocument doc = traceWindow.getStyledDocument();
@@ -137,11 +165,17 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         ampDbToolFrame.setVisible(true);
     }
 
+    /*
+     * Closes a project and resets all metadata.
+     */
     private void closeProject() {
         metaFactory.clearAllMetadata();
         traceWindow.setText(null);
     }
 
+    /*
+     * Gathers info to create a new database, and creates it.
+     */
     private void createDatabase() {
         Properties props = Properties.getProperties();
         String dbName = "";
@@ -160,6 +194,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         props.set(Properties.DB_PASSWORD, dbPassword);
     }
 
+    /*
+     * Creates a new database schema in the open database from the project metadata.
+     */
     private void createSchema() {
         if (isOpenProject() && isOpenDatabase()) {
             String dbName = database.getName();
@@ -171,6 +208,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         }
     }
 
+    /*
+     * Drops a database by name.
+     */
     private void dropDatabase() {
         List<String> databases = database.getDatabaseSelection();
         DropDatabasePanel openDialog = new DropDatabasePanel(databases);
@@ -181,7 +221,10 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         }
     }
 
-    private void executeSQL() {
+    /*
+     * Executes custom SQL from files.
+     */
+    private void executeCustomSQL() {
         if (isOpenDatabase()) {
             Properties props = Properties.getProperties();
             String sqlRoot = props.get(Properties.SQL_ROOT);
@@ -200,6 +243,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         }
     }
 
+    /*
+     * Is the database open?
+     */
     private boolean isOpenDatabase() {
         if (database == null || !database.isOpen()) {
             JOptionPane.showMessageDialog(ampDbToolFrame, "Open a database first");
@@ -208,6 +254,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         return true;
     }
 
+    /*
+     * Is the project open?
+     */
     private boolean isOpenProject() {
         if (metaFactory.getAllMetadata().size() == 0) {
             JOptionPane.showMessageDialog(ampDbToolFrame, "Open a project first");
@@ -216,6 +265,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         return true;
     }
 
+    /*
+     * Get the database information and open it.
+     */
     private void openDatabase() {
         List<String> databases = database.getDatabaseSelection();
         Properties props = Properties.getProperties();
@@ -235,6 +287,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         props.set(Properties.DB_PASSWORD, dbPassword);
     }
 
+    /*
+     * Get the project root directory and open it.
+     */
     private void openProject() {
         closeProject();
         Properties props = Properties.getProperties();
@@ -248,17 +303,26 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         }
     }
 
+    /* 
+     * Populate the open database from the project CSV files.
+     */
     private void populateDatabase() {
         if (isOpenProject() && isOpenDatabase()) {
             database.populateTables(metaFactory.getAllMetadata());
         }
     }
 
+    /*
+     * Quit the tool.
+     */
     private void quit() {
         ampDbToolFrame.dispose();
         System.exit(0);
     }
 
+    /*
+     * Save the trace output to a file.
+     */
     private void saveOutput() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Text Files", "txt"));
@@ -278,6 +342,11 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         }
     }
 
+    /**
+     * The entry point
+     *
+     * @param args the arguments: not used.
+     */
     public static void main(String[] args) {
         AMPDbTool ampDbTool = new AMPDbTool();
         SwingUtilities.invokeLater(ampDbTool);

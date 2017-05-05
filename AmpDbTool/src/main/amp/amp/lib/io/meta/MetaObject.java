@@ -27,12 +27,7 @@ import java.io.File;
 import amp.lib.io.MetadataObject;
 
 /**
- * Represents metadata about an analysis table to be created or populated.
- * Information includes: - Ordinary columns, with datatype and other decorators
- * - Primary key column - Foreign key columns
- * 
- * @author brucejtaylor333
- *
+ * The Class MetaObject.
  */
 public abstract class MetaObject {
 
@@ -43,6 +38,11 @@ public abstract class MetaObject {
 
     private File file = null;
 
+    /**
+     * Instantiates a new meta object.
+     *
+     * @param metaObject the meta object
+     */
     public MetaObject(MetadataObject metaObject) {
         super();
         this.setTitle(metaObject.getTitle());
@@ -53,6 +53,11 @@ public abstract class MetaObject {
         super();
     }
 
+    /**
+     * Debugging data for the MetaObject
+     *
+     * @return debugging data
+     */
     public String dump() {
         return identifier;
     }
@@ -66,19 +71,39 @@ public abstract class MetaObject {
         return getIdentifier().equals(((MetaObject) obj).getIdentifier());
     }
 
+    /**
+     * Gets the file.
+     *
+     * @return the file
+     */
     public File getFile() {
         return file;
     }
 
+    /**
+     * Gets the identifier.
+     *
+     * @return the identifier
+     */
     public String getIdentifier() {
         return identifier;
     }
 
+    /**
+     * Gets the title.
+     *
+     * @return the title
+     */
     public String getTitle() {
         return title;
     }
 
-    public boolean getValid() {
+    /**
+     * Checks if is valid.
+     *
+     * @return true, if is valid
+     */
+    public boolean isValid() {
         return valid;
     }
 
@@ -87,20 +112,40 @@ public abstract class MetaObject {
         return getIdentifier().hashCode();
     }
 
+    /**
+     * Sets the file.
+     *
+     * @param metafile the metafile
+     */
     public void setFile(File metafile) {
         this.file = metafile;
 
     }
 
+    /**
+     * Sets the identifier.
+     *
+     * @param identifier the identifier
+     */
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
 
     }
 
+    /**
+     * Sets the title.
+     *
+     * @param title the title
+     */
     public void setTitle(String title) {
         this.title = title;
     }
 
+    /**
+     * Sets the valid.
+     *
+     * @param valid the valid
+     */
     public void setValid(boolean valid) {
         this.valid = valid;
     }

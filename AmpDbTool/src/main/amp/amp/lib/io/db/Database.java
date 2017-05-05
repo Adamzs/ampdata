@@ -1,13 +1,30 @@
+/***************************************************************************
+ *
+ * <rrl>
+ * =========================================================================
+ *                                  LEGEND
+ *
+ * Use, duplication, or disclosure by the Government is as set forth in the
+ * Rights in technical data noncommercial items clause DFAR 252.227-7013 and
+ * Rights in noncommercial computer software and noncommercial computer
+ * software documentation clause DFAR 252.227-7014, with the exception of
+ * third party software known as Sun Microsystems' Java Runtime Environment
+ * (JRE), Quest Software's JClass, Oracle's JDBC, and JGoodies which are
+ * separately governed under their commercial licenses.  Refer to the
+ * license directory for information regarding the open source packages used
+ * by this software.
+ *
+ * Copyright 2016 by BBN Technologies Corporation.
+ * =========================================================================
+ * </rrl>
+ *
+ **************************************************************************/
 package amp.lib.io.db;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,11 +33,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 
@@ -28,6 +42,7 @@ import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 
 import amp.lib.io.errors.Report;
+import amp.lib.io.meta.MetaException;
 import amp.lib.io.meta.MetaObject;
 import amp.lib.io.meta.MetaTable;
 import amp.lib.io.meta.MetaTable.Column;
@@ -36,6 +51,10 @@ import amp.lib.io.meta.MetaTable.PrimaryKey;
 import amp.lib.io.meta.MetaView;
 import amp.lib.io.meta.MetadataFactory;
 
+/**
+ * The Database class encapsulates database operations that are mostly engine independent. It tries
+ * to hide those differences that JDBC does not and to provide higher-level operations.
+ */
 public class Database {
     private static Database database = new Database();
 
@@ -56,6 +75,10 @@ public class Database {
         openDatabase(null, BASE_USER, BASE_PASSWORD);
     }
 
+    /**
+     * Builds the schema from the given metadata, including all tables, indexes, keys, and views.
+     * @param metadata the metadata
+     */
     public void buildSchema(List<MetaObject> metadata) {
         validataMetadata(metadata);
         referentialIntegrity(false);
@@ -66,6 +89,11 @@ public class Database {
         referentialIntegrity(true);
     }
 
+    /**
+     * Executes the SQL in the supplied files. Directories are descended depth first. Note that
+     * there is no explicit ordering to the execution.
+     * @param sqlFiles the SQL files and directories
+     */
     public void buildSQL(List<File> sqlFiles) {
         for (File f : sqlFiles) {
             try {
@@ -81,6 +109,12 @@ public class Database {
         }
     }
 
+    /**
+     * Creates the database given its name, user id, and password.
+     * @param name the database name
+     * @param user the database user
+     * @param password the database password
+     */
     public void createDatabase(String name, String user, String password) {
         try {
             this.name = name;
@@ -94,6 +128,10 @@ public class Database {
         }
     }
 
+    /**
+     * Drop the current database.
+     * @param name the database name
+     */
     public void dropDatabase(String name) {
         try {
             Statement s = dbmConnection.createStatement();
@@ -103,6 +141,10 @@ public class Database {
         }
     }
 
+    /**
+     * Execute an SQL statement and report its execution to any listeners.
+     * @param statement the statement to execute
+     */
     public void execute(String statement) {
         try {
             Statement stmt = getConnection().createStatement();
@@ -113,9 +155,13 @@ public class Database {
         }
     }
 
+    /**
+     * Gets the selection of databases available. The list excludes the "standard" databases.
+     * @return the database selection
+     */
     public List<String> getDatabaseSelection() {
         try {
-            Statement s = dbmConnection.createStatement();
+            Statement s = getConnection().createStatement();
             ResultSet rs = s.executeQuery("show databases");
             List<String> selections = new ArrayList<>();
             while (rs.next()) {
@@ -130,35 +176,57 @@ public class Database {
         }
     }
 
+    /**
+     * Gets the name of the database.
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Gets the password of the database.
+     * @return the password
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Gets the user name of the database.
+     * @return the user
+     */
     public String getUser() {
         return user;
     }
 
+    /**
+     * Checks if the database is open.
+     * @return true, if is open
+     */
     public boolean isOpen() {
         try {
-            return dbmConnection != null && !dbmConnection.isClosed();
+            return getConnection() != null && !getConnection().isClosed();
         } catch (SQLException e) {
             throw new RuntimeException(e.getMessage());
         }
     }
 
+    /**
+     * Open a database.
+     * @param name the database name
+     * @param user the database user
+     * @param password database the password
+     */
     public void openDatabase(String name, String user, String password) {
         try {
             this.name = name;
             this.user = user;
             this.password = password;
             try {
-                if (dbmConnection != null) {
-                    dbmConnection.close();
-                    dbmConnection = null;
+                if (getConnection() != null) {
+                    getConnection().close();
+                    setConnection(null);
                 }
                 Class.forName("com.mysql.jdbc.Driver");
                 dbmConnection = DriverManager.getConnection(BASE_URL, user, password);
@@ -173,6 +241,11 @@ public class Database {
         }
     }
 
+    /**
+     * Populate database tables from CSV files. For every metadata file of the form "foo.csv.meta",
+     * the corresponding data is found in "foo.csv", with exactly corresponding column names.
+     * @param metadata the list of metadata objects
+     */
     public void populateTables(List<MetaObject> metadata) {
         referentialIntegrity(false);
         for (MetaObject meta : metadata) {
@@ -183,6 +256,11 @@ public class Database {
         referentialIntegrity(true);
     }
 
+    /**
+     * Execute an SQL Query.
+     * @param querySql the query SQL
+     * @return the result set returned from the query
+     */
     public ResultSet query(String querySql) {
         try {
             Statement stmt = getConnection().createStatement();
@@ -192,14 +270,19 @@ public class Database {
         }
     }
 
+    /*
+     * Build indexes to support the supplied metadata objects. These get referenced in the later
+     * step of creating foreign keys. For each table: 1. A primary key index (if required) on the
+     * specified columns. 2. Zero or more foreign key indexes on the referenced columns.
+     */
     private void buildIndexes(List<MetaObject> metadata) {
-        SQLFactory sqlm = SQLFactory.getSQLManager();
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
                 if (pk != null) {
-                    String indexName = sqlm.toIndexName(pk);
+                    String indexName = sqlm.toPrimaryKeyIndexName(pk);
                     try {
                         execute(sqlm.toDropIndexSQL(indexName));
                     } catch (Exception e) {
@@ -222,8 +305,13 @@ public class Database {
         }
     }
 
+    /*
+     * Create the keys for the metadata tables. For each table in the metadata: 1. zero or one
+     * primary key on the specified columns 2. zero or more foreign keys on specified columns
+     * referring to other table colums.
+     */
     private void buildKeys(List<MetaObject> metadata) {
-        SQLFactory sqlm = SQLFactory.getSQLManager();
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
@@ -248,8 +336,12 @@ public class Database {
         }
     }
 
+    /*
+     * Creates the tables from the specified metadata. For each MetaTable: 1. Drop the table if it
+     * exists. 2. Build the "Create table" SQL to fit this database. 3. Execute it.
+     */
     private void buildTables(List<MetaObject> metadata) {
-        SQLFactory sqlh = SQLFactory.getSQLManager();
+        SQLFactory sqlh = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
@@ -267,8 +359,12 @@ public class Database {
         }
     }
 
+    /*
+     * Creates the views from the specified metadata. For each MetaView: 1. Build the "Create view"
+     * SQL to fit this database. 2. Execute it.
+     */
     private void buildViews(List<MetaObject> metadata) {
-        SQLFactory sqlh = SQLFactory.getSQLManager();
+        SQLFactory sqlh = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaView) {
                 MetaView mv = (MetaView) mo;
@@ -282,52 +378,33 @@ public class Database {
         }
     }
 
+    /*
+     * Count the rows of a table, so we can report them after a load.
+     */
     private int countRowsLoaded(MetaTable meta) throws SQLException {
-        SQLFactory sqlm = SQLFactory.getSQLManager();
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
         ResultSet rs = query(sqlm.toCountRowsSql(meta));
         int rows = rs.next() ? rs.getInt(1) : 0;
         return rows;
     }
 
-    private Connection getConnection() {
-        return dbmConnection;
-    }
-
-    private void importCSVFile(MetaTable meta) {
-        SQLFactory sqlm = SQLFactory.getSQLManager();
-        try {
-            File csvFile = new File(sqlm.metadataToCsvFile(meta));
-            if (!csvFile.exists()) {
-                Report.error(meta, "Can't load from missing file " + csvFile.getPath());
-                return;
-            }
-            CsvFileSummary csvfs = getCsvSummary(csvFile);
-            ensureColumnsMatch(meta, csvfs);
-            execute(sqlm.toDeleteAllSql(meta));
-            execute(sqlm.toLoadSql(meta));
-            ensureAllRowsLoaded(meta, csvfs);
-        } catch (Exception e) {
-            String message = e.getMessage();
-            Pattern p = Pattern.compile("MESSAGE: *(.*\\n)", Pattern.MULTILINE);
-            Matcher m = p.matcher(message);
-            if (m.find() && m.groupCount() > 0) {
-                message = m.group(1);
-            }
-            Report.error(meta, message);
-        }
-    }
-
+    /*
+     * Make sure that we loaded all the rows we expected.
+     */
     private void ensureAllRowsLoaded(MetaTable meta, CsvFileSummary csvfs) throws SQLException {
         int rowsLoaded = countRowsLoaded(meta);
         int fileRecords = csvfs.records;
-        int notLoaded = Math.abs(rowsLoaded-fileRecords);
+        int notLoaded = Math.abs(rowsLoaded - fileRecords);
         Report.info(meta, "read " + fileRecords + " records from " + csvfs.csvFile.getPath());
-        Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());            
+        Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());
         if (notLoaded > 0) {
-            Report.error(meta, notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
+            throw new RuntimeException(meta.toString() + ": " + notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
         }
     }
 
+    /*
+     * Make sure that the CSV headers are an exact match (modulo case) in order, name, and sequence.
+     */
     private void ensureColumnsMatch(MetaTable meta, CsvFileSummary csvfs) {
         boolean columnsMatch = true;
         List<String> csvColumns = csvfs.columnNames;
@@ -337,8 +414,7 @@ public class Database {
         }
         if (csvColumns.size() != tblColumns.size()) {
             columnsMatch = false;
-        }
-        else {
+        } else {
             for (int i = 0; i < csvColumns.size(); i++) {
                 if (!csvColumns.get(i).equalsIgnoreCase(tblColumns.get(i))) {
                     columnsMatch = false;
@@ -347,14 +423,61 @@ public class Database {
             }
         }
         if (!columnsMatch) {
-            String message = "column lists do not match for load" + "\n" +
-                            csvfs.csvFile.getPath() + ": " + csvColumns + "\n" +
-                            meta + ": " + tblColumns;
-            Report.error(meta, message);
+            String message = "column lists do not match for load" + "\n" + csvfs.csvFile.getPath() + ": " + csvColumns + "\n" + meta + ": " + tblColumns;
+            throw new RuntimeException(meta.toString() + ": " + message);
         }
     }
-    
-    private CsvFileSummary getCsvSummary(File csvFile) {
+
+    /*
+     * Make sure the table is unique in the database.
+     */
+    private void ensureUniqueTable(MetaTable mt) {
+        for (MetaTable mt1 : MetadataFactory.getMetadataFactory().getAllMetaTables()) {
+            if (!mt.equals(mt1) && mt1.getTableName().equals(mt.getTableName())) {
+                throw new MetaException(mt, "Table name " + mt.getTableName() + " in " + mt + " duplicates table name in " + mt1);
+            }
+        }
+    }
+
+    /*
+     * Make sure all foreign keys are valid
+     */
+    private void ensureValidForeignKeys(MetaTable mo) {
+        for (ForeignKey fk : mo.getForeignKeys()) {
+            Column fkColumn = fk.getFkColumn();
+            if (fkColumn == null) {
+                throw new MetaException(mo, " foreign key column is null");
+            }
+            Column refColumn = fk.getReferenceColumn();
+            if (refColumn == null) {
+                throw new MetaException(mo, " foreign key column is not defined");
+            }
+        }
+    }
+
+    /*
+     * Make sure primary key (if any) is valid
+     */
+    private void ensureValidPrimaryKey(MetaTable mo) {
+        PrimaryKey pk = mo.getPrimaryKey();
+        if (pk != null) {
+            if (pk.getPrimaryKeyColumns().size() == 0) {
+                throw new RuntimeException("primary key has no columns");
+            }
+        }
+    }
+
+    /*
+     * The JDBC connection.
+     */
+    private Connection getConnection() {
+        return dbmConnection;
+    }
+
+    /*
+     * Get the summary info from the CSV file that we need to do checks.
+     */
+    private CsvFileSummary getCsvSummary(MetaTable meta, File csvFile) {
         CsvFileSummary csvfs = new CsvFileSummary();
         csvfs.csvFile = csvFile;
         try (BufferedReader bsr = new BufferedReader(new FileReader(csvFile))) {
@@ -364,85 +487,56 @@ public class Database {
                 csvfs.records++;
             }
         } catch (IOException e) {
-            // no-op
+            throw new RuntimeException(meta.toString() + ": " + e.getMessage());
         }
         return csvfs;
     }
-    
-    private class CsvFileSummary {
-        File csvFile = null;
-        List<String> columnNames = new ArrayList<>(); 
-        int records = 0;
-    }
 
-    private int countFileRecords(MetaTable meta) {
-        SQLFactory sqlm = SQLFactory.getSQLManager();
-        String csvFilePath = sqlm.metadataToCsvFile(meta);
-        File csvFile = new File(csvFilePath);
-        int records = 0;
-        InputStream is = null;
-            try { 
-                is = new BufferedInputStream(new FileInputStream(csvFile));
-                for (int c = is.read(); c >= 0; c = is.read()) {
-                    if (c == '\n') {
-                        records++;
-                    }
-                }
-                is.close();
-            } catch (IOException e) {
-            }
-            finally {
-                try {
-                    if (is != null) is.close();
-                } catch (IOException e) {
-                    // no-op
-                }
-            }
-        return Math.max(0, records-1);
-    }
-
-
-    private void isUniqueTable(MetaTable mt) {
-        for (MetaTable mt1 : MetadataFactory.getMetadataFactory().getAllMetaTables()) {
-            if (!mt.equals(mt1) && mt1.getTableName().equals(mt.getTableName())) {
-                throw new RuntimeException("Table name " + mt.getTableName() + " in " + mt + " duplicates table name in " + mt1);
-            }
+    /*
+     * Import data into a table from its corresponding CSV file.
+     */
+    private void importCSVFile(MetaTable meta) {
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
+        try {
+            File csvFile = new File(sqlm.metadataToCsvFile(meta));
+            CsvFileSummary csvfs = getCsvSummary(meta, csvFile);
+            ensureColumnsMatch(meta, csvfs);
+            execute(sqlm.toDeleteAllSql(meta));
+            execute(sqlm.toLoadSql(meta));
+            ensureAllRowsLoaded(meta, csvfs);
+        } catch (Exception e) {
+            // Here we extract the useful information from the over-specified
+            // error message.
+            String message = sqlm.simplifyErrorMessage(e.getMessage());
+            Report.error(meta, message);
         }
     }
 
-    private void isValidPrimaryKey(MetaTable mo) {
-        PrimaryKey pk = mo.getPrimaryKey();
-        if (pk != null) {
-            if (pk.getPrimaryKeyColumns().size() == 0) {
-                throw new RuntimeException("primary key has no columns");
-            }
-        }
-    }
-
-    private void isValidSecondaryKeys(MetaTable mo) {
-        for (ForeignKey fk : mo.getForeignKeys()) {
-            Column fkColumn = fk.getFkColumn();
-            if (fkColumn == null) {
-                throw new RuntimeException(" foreign key column is null");
-            }
-            Column refColumn = fk.getReferenceColumn();
-            if (refColumn == null) {
-                throw new RuntimeException(" foreign key column is not defined");
-            }
-        }
-    }
-
+    /*
+     * Turn referential integrity checks on/off
+     */
     private void referentialIntegrity(boolean integrity) {
-        SQLFactory sqlh = SQLFactory.getSQLManager();
+        SQLFactory sqlh = SQLFactory.getSQLFactory();
         String ref = sqlh.toReferentialIntegrity(integrity);
         execute(ref);
     }
 
-    private void use(String name) throws SQLException {
-        Statement s = getConnection().createStatement();
-        s.executeQuery("use " + name);
+    private void setConnection(Connection connection) {
+        dbmConnection = connection;
     }
 
+    /*
+     * Specify the database to use.
+     */
+    private void use(String name) throws SQLException {
+        SQLFactory sqlh = SQLFactory.getSQLFactory();
+        execute(sqlh.toUseSQL(name));
+    }
+
+    /*
+     * Checks a MetaObject for validity, removes it if not valid. TODO: just mark it invalid, don't
+     * build indexes, foreign keys that refer to it.
+     */
     private void validataMetadata(List<MetaObject> metadata) {
         for (ListIterator<MetaObject> i = metadata.listIterator(); i.hasNext();) {
             MetaObject mo = i.next();
@@ -459,11 +553,14 @@ public class Database {
 
     }
 
+    /*
+     * Validates a MetaTable
+     */
     private boolean validateTable(MetaTable mo) {
         try {
-            isUniqueTable(mo);
-            isValidPrimaryKey(mo);
-            isValidSecondaryKeys(mo);
+            ensureUniqueTable(mo);
+            ensureValidPrimaryKey(mo);
+            ensureValidForeignKeys(mo);
         } catch (Exception e) {
             Report.error("Skipping creation of " + mo.getIdentifier() + "\n" + e.getMessage());
             return false;
@@ -471,13 +568,29 @@ public class Database {
         return true;
     }
 
+    /*
+     * Validates a MetaView.
+     */
     private boolean validateView(MetaView mv) {
         // TODO Auto-generated method stub
         return true;
     }
 
+    /**
+     * Gets the current database.
+     * @return the current database
+     */
     public static Database getDatabase() {
         return database;
+    }
+
+    /*
+     * The CSV file summary information.
+     */
+    private class CsvFileSummary {
+        File csvFile = null;
+        List<String> columnNames = new ArrayList<>();
+        int records = 0;
     }
 
 }

@@ -1,3 +1,24 @@
+/***************************************************************************
+ *
+ * <rrl>
+ * =========================================================================
+ *                                  LEGEND
+ *
+ * Use, duplication, or disclosure by the Government is as set forth in the
+ * Rights in technical data noncommercial items clause DFAR 252.227-7013 and
+ * Rights in noncommercial computer software and noncommercial computer
+ * software documentation clause DFAR 252.227-7014, with the exception of
+ * third party software known as Sun Microsystems' Java Runtime Environment
+ * (JRE), Quest Software's JClass, Oracle's JDBC, and JGoodies which are
+ * separately governed under their commercial licenses.  Refer to the
+ * license directory for information regarding the open source packages used
+ * by this software.
+ *
+ * Copyright 2016 by BBN Technologies Corporation.
+ * =========================================================================
+ * </rrl>
+ *
+ **************************************************************************/
 package amp.lib.io.ui;
 
 import java.awt.FlowLayout;
@@ -14,6 +35,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+/**
+ * The Class OpenSQLPanel.
+ */
 @SuppressWarnings("serial")
 public class OpenSQLPanel extends JPanel implements ActionListener {
     private JTextField sqlPathField = new JTextField(50);
@@ -22,6 +46,11 @@ public class OpenSQLPanel extends JPanel implements ActionListener {
 
     List<File> sqlFiles = new ArrayList<>();
 
+    /**
+     * Instantiates a new open SQL panel.
+     *
+     * @param sqlPath the sql path
+     */
     public OpenSQLPanel(String sqlPath) {
         selectButton.addActionListener(this);
 
