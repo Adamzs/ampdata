@@ -60,6 +60,7 @@ import amp.lib.io.props.Properties;
  * The main class for the AMP Database Tool User Interface.
  */
 public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
+    private Properties props = Properties.getProperties();
     private ProjectMenu projectMenu = new ProjectMenu();
     private DatabaseMenu databaseMenu = new DatabaseMenu();
     private JTextPane traceWindow = new JTextPane();
@@ -70,6 +71,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
     private File projectDirectory;
     private Style redStyle = null;
     private Style blackStyle = null;
+    private Style blueStyle = null;
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -108,7 +110,11 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         if (event.getSeverity() == Severity.ERROR) {
             text = "\n" + event.toString();
             style = redStyle;
-        } else {
+        } else 
+            if (event.getSeverity() == Severity.WARNING) {
+                text = "\n" + event.toString();
+                style = blueStyle;
+            } else {
             text = "\n" + event.getMessage().toString();
             style = blackStyle;
         }
@@ -116,10 +122,9 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         try {
             doc.insertString(doc.getLength(), text, style);
             traceWindow.setCaretPosition(doc.getLength());
-            traceWindow.update(traceWindow.getGraphics());
             JScrollBar vertical = traceScroller.getVerticalScrollBar();
             vertical.setValue(vertical.getMaximum());
-            traceScroller.update(traceScroller.getGraphics());
+            traceScroller.paintAll(traceScroller.getGraphics());
         } catch (BadLocationException e) {
             // no-op
         }
@@ -151,8 +156,10 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
 
         redStyle = traceWindow.addStyle("Red", null);
         blackStyle = traceWindow.addStyle("Black", null);
+        blueStyle = traceWindow.addStyle("Blue", null);
         StyleConstants.setForeground(redStyle, Color.red);
         StyleConstants.setForeground(blackStyle, Color.black);
+        StyleConstants.setForeground(blueStyle, Color.blue);
 
         ampDbToolFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ampDbToolFrame.setJMenuBar(new JMenuBar());
@@ -177,7 +184,6 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      * Gathers info to create a new database, and creates it.
      */
     private void createDatabase() {
-        Properties props = Properties.getProperties();
         String dbName = "";
         String dbUser = props.get(Properties.DB_USER);
         String dbPassword = props.get(Properties.DB_PASSWORD);
@@ -226,7 +232,6 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      */
     private void executeCustomSQL() {
         if (isOpenDatabase()) {
-            Properties props = Properties.getProperties();
             String sqlRoot = props.get(Properties.SQL_ROOT);
             OpenSQLPanel openDialog = new OpenSQLPanel(sqlRoot);
             int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, openDialog, "Select SQL Views", JOptionPane.OK_CANCEL_OPTION);
@@ -270,7 +275,6 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      */
     private void openDatabase() {
         List<String> databases = database.getDatabaseSelection();
-        Properties props = Properties.getProperties();
         String dbName = props.get(Properties.DB_NAME);
         String dbUser = props.get(Properties.DB_USER);
         String dbPassword = props.get(Properties.DB_PASSWORD);
@@ -292,14 +296,14 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      */
     private void openProject() {
         closeProject();
-        Properties props = Properties.getProperties();
         String projectRoot = props.get(Properties.PROJ_ROOT);
         OpenProjectPanel openDialog = new OpenProjectPanel(projectRoot);
         int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, openDialog, "Select Project", JOptionPane.OK_CANCEL_OPTION);
         if (selected == JOptionPane.OK_OPTION) {
             projectDirectory = new File(openDialog.getProjectPath());
-            Properties.getProperties().set(Properties.PROJ_ROOT, projectDirectory.getAbsolutePath());
+            props.set(Properties.PROJ_ROOT, projectDirectory.getAbsolutePath());
             metaFactory.readMetaFiles(projectDirectory);
+            Report.info("INFO: Opened " + metaFactory.getAllMetadata().size() + " metadata files");
         }
     }
 

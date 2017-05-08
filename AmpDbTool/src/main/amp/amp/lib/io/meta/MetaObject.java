@@ -31,7 +31,6 @@ import amp.lib.io.MetadataObject;
  */
 public abstract class MetaObject {
 
-    boolean valid = true;
     public String title = "";
 
     private String identifier = "";
@@ -98,14 +97,6 @@ public abstract class MetaObject {
         return title;
     }
 
-    /**
-     * Checks if is valid.
-     *
-     * @return true, if is valid
-     */
-    public boolean isValid() {
-        return valid;
-    }
 
     @Override
     public int hashCode() {
@@ -141,14 +132,6 @@ public abstract class MetaObject {
         this.title = title;
     }
 
-    /**
-     * Sets the valid.
-     *
-     * @param valid the valid
-     */
-    public void setValid(boolean valid) {
-        this.valid = valid;
-    }
 
     @Override
     public String toString() {

@@ -47,7 +47,7 @@ import amp.lib.io.meta.MetaView.ViewJoin;
  */
 public class SQLFactory {
 
-    private static SQLFactory sqlManager = new SQLFactory();
+    private static SQLFactory sqlFactory = new SQLFactory();
 
     @SuppressWarnings("unchecked")
     private static final Map<String, String> dataTypeMap = MapUtils.putAll(new HashMap<String, String>(),
@@ -410,7 +410,7 @@ public class SQLFactory {
      * @return the SQL factory
      */
     public static SQLFactory getSQLFactory() {
-        return sqlManager;
+        return sqlFactory;
     }
 
     /**

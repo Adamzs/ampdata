@@ -62,6 +62,8 @@ import amp.lib.io.meta.MetadataFactory;
  * to hide those differences that JDBC does not and to provide higher-level operations.
  */
 public class Database {
+    private static SQLFactory sqlFactory = SQLFactory.getSQLFactory();
+    private static MetadataFactory metadataFactory = MetadataFactory.getMetadataFactory();
     private static Database database = new Database();
 
     private static final String BASE_USER = "root";
@@ -70,11 +72,8 @@ public class Database {
     private static List<String> systemDBList = Arrays.asList("information_schema", "mysql", "performance_schema", "sys");
 
     private Connection dbmConnection;
-
     private String name;
-
     private String password;
-
     private String user;
 
     private Database() {
@@ -96,15 +95,20 @@ public class Database {
     }
 
     /**
-     * Executes the SQL in the supplied files. Directories are descended depth first. Note that
-     * there is no explicit ordering to the execution.
+     * Executes the SQL in the supplied files. 
+     * See 'getAllSQLFiles' for execution order of files.
+     * Each file may have zero or more SQL statements, 
+     * each terminated by a non-escaped ';' at the end of the line. 
      * @param sqlFiles the SQL files and directories
      */
     public void buildSQL(List<File> sqlFiles) {
         for (File f : getAllSQLFiles(sqlFiles)) {
             try {
                 String sql = FileUtils.readFileToString(f, Charset.defaultCharset());
-                execute(sql);
+                String[] statements = sql.split(";");
+                for (String statement : statements) {
+                    execute(statement);
+                }
             } catch (Exception e) {
                 Report.error(e.getMessage());
             }
@@ -176,12 +180,20 @@ public class Database {
 
     /**
      * Execute an SQL statement and report its execution to any listeners.
+     * Terminal semicolon added if needed.
      * @param statement the statement to execute
      */
     public void execute(String statement) {
+        statement = statement.trim();
+        if (statement.length() == 0) {
+            return;
+        }
+        if (!statement.endsWith(";")) {
+            statement = statement + ";";
+        }
         try {
             Statement stmt = getConnection().createStatement();
-            stmt.execute(statement + ";");
+            stmt.execute(statement);
             Report.info("\n" + statement);
         } catch (Exception e) {
             throw new RuntimeException("\n" + statement + "\n" + e.getMessage());
@@ -252,24 +264,17 @@ public class Database {
      * @param password database the password
      */
     public void openDatabase(String name, String user, String password) {
+        this.name = name;
+        this.user = user;
+        this.password = password;
         try {
-            this.name = name;
-            this.user = user;
-            this.password = password;
-            try {
-                if (getConnection() != null) {
-                    getConnection().close();
-                    setConnection(null);
-                }
-                Class.forName("com.mysql.jdbc.Driver");
-                dbmConnection = DriverManager.getConnection(BASE_URL, user, password);
-            } catch (ClassNotFoundException | SQLException e) {
-                throw new RuntimeException(e.getMessage());
+            if (getConnection() != null) {
+                getConnection().close();
+                setConnection(null);
             }
-            if (name != null) {
-                use(name);
-            }
-        } catch (SQLException e) {
+            Class.forName("com.mysql.jdbc.Driver");
+            dbmConnection = DriverManager.getConnection(BASE_URL, user, password);
+        } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e.getMessage());
         }
     }
@@ -316,7 +321,7 @@ public class Database {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
                 if (pk != null) {
-                        indexColumns.addAll(pk.getPrimaryKeyColumns());
+                    indexColumns.addAll(pk.getPrimaryKeyColumns());
                 }
                 for (ForeignKey fk : mt.getForeignKeys()) {
                     indexColumns.add(fk.getFkColumn());
@@ -374,17 +379,16 @@ public class Database {
      * exists. 2. Build the "Create table" SQL to fit this database. 3. Execute it.
      */
     private void buildTables(List<MetaObject> metadata) {
-        SQLFactory sqlh = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 try {
-                    execute(sqlh.toDropTableSQL(mt));
+                    execute(sqlFactory.toDropTableSQL(mt));
                 } catch (Exception e1) {
                     // no-op
                 }
                 try {
-                    execute(sqlh.toTableSQL(mt));
+                    execute(sqlFactory.toTableSQL(mt));
                 } catch (Exception e) {
                     Report.error(mt, e.getMessage());
                 }
@@ -397,12 +401,11 @@ public class Database {
      * SQL to fit this database. 2. Execute it.
      */
     private void buildViews(List<MetaObject> metadata) {
-        SQLFactory sqlh = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaView) {
                 MetaView mv = (MetaView) mo;
                 try {
-                    String sql = sqlh.toViewSQL(mv);
+                    String sql = sqlFactory.toViewSQL(mv);
                     execute(sql);
                 } catch (Exception e) {
                     Report.error(mv, e.getMessage());
@@ -465,7 +468,7 @@ public class Database {
      * Make sure the table is unique in the database.
      */
     private void ensureUniqueTable(MetaTable mt) {
-        for (MetaTable mt1 : MetadataFactory.getMetadataFactory().getAllMetaTables()) {
+        for (MetaTable mt1 : metadataFactory.getAllMetaTables()) {
             if (!mt.equals(mt1) && mt1.getTableName().equals(mt.getTableName())) {
                 throw new MetaException(mt, "Table name " + mt.getTableName() + " in " + mt + " duplicates table name in " + mt1);
             }
@@ -549,8 +552,7 @@ public class Database {
      * Turn referential integrity checks on/off
      */
     private void referentialIntegrity(boolean integrity) {
-        SQLFactory sqlh = SQLFactory.getSQLFactory();
-        String ref = sqlh.toReferentialIntegrity(integrity);
+        String ref = sqlFactory.toReferentialIntegrity(integrity);
         execute(ref);
     }
 
@@ -562,8 +564,7 @@ public class Database {
      * Specify the database to use.
      */
     private void use(String name) throws SQLException {
-        SQLFactory sqlh = SQLFactory.getSQLFactory();
-        execute(sqlh.toUseSQL(name));
+        execute(sqlFactory.toUseSQL(name));
     }
 
     /*
