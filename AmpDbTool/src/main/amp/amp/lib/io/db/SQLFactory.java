@@ -135,8 +135,19 @@ public class SQLFactory {
      * @param indexName the index name
      * @return the SQL string
      */
-    public String toDropIndexSQL(String indexName) {
-        return "DROP INDEX " + indexName;
+    public String toDropIndexSQL(Column col) {
+        return "DROP INDEX " + toIndexName(col) + " ON " + normalize(col.getTable().getTableName());
+    }
+
+    /**
+     * Produces index name from column as TABLE_COLUMN_IDX
+     * @param col the column
+     * @return the index name
+     */
+    private String toIndexName(Column col) {
+        return normalize(col.getTable().getTableName() + "_" +
+                        col.getName() + "_" +
+                        "IDX");
     }
 
     /**
@@ -149,21 +160,7 @@ public class SQLFactory {
         return "DROP TABLE IF EXISTS " + normalize(table.getTableName());
     }
 
-    /**
-     * SQL to create a foreign index.
-     *
-     * @param fk the foreign key
-     * @return the SQL string
-     */
-    public String toForeignIndexSQL(ForeignKey fk) {
-        validateForeignKey(fk);
-        Column fkRef = fk.getFkColumn();
-        String fkColumnName = normalize(fkRef.getName());
-        String fkTableName = normalize(fkRef.getTable().getTableName());
-        String sql = "CREATE INDEX " + toForeignKeyIndexName(fk) + " ON " + fkTableName + "(" + fkColumnName + ")";
-        return sql;
-    }
-
+   
     /**
      * SQL to create a foreign key.
      *
@@ -178,31 +175,8 @@ public class SQLFactory {
         Column fkRef = fk.getFkColumn();
         String fkColumnName = normalize(fkRef.getName());
         String fkTableName = normalize(fkRef.getTable().getTableName());
-        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toForeignKeyIndexName(fk) + " FOREIGN KEY (" + fkColumnName + ")" + " REFERENCES " + pkTableName + "(" + pkColumnName + ")";
+        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toIndexName(fkRef) + " FOREIGN KEY (" + fkColumnName + ")" + " REFERENCES " + pkTableName + "(" + pkColumnName + ")";
         return sql;
-    }
-
-    /**
-     * Creates a foreign key index name
-     *
-     * @param fk the foreign key
-     * @return the string
-     */
-    public String toForeignKeyIndexName(ForeignKey fk) {
-        Column fkRef = fk.getFkColumn();
-        String fkColumnName = fkRef.getName();
-        String fkTableName = fkRef.getTable().getTableName();
-        return "FK_" + deblank(fkTableName) + "_" + deblank(fkColumnName);
-    }
-
-    /**
-     * Creates a primary key index name.
-     *
-     * @param pk the Primary key
-     * @return the string
-     */
-    public String toPrimaryKeyIndexName(PrimaryKey pk) {
-        return "PK_" + pk.getTable().getTableName();
     }
 
     /**
@@ -249,23 +223,6 @@ public class SQLFactory {
         String metaFilePath = meta.getFile().getAbsolutePath();
         String csvFilePath = metaFilePath.replaceAll(".meta", "");
         return csvFilePath;
-    }
-
-    /**
-     * SQL to create a primary index.
-     *
-     * @param pk the primary key.
-     * @return the string
-     */
-    public String toPrimaryIndexSQL(PrimaryKey pk) {
-        validatePrimaryKey(pk);
-        String pkTableName = normalize(pk.getTable().getTableName());
-        String indexName = normalize(toPrimaryKeyIndexName(pk));
-        List<String> pkColumns = new ArrayList<>();
-        for (Column pkColumn : pk.getPrimaryKeyColumns()) {
-            pkColumns.add(normalize(pkColumn.getName()));
-        }
-        return "CREATE INDEX " + indexName + " ON " + pkTableName + "(" + Joiner.on(",").join(pkColumns) + ")";
     }
 
     /**
@@ -490,5 +447,13 @@ public class SQLFactory {
      */
     public boolean isKeyword(String word) {
         return Keywords.keywordSet.contains(word.toUpperCase());
+    }
+
+    public String toCreateIndexSQL(Column col) {
+        String indexName = normalize(toIndexName(col));
+        String columnName = normalize(col.getName());
+        String tableName = normalize(col.getTable().getTableName());
+        String sql = "CREATE INDEX " + indexName + " ON " + tableName + "(" + columnName + ")";        
+        return sql;
     }
 }

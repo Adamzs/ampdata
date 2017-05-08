@@ -13,11 +13,9 @@ import amp.lib.io.errors.ErrorListener;
 import amp.lib.io.errors.Report;
 import amp.lib.io.meta.MetadataFactory;
 
-public class TestSchema implements ErrorListener {
+public class TestCustomSQL implements ErrorListener {
 
     static Database dbm;
-    static MetadataFactory mfh;
-    static SQLFactory sqlh;
     static boolean initialized = false;
 
     @Override
@@ -33,20 +31,14 @@ public class TestSchema implements ErrorListener {
         if (!initialized) {
             Report.addListener(this);
             dbm = Database.getDatabase();
-            mfh = MetadataFactory.getMetadataFactory();
-            sqlh = SQLFactory.getSQLFactory();
             initialized = true;
         }
     }
 
     @Test
-    public void testTables() {
+    public void testSQL() {
         initialize();
-        mfh.readMetaFiles(new File("data"));
-        mfh.readMetaFiles(new File("testViews"));
-        dbm.dropDatabase("Amp");
-        dbm.createDatabase("Amp", "root", "root");
-        dbm.buildSchema(mfh.getAllMetadata());
+        dbm.openDatabase("Amp", "root", "root");
+        dbm.buildSQL(Arrays.asList(new File[] { new File("sql") }));
     }
-
 }

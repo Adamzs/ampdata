@@ -24,6 +24,7 @@ package amp.lib.io.db;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.sql.Connection;
@@ -33,8 +34,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Set;
+
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.apache.commons.io.FileUtils;
 
@@ -95,18 +101,45 @@ public class Database {
      * @param sqlFiles the SQL files and directories
      */
     public void buildSQL(List<File> sqlFiles) {
-        for (File f : sqlFiles) {
+        for (File f : getAllSQLFiles(sqlFiles)) {
             try {
-                if (f.isDirectory()) {
-                    buildSQL(Arrays.asList(f.listFiles()));
-                } else if (f.getPath().endsWith(".sql")) {
-                    String sql = FileUtils.readFileToString(f, Charset.defaultCharset());
-                    execute(sql);
-                }
+                String sql = FileUtils.readFileToString(f, Charset.defaultCharset());
+                execute(sql);
             } catch (Exception e) {
                 Report.error(e.getMessage());
             }
         }
+    }
+
+    /**
+     * Finds all the SQL files that descend from the given files/directories.
+     * Files are sorted as follows:
+     * 1. depth-first traversal of directories first
+     * 2. SQL files of this directory, sorted by file name.
+     * So, to ensure ordering of SQL execution, place dependent files in sub-directories,
+     * or name files something like "1_Foo.sql", "2_Bar.sql".
+     * @param sqlFiles List of directories/files to search
+     * @return all SQL files in the supplied directory tree, sorted as described abobe.
+     */
+    private List<File> getAllSQLFiles(List<File> sqlFiles) {
+        List<File> orderedFiles = new ArrayList<>();
+        for (File f : sqlFiles) {
+            if (f.isDirectory()) {    
+                List<File> files = Arrays.asList(f.listFiles());
+                files.sort(new Comparator<File>() {
+                    public int compare(File o1, File o2) {
+                        return o1.getName().compareTo(o2.getName());
+                    };                        
+                });
+                orderedFiles.addAll(getAllSQLFiles(files));
+            }
+        }
+        for (File f : sqlFiles) {
+            if (!f.isDirectory() && f.getName().endsWith(".sql")) {    
+                orderedFiles.add(f);
+            }
+        }
+        return orderedFiles;
     }
 
     /**
@@ -276,31 +309,31 @@ public class Database {
      * specified columns. 2. Zero or more foreign key indexes on the referenced columns.
      */
     private void buildIndexes(List<MetaObject> metadata) {
+        Set<Column> indexColumns = new HashSet<>();
         SQLFactory sqlm = SQLFactory.getSQLFactory();
         for (MetaObject mo : metadata) {
             if (mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
                 if (pk != null) {
-                    String indexName = sqlm.toPrimaryKeyIndexName(pk);
-                    try {
-                        execute(sqlm.toDropIndexSQL(indexName));
-                    } catch (Exception e) {
-                        // no-op
-                    }
-                    try {
-                        execute(sqlm.toPrimaryIndexSQL(pk));
-                    } catch (Exception e) {
-                        Report.error(mt, e.getMessage());
-                    }
+                        indexColumns.addAll(pk.getPrimaryKeyColumns());
                 }
                 for (ForeignKey fk : mt.getForeignKeys()) {
-                    try {
-                        execute(sqlm.toForeignIndexSQL(fk));
-                    } catch (Exception e) {
-                        Report.error(mt, e.getMessage());
-                    }
+                    indexColumns.add(fk.getFkColumn());
+                    indexColumns.add(fk.getReferenceColumn());
                 }
+            }
+        }
+        for (Column col : indexColumns) {
+            try {
+                execute(sqlm.toDropIndexSQL(col));
+            } catch (Exception e) {
+                //no-op
+            }
+            try {
+                execute(sqlm.toCreateIndexSQL(col));
+            } catch (Exception e) {
+                Report.error(col.getTable(), e.getMessage());
             }
         }
     }

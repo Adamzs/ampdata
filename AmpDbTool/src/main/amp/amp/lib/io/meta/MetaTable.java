@@ -203,13 +203,13 @@ public class MetaTable extends MetaObject {
      * Represents a database table column.
      */
     public static class Column {
-        public MetaTable table;
-        public String name;
-        public String titles;
-        public String description;
-        public String datatype;
-        public int maxLength;
-        public boolean required;
+        private MetaTable table;
+        private String name;
+        private String titles;
+        private String description;
+        private String datatype;
+        private int maxLength;
+        private boolean required;
 
         /**
          * Instantiates a new column.
@@ -449,14 +449,13 @@ public class MetaTable extends MetaObject {
         public String getFkTableName() {
             return fkTableName;
         }
-
+        
         /**
-         * Gets the pk column.
-         *
-         * @return the pk column
+         * Gets the table of the reference
+         * @return the reference table
          */
-        public Column getPkColumn() {
-            return refColumn;
+        public MetaTable getReferenceTable() {
+            return getReferenceColumn().getTable();
         }
 
         /**
@@ -523,8 +522,8 @@ public class MetaTable extends MetaObject {
      * Represents a database primary key.
      */
     public static class PrimaryKey {
-        MetaTable table;
-        List<Column> pkColumns = new ArrayList<>();
+        private MetaTable table;
+        private List<Column> pkColumns = new ArrayList<>();
 
         /**
          * Instantiates a new primary key.
