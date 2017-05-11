@@ -32,9 +32,9 @@ import net.java.dev.designgridlayout.DesignGridLayout;
  */
 @SuppressWarnings("serial")
 public class CreateDatabasePanel extends JPanel {
-    private JTextField nameField = new JTextField();
-    private JTextField passwordField = new JTextField();
-    private JTextField userField = new JTextField();
+    private JTextField nameField = new JTextField(15);
+    private JTextField passwordField = new JTextField(15);
+    private JTextField userField = new JTextField(15);
 
     /**
      * Instantiates a new creates the database panel.

@@ -36,8 +36,8 @@ import net.java.dev.designgridlayout.DesignGridLayout;
 @SuppressWarnings("serial")
 public class OpenDatabasePanel extends JPanel {
     public JComboBox<String> databaseSelector = new JComboBox<String>();
-    public JTextField passwordField = new JTextField();
-    public JTextField userField = new JTextField();
+    public JTextField passwordField = new JTextField(15);
+    public JTextField userField = new JTextField(15);
 
     /**
      * Instantiates a new open database panel.
