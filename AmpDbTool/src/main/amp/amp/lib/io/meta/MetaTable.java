@@ -28,6 +28,7 @@ import java.util.List;
 import com.google.common.base.Joiner;
 
 import amp.lib.io.MetadataObject;
+import amp.lib.io.errors.Report;
 
 /**
  * All the metadata required to create and populate a database table.
@@ -131,7 +132,7 @@ public class MetaTable extends MetaObject {
     public String toString() {
         return getIdentifier();
     }
-    
+
     @Override
     public String dump() {
         //TODO
@@ -162,6 +163,7 @@ public class MetaTable extends MetaObject {
         for (MetadataObject.Column metaCol : columnList) {
             Column col = new Column(this, metaCol);
             if (getAllColumns().contains(col)) {
+                setValid(false);
                 throw new MetaException(metadata, "duplicate column " + col);
             }
             addColumn(col);
@@ -449,7 +451,7 @@ public class MetaTable extends MetaObject {
         public String getFkTableName() {
             return fkTableName;
         }
-        
+
         /**
          * Gets the table of the reference
          * @return the reference table
@@ -467,15 +469,14 @@ public class MetaTable extends MetaObject {
             if (refColumn == null) {
                 MetaObject mo = MetadataFactory.getMetadataFactory().getMetadataByIdentifier(this.refTableName);
                 if (mo == null) {
-                    throw new MetaException(getFkTable(), "foreign key reference table " + refTableName + " is not defined");
+                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not defined");
                 }
-                if (!(mo instanceof MetaTable)) {
-                    throw new MetaException(getFkTable(), "foreign key reference table " + refTableName + " is not to a table");
+                else if (!(mo instanceof MetaTable)) {
+                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not to a table");
                 }
-                refTable = (MetaTable) mo;
-                refColumn = refTable.getColumnByName(this.refColumnName);
-                if (refColumn == null) {
-                    throw new MetaException(getFkTable(), "foreign key reference column " + refColumnName + " is not defined");
+                else {
+                    refTable = (MetaTable) mo;
+                    refColumn = refTable.getColumnByName(this.refColumnName);
                 }
             }
             return refColumn;

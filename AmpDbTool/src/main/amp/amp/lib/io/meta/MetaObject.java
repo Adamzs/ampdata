@@ -36,6 +36,7 @@ public abstract class MetaObject {
     private String identifier = "";
 
     private File file = null;
+    private boolean valid = true;
 
     /**
      * Instantiates a new meta object.
@@ -138,6 +139,22 @@ public abstract class MetaObject {
         if (identifier != null) return identifier;
         if (file != null) return file.getPath();
         return "<unknown>";
+    }
+
+    /**
+     * Marks metaObject as valid/invalid for further processing
+     * @param valid validity state
+     */
+    public void setValid(boolean valid) {
+        this.valid = valid;        
+    }
+    
+    /**
+     * Is metaObject valid for futher processing?
+     * @return validity state
+     */
+    public boolean isValid() {
+        return valid;
     }
 
 }

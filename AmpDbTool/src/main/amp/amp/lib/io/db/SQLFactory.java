@@ -168,7 +168,6 @@ public class SQLFactory {
      * @return the SQLstring
      */
     public String toForeignKeySQL(ForeignKey fk) {
-        validateForeignKey(fk);
         Column pkRef = fk.getReferenceColumn();
         String pkTableName = normalize(pkRef.getTable().getTableName());
         String pkColumnName = normalize(pkRef.getName());
@@ -221,7 +220,7 @@ public class SQLFactory {
      */
     public String metadataToCsvFile(MetaTable meta) {
         String metaFilePath = meta.getFile().getAbsolutePath();
-        String csvFilePath = metaFilePath.replaceAll(".meta", "");
+        String csvFilePath = metaFilePath.replaceAll("\\.meta", "");
         return csvFilePath;
     }
 
@@ -232,7 +231,6 @@ public class SQLFactory {
      * @return the string
      */
     public String toPrimaryKeySQL(PrimaryKey pk) {
-        validatePrimaryKey(pk);
         String pkTableName = normalize(pk.getTable().getTableName());
         List<String> pkColumns = new ArrayList<>();
         for (Column pkColumn : pk.getPrimaryKeyColumns()) {
@@ -355,40 +353,6 @@ public class SQLFactory {
         return "@" + column;
     }
 
-    /*
-     * Ensures foreign key is valid.
-     */
-    private void validateForeignKey(ForeignKey fk) {
-        if (fk != null) {
-            if (fk.getReferenceColumn() == null) {
-                throw new RuntimeException(fk + ": " + " column reference is unknown");
-            }
-            if (fk.getFkColumn() == null) {
-                throw new RuntimeException(fk + ": " + " column is unknown");
-            }
-            if (fk.getReferenceColumn() == null) {
-                throw new RuntimeException(fk + ": " + " table reference is unknown");
-            }
-        }
-    }
-
-    /*
-     * Ensures primary key is valid.
-     */
-    private void validatePrimaryKey(PrimaryKey pk) {
-        if (pk != null) {
-            List<Column> pkColumns = pk.getPrimaryKeyColumns();
-            for (Column pkColumn : pkColumns) {
-                if (pkColumn == null) {
-                    throw new RuntimeException("primary key has null column");
-                }
-                if (pkColumn.getName() == null || pkColumn.getName().trim().isEmpty()) {
-                    throw new RuntimeException("primary key has empty column");
-                }
-            }
-        }
-    }
-
     /**
      * Simplifies an every complex SQL error message.
      *
@@ -449,11 +413,51 @@ public class SQLFactory {
         return Keywords.keywordSet.contains(word.toUpperCase());
     }
 
+    /**
+     * SQL to create an index
+     * @param col the column to be indexed
+     * @return the SQL String
+     */
     public String toCreateIndexSQL(Column col) {
         String indexName = normalize(toIndexName(col));
         String columnName = normalize(col.getName());
         String tableName = normalize(col.getTable().getTableName());
         String sql = "CREATE INDEX " + indexName + " ON " + tableName + "(" + columnName + ")";        
         return sql;
+    }
+
+    /**
+     * SQL to create a database
+     * @param name the database name
+     * @return the SQL String
+     */
+    public String toCreateDatabaseSQL(String name) {
+        return "CREATE DATABASE " + name;
+    }
+
+    /**
+     * SQL to drop a database
+     * @param name the database name
+     * @return the SQL String
+     */
+    public String toDropDatabaseSQL(String name) {
+        return "DROP DATABASE " + name;
+    }
+
+    /**
+     * The name of the JDBC driver class for this database
+     * @return the JDBC driver class name
+     */
+    public String getDriverClassName() {
+        return "com.mysql.jdbc.Driver";
+    }
+
+    /**
+     * The base URL for referencing databases of this type
+     * @param serverName the server name: 'localhost' if null
+     * @return the base URL
+     */
+    public String getBaseUrl(String serverName) {
+        return "jdbc:mysql://" + (serverName == null ? "localhost" : serverName);
     }
 }

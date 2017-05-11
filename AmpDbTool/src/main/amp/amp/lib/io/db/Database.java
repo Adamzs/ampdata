@@ -68,7 +68,6 @@ public class Database {
 
     private static final String BASE_USER = "root";
     private static final String BASE_PASSWORD = "root";
-    private static final String BASE_URL = "jdbc:mysql://localhost";
     private static List<String> systemDBList = Arrays.asList("information_schema", "mysql", "performance_schema", "sys");
 
     private Connection dbmConnection;
@@ -153,16 +152,11 @@ public class Database {
      * @param password the database password
      */
     public void createDatabase(String name, String user, String password) {
-        try {
-            this.name = name;
-            this.user = user;
-            this.password = password;
-            Statement s = getConnection().createStatement();
-            s.executeUpdate("create database " + name);
-            use(name);
-        } catch (SQLException e) {
-            throw new RuntimeException(e.getMessage());
-        }
+        this.name = name;
+        this.user = user;
+        this.password = password;
+        execute(sqlFactory.toCreateDatabaseSQL(name));
+        use(name);
     }
 
     /**
@@ -170,12 +164,7 @@ public class Database {
      * @param name the database name
      */
     public void dropDatabase(String name) {
-        try {
-            Statement s = dbmConnection.createStatement();
-            s.executeUpdate("drop database " + name);
-        } catch (SQLException e) {
-            throw new RuntimeException(e.getMessage());
-        }
+        execute(sqlFactory.toDropDatabaseSQL(name));
     }
 
     /**
@@ -272,9 +261,10 @@ public class Database {
                 getConnection().close();
                 setConnection(null);
             }
-            Class.forName("com.mysql.jdbc.Driver");
-            dbmConnection = DriverManager.getConnection(BASE_URL, user, password);
-        } catch (ClassNotFoundException | SQLException e) {
+            Class.forName(sqlFactory.getDriverClassName());
+            dbmConnection = DriverManager.getConnection(sqlFactory.getBaseUrl(null), user, password);
+            use(name);
+        } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }
     }
@@ -287,7 +277,7 @@ public class Database {
     public void populateTables(List<MetaObject> metadata) {
         referentialIntegrity(false);
         for (MetaObject meta : metadata) {
-            if (meta instanceof MetaTable) {
+            if (meta.isValid() && meta instanceof MetaTable) {
                 importCSVFile((MetaTable) meta);
             }
         }
@@ -316,8 +306,8 @@ public class Database {
     private void buildIndexes(List<MetaObject> metadata) {
         Set<Column> indexColumns = new HashSet<>();
         SQLFactory sqlm = SQLFactory.getSQLFactory();
-        for (MetaObject mo : metadata) {
-            if (mo instanceof MetaTable) {
+        for (MetaObject mo : metadata) {            
+            if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
                 if (pk != null) {
@@ -350,12 +340,13 @@ public class Database {
      */
     private void buildKeys(List<MetaObject> metadata) {
         SQLFactory sqlm = SQLFactory.getSQLFactory();
-        for (MetaObject mo : metadata) {
-            if (mo instanceof MetaTable) {
+        for (MetaObject mo : metadata) {   
+            if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
                 if (pk != null) {
                     try {
+                        validatePrimaryKey(pk);
                         String sql = sqlm.toPrimaryKeySQL(pk);
                         execute(sql);
                     } catch (Exception e) {
@@ -364,6 +355,7 @@ public class Database {
                 }
                 for (ForeignKey fk : mt.getForeignKeys()) {
                     try {
+                        validateForeignKey(fk);
                         String sql = sqlm.toForeignKeySQL(fk);
                         execute(sql);
                     } catch (Exception e) {
@@ -380,7 +372,7 @@ public class Database {
      */
     private void buildTables(List<MetaObject> metadata) {
         for (MetaObject mo : metadata) {
-            if (mo instanceof MetaTable) {
+            if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 try {
                     execute(sqlFactory.toDropTableSQL(mt));
@@ -402,7 +394,7 @@ public class Database {
      */
     private void buildViews(List<MetaObject> metadata) {
         for (MetaObject mo : metadata) {
-            if (mo instanceof MetaView) {
+            if (mo.isValid() && mo instanceof MetaView) {
                 MetaView mv = (MetaView) mo;
                 try {
                     String sql = sqlFactory.toViewSQL(mv);
@@ -434,7 +426,7 @@ public class Database {
         Report.info(meta, "read " + fileRecords + " records from " + csvfs.csvFile.getPath());
         Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());
         if (notLoaded > 0) {
-            throw new RuntimeException(meta.toString() + ": " + notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
+            throw new RuntimeException(notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
         }
     }
 
@@ -460,7 +452,7 @@ public class Database {
         }
         if (!columnsMatch) {
             String message = "column lists do not match for load" + "\n" + csvfs.csvFile.getPath() + ": " + csvColumns + "\n" + meta + ": " + tblColumns;
-            throw new RuntimeException(meta.toString() + ": " + message);
+            throw new RuntimeException(message);
         }
     }
 
@@ -479,14 +471,21 @@ public class Database {
      * Make sure all foreign keys are valid
      */
     private void ensureValidForeignKeys(MetaTable mo) {
-        for (ForeignKey fk : mo.getForeignKeys()) {
+        for (ListIterator<ForeignKey> i = mo.getForeignKeys().listIterator(); i.hasNext(); ) {
+            ForeignKey fk = i.next();
             Column fkColumn = fk.getFkColumn();
+            boolean valid = true;
             if (fkColumn == null) {
-                throw new MetaException(mo, " foreign key column is null");
+                Report.error(mo, "Foreign key " + fk + " table column is null");
+                valid = false;
             }
             Column refColumn = fk.getReferenceColumn();
             if (refColumn == null) {
-                throw new MetaException(mo, " foreign key column is not defined");
+                Report.error(mo, "Foreign key " + fk + " reference column is not defined");
+                valid = false;
+            }
+            if (!valid) {
+                i.remove();
             }
         }
     }
@@ -498,7 +497,8 @@ public class Database {
         PrimaryKey pk = mo.getPrimaryKey();
         if (pk != null) {
             if (pk.getPrimaryKeyColumns().size() == 0) {
-                throw new RuntimeException("primary key has no columns");
+                Report.error(mo, "primary key " + pk + " has no columns");
+                mo.setPrimaryKey(null);
             }
         }
     }
@@ -518,12 +518,18 @@ public class Database {
         csvfs.csvFile = csvFile;
         try (BufferedReader bsr = new BufferedReader(new FileReader(csvFile))) {
             String columns = bsr.readLine();
+            if (columns == null || columns.length() == 0) {
+                throw new RuntimeException(csvFile.getPath() + " is empty");
+            }
+            if (columns == null || columns.length() == 0) {
+                throw new RuntimeException(csvFile.getPath() + " has no column headers");
+            }
             csvfs.columnNames = Lists.newArrayList(Splitter.on(",").split(columns));
             while (bsr.readLine() != null) {
                 csvfs.records++;
             }
-        } catch (IOException e) {
-            throw new RuntimeException(meta.toString() + ": " + e.getMessage());
+        } catch (Exception e) {
+            throw new RuntimeException(e.getMessage());
         }
         return csvfs;
     }
@@ -563,13 +569,14 @@ public class Database {
     /*
      * Specify the database to use.
      */
-    private void use(String name) throws SQLException {
-        execute(sqlFactory.toUseSQL(name));
+    private void use(String name) {
+        if (name != null && name.length() > 0) {
+            execute(sqlFactory.toUseSQL(name));
+        }
     }
 
     /*
-     * Checks a MetaObject for validity, removes it if not valid. TODO: just mark it invalid, don't
-     * build indexes, foreign keys that refer to it.
+     * Checks a MetaObject for validity, removes it if not valid.
      */
     private void validataMetadata(List<MetaObject> metadata) {
         for (ListIterator<MetaObject> i = metadata.listIterator(); i.hasNext();) {
@@ -580,9 +587,7 @@ public class Database {
             } else if (mo instanceof MetaView) {
                 valid = validateView((MetaView) mo);
             }
-            if (!valid) {
-                i.remove();
-            }
+            mo.setValid(valid);
         }
 
     }
@@ -592,6 +597,7 @@ public class Database {
      */
     private boolean validateTable(MetaTable mo) {
         try {
+            ensureValidColumns(mo);
             ensureUniqueTable(mo);
             ensureValidPrimaryKey(mo);
             ensureValidForeignKeys(mo);
@@ -602,12 +608,53 @@ public class Database {
         return true;
     }
 
+    private void ensureValidColumns(MetaTable mo) {
+        if (mo.getAllColumns().size() == 0) {
+            throw new MetaException(mo, "No columns defined");
+        }
+        
+    }
+
     /*
      * Validates a MetaView.
      */
     private boolean validateView(MetaView mv) {
         // TODO Auto-generated method stub
         return true;
+    }
+
+    /*
+     * Ensures foreign key is valid.
+     */
+    private void validateForeignKey(ForeignKey fk) {
+        if (fk != null) {
+            if (fk.getReferenceColumn() == null) {
+                throw new RuntimeException(fk + ": " + " column reference is unknown");
+            }
+            if (fk.getFkColumn() == null) {
+                throw new RuntimeException(fk + ": " + " column is unknown");
+            }
+            if (fk.getReferenceColumn() == null) {
+                throw new RuntimeException(fk + ": " + " table reference is unknown");
+            }
+        }
+    }
+
+    /*
+     * Ensures primary key is valid.
+     */
+    private void validatePrimaryKey(PrimaryKey pk) {
+        if (pk != null) {
+            List<Column> pkColumns = pk.getPrimaryKeyColumns();
+            for (Column pkColumn : pkColumns) {
+                if (pkColumn == null) {
+                    throw new RuntimeException("primary key has null column");
+                }
+                if (pkColumn.getName() == null || pkColumn.getName().trim().isEmpty()) {
+                    throw new RuntimeException("primary key has empty column");
+                }
+            }
+        }
     }
 
     /**
