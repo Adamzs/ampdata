@@ -1,6 +1,6 @@
 I: ScenReader: No reconfiguration file: reconfiguration.csv
 W: EventsReader: Unable to find readers for the following EVENTS records: [TheaterAirDistances, WNTMCHNG]
-M: Day 0 change SeaLinks C:\data\AMP\scenario\metadata-scenario\model\CLINKS-0.csv
+M: Day 0 change SeaLinks C:\data\AMP\scenario\a-metadata-test\model\CLINKS-0.csv
 M: Day 0 run 22
 W: SPCLMOD: EADs  for special means 50 must be equal.
 W: SPCLMOD: EAD for requirement 1:0HBGC set to 19
@@ -2088,7 +2088,7 @@ SHIPLOC  ATSEA   7909968   27.50000-115.20000  22.0 WPVT TACOMA        42.6
 SHIPLOC  ATSEA   7704930    6.90000 -81.40000  22.0 null null          26.9
 SHIPLOC  ATSEA   7216854   32.75000 -79.80000  22.0 null null          22.0
 M: Day =    21 NUMBER OF AIR MOVEMENTS =    124 NUMBER OF SEA MOVEMENTS =    104
-M: Day 22 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-22
+M: Day 22 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-22
 M: Day 22 run 18
 AIR DEP HOME    XDAT TRAVIS AFB   B-747P       B747-400-XDAT005   2  22.445
 AIR ARR LOAD    TMKH POPE AAF     B-747P       B747-400-XDAT005   2  22.637
@@ -7502,7 +7502,7 @@ SHIPLOC  ATSEA   7603497   36.00000  -4.70000  40.0 null null          51.8
 SHIPLOC  ATSEA   7909968   35.95000  -5.75000  40.0 WPVT TACOMA        42.6
 SHIPLOC  ATSEA   5170185   24.60000 -80.90000  40.0 null null          41.9
 M: Day =    39 NUMBER OF AIR MOVEMENTS =    346 NUMBER OF SEA MOVEMENTS =    309
-M: Day 40 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-40
+M: Day 40 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-40
 M: Day 40 run 15
 AIR DEP ENROUTE PTFL MC GUIRE FLD KC-10        KC10-XDAT010   3  40.613
 AIR ARR LOAD    FJXT DOVER AFB    KC-10        KC10-XDAT010   3  40.623
@@ -11327,8 +11327,8 @@ SHIPLOC  ATSEA   7304792   32.75000-117.16666  55.0 UTAC SAN DIEGO     73.4
 SHIPLOC  ATSEA   7304792   32.70000-117.30000  55.0 UTAC SAN DIEGO     73.3
 SHIPLOC  ATSEA   7116315   36.20000  -0.60000  55.0 null null          71.8
 M: Day =    54 NUMBER OF AIR MOVEMENTS =    504 NUMBER OF SEA MOVEMENTS =    359
-M: Day 55 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-55
-M: Day 55 change Supplan C:\data\AMP\scenario\metadata-scenario\model\splan-55
+M: Day 55 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-55
+M: Day 55 change Supplan C:\data\AMP\scenario\a-metadata-test\model\splan-55
 M: Day 55 run 5
 SHIPLOC  ATSEA   5432112   23.72585 -49.32263  55.0 null null          76.2
 SHIPLOC  ATSEA   8419154   24.17595 -47.71823  55.0 null null          71.3
@@ -12174,7 +12174,7 @@ SHIPLOC  ATSEA   8419166   36.00000  -4.70000  60.0 QTUP MOREHEAD CITY  62.0
 SHIPLOC  ATSEA   8221545   20.00000 -30.00000  60.0 null null          66.0
 SHIPLOC  ATSEA   7820423   20.00000 -30.00000  60.0 null null          66.4
 M: Day =    59 NUMBER OF AIR MOVEMENTS =    529 NUMBER OF SEA MOVEMENTS =    362
-M: Day 60 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-60
+M: Day 60 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-60
 M: Day 60 run 70
 AIR DEP HOME    XDAT TRAVIS AFB   KC-10        KC10-XDAT014   4  60.000
 AIR ARR LOAD    FJXT DOVER AFB    KC-10        KC10-XDAT014   4  60.210
@@ -20621,7 +20621,7 @@ SHIPLOC  ATSEA   7224904    3.50000  -7.50000 129.9 null null         138.0
 SHIPLOC  ATSEA   8221545   20.00000 -30.00000 130.0 null null         136.0
 SHIPLOC  ATSEA   6812211   15.00000 -94.80000 130.0 null null         136.5
 M: Day =   129 NUMBER OF AIR MOVEMENTS =    793 NUMBER OF SEA MOVEMENTS =    440
-M: Day 130 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-130
+M: Day 130 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-130
 M: Day 130 run 20
 AIR CARGO   BULK    10.00  1:0001119 CH47-SEA1002     1383A
 SHIPLOC  ATSEA   6916861   30.32050 -66.53915 130.0 null null         132.9
@@ -22501,7 +22501,7 @@ SHIPLOC  ATSEA   7233278   37.20000   3.10000 149.9 RUAM NEWPORT      151.0
 SHIPLOC  ATSEA   7224904    8.50000 -14.50000 149.9 null null         157.4
 SHIPLOC  ATSEA   8221545   31.80000 -10.10000 149.9 null null         155.9
 M: Day =   149 NUMBER OF AIR MOVEMENTS =    872 NUMBER OF SEA MOVEMENTS =    467
-M: Day 150 change Events C:\data\AMP\scenario\metadata-scenario\model\cevents-150
+M: Day 150 change Events C:\data\AMP\scenario\a-metadata-test\model\cevents-150
 M: Day 150 run 30
 SHIPLOC  ATSEA   7802718   16.32881-131.80435 150.0 null null         152.8
 SHIPLOC  ATSEA   6828624   26.04200 -41.06676 150.0 null null         153.1

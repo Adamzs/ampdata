@@ -1,0 +1,1 @@
+{"id":"/dplan/TpfddPurposes.csv.meta","title":"TpfddPurposes","scenario":"a-metadata-test","classname":"ampdom.dplan.TpfddPurpose","ampversion":"14.13.0 alpha1","tableSchema":{"columns":[{"name":"TprddPurpose","titles":"TprddPurpose","description":"Purpose code for a TPFDD","datatype":"string"}],"primaryKey":["TprddPurpose"],"foreignKeys":[]}}
