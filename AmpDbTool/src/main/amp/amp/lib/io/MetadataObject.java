@@ -43,11 +43,6 @@ public class MetadataObject {
     public MetadataObject() {
         super();
     }
-    
-    @Override
-    public String toString() {
-        return (id != null) ? id : super.toString();
-    }
 
     public String getAmpversion() {
         return ampversion;
@@ -103,6 +98,11 @@ public class MetadataObject {
 
     public void setViewSchema(ViewSchema viewSchema) {
         this.viewSchema = viewSchema;
+    }
+
+    @Override
+    public String toString() {
+        return (id != null) ? id : super.toString();
     }
 
     public static class Column {

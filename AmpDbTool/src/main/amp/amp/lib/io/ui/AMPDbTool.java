@@ -26,11 +26,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
@@ -40,13 +39,10 @@ import javax.swing.JTextPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
-
-import org.apache.commons.io.FileUtils;
 
 import amp.lib.io.db.Database;
 import amp.lib.io.errors.ErrorEvent;
@@ -68,7 +64,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
     private JFrame ampDbToolFrame = new JFrame();
     private Database database;
     private MetadataFactory metaFactory;
-    private File projectDirectory;
+    private File logPath;
     private Style redStyle = null;
     private Style blackStyle = null;
     private Style blueStyle = null;
@@ -105,22 +101,15 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      */
     @Override
     public void errorOccurred(ErrorEvent event) {
-        String text;
-        Style style;
+        Style style = blackStyle;
         if (event.getSeverity() == Severity.ERROR) {
-            text = "\n" + event.toString();
             style = redStyle;
-        } else 
-            if (event.getSeverity() == Severity.WARNING) {
-                text = "\n" + event.toString();
-                style = blueStyle;
-            } else {
-            text = "\n" + event.getMessage().toString();
-            style = blackStyle;
+        } else if (event.getSeverity() == Severity.INFO) {
+            style = blueStyle;
         }
         StyledDocument doc = traceWindow.getStyledDocument();
         try {
-            doc.insertString(doc.getLength(), text, style);
+            doc.insertString(doc.getLength(), "\n" + event.toString(), style);
             traceWindow.setCaretPosition(doc.getLength());
             JScrollBar vertical = traceScroller.getVerticalScrollBar();
             vertical.setValue(vertical.getMaximum());
@@ -237,15 +226,16 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
             int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, openDialog, "Select SQL Views", JOptionPane.OK_CANCEL_OPTION);
             if (selected == JOptionPane.OK_OPTION) {
                 List<File> sqlFiles = openDialog.getSqlFiles();
-                for (File f : sqlFiles) {
-                    if (f.isDirectory()) {
-                        props.set(Properties.SQL_ROOT, f.getAbsolutePath());
-                        break;
-                    }
+                if (sqlFiles.size() > 0) {
+                    props.set(Properties.SQL_ROOT, openDialog.getSqlRoot());
+                    database.buildSQL(sqlFiles);
                 }
-                database.buildSQL(sqlFiles);
             }
         }
+    }
+
+    private boolean isFilterable(String line) {
+        return line.startsWith("ERROR") || line.startsWith("INFO");
     }
 
     /*
@@ -300,14 +290,14 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         OpenProjectPanel openDialog = new OpenProjectPanel(projectRoot);
         int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, openDialog, "Select Project", JOptionPane.OK_CANCEL_OPTION);
         if (selected == JOptionPane.OK_OPTION) {
-            projectDirectory = new File(openDialog.getProjectPath());
-            props.set(Properties.PROJ_ROOT, projectDirectory.getAbsolutePath());
-            metaFactory.readMetaFiles(projectDirectory);
-            Report.info("INFO: Opened " + metaFactory.getAllMetadata().size() + " metadata files");
+            logPath = new File(openDialog.getProjectPath());
+            props.set(Properties.PROJ_ROOT, logPath.getAbsolutePath());
+            metaFactory.readMetaFiles(logPath);
+            Report.okay("INFO: Opened " + metaFactory.getAllMetadata().size() + " metadata files");
         }
     }
 
-    /* 
+    /*
      * Populate the open database from the project CSV files.
      */
     private void populateDatabase() {
@@ -328,27 +318,32 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      * Save the trace output to a file.
      */
     private void saveOutput() {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Text Files", "txt"));
-        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        fileChooser.setMultiSelectionEnabled(false);
-        fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
-        fileChooser.setSelectedFile(new File("AmpDbToolTrace.txt"));
-        fileChooser.showSaveDialog(ampDbToolFrame);
-        if (fileChooser.getSelectedFile() != null) {
-            File output = fileChooser.getSelectedFile();
-            String text = traceWindow.getText();
-            try {
-                FileUtils.writeStringToFile(output, text, Charset.defaultCharset());
+        String logPath = props.get(Properties.LOG_FILE);
+        String logFilter = props.get(Properties.LOG_FILTER);
+        CreateLogPanel logPanel = new CreateLogPanel(logPath, Boolean.parseBoolean(logFilter));
+        int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, logPanel, "Select Log File", JOptionPane.OK_CANCEL_OPTION);
+        if (selected == JOptionPane.OK_OPTION && logPanel.getlogPath().length() > 0) {
+            File logFile = new File(logPanel.getlogPath());
+            boolean filterErrors = logPanel.getFilterErrors();
+            String[] text = traceWindow.getText().split("\n");
+            try (FileWriter logWriter = new FileWriter(logFile)) {
+                for (String line : text) {
+                    if (filterErrors && isFilterable(line)) {
+                        // no-op
+                    } else {
+                        logWriter.write(line + "\n");
+                    }
+                }
             } catch (IOException e) {
                 Report.error(e.getMessage());
             }
+            props.set(Properties.LOG_FILE, logFile.getAbsolutePath());
+            props.set(Properties.LOG_FILTER, Boolean.toString(filterErrors));
         }
     }
 
     /**
      * The entry point
-     *
      * @param args the arguments: not used.
      */
     public static void main(String[] args) {

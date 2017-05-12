@@ -42,7 +42,6 @@ public class OpenProjectPanel extends JPanel implements ActionListener {
 
     /**
      * Instantiates a new open project panel.
-     *
      * @param projectPath the project path
      */
     public OpenProjectPanel(String projectPath) {

@@ -41,7 +41,6 @@ public class OpenDatabasePanel extends JPanel {
 
     /**
      * Instantiates a new open database panel.
-     *
      * @param databases the databases
      * @param dbName the db name
      * @param dbUser the db user

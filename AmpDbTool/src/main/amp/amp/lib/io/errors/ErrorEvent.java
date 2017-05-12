@@ -30,11 +30,10 @@ public class ErrorEvent {
 
     MetaObject source = null;
     String message = "";
-    Severity severity = Severity.INFO;
+    Severity severity = Severity.OKAY;
 
     /**
      * Instantiates a new error event.
-     *
      * @param source the source
      * @param message the message
      * @param severity the severity
@@ -47,7 +46,6 @@ public class ErrorEvent {
 
     /**
      * Instantiates a new error event.
-     *
      * @param message the message
      * @param severity the severity
      */
@@ -57,7 +55,6 @@ public class ErrorEvent {
 
     /**
      * Gets the error info.
-     *
      * @return the info
      */
     public Object getMessage() {
@@ -66,7 +63,6 @@ public class ErrorEvent {
 
     /**
      * Gets the severity.
-     *
      * @return the severity
      */
     public Severity getSeverity() {
@@ -75,7 +71,6 @@ public class ErrorEvent {
 
     /**
      * Sets the error info.
-     *
      * @param message the new info
      */
     public void setMessage(String message) {
@@ -84,7 +79,6 @@ public class ErrorEvent {
 
     /**
      * Sets the severity.
-     *
      * @param severity the new severity
      */
     public void setSeverity(Severity severity) {
@@ -93,21 +87,31 @@ public class ErrorEvent {
 
     @Override
     public String toString() {
-        String severity = "";
-        if (getSeverity() != Severity.INFO) {
-            severity = getSeverity().toString() + ": ";
+        String text = message;
+        if (source != null) {
+            text = source.getIdentifier() + ": " + text;
         }
-        if (source == null) {
-            return severity + message;
-        } else {
-            return severity + " " + source.getIdentifier() + ": " + message;
-        }
+        String severity = getSeverity().toString();
+        text = text.replace("\n", "\n" + severity);
+        text = severity + text;
+        return text;
     }
 
     /**
      * The severity of an error.
      */
     public enum Severity {
-        INFO, WARNING, ERROR
+        OKAY(""), INFO("INFO "), ERROR("ERROR ");
+
+        private String text;
+
+        Severity(String text) {
+            this.text = text;
+        }
+
+        @Override
+        public String toString() {
+            return text;
+        }
     }
 }

@@ -51,18 +51,10 @@ public class SQLFactory {
 
     @SuppressWarnings("unchecked")
     private static final Map<String, String> dataTypeMap = MapUtils.putAll(new HashMap<String, String>(),
-        new String[][] { 
-        { "string", "VARCHAR(50)" }, 
-        { "integer", "INT" }, 
-        { "long", "BIGINT" }, 
-        { "float", "DECIMAL(10,2)" }, 
-        { "boolean", "BOOLEAN" }, 
-        { "double", "DECIMAL(10,2)" } 
-        });
+                    new String[][] { { "string", "VARCHAR(50)" }, { "integer", "INT" }, { "long", "BIGINT" }, { "float", "DECIMAL(10,2)" }, { "boolean", "BOOLEAN" }, { "double", "DECIMAL(10,2)" } });
 
     /**
      * Deblank a string
-     *
      * @param text the text.
      * @return the deblanked string.
      */
@@ -72,7 +64,6 @@ public class SQLFactory {
 
     /**
      * Dequote a string.
-     *
      * @param text the text.
      * @return the dequoted string.
      */
@@ -81,24 +72,59 @@ public class SQLFactory {
     }
 
     /**
-     * Gets the SQL datatype string for the given column
-     *
-     * @param c the Column
-     * @return the SQL datatype string
+     * Escapes all keywords in the statement.
+     * @param statement the statement
+     * @return the escaped statement
      */
-    public String toSqlDatatype(Column c) {
-        String sqlType = dataTypeMap.get(c.getDatatype());
-        if (sqlType == null) {
-            throw new RuntimeException("Unknown datatype:" + c.getDatatype());
-        } else if (c.getMaxLength() > 0) {
-            sqlType = "VARCHAR(" + c.getMaxLength() + ")";
+    public String escapeKeywords(String statement) {
+        String[] tokens = statement.split("(?<=[, ]+)|(?=[, ]+)");
+        for (int i = 0; i < tokens.length; i++) {
+            if (isKeyword(tokens[i])) {
+                tokens[i] = "`" + tokens[i] + "`";
+            }
         }
-        return sqlType;
+        return Joiner.on("").join(tokens);
+    }
+
+    /**
+     * The base URL for referencing databases of this type
+     * @param serverName the server name: 'localhost' if null
+     * @return the base URL
+     */
+    public String getBaseUrl(String serverName) {
+        return "jdbc:mysql://" + (serverName == null ? "localhost" : serverName);
+    }
+
+    /**
+     * The name of the JDBC driver class for this database
+     * @return the JDBC driver class name
+     */
+    public String getDriverClassName() {
+        return "com.mysql.jdbc.Driver";
+    }
+
+    /**
+     * Checks if this is keyword.
+     * @param word the word
+     * @return true, if is keyword
+     */
+    public boolean isKeyword(String word) {
+        return Keywords.keywordSet.contains(word.toUpperCase());
+    }
+
+    /**
+     * The CSV file associated with this metaFile.
+     * @param meta the metaFile
+     * @return the CSV file path.
+     */
+    public String metadataToCsvFile(MetaTable meta) {
+        String metaFilePath = meta.getFile().getAbsolutePath();
+        String csvFilePath = metaFilePath.replaceAll("\\.meta", "");
+        return csvFilePath;
     }
 
     /**
      * Normalize an SQL identifier by dequoting, deblanking, and escaping it
-     *
      * @param text the text
      * @return the normalized string
      */
@@ -110,8 +136,21 @@ public class SQLFactory {
     }
 
     /**
+     * Simplifies an every complex SQL error message.
+     * @param message the message
+     * @return the simplified message
+     */
+    public String simplifyErrorMessage(String message) {
+        Pattern p = Pattern.compile("MESSAGE: *(.*\\n)", Pattern.MULTILINE);
+        Matcher m = p.matcher(message);
+        if (m.find() && m.groupCount() > 0) {
+            message = m.group(1);
+        }
+        return message;
+    }
+
+    /**
      * SQL to count rows in a table.
-     *
      * @param meta the metaTable
      * @return the SQL string
      */
@@ -120,8 +159,29 @@ public class SQLFactory {
     }
 
     /**
+     * SQL to create a database
+     * @param name the database name
+     * @return the SQL String
+     */
+    public String toCreateDatabaseSQL(String name) {
+        return "CREATE DATABASE " + name;
+    }
+
+    /**
+     * SQL to create an index
+     * @param col the column to be indexed
+     * @return the SQL String
+     */
+    public String toCreateIndexSQL(Column col) {
+        String indexName = normalize(toIndexName(col));
+        String columnName = normalize(col.getName());
+        String tableName = normalize(col.getTable().getTableName());
+        String sql = "CREATE INDEX " + indexName + " ON " + tableName + "(" + columnName + ")";
+        return sql;
+    }
+
+    /**
      * SQL to delete all rows in a table.
-     *
      * @param meta the metaTable
      * @return the SQL string
      */
@@ -130,8 +190,16 @@ public class SQLFactory {
     }
 
     /**
+     * SQL to drop a database
+     * @param name the database name
+     * @return the SQL String
+     */
+    public String toDropDatabaseSQL(String name) {
+        return "DROP DATABASE " + name;
+    }
+
+    /**
      * SQL to drop index.
-     *
      * @param indexName the index name
      * @return the SQL string
      */
@@ -140,19 +208,7 @@ public class SQLFactory {
     }
 
     /**
-     * Produces index name from column as TABLE_COLUMN_IDX
-     * @param col the column
-     * @return the index name
-     */
-    private String toIndexName(Column col) {
-        return normalize(col.getTable().getTableName() + "_" +
-                        col.getName() + "_" +
-                        "IDX");
-    }
-
-    /**
      * SQL to drop a table.
-     *
      * @param table the metaTable
      * @return the SQL string
      */
@@ -160,10 +216,8 @@ public class SQLFactory {
         return "DROP TABLE IF EXISTS " + normalize(table.getTableName());
     }
 
-   
     /**
      * SQL to create a foreign key.
-     *
      * @param fk the foreign key
      * @return the SQLstring
      */
@@ -179,9 +233,7 @@ public class SQLFactory {
     }
 
     /**
-     * SQL to load a table from a CSV file.
-     * Handles conversion of "true" to "1" in boolean columns
-     *
+     * SQL to load a table from a CSV file. Handles conversion of "true" to "1" in boolean columns
      * @param meta the metaTable
      * @return the string
      */
@@ -213,20 +265,7 @@ public class SQLFactory {
     }
 
     /**
-     * The CSV file associated with this metaFile.
-     *
-     * @param meta the metaFile
-     * @return the CSV file path.
-     */
-    public String metadataToCsvFile(MetaTable meta) {
-        String metaFilePath = meta.getFile().getAbsolutePath();
-        String csvFilePath = metaFilePath.replaceAll("\\.meta", "");
-        return csvFilePath;
-    }
-
-    /**
      * SQL to create a primary key.
-     *
      * @param pk the primary key.
      * @return the string
      */
@@ -241,7 +280,6 @@ public class SQLFactory {
 
     /**
      * SQL to turn referential integrity checking on/off
-     *
      * @param state the referential integrity state
      * @return the string
      */
@@ -250,9 +288,23 @@ public class SQLFactory {
     }
 
     /**
+     * Gets the SQL datatype string for the given column
+     * @param c the Column
+     * @return the SQL datatype string
+     */
+    public String toSqlDatatype(Column c) {
+        String sqlType = dataTypeMap.get(c.getDatatype());
+        if (sqlType == null) {
+            throw new RuntimeException("Unknown datatype:" + c.getDatatype());
+        } else if (c.getMaxLength() > 0) {
+            sqlType = "VARCHAR(" + c.getMaxLength() + ")";
+        }
+        return sqlType;
+    }
+
+    /**
      * SQL to create a table.
-     *
-     * @param meta the metaTable 
+     * @param meta the metaTable
      * @return the string
      */
     public String toTableSQL(MetaTable meta) {
@@ -271,8 +323,16 @@ public class SQLFactory {
     }
 
     /**
+     * Creates USE SQL.
+     * @param name the database name
+     * @return the USE SQL string
+     */
+    public String toUseSQL(String name) {
+        return "use " + name;
+    }
+
+    /**
      * SQL to create a view.
-     *
      * @param view the MetaView.
      * @return the string
      */
@@ -318,6 +378,36 @@ public class SQLFactory {
     }
 
     /*
+     * SQL for creating a column definition.
+     */
+    private String toColumnSQL(Column col) {
+        StringBuilder decl = new StringBuilder();
+        decl.append(normalize(col.getName()) + " " + toSqlDatatype(col));
+        if (col.getDescription() != null && col.getDescription().length() > 0) {
+            String comment = col.getDescription();
+            comment = escapeKeywords(dequote(comment));
+            decl.append(" COMMENT '" + comment + "'");
+        }
+        return decl.toString();
+    }
+
+    /**
+     * Produces index name from column as TABLE_COLUMN_IDX
+     * @param col the column
+     * @return the index name
+     */
+    private String toIndexName(Column col) {
+        return normalize(col.getTable().getTableName() + "_" + col.getName() + "_" + "IDX");
+    }
+
+    /*
+     * Creates a variable name.
+     */
+    private String toVariable(String column) {
+        return "@" + column;
+    }
+
+    /*
      * Gets a full column name for a Column
      */
     private String toViewColumnName(ViewColumn viewColumn) {
@@ -332,132 +422,11 @@ public class SQLFactory {
         return normalize(vcTable.getTableName()) + "." + normalize(vcColumn.getName());
     }
 
-    /*
-     * SQL for creating a column definition.
-     */
-    private String toColumnSQL(Column col) {
-        StringBuilder decl = new StringBuilder();
-        decl.append(normalize(col.getName()) + " " + toSqlDatatype(col));
-        if (col.getDescription() != null && col.getDescription().length() > 0) {
-            String comment = col.getDescription();
-            comment = escapeKeywords(dequote(comment));
-            decl.append(" COMMENT '" + comment + "'");
-        }
-        return decl.toString();
-    }
-
-    /*
-     * Creates a variable name.
-     */
-    private String toVariable(String column) {
-        return "@" + column;
-    }
-
-    /**
-     * Simplifies an every complex SQL error message.
-     *
-     * @param message the message
-     * @return the simplified message
-     */
-    public String simplifyErrorMessage(String message) {
-        Pattern p = Pattern.compile("MESSAGE: *(.*\\n)", Pattern.MULTILINE);
-        Matcher m = p.matcher(message);
-        if (m.find() && m.groupCount() > 0) {
-            message = m.group(1);
-        }
-        return message;
-    }
-
     /**
      * Gets the SQL factory.
-     *
      * @return the SQL factory
      */
     public static SQLFactory getSQLFactory() {
         return sqlFactory;
-    }
-
-    /**
-     * Creates USE SQL.
-     *
-     * @param name the database name
-     * @return the USE SQL string
-     */
-    public String toUseSQL(String name) {
-        return "use " + name;
-    }
-
-    /**
-     * Escapes all keywords in the statement.
-     *
-     * @param statement the statement
-     * @return the escaped statement
-     */
-    public String escapeKeywords(String statement) {
-        String[] tokens = statement.split("(?<=[, ]+)|(?=[, ]+)");
-        for (int i = 0; i < tokens.length; i++) {
-            if (isKeyword(tokens[i])) {
-                tokens[i] = "`" + tokens[i] + "`";
-            }
-        }
-        return Joiner.on("").join(tokens);
-    }
-
-    /**
-     * Checks if this is keyword.
-     *
-     * @param word the word
-     * @return true, if is keyword
-     */
-    public boolean isKeyword(String word) {
-        return Keywords.keywordSet.contains(word.toUpperCase());
-    }
-
-    /**
-     * SQL to create an index
-     * @param col the column to be indexed
-     * @return the SQL String
-     */
-    public String toCreateIndexSQL(Column col) {
-        String indexName = normalize(toIndexName(col));
-        String columnName = normalize(col.getName());
-        String tableName = normalize(col.getTable().getTableName());
-        String sql = "CREATE INDEX " + indexName + " ON " + tableName + "(" + columnName + ")";        
-        return sql;
-    }
-
-    /**
-     * SQL to create a database
-     * @param name the database name
-     * @return the SQL String
-     */
-    public String toCreateDatabaseSQL(String name) {
-        return "CREATE DATABASE " + name;
-    }
-
-    /**
-     * SQL to drop a database
-     * @param name the database name
-     * @return the SQL String
-     */
-    public String toDropDatabaseSQL(String name) {
-        return "DROP DATABASE " + name;
-    }
-
-    /**
-     * The name of the JDBC driver class for this database
-     * @return the JDBC driver class name
-     */
-    public String getDriverClassName() {
-        return "com.mysql.jdbc.Driver";
-    }
-
-    /**
-     * The base URL for referencing databases of this type
-     * @param serverName the server name: 'localhost' if null
-     * @return the base URL
-     */
-    public String getBaseUrl(String serverName) {
-        return "jdbc:mysql://" + (serverName == null ? "localhost" : serverName);
     }
 }

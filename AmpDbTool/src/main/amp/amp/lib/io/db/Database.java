@@ -24,8 +24,6 @@ package amp.lib.io.db;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FilenameFilter;
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -39,8 +37,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Set;
-
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.apache.commons.io.FileUtils;
 
@@ -94,10 +90,9 @@ public class Database {
     }
 
     /**
-     * Executes the SQL in the supplied files. 
-     * See 'getAllSQLFiles' for execution order of files.
-     * Each file may have zero or more SQL statements, 
-     * each terminated by a non-escaped ';' at the end of the line. 
+     * Executes the SQL in the supplied files. See 'getAllSQLFiles' for execution order of files.
+     * Each file may have zero or more SQL statements, each terminated by a non-escaped ';' at the
+     * end of the line.
      * @param sqlFiles the SQL files and directories
      */
     public void buildSQL(List<File> sqlFiles) {
@@ -112,37 +107,6 @@ public class Database {
                 Report.error(e.getMessage());
             }
         }
-    }
-
-    /**
-     * Finds all the SQL files that descend from the given files/directories.
-     * Files are sorted as follows:
-     * 1. depth-first traversal of directories first
-     * 2. SQL files of this directory, sorted by file name.
-     * So, to ensure ordering of SQL execution, place dependent files in sub-directories,
-     * or name files something like "1_Foo.sql", "2_Bar.sql".
-     * @param sqlFiles List of directories/files to search
-     * @return all SQL files in the supplied directory tree, sorted as described abobe.
-     */
-    private List<File> getAllSQLFiles(List<File> sqlFiles) {
-        List<File> orderedFiles = new ArrayList<>();
-        for (File f : sqlFiles) {
-            if (f.isDirectory()) {    
-                List<File> files = Arrays.asList(f.listFiles());
-                files.sort(new Comparator<File>() {
-                    public int compare(File o1, File o2) {
-                        return o1.getName().compareTo(o2.getName());
-                    };                        
-                });
-                orderedFiles.addAll(getAllSQLFiles(files));
-            }
-        }
-        for (File f : sqlFiles) {
-            if (!f.isDirectory() && f.getName().endsWith(".sql")) {    
-                orderedFiles.add(f);
-            }
-        }
-        return orderedFiles;
     }
 
     /**
@@ -168,8 +132,8 @@ public class Database {
     }
 
     /**
-     * Execute an SQL statement and report its execution to any listeners.
-     * Terminal semicolon added if needed.
+     * Execute an SQL statement and report its execution to any listeners. Terminal semicolon added
+     * if needed.
      * @param statement the statement to execute
      */
     public void execute(String statement) {
@@ -183,7 +147,7 @@ public class Database {
         try {
             Statement stmt = getConnection().createStatement();
             stmt.execute(statement);
-            Report.info("\n" + statement);
+            Report.okay("\n" + statement);
         } catch (Exception e) {
             throw new RuntimeException("\n" + statement + "\n" + e.getMessage());
         }
@@ -306,7 +270,7 @@ public class Database {
     private void buildIndexes(List<MetaObject> metadata) {
         Set<Column> indexColumns = new HashSet<>();
         SQLFactory sqlm = SQLFactory.getSQLFactory();
-        for (MetaObject mo : metadata) {            
+        for (MetaObject mo : metadata) {
             if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
@@ -323,7 +287,7 @@ public class Database {
             try {
                 execute(sqlm.toDropIndexSQL(col));
             } catch (Exception e) {
-                //no-op
+                // no-op
             }
             try {
                 execute(sqlm.toCreateIndexSQL(col));
@@ -340,7 +304,7 @@ public class Database {
      */
     private void buildKeys(List<MetaObject> metadata) {
         SQLFactory sqlm = SQLFactory.getSQLFactory();
-        for (MetaObject mo : metadata) {   
+        for (MetaObject mo : metadata) {
             if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
                 PrimaryKey pk = mt.getPrimaryKey();
@@ -426,7 +390,7 @@ public class Database {
         Report.info(meta, "read " + fileRecords + " records from " + csvfs.csvFile.getPath());
         Report.info(meta, "loaded " + rowsLoaded + " rows into " + meta.getTableName());
         if (notLoaded > 0) {
-            throw new RuntimeException(notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
+            Report.error(meta, notLoaded + " records not loaded: check primary key " + meta.getPrimaryKey());
         }
     }
 
@@ -467,11 +431,18 @@ public class Database {
         }
     }
 
+    private void ensureValidColumns(MetaTable mo) {
+        if (mo.getAllColumns().size() == 0) {
+            throw new MetaException(mo, "No columns defined");
+        }
+
+    }
+
     /*
      * Make sure all foreign keys are valid
      */
     private void ensureValidForeignKeys(MetaTable mo) {
-        for (ListIterator<ForeignKey> i = mo.getForeignKeys().listIterator(); i.hasNext(); ) {
+        for (ListIterator<ForeignKey> i = mo.getForeignKeys().listIterator(); i.hasNext();) {
             ForeignKey fk = i.next();
             Column fkColumn = fk.getFkColumn();
             boolean valid = true;
@@ -501,6 +472,36 @@ public class Database {
                 mo.setPrimaryKey(null);
             }
         }
+    }
+
+    /**
+     * Finds all the SQL files that descend from the given files/directories. Files are sorted as
+     * follows: 1. depth-first traversal of directories first 2. SQL files of this directory, sorted
+     * by file name. So, to ensure ordering of SQL execution, place dependent files in
+     * sub-directories, or name files something like "1_Foo.sql", "2_Bar.sql".
+     * @param sqlFiles List of directories/files to search
+     * @return all SQL files in the supplied directory tree, sorted as described abobe.
+     */
+    private List<File> getAllSQLFiles(List<File> sqlFiles) {
+        List<File> orderedFiles = new ArrayList<>();
+        for (File f : sqlFiles) {
+            if (f.isDirectory()) {
+                List<File> files = Arrays.asList(f.listFiles());
+                files.sort(new Comparator<File>() {
+                    @Override
+                    public int compare(File o1, File o2) {
+                        return o1.getName().compareTo(o2.getName());
+                    };
+                });
+                orderedFiles.addAll(getAllSQLFiles(files));
+            }
+        }
+        for (File f : sqlFiles) {
+            if (!f.isDirectory() && f.getName().endsWith(".sql")) {
+                orderedFiles.add(f);
+            }
+        }
+        return orderedFiles;
     }
 
     /*
@@ -593,37 +594,6 @@ public class Database {
     }
 
     /*
-     * Validates a MetaTable
-     */
-    private boolean validateTable(MetaTable mo) {
-        try {
-            ensureValidColumns(mo);
-            ensureUniqueTable(mo);
-            ensureValidPrimaryKey(mo);
-            ensureValidForeignKeys(mo);
-        } catch (Exception e) {
-            Report.error("Skipping creation of " + mo.getIdentifier() + "\n" + e.getMessage());
-            return false;
-        }
-        return true;
-    }
-
-    private void ensureValidColumns(MetaTable mo) {
-        if (mo.getAllColumns().size() == 0) {
-            throw new MetaException(mo, "No columns defined");
-        }
-        
-    }
-
-    /*
-     * Validates a MetaView.
-     */
-    private boolean validateView(MetaView mv) {
-        // TODO Auto-generated method stub
-        return true;
-    }
-
-    /*
      * Ensures foreign key is valid.
      */
     private void validateForeignKey(ForeignKey fk) {
@@ -655,6 +625,30 @@ public class Database {
                 }
             }
         }
+    }
+
+    /*
+     * Validates a MetaTable
+     */
+    private boolean validateTable(MetaTable mo) {
+        try {
+            ensureValidColumns(mo);
+            ensureUniqueTable(mo);
+            ensureValidPrimaryKey(mo);
+            ensureValidForeignKeys(mo);
+        } catch (Exception e) {
+            Report.error("Skipping creation of " + mo.getIdentifier() + "\n" + e.getMessage());
+            return false;
+        }
+        return true;
+    }
+
+    /*
+     * Validates a MetaView.
+     */
+    private boolean validateView(MetaView mv) {
+        // TODO Auto-generated method stub
+        return true;
     }
 
     /**

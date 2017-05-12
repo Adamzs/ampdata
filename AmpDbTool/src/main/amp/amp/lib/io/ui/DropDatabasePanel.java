@@ -38,7 +38,6 @@ public class DropDatabasePanel extends JPanel {
 
     /**
      * Instantiates a new drop database panel.
-     *
      * @param databases the databases
      */
     public DropDatabasePanel(List<String> databases) {

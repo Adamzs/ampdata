@@ -35,7 +35,6 @@ public class Report {
 
     /**
      * Adds a listener.
-     *
      * @param listener the listener
      */
     public static void addListener(ErrorListener listener) {
@@ -44,7 +43,6 @@ public class Report {
 
     /**
      * Error reporter.
-     *
      * @param source the source
      * @param message the message
      */
@@ -54,7 +52,6 @@ public class Report {
 
     /**
      * Error reporter.
-     *
      * @param message the message
      */
     public static void error(String message) {
@@ -62,8 +59,7 @@ public class Report {
     }
 
     /**
-     * Info reporter.
-     *
+     * Warning reporter.
      * @param source the source
      * @param message the message
      */
@@ -72,8 +68,7 @@ public class Report {
     }
 
     /**
-     * Info reporter.
-     *
+     * Warning reporter.
      * @param message the message
      */
     public static void info(String message) {
@@ -81,32 +76,29 @@ public class Report {
     }
 
     /**
+     * Okay reporter.
+     * @param source the source
+     * @param message the message
+     */
+    public static void okay(MetaObject source, String message) {
+        report(new ErrorEvent(source, message, Severity.OKAY));
+    }
+
+    /**
+     * Okay reporter.
+     * @param message the message
+     */
+    public static void okay(String message) {
+        report(new ErrorEvent(null, message, Severity.OKAY));
+    }
+
+    /**
      * Report an event.
-     *
      * @param event the event
      */
     public static void report(ErrorEvent event) {
         for (ErrorListener listener : listeners) {
             listener.errorOccurred(event);
         }
-    }
-
-    /**
-     * Warning reporter.
-     *
-     * @param source the source
-     * @param message the message
-     */
-    public static void warning(MetaObject source, String message) {
-        report(new ErrorEvent(source, message, Severity.WARNING));
-    }
-
-    /**
-     * Warning reporter.
-     *
-     * @param message the message
-     */
-    public static void warning(String message) {
-        report(new ErrorEvent(null, message, Severity.WARNING));
     }
 }

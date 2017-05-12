@@ -42,7 +42,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Instantiates a new meta table.
-     *
      * @param metaObject the meta object
      */
     public MetaTable(MetadataObject metaObject) {
@@ -50,9 +49,14 @@ public class MetaTable extends MetaObject {
         createMetadata(metaObject);
     }
 
+    @Override
+    public String dump() {
+        // TODO
+        return super.dump();
+    }
+
     /**
      * Gets all the columns.
-     *
      * @return the all columns
      */
     public List<Column> getAllColumns() {
@@ -61,7 +65,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Gets the column by name.
-     *
      * @param columnName the column reference
      * @return the column by name
      */
@@ -76,7 +79,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Gets the foreign keys.
-     *
      * @return the foreign keys
      */
     public List<ForeignKey> getForeignKeys() {
@@ -85,7 +87,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Gets the primary key.
-     *
      * @return the primary key
      */
     public PrimaryKey getPrimaryKey() {
@@ -94,7 +95,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Gets the table name.
-     *
      * @return the table name
      */
     public String getTableName() {
@@ -103,7 +103,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Sets the foreign keys.
-     *
      * @param foreignKeys the new foreign keys
      */
     public void setForeignKeys(List<ForeignKey> foreignKeys) {
@@ -112,7 +111,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Sets the primary key.
-     *
      * @param primaryKey the new primary key
      */
     public void setPrimaryKey(PrimaryKey primaryKey) {
@@ -121,7 +119,6 @@ public class MetaTable extends MetaObject {
 
     /**
      * Sets the table name.
-     *
      * @param tableName the new table name
      */
     public void setTableName(String tableName) {
@@ -131,12 +128,6 @@ public class MetaTable extends MetaObject {
     @Override
     public String toString() {
         return getIdentifier();
-    }
-
-    @Override
-    public String dump() {
-        //TODO
-        return super.dump();
     }
 
     /*
@@ -215,7 +206,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Instantiates a new column.
-         *
          * @param table the table
          * @param metaCol the meta col
          */
@@ -231,7 +221,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * The internal data of the column
-         *
          * @return the string
          */
         public String dump() {
@@ -255,7 +244,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the datatype.
-         *
          * @return the datatype
          */
         public String getDatatype() {
@@ -264,7 +252,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the description.
-         *
          * @return the description
          */
         public String getDescription() {
@@ -273,7 +260,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the max length.
-         *
          * @return the max length
          */
         public int getMaxLength() {
@@ -282,7 +268,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the name.
-         *
          * @return the name
          */
         public String getName() {
@@ -291,7 +276,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the table.
-         *
          * @return the table
          */
         public MetaTable getTable() {
@@ -300,7 +284,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the titles.
-         *
          * @return the titles
          */
         public String getTitles() {
@@ -314,7 +297,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Checks if is required.
-         *
          * @return true, if is required
          */
         public boolean isRequired() {
@@ -323,7 +305,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the datatype.
-         *
          * @param datatype the new datatype
          */
         public void setDatatype(String datatype) {
@@ -332,7 +313,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the description.
-         *
          * @param description the new description
          */
         public void setDescription(String description) {
@@ -341,7 +321,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the max length.
-         *
          * @param maxLength the new max length
          */
         public void setMaxLength(int maxLength) {
@@ -350,7 +329,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the name.
-         *
          * @param name the new name
          */
         public void setName(String name) {
@@ -359,7 +337,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the required.
-         *
          * @param required the new required
          */
         public void setRequired(boolean required) {
@@ -368,7 +345,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the table.
-         *
          * @param table the new table
          */
         public void setTable(MetaTable table) {
@@ -377,7 +353,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the titles.
-         *
          * @param titles the new titles
          */
         public void setTitles(String titles) {
@@ -409,19 +384,8 @@ public class MetaTable extends MetaObject {
         private String refColumnName;
         private Column refColumn;
 
-
-        /**
-         * Gets the host table.
-         *
-         * @return the foreign key table
-         */
-        public MetaTable getFkTable() {
-            return fkTable;
-        }
-
         /**
          * Instantiates a new foreign key.
-         *
          * @param table the table
          * @param metaColumn the meta column
          */
@@ -436,7 +400,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the foreign key column.
-         *
          * @return the foreign key column
          */
         public Column getFkColumn() {
@@ -444,12 +407,38 @@ public class MetaTable extends MetaObject {
         }
 
         /**
+         * Gets the host table.
+         * @return the foreign key table
+         */
+        public MetaTable getFkTable() {
+            return fkTable;
+        }
+
+        /**
          * Gets the foreign key table name.
-         *
          * @return the foreign key table name
          */
         public String getFkTableName() {
             return fkTableName;
+        }
+
+        /**
+         * Gets the reference column.
+         * @return the reference column
+         */
+        public Column getReferenceColumn() {
+            if (refColumn == null) {
+                MetaObject mo = MetadataFactory.getMetadataFactory().getMetadataByIdentifier(this.refTableName);
+                if (mo == null) {
+                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not defined");
+                } else if (!(mo instanceof MetaTable)) {
+                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not to a table");
+                } else {
+                    refTable = (MetaTable) mo;
+                    refColumn = refTable.getColumnByName(this.refColumnName);
+                }
+            }
+            return refColumn;
         }
 
         /**
@@ -461,30 +450,7 @@ public class MetaTable extends MetaObject {
         }
 
         /**
-         * Gets the reference column.
-         *
-         * @return the reference column
-         */
-        public Column getReferenceColumn() {
-            if (refColumn == null) {
-                MetaObject mo = MetadataFactory.getMetadataFactory().getMetadataByIdentifier(this.refTableName);
-                if (mo == null) {
-                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not defined");
-                }
-                else if (!(mo instanceof MetaTable)) {
-                    Report.error(getFkTable(), "foreign key reference table " + refTableName + " is not to a table");
-                }
-                else {
-                    refTable = (MetaTable) mo;
-                    refColumn = refTable.getColumnByName(this.refColumnName);
-                }
-            }
-            return refColumn;
-        }
-
-        /**
          * Sets the foreign key table name.
-         *
          * @param fkTableName the new foreign key table name
          */
         public void setFkTableName(String fkTableName) {
@@ -493,7 +459,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the reference column.
-         *
          * @param refColumn the new reference column
          */
         public void setReferenceColumn(Column refColumn) {
@@ -504,7 +469,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Sets the reference column.
-         *
          * @param refTableName the ref table name
          * @param refColumnName the ref column name
          */
@@ -528,7 +492,6 @@ public class MetaTable extends MetaObject {
 
         /**
          * Instantiates a new primary key.
-         *
          * @param table the table
          * @param meta the meta
          */
@@ -545,14 +508,8 @@ public class MetaTable extends MetaObject {
             }
         }
 
-        @Override
-        public String toString() {
-            return "(" + Joiner.on(",").join(pkColumns) + ")";
-        }
-
         /**
          * Gets the primary key columns.
-         *
          * @return the primary key columns
          */
         public List<Column> getPrimaryKeyColumns() {
@@ -561,11 +518,15 @@ public class MetaTable extends MetaObject {
 
         /**
          * Gets the table.
-         *
          * @return the table
          */
         public MetaTable getTable() {
             return table;
+        }
+
+        @Override
+        public String toString() {
+            return "(" + Joiner.on(",").join(pkColumns) + ")";
         }
 
     }

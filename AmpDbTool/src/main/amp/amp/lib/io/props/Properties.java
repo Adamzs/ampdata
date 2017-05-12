@@ -38,6 +38,8 @@ public class Properties {
     public static final String DB_PASSWORD = "db.password";
     public static final String PROJ_ROOT = "proj.root";
     public static final String SQL_ROOT = "sql.root";
+    public static final String LOG_FILE = "log.file";
+    public static final String LOG_FILTER = "log.filter";
 
     private static Properties properties = new Properties();
     private java.util.Properties props = new java.util.Properties();
@@ -92,7 +94,6 @@ public class Properties {
 
     /**
      * Sets a property by name
-     *
      * @param property the property name
      * @param value the property value value
      */

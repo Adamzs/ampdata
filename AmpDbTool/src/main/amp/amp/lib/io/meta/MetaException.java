@@ -21,16 +21,18 @@
  **************************************************************************/
 package amp.lib.io.meta;
 
-
 /**
  * Thrown when something goes wrong with metadata parsing or validation.
  */
 @SuppressWarnings("serial")
 public class MetaException extends RuntimeException {
-    
+
+    private Object source;
+
+    private String message;
+
     /**
      * Instantiates a new meta exception.
-     *
      * @param source the source
      * @param message the message
      */
@@ -40,44 +42,40 @@ public class MetaException extends RuntimeException {
     }
 
     @Override
-    public String toString() {
-        if (source == null) {
-            return message;
-        }
-        else {
-            return source.toString() + ": " + message;
-        }
+    public String getMessage() {
+        return message;
     }
-    
+
     /**
      * Gets the source.
-     *
      * @return the source
      */
     public Object getSource() {
         return source;
     }
-    
-    /**
-     * Sets the source.
-     *
-     * @param source the new source
-     */
-    public void setSource(Object source) {
-        this.source = source;
-    }
-    public String getMessage() {
-        return message;
-    }
-    
+
     /**
      * Sets the message.
-     *
      * @param message the new message
      */
     public void setMessage(String message) {
         this.message = message;
     }
-    private Object source;
-    private String message;
+
+    /**
+     * Sets the source.
+     * @param source the new source
+     */
+    public void setSource(Object source) {
+        this.source = source;
+    }
+
+    @Override
+    public String toString() {
+        if (source == null) {
+            return message;
+        } else {
+            return source.toString() + ": " + message;
+        }
+    }
 }

@@ -41,7 +41,6 @@ public class MetaView extends MetaObject {
 
     /**
      * Instantiates a new meta view.
-     *
      * @param metaObject the meta object
      */
     public MetaView(MetadataObject metaObject) {
@@ -57,7 +56,6 @@ public class MetaView extends MetaObject {
 
     /**
      * Gets the columns.
-     *
      * @return the columns
      */
     public List<ViewColumn> getColumns() {
@@ -66,7 +64,6 @@ public class MetaView extends MetaObject {
 
     /**
      * Gets the joins.
-     *
      * @return the joins
      */
     public List<ViewJoin> getJoins() {
@@ -75,7 +72,6 @@ public class MetaView extends MetaObject {
 
     /**
      * Sets the columns.
-     *
      * @param columns the new columns
      */
     public void setColumns(List<ViewColumn> columns) {
@@ -84,7 +80,6 @@ public class MetaView extends MetaObject {
 
     /**
      * Sets the joins.
-     *
      * @param joins the new joins
      */
     public void setJoins(List<ViewJoin> joins) {
@@ -101,7 +96,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Instantiates a new view column.
-         *
          * @param ref the ref
          */
         public ViewColumn(Reference ref) {
@@ -111,7 +105,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Gets the ref column.
-         *
          * @return the ref column
          */
         public Column getRefColumn() {
@@ -137,7 +130,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Checks if is all columns.
-         *
          * @return true, if is all columns
          */
         public boolean isAllColumns() {
@@ -160,7 +152,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Instantiates a new view join.
-         *
          * @param join the join
          */
         public ViewJoin(Join join) {
@@ -171,7 +162,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Gets the column 1.
-         *
          * @return the column 1
          */
         public ViewColumn getColumn1() {
@@ -180,7 +170,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Gets the column 2.
-         *
          * @return the column 2
          */
         public ViewColumn getColumn2() {
@@ -189,7 +178,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Gets the operator.
-         *
          * @return the operator
          */
         public String getOperator() {
@@ -198,7 +186,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Sets the column 1.
-         *
          * @param column1 the new column 1
          */
         public void setColumn1(ViewColumn column1) {
@@ -207,7 +194,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Sets the column 2.
-         *
          * @param column2 the new column 2
          */
         public void setColumn2(ViewColumn column2) {
@@ -216,7 +202,6 @@ public class MetaView extends MetaObject {
 
         /**
          * Sets the operator.
-         *
          * @param operator the new operator
          */
         public void setOperator(String operator) {

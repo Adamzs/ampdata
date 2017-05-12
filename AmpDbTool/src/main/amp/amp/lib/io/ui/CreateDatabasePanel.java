@@ -38,7 +38,6 @@ public class CreateDatabasePanel extends JPanel {
 
     /**
      * Instantiates a new creates the database panel.
-     *
      * @param dbName the db name
      * @param dbUser the db user
      * @param dbPassword the db password

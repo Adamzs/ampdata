@@ -40,7 +40,6 @@ public abstract class MetaObject {
 
     /**
      * Instantiates a new meta object.
-     *
      * @param metaObject the meta object
      */
     public MetaObject(MetadataObject metaObject) {
@@ -55,7 +54,6 @@ public abstract class MetaObject {
 
     /**
      * Debugging data for the MetaObject
-     *
      * @return debugging data
      */
     public String dump() {
@@ -73,7 +71,6 @@ public abstract class MetaObject {
 
     /**
      * Gets the file.
-     *
      * @return the file
      */
     public File getFile() {
@@ -82,7 +79,6 @@ public abstract class MetaObject {
 
     /**
      * Gets the identifier.
-     *
      * @return the identifier
      */
     public String getIdentifier() {
@@ -91,13 +87,11 @@ public abstract class MetaObject {
 
     /**
      * Gets the title.
-     *
      * @return the title
      */
     public String getTitle() {
         return title;
     }
-
 
     @Override
     public int hashCode() {
@@ -105,8 +99,15 @@ public abstract class MetaObject {
     }
 
     /**
+     * Is metaObject valid for futher processing?
+     * @return validity state
+     */
+    public boolean isValid() {
+        return valid;
+    }
+
+    /**
      * Sets the file.
-     *
      * @param metafile the metafile
      */
     public void setFile(File metafile) {
@@ -116,7 +117,6 @@ public abstract class MetaObject {
 
     /**
      * Sets the identifier.
-     *
      * @param identifier the identifier
      */
     public void setIdentifier(String identifier) {
@@ -126,19 +126,10 @@ public abstract class MetaObject {
 
     /**
      * Sets the title.
-     *
      * @param title the title
      */
     public void setTitle(String title) {
         this.title = title;
-    }
-
-
-    @Override
-    public String toString() {
-        if (identifier != null) return identifier;
-        if (file != null) return file.getPath();
-        return "<unknown>";
     }
 
     /**
@@ -146,15 +137,16 @@ public abstract class MetaObject {
      * @param valid validity state
      */
     public void setValid(boolean valid) {
-        this.valid = valid;        
+        this.valid = valid;
     }
-    
-    /**
-     * Is metaObject valid for futher processing?
-     * @return validity state
-     */
-    public boolean isValid() {
-        return valid;
+
+    @Override
+    public String toString() {
+        if (identifier != null)
+            return identifier;
+        if (file != null)
+            return file.getPath();
+        return "<unknown>";
     }
 
 }

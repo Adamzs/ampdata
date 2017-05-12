@@ -25,10 +25,9 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -36,76 +35,61 @@ import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
- * The Class OpenSQLPanel.
+ * The Class OpenlogPanel.
  */
 @SuppressWarnings("serial")
-public class OpenSQLPanel extends JPanel implements ActionListener {
-    private JTextField sqlRootField = new JTextField(50);
+public class CreateLogPanel extends JPanel implements ActionListener {
+    public JTextField logPathField = new JTextField(50);
+    private JCheckBox errorFilterCheckBox = new JCheckBox("Filter Error Messages");
     private JButton selectButton = new JButton("Select...");
-    private File sqlRootDir;
-
-    List<File> sqlFiles = new ArrayList<>();
 
     /**
-     * Instantiates a new open SQL panel.
-     * @param sqlRoot the sql path
+     * Instantiates a new open log panel.
+     * @param logPath the log path
      */
-    public OpenSQLPanel(String sqlRoot) {
+    public CreateLogPanel(String logPath, boolean filterErrors) {
         selectButton.addActionListener(this);
+        errorFilterCheckBox.setSelected(filterErrors);
 
         this.setLayout(new FlowLayout());
-        this.add(new JLabel("SQL Directories and Files"));
-        this.add(sqlRootField);
+        this.add(new JLabel("Log File"));
+        this.add(logPathField);
         this.add(selectButton);
-        if (sqlRoot == null || sqlRoot.trim().isEmpty()) {
-            sqlRoot = System.getProperty("user.dir");
+        this.add(errorFilterCheckBox, filterErrors);
+        if (logPath != null) {
+            logPathField.setText(logPath);
         }
-        sqlRootDir = new File(sqlRoot);
-        if (!sqlRootDir.exists()) {
-            sqlRoot = System.getProperty("user.dir");
-        }
-        sqlRootDir = new File(sqlRoot);
-        sqlRootField.setText(sqlRoot);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == selectButton) {
             JFileChooser chooser = new JFileChooser();
-            FileNameExtensionFilter sqlFilter = new FileNameExtensionFilter("SQL Scripts", "sql");
-            chooser.addChoosableFileFilter(sqlFilter);
-            chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-            chooser.setMultiSelectionEnabled(true);
+            chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            chooser.setMultiSelectionEnabled(false);
             chooser.setSize(1000, 1000);
             chooser.setLocation(100, 100);
-            chooser.setCurrentDirectory(sqlRootDir);
-            chooser.setAcceptAllFileFilterUsed(false);
+            chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+            chooser.setAcceptAllFileFilterUsed(true);
+            chooser.addChoosableFileFilter(new FileNameExtensionFilter("Log Files", "log"));
             chooser.showOpenDialog(null);
-            if (chooser.getSelectedFiles() != null) {
-                for (File f : chooser.getSelectedFiles()) {
-                    if (f.isDirectory()) {
-                        sqlRootField.setText(f.getAbsolutePath());
-                        for (File f2 : f.listFiles()) {
-                            if (f2.getName().endsWith(".sql")) {
-                                sqlFiles.add(f2);
-                            }
-                        }
-
-                    } else if (f.getName().endsWith(".sql")) {
-                        sqlFiles.add(f);
-                    }
-                }
+            if (chooser.getSelectedFile() != null) {
+                logPathField.setText(chooser.getSelectedFile().getPath());
             }
         }
 
     }
 
-    public List<File> getSqlFiles() {
-        return sqlFiles;
+    public boolean getFilterErrors() {
+        return errorFilterCheckBox.isSelected();
     }
 
-    public String getSqlRoot() {
-        return sqlRootField.getText();
+    public String getlogPath() {
+        return logPathField.getText();
+    }
+
+    public void setFilterErrors(boolean filterErrors) {
+        errorFilterCheckBox.setSelected(filterErrors);
     }
 
 }

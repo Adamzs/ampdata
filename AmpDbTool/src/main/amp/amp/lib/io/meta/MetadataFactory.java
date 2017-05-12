@@ -57,7 +57,6 @@ public class MetadataFactory {
 
     /**
      * Gets the all metadata.
-     *
      * @return the all metadata objects
      */
     public List<MetaObject> getAllMetadata() {
@@ -68,7 +67,6 @@ public class MetadataFactory {
 
     /**
      * Gets the all metaTables.
-     *
      * @return the all meta tables
      */
     public List<MetaTable> getAllMetaTables() {
@@ -83,7 +81,6 @@ public class MetadataFactory {
 
     /**
      * Gets the all meta views.
-     *
      * @return the all meta views
      */
     public List<MetaView> getAllMetaViews() {
@@ -98,7 +95,6 @@ public class MetadataFactory {
 
     /**
      * Gets a MetaObject by identifier.
-     *
      * @param identifier the identifier
      * @return the metadata or null if not found.
      */
@@ -108,7 +104,6 @@ public class MetadataFactory {
 
     /**
      * Read and parse all the metadata files from the directory and sub-directories
-     *
      * @param dir the root directory
      */
     public void readMetaFiles(File dir) {
@@ -163,7 +158,6 @@ public class MetadataFactory {
 
     /**
      * Gets the metadata factory.
-     *
      * @return the metadata factory
      */
     public static MetadataFactory getMetadataFactory() {

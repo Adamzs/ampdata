@@ -22,21 +22,16 @@
 package amp.lib.io.errors;
 
 /**
- * The listener interface for receiving error events.
- * The class that is interested in processing a error
- * event implements this interface, and the object created
- * with that class is registered with a component using the
- * component's <code>addErrorListener<code> method. When
- * the error event occurs, that object's appropriate
- * method is invoked.
- *
+ * The listener interface for receiving error events. The class that is interested in processing a
+ * error event implements this interface, and the object created with that class is registered with
+ * a component using the component's <code>addErrorListener<code> method. When the error event
+ * occurs, that object's appropriate method is invoked.
  * @see ErrorEvent
  */
 public interface ErrorListener {
-    
+
     /**
      * Error occurred: handle appropriately.
-     *
      * @param event the event that occurred
      */
     public void errorOccurred(ErrorEvent event);
