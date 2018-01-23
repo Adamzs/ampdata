@@ -49,9 +49,11 @@ public class SQLFactory {
 
     private static SQLFactory sqlFactory = new SQLFactory();
 
+    public static String AUTOINDEXID = "ID_IDX";
+    
     @SuppressWarnings("unchecked")
     private static final Map<String, String> dataTypeMap = MapUtils.putAll(new HashMap<String, String>(),
-                    new String[][] { { "string", "VARCHAR(50)" }, { "integer", "INT" }, { "long", "BIGINT" }, { "float", "DECIMAL(10,2)" }, { "boolean", "BOOLEAN" }, { "double", "DECIMAL(10,2)" } });
+                    new String[][] { { "string", "VARCHAR(100)" }, { "date", "DATE" }, { "integer", "INT" }, { "short", "INT" }, { "long", "BIGINT" }, { "float", "DOUBLE" }, { "boolean", "BOOLEAN" }, { "double", "DOUBLE" } });
 
     /**
      * Deblank a string
@@ -68,10 +70,83 @@ public class SQLFactory {
      * @return the dequoted string.
      */
     public String dequote(String text) {
-        return text.replaceAll("['\"`]", " ");
+    	return text.replaceAll("['\"`]", "");
     }
 
     /**
+     * Deparen a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String deparen(String text) {
+    	return text.replaceAll("[()]", "");
+    }
+
+    /**
+     * Depercen a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String depercen(String text) {
+    	return text.replaceAll("%", "");
+    }
+
+    /**
+     * Deslash a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String deslash(String text) {
+    	return text.replaceAll("/", "");
+    }
+
+    /**
+     * Dequestion a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String dequestion(String text) {
+    	return text.replaceAll("\\?", "");
+    }
+
+    /**
+     * Degtlt a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String degtlt(String text) {
+    	text = text.replaceAll(">", "");
+    	return text.replaceAll("<", "");
+    }
+
+    /**
+     * Deperiod a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String deperiod(String text) {
+    	return text.replaceAll("\\.", "");
+    }
+
+    /**
+     * Dedash a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String dedash(String text) {
+    	return text.replaceAll("-", "");
+    }
+
+    /**
+     * Depound a string.
+     * @param text the text.
+     * @return the dequoted string.
+     */
+    public String depound(String text) {
+    	return text.replaceAll("#", "");
+    }
+    	    
+    /*
      * Escapes all keywords in the statement.
      * @param statement the statement
      * @return the escaped statement
@@ -120,6 +195,7 @@ public class SQLFactory {
     public String metadataToCsvFile(MetaTable meta) {
         String metaFilePath = meta.getFile().getAbsolutePath();
         String csvFilePath = metaFilePath.replaceAll("\\.meta", "");
+        csvFilePath = csvFilePath.replace("\\", "/");
         return csvFilePath;
     }
 
@@ -131,6 +207,14 @@ public class SQLFactory {
     public String normalize(String text) {
         text = dequote(text);
         text = deblank(text);
+        text = deparen(text);
+        text = depercen(text);
+        text = deslash(text);
+        text = dequestion(text);
+        text = degtlt(text);
+        text = deperiod(text);
+        text = dedash(text);
+        text = depound(text);
         text = escapeKeywords(text);
         return text;
     }
@@ -269,14 +353,21 @@ public class SQLFactory {
      * @param pk the primary key.
      * @return the string
      */
-    public String toPrimaryKeySQL(PrimaryKey pk) {
-        String pkTableName = normalize(pk.getTable().getTableName());
-        List<String> pkColumns = new ArrayList<>();
-        for (Column pkColumn : pk.getPrimaryKeyColumns()) {
-            pkColumns.add(normalize(pkColumn.getName()));
-        }
-        return "ALTER TABLE " + pkTableName + " ADD PRIMARY KEY(" + Joiner.on(",").join(pkColumns) + ")";
-    }
+//    public String toPrimaryKeySQL(PrimaryKey pk) {
+//      if (!pk.getTable().isAutoIndex()) {
+//        String pkTableName = normalize(pk.getTable().getTableName());
+//        
+//        List<String> pkColumns = new ArrayList<>();
+////        if (pk.getTable().isAutoIndex()) {
+////        	pkColumns.add(AUTOINDEXID);
+////        }
+//        for (Column pkColumn : pk.getPrimaryKeyColumns()) {
+//            pkColumns.add(normalize(pkColumn.getName()));
+//        }
+//        return "ALTER TABLE " + pkTableName + " ADD PRIMARY KEY(" + Joiner.on(",").join(pkColumns) + ")";
+//      }
+//      return "";
+//    }
 
     /**
      * SQL to turn referential integrity checking on/off
@@ -302,6 +393,25 @@ public class SQLFactory {
         return sqlType;
     }
 
+    public String getAutoIDColumn() {
+    	return AUTOINDEXID + " int AUTO_INCREMENT NOT NULL";
+    }
+    
+    public String getPrimaryKeyString(MetaTable meta) {
+    	PrimaryKey pk = meta.getPrimaryKey();
+    	List<String> pkColumns = new ArrayList<>();
+    	if (pk.getTable().isAutoIndex()) {
+    		pkColumns.add(AUTOINDEXID);
+    	}
+    	for (Column pkColumn : pk.getPrimaryKeyColumns()) {
+    		pkColumns.add(normalize(pkColumn.getName()));
+    	}
+    	if (pkColumns.isEmpty()) {
+    		return "";
+    	}
+    	return "PRIMARY KEY(" + Joiner.on(",").join(pkColumns) + ")";
+    }
+    
     /**
      * SQL to create a table.
      * @param meta the metaTable
@@ -311,9 +421,16 @@ public class SQLFactory {
         StringBuffer sql = new StringBuffer();
         sql.append("CREATE TABLE " + normalize(meta.getTableName()));
         List<String> columnDecls = new ArrayList<>();
+        if (meta.isAutoIndex()) {
+        	columnDecls.add(getAutoIDColumn());
+        }
         for (Column col : meta.getAllColumns()) {
             String decl = toColumnSQL(col);
             columnDecls.add(decl);
+        }
+        String pkstring = getPrimaryKeyString(meta);
+        if (pkstring != null && !pkstring.isEmpty()) {
+        	columnDecls.add(pkstring);
         }
         sql.append(" (\n   ");
         sql.append(Joiner.on(",\n   ").join(columnDecls));

@@ -38,6 +38,8 @@ public abstract class MetaObject {
     private File file = null;
     private boolean valid = true;
 
+	private Boolean autoindex;
+
     /**
      * Instantiates a new meta object.
      * @param metaObject the meta object
@@ -46,6 +48,9 @@ public abstract class MetaObject {
         super();
         this.setTitle(metaObject.getTitle());
         this.setIdentifier(metaObject.getId());
+        if (metaObject.addindex != null) {
+        	this.setAutoIndex(metaObject.addindex.equalsIgnoreCase("TRUE"));
+        }
     }
 
     protected MetaObject() {
@@ -114,6 +119,10 @@ public abstract class MetaObject {
         this.file = metafile;
 
     }
+    
+    public void setAutoIndex(Boolean addindex) {
+    	this.autoindex = addindex;
+    }
 
     /**
      * Sets the identifier.
@@ -140,6 +149,10 @@ public abstract class MetaObject {
         this.valid = valid;
     }
 
+    public Boolean isAutoIndex() {
+    	return this.autoindex;
+    }
+    
     @Override
     public String toString() {
         if (identifier != null)

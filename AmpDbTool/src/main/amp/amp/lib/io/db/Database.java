@@ -63,7 +63,7 @@ public class Database {
     private static Database database = new Database();
 
     private static final String BASE_USER = "root";
-    private static final String BASE_PASSWORD = "root";
+    private static final String BASE_PASSWORD = "p0O(i8U&y6";
     private static List<String> systemDBList = Arrays.asList("information_schema", "mysql", "performance_schema", "sys");
 
     private Connection dbmConnection;
@@ -307,16 +307,16 @@ public class Database {
         for (MetaObject mo : metadata) {
             if (mo.isValid() && mo instanceof MetaTable) {
                 MetaTable mt = (MetaTable) mo;
-                PrimaryKey pk = mt.getPrimaryKey();
-                if (pk != null) {
-                    try {
-                        validatePrimaryKey(pk);
-                        String sql = sqlm.toPrimaryKeySQL(pk);
-                        execute(sql);
-                    } catch (Exception e) {
-                        Report.error(mt, e.getMessage());
-                    }
-                }
+//                PrimaryKey pk = mt.getPrimaryKey();
+//                if (pk != null) {
+//                    try {
+//                        validatePrimaryKey(pk);
+//                        String sql = sqlm.toPrimaryKeySQL(pk);
+//                        execute(sql);
+//                    } catch (Exception e) {
+//                        Report.error(mt, e.getMessage());
+//                    }
+//                }
                 for (ForeignKey fk : mt.getForeignKeys()) {
                     try {
                         validateForeignKey(fk);

@@ -29,7 +29,7 @@ public class MetadataObject {
     public String id;
     public String title;
     public String scenario;
-
+    public String addindex;
     public String classname;
 
     public String ampversion;
@@ -98,6 +98,14 @@ public class MetadataObject {
 
     public void setViewSchema(ViewSchema viewSchema) {
         this.viewSchema = viewSchema;
+    }
+    
+    public String getAddindex() {
+    	return this.addindex;
+    }
+    
+    public void setAddindex(String addindex) {
+    	this.addindex = addindex;
     }
 
     @Override
