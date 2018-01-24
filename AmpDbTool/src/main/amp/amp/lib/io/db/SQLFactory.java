@@ -271,8 +271,8 @@ public class SQLFactory {
      * @param meta the metaTable
      * @return the SQL string
      */
-    public String toDeleteAllSql(MetaTable meta) {
-        return "DELETE FROM " + normalize(meta.getTableName()) + " WHERE(1=1)";
+    public String toDeleteAllSql(MetaTable meta, String scenarioName) {
+        return "DELETE FROM " + normalize(meta.getTableName()) + " WHERE(" + SCENARIO_NAME_COLUMN + "=\"" + scenarioName + "\")";
     }
 
     /**

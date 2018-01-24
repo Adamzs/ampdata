@@ -544,7 +544,7 @@ public class Database {
             File csvFile = new File(sqlm.metadataToCsvFile(meta));
             CsvFileSummary csvfs = getCsvSummary(meta, csvFile);
             ensureColumnsMatch(meta, csvfs);
-            execute(sqlm.toDeleteAllSql(meta));
+            execute(sqlm.toDeleteAllSql(meta, scenarioName));
             execute(sqlm.toLoadSql(meta, scenarioName));
             ensureAllRowsLoaded(meta, csvfs);
         } catch (Exception e) {
