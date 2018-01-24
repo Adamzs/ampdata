@@ -68,6 +68,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
     private Style redStyle = null;
     private Style blackStyle = null;
     private Style blueStyle = null;
+    private String scenarioName = "Empty";
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -291,6 +292,8 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, openDialog, "Select Project", JOptionPane.OK_CANCEL_OPTION);
         if (selected == JOptionPane.OK_OPTION) {
             logPath = new File(openDialog.getProjectPath());
+            scenarioName = logPath.getName();
+            System.out.println(scenarioName);
             props.set(Properties.PROJ_ROOT, logPath.getAbsolutePath());
             metaFactory.readMetaFiles(logPath);
             Report.okay("INFO: Opened " + metaFactory.getAllMetadata().size() + " metadata files");
@@ -302,7 +305,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
      */
     private void populateDatabase() {
         if (isOpenProject() && isOpenDatabase()) {
-            database.populateTables(metaFactory.getAllMetadata());
+            database.populateTables(metaFactory.getAllMetadata(), this.scenarioName);
         }
     }
 

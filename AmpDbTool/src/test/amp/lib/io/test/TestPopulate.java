@@ -28,7 +28,7 @@ public class TestPopulate implements ErrorListener {
         dbm.openDatabase("Amp", "root", "root");
         mfh.readMetaFiles(new File("data"));
         List<MetaObject> metadata = mfh.getAllMetadata();
-        dbm.populateTables(metadata);
+        dbm.populateTables(metadata, "TestScenario");
     }
 
 }

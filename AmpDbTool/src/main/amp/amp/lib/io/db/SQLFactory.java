@@ -51,6 +51,8 @@ public class SQLFactory {
 
     public static String AUTOINDEXID = "ID_IDX";
     
+    public static String SCENARIO_NAME_COLUMN = "ScenarioName";
+    
     @SuppressWarnings("unchecked")
     private static final Map<String, String> dataTypeMap = MapUtils.putAll(new HashMap<String, String>(),
                     new String[][] { { "string", "VARCHAR(100)" }, { "date", "DATE" }, { "integer", "INT" }, { "short", "INT" }, { "long", "BIGINT" }, { "float", "DOUBLE" }, { "boolean", "BOOLEAN" }, { "double", "DOUBLE" } });
@@ -321,7 +323,7 @@ public class SQLFactory {
      * @param meta the metaTable
      * @return the string
      */
-    public String toLoadSql(MetaTable meta) {
+    public String toLoadSql(MetaTable meta, String scenarioName) {
         String csvFilePath = metadataToCsvFile(meta);
         StringBuilder sql = new StringBuilder();
         sql.append("LOAD DATA LOCAL INFILE '" + csvFilePath + "'");
@@ -341,6 +343,7 @@ public class SQLFactory {
             }
         }
         sql.append("\n (" + Joiner.on(",").join(columns) + ")");
+        assignments.add(SCENARIO_NAME_COLUMN + " = \"" + scenarioName + "\""); 
         if (assignments.size() > 0) {
             sql.append("\n SET ");
             sql.append(Joiner.on(",\n     ").join(assignments));
@@ -358,9 +361,6 @@ public class SQLFactory {
 //        String pkTableName = normalize(pk.getTable().getTableName());
 //        
 //        List<String> pkColumns = new ArrayList<>();
-////        if (pk.getTable().isAutoIndex()) {
-////        	pkColumns.add(AUTOINDEXID);
-////        }
 //        for (Column pkColumn : pk.getPrimaryKeyColumns()) {
 //            pkColumns.add(normalize(pkColumn.getName()));
 //        }
@@ -397,16 +397,21 @@ public class SQLFactory {
     	return AUTOINDEXID + " int AUTO_INCREMENT NOT NULL";
     }
     
+    public String getScenarioNameColumnString() {
+    	return SCENARIO_NAME_COLUMN + " VARCHAR(100) NOT NULL";
+    }
+    
     public String getPrimaryKeyString(MetaTable meta) {
     	PrimaryKey pk = meta.getPrimaryKey();
     	List<String> pkColumns = new ArrayList<>();
     	if (pk.getTable().isAutoIndex()) {
     		pkColumns.add(AUTOINDEXID);
     	}
+    	pkColumns.add(SCENARIO_NAME_COLUMN);
     	for (Column pkColumn : pk.getPrimaryKeyColumns()) {
     		pkColumns.add(normalize(pkColumn.getName()));
     	}
-    	if (pkColumns.isEmpty()) {
+    	if (pkColumns.isEmpty()) { // this should never happen now
     		return "";
     	}
     	return "PRIMARY KEY(" + Joiner.on(",").join(pkColumns) + ")";
@@ -424,6 +429,7 @@ public class SQLFactory {
         if (meta.isAutoIndex()) {
         	columnDecls.add(getAutoIDColumn());
         }
+        columnDecls.add(getScenarioNameColumnString());
         for (Column col : meta.getAllColumns()) {
             String decl = toColumnSQL(col);
             columnDecls.add(decl);

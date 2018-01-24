@@ -238,11 +238,11 @@ public class Database {
      * the corresponding data is found in "foo.csv", with exactly corresponding column names.
      * @param metadata the list of metadata objects
      */
-    public void populateTables(List<MetaObject> metadata) {
+    public void populateTables(List<MetaObject> metadata, String scenarioName) {
         referentialIntegrity(false);
         for (MetaObject meta : metadata) {
             if (meta.isValid() && meta instanceof MetaTable) {
-                importCSVFile((MetaTable) meta);
+                importCSVFile((MetaTable) meta, scenarioName);
             }
         }
         referentialIntegrity(true);
@@ -538,14 +538,14 @@ public class Database {
     /*
      * Import data into a table from its corresponding CSV file.
      */
-    private void importCSVFile(MetaTable meta) {
+    private void importCSVFile(MetaTable meta, String scenarioName) {
         SQLFactory sqlm = SQLFactory.getSQLFactory();
         try {
             File csvFile = new File(sqlm.metadataToCsvFile(meta));
             CsvFileSummary csvfs = getCsvSummary(meta, csvFile);
             ensureColumnsMatch(meta, csvfs);
             execute(sqlm.toDeleteAllSql(meta));
-            execute(sqlm.toLoadSql(meta));
+            execute(sqlm.toLoadSql(meta, scenarioName));
             ensureAllRowsLoaded(meta, csvfs);
         } catch (Exception e) {
             // Here we extract the useful information from the over-specified
