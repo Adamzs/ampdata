@@ -63,7 +63,7 @@ public class Database {
     private static Database database = new Database();
 
     private static final String BASE_USER = "root";
-    private static final String BASE_PASSWORD = "p0O(i8U&y6";
+    private static final String BASE_PASSWORD = "user@5AMP";//"p0O(i8U&y6";
     private static List<String> systemDBList = Arrays.asList("information_schema", "mysql", "performance_schema", "sys");
 
     private Connection dbmConnection;
@@ -626,6 +626,54 @@ public class Database {
             }
         }
     }
+    
+    /*
+     * Deletes teh given scenarios from the database
+     */
+    public void deleteScenarios(ArrayList<String> scenarios) throws SQLException {
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
+        //ArrayList<String> scen = new ArrayList<String>();
+        for(String tbl : getDatabaseTableNames()){
+		        execute(sqlm.deleteScenarios(tbl, scenarios));
+        }
+    }
+    
+    /*
+     * Get a list of Scenarios that are represented in the database. 
+     */
+    public ArrayList<String> getScenarioNames() throws SQLException {
+        SQLFactory sqlm = SQLFactory.getSQLFactory();
+        ArrayList<String> scen = new ArrayList<String>();
+        for(String tbl : getDatabaseTableNames()){
+	        ResultSet rs = query(sqlm.getScenarioNames(tbl));
+	        
+	        while(rs.next()){
+	        	String thisScen = rs.getString(1);
+	        	if(!scen.contains(thisScen)){
+	        		scen.add(rs.getString(1));
+	        	}
+	        }
+        }
+        return scen;
+    }
+    
+    /**
+     * Get the table names in the database
+     * @return
+     */
+    private ArrayList<String> getDatabaseTableNames() throws SQLException{
+    	String dbName = this.getName();
+    	SQLFactory sqlm = SQLFactory.getSQLFactory();
+    	ArrayList<String> tableNames = new ArrayList<String>();
+    	ResultSet rs = query(sqlm.getTableNames(dbName));
+        
+        while(rs.next()){
+        	tableNames.add(rs.getString(1));
+        }
+    	
+        return tableNames;
+    }
+
 
     /*
      * Validates a MetaTable

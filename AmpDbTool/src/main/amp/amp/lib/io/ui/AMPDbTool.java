@@ -28,6 +28,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.swing.JFrame;
@@ -59,6 +60,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
     private Properties props = Properties.getProperties();
     private ProjectMenu projectMenu = new ProjectMenu();
     private DatabaseMenu databaseMenu = new DatabaseMenu();
+    private ScenarioMenu scenarioMenu = new ScenarioMenu();
     private JTextPane traceWindow = new JTextPane();
     private JScrollPane traceScroller = new JScrollPane();
     private JFrame ampDbToolFrame = new JFrame();
@@ -92,6 +94,8 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
             dropDatabase();
         } else if (e.getActionCommand().equals(DatabaseMenu.POPULATE)) {
             populateDatabase();
+        }else if(e.getActionCommand().equals(ScenarioMenu.REMOVE)){
+        	removeScenatio();
         }
 
     }
@@ -130,6 +134,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
 
         projectMenu.addActionListener(this);
         databaseMenu.addActionListener(this);
+        scenarioMenu.addActionListener(this);
 
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -155,6 +160,7 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         ampDbToolFrame.setJMenuBar(new JMenuBar());
         ampDbToolFrame.getJMenuBar().add(projectMenu);
         ampDbToolFrame.getJMenuBar().add(databaseMenu);
+        ampDbToolFrame.getJMenuBar().add(scenarioMenu);
         ampDbToolFrame.getContentPane().setLayout(new BorderLayout());
         ampDbToolFrame.getContentPane().add(traceScroller, BorderLayout.CENTER);
         ampDbToolFrame.pack();
@@ -307,6 +313,25 @@ public class AMPDbTool implements Runnable, ActionListener, ErrorListener {
         if (isOpenProject() && isOpenDatabase()) {
             database.populateTables(metaFactory.getAllMetadata(), this.scenarioName);
         }
+    }
+    
+    private void removeScenatio(){
+    	if(!isOpenDatabase()) {
+    		openDatabase();
+    	}
+    	String dbName = props.get(Properties.DB_NAME);
+        String dbUser = props.get(Properties.DB_USER);
+        String dbPassword = props.get(Properties.DB_PASSWORD);
+    	RemoveScenarioPanel removeDialog = new RemoveScenarioPanel(dbName, dbUser, dbPassword);
+        int selected = JOptionPane.showConfirmDialog(ampDbToolFrame, removeDialog, "Select Scenario to Remove", JOptionPane.OK_CANCEL_OPTION);
+        if (selected == JOptionPane.OK_OPTION) {
+        	try{
+        		database.deleteScenarios(removeDialog.getSelectedScenarios());
+        	}catch(SQLException e){
+        		Report.error("Remove scenario failed");
+        	}
+        }
+        Report.okay("Done!");
     }
 
     /*

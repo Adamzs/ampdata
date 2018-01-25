@@ -314,7 +314,7 @@ public class SQLFactory {
         Column fkRef = fk.getFkColumn();
         String fkColumnName = normalize(fkRef.getName());
         String fkTableName = normalize(fkRef.getTable().getTableName());
-        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toIndexName(fkRef) + " FOREIGN KEY (" + fkColumnName + ")" + " REFERENCES " + pkTableName + "(" + pkColumnName + ")";
+        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toIndexName(fkRef) + " FOREIGN KEY (" + fkColumnName + ")" + " REFERENCES " + pkTableName + "(" + pkColumnName + ") ON DELETE CASCADE";
         return sql;
     }
 
@@ -513,6 +513,49 @@ public class SQLFactory {
         }
         return decl.toString();
     }
+    
+    /** Get the names of the scenarios seen in the database 
+     * 
+     * @return
+     */
+    public String getScenarioNames(String tbl){
+    	StringBuffer sql = new StringBuffer();
+        sql.append("SELECT " + SCENARIO_NAME_COLUMN);
+        sql.append("\n FROM " + tbl);
+        return sql.toString();
+    }
+    
+    /** Get the names of the scenarios seen in the database 
+     * 
+     * @return
+     */
+    public String deleteScenarios(String tbl, ArrayList<String> scenarios){
+    	StringBuffer sql = new StringBuffer();
+    	StringBuffer scenStr = new StringBuffer();
+    	for(int i = 0; i < scenarios.size(); i++){
+    		if(i > 0){
+    			scenStr.append(" OR ");
+    		}
+    		scenStr.append(SCENARIO_NAME_COLUMN + "= '" + scenarios.get(i) + "'");
+
+    	}
+    	
+        sql.append("DELETE FROM " + tbl);
+        sql.append(" WHERE " + scenStr.toString());
+        return sql.toString();
+    }
+    
+    /**
+     * Get the names of the tables actually in the DB
+     * @return
+     */
+    public String getTableNames(String dbName){
+    	StringBuffer sql = new StringBuffer();
+        sql.append("SELECT table_name");
+        sql.append("\n FROM information_schema.tables");
+        sql.append("\n WHERE table_schema='" + dbName +"'");
+        return sql.toString();
+    }
 
     /**
      * Produces index name from column as TABLE_COLUMN_IDX
@@ -544,6 +587,8 @@ public class SQLFactory {
             return null;
         return normalize(vcTable.getTableName()) + "." + normalize(vcColumn.getName());
     }
+    
+
 
     /**
      * Gets the SQL factory.
