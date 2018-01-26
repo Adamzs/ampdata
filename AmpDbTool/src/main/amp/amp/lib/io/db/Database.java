@@ -83,7 +83,7 @@ public class Database {
         validataMetadata(metadata);
         referentialIntegrity(false);
         buildTables(metadata);
-        buildIndexes(metadata);
+        //buildIndexes(metadata);
         buildKeys(metadata);
         buildViews(metadata);
         referentialIntegrity(true);

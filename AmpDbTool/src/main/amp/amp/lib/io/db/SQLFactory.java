@@ -308,14 +308,19 @@ public class SQLFactory {
      * @return the SQLstring
      */
     public String toForeignKeySQL(ForeignKey fk) {
+    	// hmm, not sure if we should support foreign/primary keys consisting of multiple columns
         Column pkRef = fk.getReferenceColumn();
-        String pkTableName = normalize(pkRef.getTable().getTableName());
-        String pkColumnName = normalize(pkRef.getName());
-        Column fkRef = fk.getFkColumn();
-        String fkColumnName = normalize(fkRef.getName());
-        String fkTableName = normalize(fkRef.getTable().getTableName());
-        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toIndexName(fkRef) + " FOREIGN KEY (" + fkColumnName + ")" + " REFERENCES " + pkTableName + "(" + pkColumnName + ") ON DELETE CASCADE";
-        return sql;
+        if (!pkRef.getTable().isAutoIndex()) { // if there need to be an auto-index column then it can't be linked as a key
+	        String pkTableName = normalize(pkRef.getTable().getTableName());
+	        String pkColumnName = normalize(pkRef.getName());
+	        Column fkRef = fk.getFkColumn();
+	        String fkColumnName = normalize(fkRef.getName());
+	        String fkTableName = normalize(fkRef.getTable().getTableName());
+	        String sql = "ALTER TABLE " + fkTableName + " ADD CONSTRAINT " + toIndexName(fkRef) + " FOREIGN KEY (" + SCENARIO_NAME_COLUMN + ", " + fkColumnName 
+	        		+ ")" + " REFERENCES " + pkTableName + "(" + SCENARIO_NAME_COLUMN + ", " + pkColumnName + ") ON DELETE CASCADE";
+	        return sql;
+        }
+        return "";
     }
 
     /**
