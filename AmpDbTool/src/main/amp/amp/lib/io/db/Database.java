@@ -63,7 +63,7 @@ public class Database {
     private static Database database = new Database();
 
     private static final String BASE_USER = "root";
-    private static final String BASE_PASSWORD = "user@5AMP";//"p0O(i8U&y6";
+    private static final String BASE_PASSWORD = "p0O(i8U&y6";
     private static List<String> systemDBList = Arrays.asList("information_schema", "mysql", "performance_schema", "sys");
 
     private Connection dbmConnection;

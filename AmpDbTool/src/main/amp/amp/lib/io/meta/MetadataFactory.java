@@ -126,7 +126,7 @@ public class MetadataFactory {
      * Is this is a metadata file
      */
     private boolean isMeta(File f) {
-        return f.getName().endsWith(".meta");
+        return f.getName().endsWith("csv.meta");
     }
 
     /*

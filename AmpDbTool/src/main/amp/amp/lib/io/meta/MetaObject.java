@@ -38,7 +38,7 @@ public abstract class MetaObject {
     private File file = null;
     private boolean valid = true;
 
-	private Boolean autoindex;
+	private Boolean autoindex = false;
 
     /**
      * Instantiates a new meta object.

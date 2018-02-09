@@ -339,7 +339,7 @@ public class SQLFactory {
         List<String> assignments = new ArrayList<>();
         for (Column c : meta.getAllColumns()) {
             String columnName = c.getName();
-            String variable = toVariable(columnName);
+            String variable = toVariable(normalize(columnName));
             if (c.getDatatype().equals("boolean")) {
                 columns.add(variable);
                 assignments.add(normalize(columnName) + " = (" + variable + "='true'" + ")");
